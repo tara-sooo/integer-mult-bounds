@@ -17,10 +17,10 @@ All SHA-256 values below were computed from the exact pinned Git objects with `g
 | File at commit `8d4fb37796f9eb2badeca1ef0dd1c810ae23245c` | SHA-256 |
 |---|---|
 | `research/global-role-frame-audit/RESULTS.md` | `ec6ad8194b9b82dce37a281aada3629dc7d71820f8b360706d75199a65315ce6` |
-| `research/global-role-frame-audit/ROLE_MAP.md` | `f40992b8fd5d3492b217e9f91fe41f909f146e27` |
-| `research/global-role-frame-audit/ENDPOINTS.md` | `2ec8715358010007fdd02cec226b1315ee03a95b` |
-| `research/global-role-frame-audit/RANK_LEDGER.md` | `4625924cfbef45b260059cd220c5f76004786850` |
-| `research/global-role-frame-audit/SOURCES.md` | `a0a176573f88612da4a613bab757a9877c1d2ed3` |
+| `research/global-role-frame-audit/ROLE_MAP.md` | `7f0f159a0fbdf4986e029fb874e4d1f3d876108ea13326e5127ef1b6ebd804dd` |
+| `research/global-role-frame-audit/ENDPOINTS.md` | `28219018338e7161b00ce3a7838db40d8e0863ea2033034262d1bc178bc80e53` |
+| `research/global-role-frame-audit/RANK_LEDGER.md` | `fe876f417f7b3cf0dc939fc071868cc13a9bda3c72fe3ad7a0c5aca92791d3e2` |
+| `research/global-role-frame-audit/SOURCES.md` | `c02d1c977fdf3df5b4246d1f1e13aef120fa96bc20ebf8ec0dc9d672e4250e11` |
 
 ## Issue 16 files
 
