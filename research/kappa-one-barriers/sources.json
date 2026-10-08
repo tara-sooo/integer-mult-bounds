@@ -1,0 +1,163 @@
+{
+  "snapshot_date": "2026-10-08",
+  "fork_base": {
+    "repository": "tara-sooo/integer-mult-bounds",
+    "ref": "origin/main",
+    "commit": "0605a24a28836168ad29d6239b46064b892298fc"
+  },
+  "policy": "Immutable source commits and per-file SHA-256 digests are recorded below. The source ledger is a dated snapshot and is not refreshed for later pull requests.",
+  "sources": [
+    {
+      "id": "S0",
+      "repository": "tara-sooo/integer-mult-bounds",
+      "commit": "7210de7d0f9ccaeb64c3f60f188419e02be08d95",
+      "path": "research/skip-clones/PROOF.md",
+      "sha256": "4fbbcfd89a3248cef3d455b797fbda5ad293463162218464d5b3e9cdf91d96a3",
+      "line_ranges": [[1, 25], [184, 247]],
+      "attribution": "Chafik Boukhalfa with OpenAI Codex assistance; inherited contributors and notices are listed in the pinned proof.",
+      "claim_scope": "Issue #5 / PR #54 reproduction baseline only; conditional finite witness, not a global ceiling.",
+      "immutable_commit_url": "https://redirect.github.com/tara-sooo/integer-mult-bounds/commit/7210de7d0f9ccaeb64c3f60f188419e02be08d95"
+    },
+    {
+      "id": "S0-cert",
+      "repository": "tara-sooo/integer-mult-bounds",
+      "commit": "7210de7d0f9ccaeb64c3f60f188419e02be08d95",
+      "path": "research/skip-clones/certificate.json",
+      "sha256": "6e67591862ac582deeb2d9cc264a419bde1a29a5de44e32f7f02f820c6384679",
+      "attribution": "Chafik Boukhalfa with OpenAI Codex assistance; inherited contributors and notices are listed in the pinned proof.",
+      "claim_scope": "Exact finite certificate for the PR #54 baseline witness.",
+      "immutable_commit_url": "https://redirect.github.com/tara-sooo/integer-mult-bounds/commit/7210de7d0f9ccaeb64c3f60f188419e02be08d95"
+    },
+    {
+      "id": "S1",
+      "repository": "openai/math",
+      "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "path": "preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/00-introduction.tex",
+      "vendored_path_at_fork_base": "upstream/build/sections/00-introduction.tex",
+      "sha256": "98721f03682ccf1cc7d0850b07adabaa2d8f3afe552e3861753eba9d284d0da0",
+      "line_ranges": [[21, 36], [82, 143], [170, 176]],
+      "attribution": "OpenAI, original manuscript.",
+      "claim_scope": "Theorem/model statement, network roles and recursive-saving explanation.",
+      "immutable_commit_url": "https://redirect.github.com/openai/math/commit/adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "id": "S2",
+      "repository": "openai/math",
+      "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "path": "preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/05-layers.tex",
+      "vendored_path_at_fork_base": "upstream/build/sections/05-layers.tex",
+      "sha256": "20cfc8d12099d4e4ed9e3e7eeb6162edd9b6e0e076f24693364cd24377252594",
+      "line_ranges": [[631, 686], [695, 703]],
+      "attribution": "OpenAI, original manuscript.",
+      "claim_scope": "All-size equal-width recurrence and strict parameter conditions for the complex layer.",
+      "immutable_commit_url": "https://redirect.github.com/openai/math/commit/adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "id": "S3",
+      "repository": "openai/math",
+      "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+      "path": "preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/08-assembly.tex",
+      "vendored_path_at_fork_base": "upstream/build/sections/08-assembly.tex",
+      "sha256": "763d7945b1e1ec4ebae9b799bcefcc45fa9bae6e2ffad799868a9c3d513dbd4a",
+      "line_ranges": [[20, 48], [827, 847]],
+      "attribution": "OpenAI, original manuscript.",
+      "claim_scope": "Fixed rational parameters, strict inequalities, and the end-to-end cost exponent table.",
+      "immutable_commit_url": "https://redirect.github.com/openai/math/commit/adc7f1241b42e322a6451854ab7e4b4c146bf78a"
+    },
+    {
+      "id": "S4",
+      "repository": "tara-sooo/integer-mult-bounds",
+      "commit": "0605a24a28836168ad29d6239b46064b892298fc",
+      "path": "docs/research/community-final-audit.md",
+      "sha256": "8233d348873fe5168014fa49888a6a1da69ade6fa4fc2541f85a1264c1d6fc18",
+      "line_ranges": [[1, 36], [53, 57], [99, 143], [177, 235]],
+      "attribution": "Douglas Colkitt's project audit, reviewed with the project's Codex assistant; predecessor attributions remain in the cited source notices.",
+      "claim_scope": "Fork's accepted conditional release and inherited residual, fixed-tape, semantic, analytic, routing, recovery and threshold obligations.",
+      "immutable_commit_url": "https://redirect.github.com/tara-sooo/integer-mult-bounds/commit/0605a24a28836168ad29d6239b46064b892298fc"
+    },
+    {
+      "id": "S5",
+      "repository": "tara-sooo/integer-mult-bounds",
+      "commit": "0605a24a28836168ad29d6239b46064b892298fc",
+      "path": "docs/research/community-audit-arithmetic.json",
+      "sha256": "f8053b6e4a856d3931c56611722ae14918a4d745f2caa5d84a4bbaba3d118bdf",
+      "attribution": "Maintainer audit arithmetic record; inherited construction authorship and notices remain in the repository.",
+      "claim_scope": "Exact bit/complex moment and final-margin arithmetic for the fork's audited release, not PR #58/#62/#63.",
+      "immutable_commit_url": "https://redirect.github.com/tara-sooo/integer-mult-bounds/commit/0605a24a28836168ad29d6239b46064b892298fc"
+    },
+    {
+      "id": "S6",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "bc2f7ed4c20dc18898305ab17165c0c995cbb804",
+      "path": "research/joint-dual/PROOF.md",
+      "sha256": "dccf893d6f6e8be7d40192b7976aa6712a32d7573e382c16056b703c29780b0d",
+      "line_ranges": [[1, 23], [68, 94], [96, 136], [174, 224], [226, 257]],
+      "attribution": "Chafik Boukhalfa with OpenAI Codex assistance; dual-suffix graph by Rohan Gupta with Anthropic Claude assistance; joint frame compiler by eumemic with OpenAI Codex assistance; inherited credits remain in the proof.",
+      "claim_scope": "PR #58 finite graph, full child rank/profile, exact moment, assembly and inherited proof boundary.",
+      "immutable_commit_url": "https://redirect.github.com/CrocSwap/integer-mult-bounds/commit/bc2f7ed4c20dc18898305ab17165c0c995cbb804"
+    },
+    {
+      "id": "S6-cert",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "bc2f7ed4c20dc18898305ab17165c0c995cbb804",
+      "path": "certificates/joint-dual-kappa.json",
+      "sha256": "c05631d319c71ca6c91e8422cee9d617d9b0056ebf971db8282b041613b09025",
+      "attribution": "Construction contributors as listed in `research/joint-dual/PROOF.md` at the same commit.",
+      "claim_scope": "Exact finite child, moment, assembly and eventual-bound certificate for PR #58.",
+      "immutable_commit_url": "https://redirect.github.com/CrocSwap/integer-mult-bounds/commit/bc2f7ed4c20dc18898305ab17165c0c995cbb804"
+    },
+    {
+      "id": "S7",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "ad0f25ff7b23cff7f08ad237c2254e6ecf74257e",
+      "path": "research/pair-assembly/PROOF.md",
+      "sha256": "30685624bf922bb9d9f7ed4b0d367a660fe373cc9ee28fec33585bd8c7023e75",
+      "line_ranges": [[1, 18], [84, 121], [124, 136], [138, 177], [193, 221]],
+      "attribution": "Avi Eisenberg with Anthropic Claude assistance; inherited contributors and notices are listed in the pinned proof.",
+      "claim_scope": "PR #62 interval strips, rank/deficit, exact moment crossing, 47 assembly constraints, seven margins and inherited obligations.",
+      "immutable_commit_url": "https://redirect.github.com/CrocSwap/integer-mult-bounds/commit/ad0f25ff7b23cff7f08ad237c2254e6ecf74257e"
+    },
+    {
+      "id": "S7-cert",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "ad0f25ff7b23cff7f08ad237c2254e6ecf74257e",
+      "path": "research/pair-assembly/certificate.json",
+      "sha256": "1f7a8d3a4015b18f150a5ff87656f5934f135e129431e63b0abb4b86a49cb7e3",
+      "attribution": "Construction contributors as listed in `research/pair-assembly/PROOF.md` at the same commit.",
+      "claim_scope": "Exact finite profiles, moment bounds, all 47 assembly constraints, seven margins and stacked witness data for PR #62.",
+      "immutable_commit_url": "https://redirect.github.com/CrocSwap/integer-mult-bounds/commit/ad0f25ff7b23cff7f08ad237c2254e6ecf74257e"
+    },
+    {
+      "id": "S8",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "aa7701b68540b7863d3b66a414e4319915d6282d",
+      "path": "research/rank-pair/PROOF.md",
+      "sha256": "b61b3cd554114f6eff6747133a980ac6525d1e2cdf0607056bf421dd331a261c",
+      "line_ranges": [[1, 77], [94, 106], [115, 126]],
+      "attribution": "Dominik Scholz with substantial OpenAI GPT-6 Astra assistance; rank-first compiler by Chafik Boukhalfa with OpenAI Codex assistance; inherited graph and frame contributors are listed in the proof.",
+      "claim_scope": "PR #63 fixed child profile, moment crossing, rank/deficit, assembly parameters and inherited proof boundary.",
+      "immutable_commit_url": "https://redirect.github.com/CrocSwap/integer-mult-bounds/commit/aa7701b68540b7863d3b66a414e4319915d6282d"
+    },
+    {
+      "id": "S8-cert",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "aa7701b68540b7863d3b66a414e4319915d6282d",
+      "path": "research/rank-pair/screen-certificate.json",
+      "sha256": "4aea9e9a2610f26f28872e2918c94c402bc93aa2203796af77021982e9120d8e",
+      "attribution": "Construction contributors as listed in `research/rank-pair/PROOF.md` at the same commit.",
+      "claim_scope": "Exact finite child multiplicities, interval-moment bounds, 47 assembly slacks, seven final margins, and eventual-cutoff record for PR #63.",
+      "immutable_commit_url": "https://redirect.github.com/CrocSwap/integer-mult-bounds/commit/aa7701b68540b7863d3b66a414e4319915d6282d"
+    },
+    {
+      "id": "S8-script",
+      "repository": "CrocSwap/integer-mult-bounds",
+      "commit": "aa7701b68540b7863d3b66a414e4319915d6282d",
+      "path": "research/rank-pair/screen.py",
+      "sha256": "507f709e9e3a8781a2efaf6b4e31f936b9b9ba26d25dae9a24b9f51717b09b7c",
+      "line_ranges": [[39, 115]],
+      "attribution": "Dominik Scholz with substantial OpenAI GPT-6 Astra assistance; compiler and inherited verifier attributions are retained in source files.",
+      "claim_scope": "Focused deterministic regeneration and exact screening recipe; not executed in this pass.",
+      "immutable_commit_url": "https://redirect.github.com/CrocSwap/integer-mult-bounds/commit/aa7701b68540b7863d3b66a414e4319915d6282d"
+    }
+  ]
+}
