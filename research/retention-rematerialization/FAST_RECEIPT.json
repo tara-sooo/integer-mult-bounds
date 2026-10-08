@@ -1,0 +1,195 @@
+{
+  "fallback": {
+    "compatible_role_span_screens": [
+      {
+        "available_other_roles": 82,
+        "conclusion": "NO_COMPATIBLE_CONTROL_SPAN",
+        "live_future_compatible_roles": 3,
+        "retired_roles": 79,
+        "span_rank": 82,
+        "target_group": 1954,
+        "y2048_in_span": false
+      },
+      {
+        "available_other_roles": 79,
+        "conclusion": "NO_COMPATIBLE_CONTROL_SPAN",
+        "live_future_compatible_roles": 3,
+        "retired_roles": 76,
+        "span_rank": 79,
+        "target_group": 1974,
+        "y2048_in_span": false
+      },
+      {
+        "available_other_roles": 79,
+        "conclusion": "NO_COMPATIBLE_CONTROL_SPAN",
+        "live_future_compatible_roles": 2,
+        "retired_roles": 77,
+        "span_rank": 79,
+        "target_group": 2066,
+        "y2048_in_span": false
+      },
+      {
+        "available_other_roles": 78,
+        "conclusion": "NO_COMPATIBLE_CONTROL_SPAN",
+        "live_future_compatible_roles": 2,
+        "retired_roles": 76,
+        "span_rank": 78,
+        "target_group": 2086,
+        "y2048_in_span": false
+      }
+    ],
+    "demands": [
+      {
+        "carrier_slot": 21455,
+        "compiler_use": 522,
+        "consumer_group": 1954,
+        "event": [
+          21455,
+          1929,
+          1954
+        ],
+        "event_index": 260888,
+        "exact_Q23_edge_rank": 2,
+        "frame": [
+          1,
+          8142835
+        ],
+        "frame_rank": 16,
+        "local_input_reconstruction": false
+      },
+      {
+        "carrier_slot": 22506,
+        "compiler_use": 571,
+        "consumer_group": 1974,
+        "event": [
+          22506,
+          1929,
+          1974
+        ],
+        "event_index": 260935,
+        "exact_Q23_edge_rank": 2,
+        "frame": [
+          1,
+          8142799
+        ],
+        "frame_rank": 16,
+        "local_input_reconstruction": false
+      },
+      {
+        "carrier_slot": 22507,
+        "compiler_use": 801,
+        "consumer_group": 2066,
+        "event": [
+          22507,
+          1929,
+          2066
+        ],
+        "event_index": 261164,
+        "exact_Q23_edge_rank": 2,
+        "frame": [
+          1,
+          8339395
+        ],
+        "frame_rank": 16,
+        "local_input_reconstruction": false
+      },
+      {
+        "carrier_slot": 22508,
+        "compiler_use": 851,
+        "consumer_group": 2086,
+        "event": [
+          22508,
+          1929,
+          2086
+        ],
+        "event_index": 261218,
+        "exact_Q23_edge_rank": 2,
+        "frame": [
+          1,
+          8191939
+        ],
+        "frame_rank": 16,
+        "local_input_reconstruction": false
+      }
+    ],
+    "graph_uses": [
+      {
+        "consumer": 2349,
+        "consumer_group": 1954,
+        "operand": 0,
+        "same_group": false
+      },
+      {
+        "consumer": 2350,
+        "consumer_group": 1974,
+        "operand": 0,
+        "same_group": false
+      },
+      {
+        "consumer": 2351,
+        "consumer_group": 2066,
+        "operand": 0,
+        "same_group": false
+      },
+      {
+        "consumer": 2352,
+        "consumer_group": 2086,
+        "operand": 0,
+        "same_group": false
+      }
+    ],
+    "node": 2048,
+    "one_carrier_retention": "INADMISSIBLE: distinct equal-rank child frames are incomparable",
+    "pairwise_frame_containment": {
+      "1954->1954": true,
+      "1954->1974": false,
+      "1954->2066": false,
+      "1954->2086": false,
+      "1974->1954": false,
+      "1974->1974": true,
+      "1974->2066": false,
+      "1974->2086": false,
+      "2066->1954": false,
+      "2066->1974": false,
+      "2066->2066": true,
+      "2066->2086": false,
+      "2086->1954": false,
+      "2086->1974": false,
+      "2086->2066": false,
+      "2086->2086": true
+    },
+    "physical_copy_ops": [
+      75973,
+      75974,
+      75975
+    ],
+    "retired_span_reconstruction": "NO_ADMISSIBLE_CONTROL_SPAN",
+    "same_child_input_reconstruction": "INADMISSIBLE: 2048 is independent of the other block inputs"
+  },
+  "resources": {
+    "peak_rss_kib": 434380,
+    "wall_seconds": 1.828182604018366
+  },
+  "source": {
+    "compiler_sha256": "9984aaccf880e4840402322d76678bfddb33ce7e494af78430a43429f51b85fd",
+    "graph_sha256": "3d47e89d2649c90800a276bdd0480131def50e0bdf92c122a19494b55bf17420",
+    "issue19_commit": "eaa21e97209357575ef462d189c0950b6da85e7c",
+    "pr63_commit": "aa7701b68540b7863d3b66a414e4319915d6282d",
+    "word_gzip_sha256": "1a57c143380a063211653f1f35e7cc9710539523b0b34c90f354a0425c34bd59",
+    "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+  },
+  "status": "PASS",
+  "y2": {
+    "conclusion": "NO_REUSE_DEMAND_FOR_Y2",
+    "cross_group_or_terminal_uses": [],
+    "graph_uses": [
+      {
+        "consumer": 2048,
+        "consumer_group": 1929,
+        "operand": 1,
+        "same_group": true
+      }
+    ],
+    "node": 2044
+  }
+}

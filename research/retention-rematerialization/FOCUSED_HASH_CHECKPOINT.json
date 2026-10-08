@@ -1,0 +1,11 @@
+{
+  "compile_seconds": 71.32821981702,
+  "compiler_sha256": "9984aaccf880e4840402322d76678bfddb33ce7e494af78430a43429f51b85fd",
+  "graph_sha256": "3d47e89d2649c90800a276bdd0480131def50e0bdf92c122a19494b55bf17420",
+  "peak_rss_kib": 485468,
+  "pr63_commit": "aa7701b68540b7863d3b66a414e4319915d6282d",
+  "source_commit": "eaa21e97209357575ef462d189c0950b6da85e7c",
+  "status": "WORD_HASH_CHECKPOINT",
+  "word_gzip_sha256": "1a57c143380a063211653f1f35e7cc9710539523b0b34c90f354a0425c34bd59",
+  "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+}

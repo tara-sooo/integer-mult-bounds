@@ -1,0 +1,692 @@
+{
+  "baseline": {
+    "axis": 23,
+    "compiler_xors": 149172,
+    "duplicate_use_copy_ops": [
+      75973,
+      75974,
+      75975
+    ],
+    "expanded_wrapper_copy_xors": 12,
+    "local_dirty_restoration": {
+      "arbitrary_dirty_role_bits": 6,
+      "both_orientations": true,
+      "checked_basis_vectors": 13,
+      "input_bits": 3,
+      "measured_cost": false,
+      "operation_list": "actual ops[75969..75975] inside the reversible dirty wrapper",
+      "output_bits": 4,
+      "status": "PASS",
+      "wrapper_scaffolding": "V seeds the three exact source inputs; J exposes the four demanded carriers"
+    },
+    "outgoing_frame_edges": [
+      {
+        "compiler_use": 522,
+        "event": [
+          21455,
+          1929,
+          1954
+        ],
+        "event_index": 260888,
+        "exact_Q23_rank": 2,
+        "slot": 21455,
+        "target_frame": [
+          1,
+          8142835
+        ],
+        "target_group": 1954,
+        "target_rank": 16
+      },
+      {
+        "compiler_use": 571,
+        "event": [
+          22506,
+          1929,
+          1974
+        ],
+        "event_index": 260935,
+        "exact_Q23_rank": 2,
+        "slot": 22506,
+        "target_frame": [
+          1,
+          8142799
+        ],
+        "target_group": 1974,
+        "target_rank": 16
+      },
+      {
+        "compiler_use": 801,
+        "event": [
+          22507,
+          1929,
+          2066
+        ],
+        "event_index": 261164,
+        "exact_Q23_rank": 2,
+        "slot": 22507,
+        "target_frame": [
+          1,
+          8339395
+        ],
+        "target_group": 2066,
+        "target_rank": 16
+      },
+      {
+        "compiler_use": 851,
+        "event": [
+          22508,
+          1929,
+          2086
+        ],
+        "event_index": 261218,
+        "exact_Q23_rank": 2,
+        "slot": 22508,
+        "target_frame": [
+          1,
+          8191939
+        ],
+        "target_group": 2086,
+        "target_rank": 16
+      }
+    ],
+    "outgoing_role_endpoints": [
+      {
+        "carrier_history": [
+          {
+            "event": [
+              21455,
+              -1,
+              1891
+            ],
+            "event_index": 137927
+          },
+          {
+            "event": [
+              21455,
+              1891,
+              1891
+            ],
+            "event_index": 137928
+          },
+          {
+            "event": [
+              21455,
+              1891,
+              1929
+            ],
+            "event_index": 226454
+          },
+          {
+            "event": [
+              21455,
+              1929,
+              1929
+            ],
+            "event_index": 226457
+          },
+          {
+            "event": [
+              21455,
+              1929,
+              1929
+            ],
+            "event_index": 226461
+          },
+          {
+            "event": [
+              21455,
+              1929,
+              1929
+            ],
+            "event_index": 226464
+          },
+          {
+            "event": [
+              21455,
+              1929,
+              1929
+            ],
+            "event_index": 226467
+          },
+          {
+            "event": [
+              21455,
+              1929,
+              1929
+            ],
+            "event_index": 226470
+          },
+          {
+            "event": [
+              21455,
+              1929,
+              1929
+            ],
+            "event_index": 226473
+          },
+          {
+            "event": [
+              21455,
+              1929,
+              1954
+            ],
+            "event_index": 260888
+          },
+          {
+            "event": [
+              21455,
+              1954,
+              1954
+            ],
+            "event_index": 260894
+          },
+          {
+            "event": [
+              21455,
+              1954,
+              2139
+            ],
+            "event_index": 300903
+          },
+          {
+            "event": [
+              21455,
+              2139,
+              2139
+            ],
+            "event_index": 300905
+          },
+          {
+            "event": [
+              21455,
+              2139,
+              2139
+            ],
+            "event_index": 300906
+          }
+        ],
+        "endpoint": {
+          "kind": "retired_cleanup",
+          "rank": 5
+        },
+        "final_group": 2139,
+        "final_rank": 18,
+        "slot": 21455
+      },
+      {
+        "carrier_history": [
+          {
+            "event": [
+              22506,
+              -1,
+              1929
+            ],
+            "event_index": 226465
+          },
+          {
+            "event": [
+              22506,
+              1929,
+              1929
+            ],
+            "event_index": 226466
+          },
+          {
+            "event": [
+              22506,
+              1929,
+              1974
+            ],
+            "event_index": 260935
+          },
+          {
+            "event": [
+              22506,
+              1974,
+              1974
+            ],
+            "event_index": 260942
+          },
+          {
+            "event": [
+              22506,
+              1974,
+              1974
+            ],
+            "event_index": 260944
+          },
+          {
+            "event": [
+              22506,
+              1974,
+              1974
+            ],
+            "event_index": 260947
+          },
+          {
+            "event": [
+              22506,
+              1974,
+              1974
+            ],
+            "event_index": 260948
+          },
+          {
+            "event": [
+              22506,
+              1974,
+              2141
+            ],
+            "event_index": 300942
+          },
+          {
+            "event": [
+              22506,
+              2141,
+              2141
+            ],
+            "event_index": 300944
+          },
+          {
+            "event": [
+              22506,
+              2141,
+              2141
+            ],
+            "event_index": 300947
+          },
+          {
+            "event": [
+              22506,
+              2141,
+              2141
+            ],
+            "event_index": 300949
+          },
+          {
+            "event": [
+              22506,
+              2141,
+              2141
+            ],
+            "event_index": 300950
+          }
+        ],
+        "endpoint": {
+          "kind": "retired_cleanup",
+          "rank": 5
+        },
+        "final_group": 2141,
+        "final_rank": 18,
+        "slot": 22506
+      },
+      {
+        "carrier_history": [
+          {
+            "event": [
+              22507,
+              -1,
+              1929
+            ],
+            "event_index": 226468
+          },
+          {
+            "event": [
+              22507,
+              1929,
+              1929
+            ],
+            "event_index": 226469
+          },
+          {
+            "event": [
+              22507,
+              1929,
+              2066
+            ],
+            "event_index": 261164
+          },
+          {
+            "event": [
+              22507,
+              2066,
+              2066
+            ],
+            "event_index": 261170
+          },
+          {
+            "event": [
+              22507,
+              2066,
+              2138
+            ],
+            "event_index": 300883
+          },
+          {
+            "event": [
+              22507,
+              2138,
+              2138
+            ],
+            "event_index": 300885
+          },
+          {
+            "event": [
+              22507,
+              2138,
+              2138
+            ],
+            "event_index": 300886
+          }
+        ],
+        "endpoint": {
+          "kind": "retired_cleanup",
+          "rank": 5
+        },
+        "final_group": 2138,
+        "final_rank": 18,
+        "slot": 22507
+      },
+      {
+        "carrier_history": [
+          {
+            "event": [
+              22508,
+              -1,
+              1929
+            ],
+            "event_index": 226471
+          },
+          {
+            "event": [
+              22508,
+              1929,
+              1929
+            ],
+            "event_index": 226472
+          },
+          {
+            "event": [
+              22508,
+              1929,
+              2086
+            ],
+            "event_index": 261218
+          },
+          {
+            "event": [
+              22508,
+              2086,
+              2086
+            ],
+            "event_index": 261224
+          },
+          {
+            "event": [
+              22508,
+              2086,
+              2141
+            ],
+            "event_index": 300943
+          },
+          {
+            "event": [
+              22508,
+              2141,
+              2141
+            ],
+            "event_index": 300945
+          },
+          {
+            "event": [
+              22508,
+              2141,
+              2141
+            ],
+            "event_index": 300946
+          }
+        ],
+        "endpoint": {
+          "kind": "retired_cleanup",
+          "rank": 5
+        },
+        "final_group": 2141,
+        "final_rank": 18,
+        "slot": 22508
+      }
+    ],
+    "peak_simultaneous_y2048_roles": 4,
+    "profile_rebuilt_from_events_and_endpoints": true,
+    "rank_mass": 642620,
+    "roles": 27918,
+    "y2048_demand_slots": [
+      21455,
+      22506,
+      22507,
+      22508
+    ],
+    "y2048_group_operations": [
+      {
+        "index": 75969,
+        "op": [
+          21455,
+          17581,
+          1929
+        ]
+      },
+      {
+        "index": 75970,
+        "op": [
+          17581,
+          1078,
+          1929
+        ]
+      },
+      {
+        "index": 75971,
+        "op": [
+          21455,
+          1078,
+          1929
+        ]
+      },
+      {
+        "index": 75972,
+        "op": [
+          17581,
+          21455,
+          1929
+        ]
+      },
+      {
+        "index": 75973,
+        "op": [
+          22506,
+          21455,
+          1929
+        ]
+      },
+      {
+        "index": 75974,
+        "op": [
+          22507,
+          21455,
+          1929
+        ]
+      },
+      {
+        "index": 75975,
+        "op": [
+          22508,
+          21455,
+          1929
+        ]
+      }
+    ]
+  },
+  "pr96_negative_control": {
+    "exact_rank_sum": 8,
+    "four_distinct_source_to_child_edges": true,
+    "free_transition_merge": "REJECTED: no matching event or shared target frame",
+    "invented_merged_edges_rejected": [
+      [
+        21455,
+        1929,
+        1974
+      ],
+      [
+        22506,
+        1929,
+        2066
+      ],
+      [
+        22507,
+        1929,
+        2086
+      ]
+    ],
+    "status": "PASS"
+  },
+  "resources": {
+    "compile_seconds": 71.32821981702,
+    "free_disk_kib_after": 37266544,
+    "full_h23_dirty_word_replay": "NOT_RUN; exact selected-block dirty wrapper checked",
+    "peak_rss_kib": 485468,
+    "pinned_issue19_compile_seconds": 89.21171756999684,
+    "runtime_seconds": 76.71616023097886
+  },
+  "retention": {
+    "one_carrier_across_child_demands": "INADMISSIBLE: equal-rank destination frames are pairwise incomparable",
+    "separate_carriers": "BASELINE: four distinct carriers and four exact rank-2 edges"
+  },
+  "retired_span_probes": [
+    {
+      "direct_local_input_reconstruction": false,
+      "input_slots": [
+        {
+          "input_index": 0,
+          "slot": 20010,
+          "value": 1940
+        },
+        {
+          "input_index": 1,
+          "slot": 21455,
+          "value": 2048
+        },
+        {
+          "input_index": 2,
+          "slot": 533,
+          "value": 2089
+        }
+      ],
+      "retired_span": {
+        "eligible_roles": 79,
+        "gaussian_witness_size": null,
+        "span_rank": 79,
+        "target_in_span": false,
+        "witness_up_to_three": null
+      },
+      "target_group": 1954,
+      "target_input_slot": 21455
+    },
+    {
+      "direct_local_input_reconstruction": false,
+      "input_slots": [
+        {
+          "input_index": 0,
+          "slot": 22506,
+          "value": 2048
+        },
+        {
+          "input_index": 1,
+          "slot": 20038,
+          "value": 2097
+        },
+        {
+          "input_index": 2,
+          "slot": 298,
+          "value": 2114
+        }
+      ],
+      "retired_span": {
+        "eligible_roles": 76,
+        "gaussian_witness_size": null,
+        "span_rank": 76,
+        "target_in_span": false,
+        "witness_up_to_three": null
+      },
+      "target_group": 1974,
+      "target_input_slot": 22506
+    },
+    {
+      "direct_local_input_reconstruction": false,
+      "input_slots": [
+        {
+          "input_index": 0,
+          "slot": 1383,
+          "value": 1927
+        },
+        {
+          "input_index": 1,
+          "slot": 22507,
+          "value": 2048
+        },
+        {
+          "input_index": 2,
+          "slot": 20030,
+          "value": 2231
+        }
+      ],
+      "retired_span": {
+        "eligible_roles": 77,
+        "gaussian_witness_size": null,
+        "span_rank": 77,
+        "target_in_span": false,
+        "witness_up_to_three": null
+      },
+      "target_group": 2066,
+      "target_input_slot": 22507
+    },
+    {
+      "direct_local_input_reconstruction": false,
+      "input_slots": [
+        {
+          "input_index": 0,
+          "slot": 1285,
+          "value": 1918
+        },
+        {
+          "input_index": 1,
+          "slot": 22508,
+          "value": 2048
+        },
+        {
+          "input_index": 2,
+          "slot": 20055,
+          "value": 2256
+        }
+      ],
+      "retired_span": {
+        "eligible_roles": 76,
+        "gaussian_witness_size": null,
+        "span_rank": 76,
+        "target_in_span": false,
+        "witness_up_to_three": null
+      },
+      "target_group": 2086,
+      "target_input_slot": 22508
+    }
+  ],
+  "source": {
+    "frozen_compiler_sha256": "9984aaccf880e4840402322d76678bfddb33ce7e494af78430a43429f51b85fd",
+    "graph_sha256": "3d47e89d2649c90800a276bdd0480131def50e0bdf92c122a19494b55bf17420",
+    "instrumented_compiler_sha256": "e2eb7063e5ca6788dd86b3c2affdc49b470efc3ba57ca89ef820e76e6843bb89",
+    "issue19_commit": "eaa21e97209357575ef462d189c0950b6da85e7c",
+    "pr63_commit": "aa7701b68540b7863d3b66a414e4319915d6282d",
+    "runtime_instrumentation_sha256": "749e7efbe915f0d9e4979792e8c7737d5c95d5013ee5e163d134dcaa710d46d5",
+    "word_gzip_sha256": "1a57c143380a063211653f1f35e7cc9710539523b0b34c90f354a0425c34bd59",
+    "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+  },
+  "started_utc": "2026-10-08T23:06:48.377068+00:00",
+  "status": "PASS"
+}
