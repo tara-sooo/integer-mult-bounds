@@ -1,0 +1,395 @@
+{
+  "baseline": {
+    "R23": 32693,
+    "R25": 43056,
+    "W": 159592676,
+    "kappa": [
+      141532521,
+      3125000000000
+    ]
+  },
+  "candidates": [
+    {
+      "R": 32705,
+      "W": 159643299,
+      "changed_chains": 162,
+      "choice_count_max": 3,
+      "choice_count_min": 3,
+      "clones": 241,
+      "compared_with_W": 159643299,
+      "compared_with_round_baseline": {
+        "R": 32705,
+        "graph_sha256": "fe9fd3c3895c563be97a22baa4d0d7e55aaccfd2d0112491ad40d6e023d40ace",
+        "matched": 13201,
+        "rank_sum": 753227
+      },
+      "decision": "not promoted; no first-round FAST W gain",
+      "delta_R": 0,
+      "delta_W": 0,
+      "dimension": 23,
+      "graph_sha256": "ef4f52cc7c047110dbb706c00947b23889d8b1c1c0a898132a27074bc4161f4c",
+      "matched": 13201,
+      "rank_sum": 753227,
+      "round": "first",
+      "scope": "round-1 graph only; later round schedule must be regenerated",
+      "seed": "101",
+      "status": "screened",
+      "strategy": "sha256-choice"
+    },
+    {
+      "R": 32705,
+      "W": 159643299,
+      "changed_chains": 155,
+      "choice_count_max": 3,
+      "choice_count_min": 3,
+      "clones": 241,
+      "compared_with_W": 159643299,
+      "compared_with_round_baseline": {
+        "R": 32705,
+        "graph_sha256": "fe9fd3c3895c563be97a22baa4d0d7e55aaccfd2d0112491ad40d6e023d40ace",
+        "matched": 13201,
+        "rank_sum": 753227
+      },
+      "decision": "not promoted; no first-round FAST W gain",
+      "delta_R": 0,
+      "delta_W": 0,
+      "dimension": 23,
+      "graph_sha256": "7984bb214b6e2004aae36760e06087cb551e17e9e2d12ed69c0315ca5e2db494",
+      "matched": 13201,
+      "rank_sum": 753227,
+      "round": "first",
+      "scope": "round-1 graph only; later round schedule must be regenerated",
+      "seed": "102",
+      "status": "screened",
+      "strategy": "sha256-choice"
+    },
+    {
+      "R": 32705,
+      "W": 159643299,
+      "changed_chains": 92,
+      "choice_count_max": 3,
+      "choice_count_min": 3,
+      "clones": 241,
+      "compared_with_W": 159643299,
+      "compared_with_round_baseline": {
+        "R": 32705,
+        "graph_sha256": "fe9fd3c3895c563be97a22baa4d0d7e55aaccfd2d0112491ad40d6e023d40ace",
+        "matched": 13201,
+        "rank_sum": 753227
+      },
+      "decision": "not promoted; no first-round FAST W gain",
+      "delta_R": 0,
+      "delta_W": 0,
+      "dimension": 23,
+      "graph_sha256": "9d6ab92bf75f614dce523aec2d87f7195668efa97b9d83b5e59bceab5e634551",
+      "matched": 13201,
+      "rank_sum": 753227,
+      "round": "first",
+      "scope": "round-1 graph only; later round schedule must be regenerated",
+      "seed": null,
+      "status": "screened",
+      "strategy": "shortest-chain"
+    },
+    {
+      "R": 43069,
+      "W": 159643299,
+      "changed_chains": 226,
+      "choice_count_max": 3,
+      "choice_count_min": 3,
+      "clones": 340,
+      "compared_with_W": 159643299,
+      "compared_with_round_baseline": {
+        "R": 43069,
+        "graph_sha256": "fca850dbe528564ef1f88ec4a9845b9b8fe6298404aea42f33c5fdcebd18cf1c",
+        "matched": 17671,
+        "rank_sum": 1077925
+      },
+      "decision": "not promoted; no first-round FAST W gain",
+      "delta_R": 0,
+      "delta_W": 0,
+      "dimension": 25,
+      "graph_sha256": "4ffc9c9b5705395503e03184f9766c03252eb22d4939a79a265e972fd3ebddcf",
+      "matched": 17671,
+      "rank_sum": 1077925,
+      "round": "first",
+      "scope": "round-1 graph only; later round schedule must be regenerated",
+      "seed": "101",
+      "status": "screened",
+      "strategy": "sha256-choice"
+    },
+    {
+      "R": 43069,
+      "W": 159643299,
+      "changed_chains": 230,
+      "choice_count_max": 3,
+      "choice_count_min": 3,
+      "clones": 340,
+      "compared_with_W": 159643299,
+      "compared_with_round_baseline": {
+        "R": 43069,
+        "graph_sha256": "fca850dbe528564ef1f88ec4a9845b9b8fe6298404aea42f33c5fdcebd18cf1c",
+        "matched": 17671,
+        "rank_sum": 1077925
+      },
+      "decision": "not promoted; no first-round FAST W gain",
+      "delta_R": 0,
+      "delta_W": 0,
+      "dimension": 25,
+      "graph_sha256": "7ab15ef87ed93c68c6a022a6dc80c31fc6a8d30ede5247fb9f57b7ff7b54a6c7",
+      "matched": 17671,
+      "rank_sum": 1077925,
+      "round": "first",
+      "scope": "round-1 graph only; later round schedule must be regenerated",
+      "seed": "102",
+      "status": "screened",
+      "strategy": "sha256-choice"
+    },
+    {
+      "R": 43069,
+      "W": 159643299,
+      "changed_chains": 51,
+      "choice_count_max": 3,
+      "choice_count_min": 3,
+      "clones": 340,
+      "compared_with_W": 159643299,
+      "compared_with_round_baseline": {
+        "R": 43069,
+        "graph_sha256": "fca850dbe528564ef1f88ec4a9845b9b8fe6298404aea42f33c5fdcebd18cf1c",
+        "matched": 17671,
+        "rank_sum": 1077925
+      },
+      "decision": "not promoted; no first-round FAST W gain",
+      "delta_R": 0,
+      "delta_W": 0,
+      "dimension": 25,
+      "graph_sha256": "932fa56aa15a8a4341ba416f21e9dd43cd9ed307a1ec275079eae9de440e485a",
+      "matched": 17671,
+      "rank_sum": 1077925,
+      "round": "first",
+      "scope": "round-1 graph only; later round schedule must be regenerated",
+      "seed": null,
+      "status": "screened",
+      "strategy": "shortest-chain"
+    },
+    {
+      "R": 32693,
+      "W": 159592676,
+      "changed_chains": 10,
+      "choice_count_max": 3,
+      "choice_count_min": 3,
+      "clones": 253,
+      "compared_with_W": 159592676,
+      "compared_with_final_baseline": {
+        "R": 32693,
+        "W": 159592676
+      },
+      "decision": "not promoted; no final-round FAST W gain",
+      "delta_R": 0,
+      "delta_W": 0,
+      "dimension": 23,
+      "graph_sha256": "a44fb91296067fef315012c5de2af8fa5c72debc175458aa946d5c932b0dd030",
+      "matched": 13225,
+      "rank_sum": 752951,
+      "round": "final",
+      "scope": "complete pinned clone schedule; exact profile and kappa not rerun",
+      "seed": "9",
+      "status": "screened",
+      "strategy": "sha256-choice"
+    },
+    {
+      "R": 32693,
+      "W": 159592676,
+      "changed_chains": 7,
+      "choice_count_max": 3,
+      "choice_count_min": 3,
+      "clones": 253,
+      "compared_with_W": 159592676,
+      "compared_with_final_baseline": {
+        "R": 32693,
+        "W": 159592676
+      },
+      "decision": "not promoted; no final-round FAST W gain",
+      "delta_R": 0,
+      "delta_W": 0,
+      "dimension": 23,
+      "graph_sha256": "7b438340e6325752014c39907173c853614619ca4fc8c8e367f8fb7b6b47736f",
+      "matched": 13225,
+      "rank_sum": 752951,
+      "round": "final",
+      "scope": "complete pinned clone schedule; exact profile and kappa not rerun",
+      "seed": "10",
+      "status": "screened",
+      "strategy": "sha256-choice"
+    },
+    {
+      "R": 32693,
+      "W": 159592676,
+      "changed_chains": 8,
+      "choice_count_max": 3,
+      "choice_count_min": 3,
+      "clones": 253,
+      "compared_with_W": 159592676,
+      "compared_with_final_baseline": {
+        "R": 32693,
+        "W": 159592676
+      },
+      "decision": "not promoted; no final-round FAST W gain",
+      "delta_R": 0,
+      "delta_W": 0,
+      "dimension": 23,
+      "graph_sha256": "dda57f1e3b16bc104599eb0193bf1fbf77aff6500f05136fbe7f760a13b6d4a6",
+      "matched": 13225,
+      "rank_sum": 752951,
+      "round": "final",
+      "scope": "complete pinned clone schedule; exact profile and kappa not rerun",
+      "seed": null,
+      "status": "screened",
+      "strategy": "shortest-chain"
+    },
+    {
+      "R": 43056,
+      "W": 159592676,
+      "changed_chains": 5,
+      "choice_count_max": 3,
+      "choice_count_min": 3,
+      "clones": 353,
+      "compared_with_W": 159592676,
+      "compared_with_final_baseline": {
+        "R": 43056,
+        "W": 159592676
+      },
+      "decision": "not promoted; no final-round FAST W gain",
+      "delta_R": 0,
+      "delta_W": 0,
+      "dimension": 25,
+      "graph_sha256": "2fe5f45c67981c8bd69e080d4159177b60ed82c0e334c89491def7af018655ce",
+      "matched": 17697,
+      "rank_sum": 1077600,
+      "round": "final",
+      "scope": "complete pinned clone schedule; exact profile and kappa not rerun",
+      "seed": "9",
+      "status": "screened",
+      "strategy": "sha256-choice"
+    },
+    {
+      "R": 43056,
+      "W": 159592676,
+      "changed_chains": 10,
+      "choice_count_max": 3,
+      "choice_count_min": 3,
+      "clones": 353,
+      "compared_with_W": 159592676,
+      "compared_with_final_baseline": {
+        "R": 43056,
+        "W": 159592676
+      },
+      "decision": "not promoted; no final-round FAST W gain",
+      "delta_R": 0,
+      "delta_W": 0,
+      "dimension": 25,
+      "graph_sha256": "ae0934d57e5ea2e9734a5033bc961a7c9edb798bc4633979eb7ba2f9b506d0e8",
+      "matched": 17697,
+      "rank_sum": 1077600,
+      "round": "final",
+      "scope": "complete pinned clone schedule; exact profile and kappa not rerun",
+      "seed": "10",
+      "status": "screened",
+      "strategy": "sha256-choice"
+    },
+    {
+      "R": 43056,
+      "W": 159592676,
+      "changed_chains": 3,
+      "choice_count_max": 3,
+      "choice_count_min": 3,
+      "clones": 353,
+      "compared_with_W": 159592676,
+      "compared_with_final_baseline": {
+        "R": 43056,
+        "W": 159592676
+      },
+      "decision": "not promoted; no final-round FAST W gain",
+      "delta_R": 0,
+      "delta_W": 0,
+      "dimension": 25,
+      "graph_sha256": "0ec08498eb97d2adb6fbacb8215590cb489131ab19936dcec08cb44f86cb01cf",
+      "matched": 17697,
+      "rank_sum": 1077600,
+      "round": "final",
+      "scope": "complete pinned clone schedule; exact profile and kappa not rerun",
+      "seed": null,
+      "status": "screened",
+      "strategy": "shortest-chain"
+    }
+  ],
+  "conclusion": "No candidate improved its comparable FAST W screen; no exact kappa claim is made.",
+  "environment": {
+    "platform": "Android-15-aarch64-64bit-ELF",
+    "python": "3.14.6"
+  },
+  "final_round_seeds": [
+    "9",
+    "10"
+  ],
+  "first_round_baseline": {
+    "23": {
+      "R": 32705,
+      "graph_sha256": "fe9fd3c3895c563be97a22baa4d0d7e55aaccfd2d0112491ad40d6e023d40ace",
+      "matched": 13201,
+      "rank_sum": 753227
+    },
+    "25": {
+      "R": 43069,
+      "graph_sha256": "fca850dbe528564ef1f88ec4a9845b9b8fe6298404aea42f33c5fdcebd18cf1c",
+      "matched": 17671,
+      "rank_sum": 1077925
+    }
+  },
+  "first_round_seeds": [
+    "101",
+    "102"
+  ],
+  "focused": false,
+  "full": false,
+  "issue": 6,
+  "method": "First round: deterministic SHA-256 choices (seeds 101,102) and shortest complete chain; final round: new SHA-256 seeds 9,10 and shortest complete chain. Every screen follows strict clone replay; matching/profile values are discovery-only.",
+  "pinned_pr53_commit": "3ffd4021995c959ac02d12920e0279ae97dd03c7",
+  "pinned_pr54_commit": "7210de7d0f9ccaeb64c3f60f188419e02be08d95",
+  "previous_final_seeds": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "rejected_candidates": [],
+  "schema_version": 1,
+  "screen_profiler_sha256": "9fe03c0ffa00a0a3332fe48d162e0ff141d498e7ad75ddbf842cdc5c8ed7a36e",
+  "source_sha256": {
+    "baseline_clone_jobs": {
+      "23": "8433fac1e2484e5905e743b838ad82773298ca735418b291db2168143d08c11c",
+      "25": "83f02dfd55ba03c30e7641cd420b37b0fac60f753d686d317184f0d4ffd1a83e"
+    },
+    "baseline_manifest": "9908a7eeba68cc2560c2c6e8418fb25d86ffb1bb163c5dfd0e9e721ea5e52578",
+    "baseline_original_roles": {
+      "23": "ba9d8c0067971b73fa1719f29886f10c44b783f413920a576ed1f95d7627cd0b",
+      "25": "57be3aaefe0d1d0c5d994f7e5f04a1b5f7dd80e25234c301f6ee393055419153"
+    },
+    "parameters": "69af7f3a7c097084068f6b2b072d0bd5a901ec6e49fcd18a3c2a3cdf56464993",
+    "previous_screening": "c59624e54c979c06996732b2bfb9502109d2b20d05d37a4c8f27052ddae584aa",
+    "script": "89afffe4777d4eb6c24980c051362fcf4d79460898ca3367a52227e9418b2acf",
+    "source_files": {
+      "references/copied-fixed/pr44/profiles.cpp": "2c8c32fdfa0719247e24da41a66da18bd3eef4a8a78e13b5581df86a7be225da",
+      "research/skip-clones/clone_io.py": "d8e88aa31caf6bdb9e2abb82302e808b9ac2e4c5dd146e5249ec891d8e8b30a2",
+      "research/skip-clones/cloned_graph.py": "f862ea9bf3c321b6685b7852fe66bd25cfc9de49dda47df7ae38f1f28fefe6db",
+      "research/skip-clones/profiles.cpp": "b9fbd71c746609948b60c441ba4601e88436956fe636d1810f270ce4ce6a63a6",
+      "research/skip-strips/optimize_matching.py": "b8146942253fd34fafb92f6eaca4d145609e4c277704492635135095a03ddacf",
+      "research/skip-strips/skip_graph.py": "03ee019cdaf73391455aaf4f5dcb4873f4fdcb278179b296c02ea39eafd047e4",
+      "scripts/partial_swap/binary_io.hpp": "7e143eb75bb342ac8f0c82a60005e7c35c9ec827de479bf6fb773151f3af5fa1",
+      "scripts/partial_swap/graph.py": "fd8c567759e26a10d2bad05508fd0355eb70fb116664d4e06e1858d0d8cb2ef9"
+    }
+  }
+}
