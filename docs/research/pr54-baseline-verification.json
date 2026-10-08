@@ -1,0 +1,158 @@
+{
+  "candidate": {
+    "issue_number": 5,
+    "pinned_source_commit": "7210de7d0f9ccaeb64c3f60f188419e02be08d95",
+    "producer_commit": "3ffd4021995c959ac02d12920e0279ae97dd03c7",
+    "pull_request_number": 54,
+    "repository": "tara-sooo/integer-mult-bounds"
+  },
+  "checkout": {
+    "base_head": "7210de7d0f9ccaeb64c3f60f188419e02be08d95",
+    "base_tree": "289e21335134d4d6abbe58bc3c48fc67a73efbce",
+    "branch": "issue-5-pr54-baseline"
+  },
+  "checks": [
+    {
+      "command": [
+        "make",
+        "verify"
+      ],
+      "duration_seconds": 1946.898,
+      "exit_status": 0,
+      "log_sha256": "c15ca3b8cdc265c935c57ddea5822c3b751ed9c4b06e70f4e86d934fb97adf49",
+      "source_sha256_at_execution": {
+        ".github/workflows/pr54-baseline.yml": "2b3dccbb5ed22647876628633a7a2b0c2247546041146025191ba79f52aa3950",
+        "Makefile": "82c5be4278cc5732b21bc9ef3aabb4753f3f6579971a8ebefa6b9ba7897ec218",
+        "research/skip-clones/PROOF.md": "4fbbcfd89a3248cef3d455b797fbda5ad293463162218464d5b3e9cdf91d96a3",
+        "research/skip-clones/SOURCE.json": "9908a7eeba68cc2560c2c6e8418fb25d86ffb1bb163c5dfd0e9e721ea5e52578",
+        "research/skip-clones/certificate.json": "6e67591862ac582deeb2d9cc264a419bde1a29a5de44e32f7f02f820c6384679",
+        "research/skip-clones/clone-jobs-23.json": "8433fac1e2484e5905e743b838ad82773298ca735418b291db2168143d08c11c",
+        "research/skip-clones/clone-jobs-25.json": "83f02dfd55ba03c30e7641cd420b37b0fac60f753d686d317184f0d4ffd1a83e",
+        "research/skip-clones/producer-receipt.json": "0d4e0c8d7c2461d727e38b905cfeb3c0179a94528503965bc88dd8d0252cb279",
+        "research/skip-clones/producer.py": "ff6fc9c1b787e1c2f60d28435c36c6477f97702d21d56e9f4357d3ee1b57ff96",
+        "research/skip-clones/witness.py": "9e0e972d957560015946b15452bf8d4b75aeecf0ce4a49999f9f913b21abbf89",
+        "scripts/replay_pr54_baseline.py": "afe6037120ebb093c5016aec5639ddfdba139b72b7b65d22edaa9cf8eefdf5e5"
+      },
+      "started_at_utc": "2026-10-08T17:11:16.982155+00:00",
+      "timed_out": false
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_pr54_baseline.py",
+        "-v"
+      ],
+      "exit_status": 0,
+      "source_sha256": {
+        ".github/workflows/pr54-baseline.yml": "5b7e71a027e30da4da702f5e40bc91488020975d73dcb840375cb721b53848c6",
+        "Makefile": "82c5be4278cc5732b21bc9ef3aabb4753f3f6579971a8ebefa6b9ba7897ec218",
+        "README.md": "0424bebd32b49333217084705b56d69a05fc6a3e00a5dda1ad1e2664fd0d25fd",
+        "docs/research/pr54-integration-map.md": "d37822283c0eea9660073bf5be6253db0a7be963da1409dd9d18284a44708387",
+        "research/skip-clones/PROOF.md": "4fbbcfd89a3248cef3d455b797fbda5ad293463162218464d5b3e9cdf91d96a3",
+        "research/skip-clones/SOURCE.json": "9908a7eeba68cc2560c2c6e8418fb25d86ffb1bb163c5dfd0e9e721ea5e52578",
+        "research/skip-clones/certificate.json": "6e67591862ac582deeb2d9cc264a419bde1a29a5de44e32f7f02f820c6384679",
+        "research/skip-clones/clone-jobs-23.json": "8433fac1e2484e5905e743b838ad82773298ca735418b291db2168143d08c11c",
+        "research/skip-clones/clone-jobs-25.json": "83f02dfd55ba03c30e7641cd420b37b0fac60f753d686d317184f0d4ffd1a83e",
+        "research/skip-clones/producer-receipt.json": "0d4e0c8d7c2461d727e38b905cfeb3c0179a94528503965bc88dd8d0252cb279",
+        "research/skip-clones/producer.py": "ff6fc9c1b787e1c2f60d28435c36c6477f97702d21d56e9f4357d3ee1b57ff96",
+        "research/skip-clones/witness.py": "9e0e972d957560015946b15452bf8d4b75aeecf0ce4a49999f9f913b21abbf89",
+        "scripts/replay_pr54_baseline.py": "3f8058432e2b68b8b21d51ba964687eeef815f4c98d69d7d3c55dc1ab8cee819",
+        "tests/test_pr54_baseline.py": "eb388d4fb1d28c1dd1f0f4024fe9cf72dd993a04eddcd26310812b7be2518a7f"
+      }
+    },
+    {
+      "command": [
+        "make",
+        "skip-clones-verify"
+      ],
+      "duration_seconds": 171.165,
+      "exit_status": 0,
+      "log_sha256": "af5466d5d2cf347d67e7f48b0ab8a70a337efd70cec3dd9cb8c08debb49efb95",
+      "source_sha256_at_execution": {
+        ".github/workflows/pr54-baseline.yml": "5b7e71a027e30da4da702f5e40bc91488020975d73dcb840375cb721b53848c6",
+        "Makefile": "82c5be4278cc5732b21bc9ef3aabb4753f3f6579971a8ebefa6b9ba7897ec218",
+        "README.md": "0424bebd32b49333217084705b56d69a05fc6a3e00a5dda1ad1e2664fd0d25fd",
+        "docs/research/pr54-integration-map.md": "d37822283c0eea9660073bf5be6253db0a7be963da1409dd9d18284a44708387",
+        "research/skip-clones/PROOF.md": "4fbbcfd89a3248cef3d455b797fbda5ad293463162218464d5b3e9cdf91d96a3",
+        "research/skip-clones/SOURCE.json": "9908a7eeba68cc2560c2c6e8418fb25d86ffb1bb163c5dfd0e9e721ea5e52578",
+        "research/skip-clones/certificate.json": "6e67591862ac582deeb2d9cc264a419bde1a29a5de44e32f7f02f820c6384679",
+        "research/skip-clones/clone-jobs-23.json": "8433fac1e2484e5905e743b838ad82773298ca735418b291db2168143d08c11c",
+        "research/skip-clones/clone-jobs-25.json": "83f02dfd55ba03c30e7641cd420b37b0fac60f753d686d317184f0d4ffd1a83e",
+        "research/skip-clones/producer-receipt.json": "0d4e0c8d7c2461d727e38b905cfeb3c0179a94528503965bc88dd8d0252cb279",
+        "research/skip-clones/producer.py": "ff6fc9c1b787e1c2f60d28435c36c6477f97702d21d56e9f4357d3ee1b57ff96",
+        "research/skip-clones/witness.py": "9e0e972d957560015946b15452bf8d4b75aeecf0ce4a49999f9f913b21abbf89",
+        "scripts/replay_pr54_baseline.py": "3f8058432e2b68b8b21d51ba964687eeef815f4c98d69d7d3c55dc1ab8cee819",
+        "tests/test_pr54_baseline.py": "eb388d4fb1d28c1dd1f0f4024fe9cf72dd993a04eddcd26310812b7be2518a7f"
+      },
+      "started_at_utc": "2026-10-08T17:45:07.364542+00:00",
+      "timed_out": false
+    }
+  ],
+  "environment": {
+    "architecture": "aarch64",
+    "compiler_command": "g++",
+    "os_family": "Android 15 / Termux",
+    "python_version": "3.14.6"
+  },
+  "github_actions": "not_run",
+  "logs": {
+    "committed": false,
+    "focused_replay_sha256": "af5466d5d2cf347d67e7f48b0ab8a70a337efd70cec3dd9cb8c08debb49efb95",
+    "full_verify_sha256": "c15ca3b8cdc265c935c57ddea5822c3b751ed9c4b06e70f4e86d934fb97adf49",
+    "note": "Raw local logs contain host-specific paths; only their hashes are recorded here. A future hosted Actions run uploads its logs and receipt as an artifact."
+  },
+  "research_result": {
+    "R23": 32693,
+    "R25": 43056,
+    "W": 159592676,
+    "kappa": "141532521/3125000000000"
+  },
+  "schema_version": 1,
+  "source_integrity": {
+    "full_verify_head_and_tree_match_final_replay": true,
+    "harness_hashes_finalized_after_full_verify": {
+      ".github/workflows/pr54-baseline.yml": {
+        "at_final_focused_replay": "5b7e71a027e30da4da702f5e40bc91488020975d73dcb840375cb721b53848c6",
+        "at_full_verify": "2b3dccbb5ed22647876628633a7a2b0c2247546041146025191ba79f52aa3950"
+      },
+      "scripts/replay_pr54_baseline.py": {
+        "at_final_focused_replay": "3f8058432e2b68b8b21d51ba964687eeef815f4c98d69d7d3c55dc1ab8cee819",
+        "at_full_verify": "afe6037120ebb093c5016aec5639ddfdba139b72b7b65d22edaa9cf8eefdf5e5"
+      }
+    },
+    "note": "The updated receipt bookkeeping was checked by the targeted unit test and final focused replay; the pinned mathematical inputs and Makefile hashes match the full-verification run.",
+    "shared_hashes_unchanged_since_full_verify": [
+      "Makefile",
+      "research/skip-clones/PROOF.md",
+      "research/skip-clones/SOURCE.json",
+      "research/skip-clones/certificate.json",
+      "research/skip-clones/clone-jobs-23.json",
+      "research/skip-clones/clone-jobs-25.json",
+      "research/skip-clones/producer-receipt.json",
+      "research/skip-clones/producer.py",
+      "research/skip-clones/witness.py"
+    ]
+  },
+  "source_sha256": {
+    ".github/workflows/pr54-baseline.yml": "5b7e71a027e30da4da702f5e40bc91488020975d73dcb840375cb721b53848c6",
+    "Makefile": "82c5be4278cc5732b21bc9ef3aabb4753f3f6579971a8ebefa6b9ba7897ec218",
+    "README.md": "0424bebd32b49333217084705b56d69a05fc6a3e00a5dda1ad1e2664fd0d25fd",
+    "docs/research/pr54-integration-map.md": "d37822283c0eea9660073bf5be6253db0a7be963da1409dd9d18284a44708387",
+    "research/skip-clones/PROOF.md": "4fbbcfd89a3248cef3d455b797fbda5ad293463162218464d5b3e9cdf91d96a3",
+    "research/skip-clones/SOURCE.json": "9908a7eeba68cc2560c2c6e8418fb25d86ffb1bb163c5dfd0e9e721ea5e52578",
+    "research/skip-clones/certificate.json": "6e67591862ac582deeb2d9cc264a419bde1a29a5de44e32f7f02f820c6384679",
+    "research/skip-clones/clone-jobs-23.json": "8433fac1e2484e5905e743b838ad82773298ca735418b291db2168143d08c11c",
+    "research/skip-clones/clone-jobs-25.json": "83f02dfd55ba03c30e7641cd420b37b0fac60f753d686d317184f0d4ffd1a83e",
+    "research/skip-clones/producer-receipt.json": "0d4e0c8d7c2461d727e38b905cfeb3c0179a94528503965bc88dd8d0252cb279",
+    "research/skip-clones/producer.py": "ff6fc9c1b787e1c2f60d28435c36c6477f97702d21d56e9f4357d3ee1b57ff96",
+    "research/skip-clones/witness.py": "9e0e972d957560015946b15452bf8d4b75aeecf0ce4a49999f9f913b21abbf89",
+    "scripts/replay_pr54_baseline.py": "3f8058432e2b68b8b21d51ba964687eeef815f4c98d69d7d3c55dc1ab8cee819",
+    "tests/test_pr54_baseline.py": "eb388d4fb1d28c1dd1f0f4024fe9cf72dd993a04eddcd26310812b7be2518a7f"
+  }
+}

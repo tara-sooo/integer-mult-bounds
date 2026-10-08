@@ -1,9 +1,22 @@
 # Conditional saving 4.529040672e-5 from paid whole-chain clones
 
+## Reproducing the pinned PR 54 baseline
+
+This integration checkout is pinned at
+chafreaky/integer-mult-bounds@7210de7d0f9ccaeb64c3f60f188419e02be08d95.
+Run python3 scripts/replay_pr54_baseline.py to capture the focused
+make skip-clones-verify replay, including its command, runtime, exit status,
+environment, and source hashes. Add --full to run the broader make verify
+afterward. Logs and a machine-readable receipt go under
+build/pr54-baseline/. The manual GitHub Actions workflow file is included in
+this branch; GitHub makes it dispatchable after it is present on the default
+branch. See the [integration map](docs/research/pr54-integration-map.md) for
+the source lineage and compatibility boundaries.
+
 The [clone proof and reproduction note](research/skip-clones/PROOF.md) gives
 **κ = 141532521/3125000000000 = 4.529040672e-5 > 2^-15**, conditional on
 OpenAI's base theorem and the inherited analytic and fixed-tape interfaces.
-This is **0.686876% above PR #53** and **17.769260% above PR #36**.
+This is **0.686876% above PR 53** and **17.769260% above PR 36**.
 
 Starting from Avi Eisenberg's PR #53 skip-prefix graphs, 606 explicitly paid
 whole-chain clones retain the original core/cover envelopes. The actual
@@ -12,7 +25,7 @@ operation is included in the exact profiles, and both complete dirty-basis
 orientations are replayed. The I+J geometry, all data pairs, copied centers,
 paid endpoint corrections and complex layer are inherited unchanged.
 The source-partition/whole-chain cloning construction is adapted from
-RaD / hipotures (PR #51); this original-envelope specialization and exact
+RaD / hipotures (PR 51); this original-envelope specialization and exact
 integration are by Chafik Boukhalfa with OpenAI Codex assistance.
 
 Run `make skip-clones-verify`; `make verify` retains the predecessor checks.
