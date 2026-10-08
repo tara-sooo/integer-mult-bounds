@@ -1,0 +1,58 @@
+{
+  "status": "BLOCKED_AFTER_WORD_EMISSION",
+  "axis": 23,
+  "logical_use": {
+    "stable_id": "graph:h23:producer2039:consumer2044:operand0",
+    "producer_node": 2039,
+    "consumer_node": 2044,
+    "operand_position": 0,
+    "graph_sha256": "3d47e89d2649c90800a276bdd0480131def50e0bdf92c122a19494b55bf17420"
+  },
+  "pinned_baseline": {
+    "source_commit": "aa7701b68540b7863d3b66a414e4319915d6282d",
+    "compiler_sha256": "9984aaccf880e4840402322d76678bfddb33ce7e494af78430a43429f51b85fd",
+    "word_gzip_sha256": "1a57c143380a063211653f1f35e7cc9710539523b0b34c90f354a0425c34bd59",
+    "canonical_word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad",
+    "local_pin_integrity": "PASS",
+    "generated_word_match": "NOT_VERIFIED"
+  },
+  "single_compile": {
+    "compiler_returned": true,
+    "word_emitted_in_memory": true,
+    "canonical_json_serialized": true,
+    "generated_digest_computation_reached": true,
+    "generated_canonical_sha256": null,
+    "generated_gzip_sha256": null,
+    "digest_values_persisted": false,
+    "receipt_assertions": "PASS: whole-axis roles, rank_mass, elementary_xors, stats, and histogram matched the pinned receipt",
+    "repeat_compile": "PROHIBITED"
+  },
+  "physical_trace": {
+    "producer_group": "UNRESOLVED",
+    "consumer_group": "UNRESOLVED",
+    "selected_use_slot": "UNRESOLVED",
+    "consumer_input_slot": "UNRESOLVED",
+    "consumer_Y2_value_slot": null,
+    "ops_refs": "UNRESOLVED",
+    "event_refs": "UNRESOLVED",
+    "orientation": "NOT_RUN",
+    "logical_to_physical_cardinality": "UNRESOLVED",
+    "one_to_one_assumed": false
+  },
+  "failure": {
+    "stage": "trace post-processing after word emission",
+    "target_value_slot_observed": null,
+    "error": "TypeError: unsupported operand type(s) for <<: 'int' and 'NoneType'",
+    "cause": "The cone walker received the absent Y2 value slot. The process ended before the canonical and gzip digests were compared with the pinned word or written to disk."
+  },
+  "resource_record": {
+    "pre_compile_mem_available_kib": 2785176,
+    "memory_limit": "No address-space cap: Termux prlimit launch failed before Python startup; 30 minute wall timeout retained",
+    "matching_seconds_reported": 36.665491,
+    "compile_progress_seconds_at_step_50000": 92.374,
+    "peak_rss_kib": "NOT_RETAINED",
+    "full_word_replay": "NOT_RUN",
+    "h25_compile": "NOT_RUN",
+    "CRT_regeneration": "NOT_RUN"
+  }
+}
