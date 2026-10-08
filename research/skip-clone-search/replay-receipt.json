@@ -1,0 +1,173 @@
+{
+  "artifact_sha256": {
+    "docs/research/pr54-integration-map.md": "56358a4297291fe8b4b61328d87c78c85963792d9ea92e84dc3c37783a60af28",
+    "research/skip-clone-search/README.md": "767f91166414cf0bc9569e2bdd861d09b95b2720d044d8aa3782077b05f081dd",
+    "research/skip-clone-search/baseline-SOURCE.json": "9908a7eeba68cc2560c2c6e8418fb25d86ffb1bb163c5dfd0e9e721ea5e52578",
+    "research/skip-clone-search/baseline-clone-jobs-23.json": "8433fac1e2484e5905e743b838ad82773298ca735418b291db2168143d08c11c",
+    "research/skip-clone-search/baseline-clone-jobs-25.json": "83f02dfd55ba03c30e7641cd420b37b0fac60f753d686d317184f0d4ffd1a83e",
+    "research/skip-clone-search/baseline-original-23.json": "ba9d8c0067971b73fa1719f29886f10c44b783f413920a576ed1f95d7627cd0b",
+    "research/skip-clone-search/baseline-original-25.json": "57be3aaefe0d1d0c5d994f7e5f04a1b5f7dd80e25234c301f6ee393055419153",
+    "research/skip-clone-search/baseline-parameters.json": "69af7f3a7c097084068f6b2b072d0bd5a901ec6e49fcd18a3c2a3cdf56464993",
+    "research/skip-clone-search/screening.json": "c59624e54c979c06996732b2bfb9502109d2b20d05d37a4c8f27052ddae584aa",
+    "research/skip-clone-search/search.py": "5aab36145ba4efc08775bcf8815aecedc9def93172e86d32cc618315c48fdbe9",
+    "research/skip-clones/SOURCE.json": "2f32a26b94d844415b1522a4ba08af0693c8db832313154b3b00ad4d1e4b229f",
+    "research/skip-clones/certificate.json": "6c1456df6452d27c828fec6728ff9bddff3991e5880c9fa6802e7f66b45cb14b",
+    "research/skip-clones/clone-jobs-23.json": "8b5bff30a525dc609e5d80745b47b2f4305339b8df8211474871e9004e0dc288",
+    "research/skip-clones/clone-jobs-25.json": "ad5f8761f49fbd55adfe9fd58ceacd09b995deadb336bdbe850685a7ee4a9c8d",
+    "research/skip-clones/links-23.uses": "6d88d73d3e7de1e73a0e5b245d80a5f8ab8315df877481400cd85d600c2fd073",
+    "research/skip-clones/links-25.uses": "7c2f3c167f97e596002b8c5ebc025154c2c5bdd268e89e1437a19ddcf9552e71",
+    "research/skip-clones/original-23.json": "ba9d8c0067971b73fa1719f29886f10c44b783f413920a576ed1f95d7627cd0b",
+    "research/skip-clones/original-25.json": "57be3aaefe0d1d0c5d994f7e5f04a1b5f7dd80e25234c301f6ee393055419153",
+    "research/skip-clones/parameters.json": "69af7f3a7c097084068f6b2b072d0bd5a901ec6e49fcd18a3c2a3cdf56464993",
+    "research/skip-clones/profiles-23.json": "417cb2503452e4bc8e2a7d8489aaecb0f83fb08eeb32a7e242c51c79fd6b4196",
+    "research/skip-clones/profiles-25.json": "56972b9620f7d5f227cad3a0af15e47697feaeede7df67836c6304ffd2b25d3b",
+    "research/skip-clones/scalar-23.json": "ba92669b2bbff745ecb17e9483713ebfeecc26f14083c5263b3219a2c06d42d5",
+    "research/skip-clones/scalar-25.json": "80d4c59b9ebc714bf3426cd07fc90f1720ea2b4981ab29c92577298854e8b545",
+    "research/skip-clones/timeline-23.json": "a465effb0ffb08674dd57752736599a9684e31e63c38146c7d1bdebd089a0d1c",
+    "research/skip-clones/timeline-25.json": "5e1e87087928b6b28b9f7bcbd99a5ab8648dd0a01f560c4e4021023d63375ae4"
+  },
+  "baseline": {
+    "R23": 32693,
+    "R25": 43056,
+    "W": 159592676,
+    "kappa": "141532521/3125000000000"
+  },
+  "candidate": {
+    "R23": 32693,
+    "R25": 43056,
+    "W": 159592676,
+    "assembly": {
+      "all_constraints_positive": true,
+      "margins": 7,
+      "next_bit_grid_rejected": true,
+      "next_kappa_grid_rejected": true,
+      "strict_conditions": 47
+    },
+    "bit_saving": "1132311451/25000000000000",
+    "candidate_count": 8,
+    "changed_final_round_chains": {
+      "h23": 6,
+      "h25": 10
+    },
+    "dirty_basis": {
+      "23": {
+        "all_dirty_restore": true,
+        "auxiliary_basis_vectors": 32693,
+        "elementary_word_length": 310810,
+        "orientations": [
+          "forward",
+          "reverse-complement"
+        ],
+        "total_basis_vectors": 36235
+      },
+      "25": {
+        "all_dirty_restore": true,
+        "auxiliary_basis_vectors": 43056,
+        "elementary_word_length": 410536,
+        "orientations": [
+          "forward",
+          "reverse-complement"
+        ],
+        "total_basis_vectors": 47656
+      }
+    },
+    "exact_profile_replay": {
+      "23": {
+        "crt_disagreements": 0,
+        "crt_matrices": 5631,
+        "distinct_matrices": 61279,
+        "frames": 36628
+      },
+      "25": {
+        "crt_disagreements": 0,
+        "crt_matrices": 7434,
+        "distinct_matrices": 82331,
+        "frames": 48677
+      }
+    },
+    "graph_sha256": {
+      "23": "9dcd2a3682087c1a9e0760a3f9bb09a377f7046790c9971fdf5023c9f6638b0c",
+      "25": "46b0a1459dd420aa8cdf544cf0fdeb5c2ca5c7e1fdcf9d11c9d649e2fbdd507c"
+    },
+    "kappa": "141532521/3125000000000",
+    "matching": {
+      "23": {
+        "edges_sha256": "97e0e06735815aab487ad53bad6f0712b3a09d41eaba7a65a7c6cda892762706",
+        "links_sha256": "6d88d73d3e7de1e73a0e5b245d80a5f8ab8315df877481400cd85d600c2fd073",
+        "matched": 13225
+      },
+      "25": {
+        "edges_sha256": "0111c21075a48bf96375472e0cd3cb057b128ca8d84a002441344cb3de5ef182",
+        "links_sha256": "7c2f3c167f97e596002b8c5ebc025154c2c5bdd268e89e1437a19ddcf9552e71",
+        "matched": 17697
+      }
+    },
+    "selected_seed": "1"
+  },
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "research/skip-clones/producer.py",
+        "--work-dir",
+        "build/issue6/generation",
+        "--output",
+        "build/issue6/producer-generation.json",
+        "--write"
+      ],
+      "exit_status": 0,
+      "log_sha256": "65b66abf6d0b4d543738fa125bfa02d05a2755f2c5935619e07e2fdaa4955c43"
+    },
+    {
+      "command": [
+        "python3",
+        "research/skip-clones/witness.py",
+        "--output",
+        "research/skip-clones/certificate.json"
+      ],
+      "exit_status": 0,
+      "log_sha256": "d32a5f0a48d2c8ca22d73e5f291d925b01fc88b8d1cae76d8ad641b7031e84d9"
+    },
+    {
+      "command": [
+        "make",
+        "skip-clones-verify"
+      ],
+      "exit_status": 0,
+      "focused_tests_passed": 11,
+      "log_sha256": "8d3194337c971e785c346dd79c98def05b153d0c419bb6325b966dab8e8ae494"
+    }
+  ],
+  "comparison": {
+    "R23_equal": true,
+    "R25_equal": true,
+    "W_equal": true,
+    "improvement_claimed": false,
+    "kappa_equal": true
+  },
+  "issue": 6,
+  "pinned_sources": {
+    "PR53": "3ffd4021995c959ac02d12920e0279ae97dd03c7",
+    "PR54": "7210de7d0f9ccaeb64c3f60f188419e02be08d95",
+    "baseline_source_manifest_sha256": "9908a7eeba68cc2560c2c6e8418fb25d86ffb1bb163c5dfd0e9e721ea5e52578"
+  },
+  "result": "PASS: candidate invariants, regenerated matching, exact fixed-basis profiles, complete physical timeline in both orientations, and exact assembly witness replayed; no improvement over pinned PR 54.",
+  "schema_version": 1,
+  "search": {
+    "best_screened_improves_W": false,
+    "best_screened_seed": "1",
+    "method": "Choose a deterministic SHA-256-indexed final-round continuation chain for each clone; replay every invariant, then screen exact maximum matching cardinality. Matching and profile scores are discovery only.",
+    "scope": "Final-round chain-choice sample only; no global optimality claim.",
+    "seeds": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "selection_rule": "Minimum W, then lexicographically smallest seed; exact full replay is required before any claim."
+  }
+}

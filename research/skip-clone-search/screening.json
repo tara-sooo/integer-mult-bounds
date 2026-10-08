@@ -1,0 +1,1902 @@
+{
+  "baseline": {
+    "R23": 32693,
+    "R25": 43056,
+    "W": 159592676,
+    "kappa": [
+      141532521,
+      3125000000000
+    ]
+  },
+  "best_screened_improves_W": false,
+  "best_screened_seed": "1",
+  "candidates": [
+    {
+      "R23": 32693,
+      "R25": 43056,
+      "W": 159592676,
+      "changed_chains": {
+        "23": [
+          {
+            "chain": [
+              39157
+            ],
+            "first": 39157,
+            "job": 0,
+            "old_chain": [
+              30521,
+              34497
+            ],
+            "old_first": 30521,
+            "parent": 11293
+          },
+          {
+            "chain": [
+              31256
+            ],
+            "first": 31256,
+            "job": 5,
+            "old_chain": [
+              31246
+            ],
+            "old_first": 31246,
+            "parent": 11675
+          },
+          {
+            "chain": [
+              36739
+            ],
+            "first": 36739,
+            "job": 6,
+            "old_chain": [
+              32492
+            ],
+            "old_first": 32492,
+            "parent": 12291
+          },
+          {
+            "chain": [
+              32496
+            ],
+            "first": 32496,
+            "job": 7,
+            "old_chain": [
+              32486
+            ],
+            "old_first": 32486,
+            "parent": 12297
+          },
+          {
+            "chain": [
+              29203
+            ],
+            "first": 29203,
+            "job": 9,
+            "old_chain": [
+              33172
+            ],
+            "old_first": 33172,
+            "parent": 12633
+          },
+          {
+            "chain": [
+              43273
+            ],
+            "first": 43273,
+            "job": 10,
+            "old_chain": [
+              33175,
+              37469
+            ],
+            "old_first": 33175,
+            "parent": 12637
+          }
+        ],
+        "25": [
+          {
+            "chain": [
+              77162
+            ],
+            "first": 77162,
+            "job": 1,
+            "old_chain": [
+              59704,
+              110390,
+              112217
+            ],
+            "old_first": 59704,
+            "parent": 25703
+          },
+          {
+            "chain": [
+              78638
+            ],
+            "first": 78638,
+            "job": 2,
+            "old_chain": [
+              60354,
+              111548,
+              112229
+            ],
+            "old_first": 60354,
+            "parent": 25872
+          },
+          {
+            "chain": [
+              48039
+            ],
+            "first": 48039,
+            "job": 3,
+            "old_chain": [
+              38476
+            ],
+            "old_first": 38476,
+            "parent": 14552
+          },
+          {
+            "chain": [
+              48243
+            ],
+            "first": 48243,
+            "job": 5,
+            "old_chain": [
+              38673
+            ],
+            "old_first": 38673,
+            "parent": 14662
+          },
+          {
+            "chain": [
+              38725,
+              48209
+            ],
+            "first": 38725,
+            "job": 6,
+            "old_chain": [
+              38709
+            ],
+            "old_first": 38709,
+            "parent": 14668
+          },
+          {
+            "chain": [
+              49035
+            ],
+            "first": 49035,
+            "job": 7,
+            "old_chain": [
+              39534
+            ],
+            "old_first": 39534,
+            "parent": 15054
+          },
+          {
+            "chain": [
+              49993
+            ],
+            "first": 49993,
+            "job": 8,
+            "old_chain": [
+              40550
+            ],
+            "old_first": 40550,
+            "parent": 15533
+          },
+          {
+            "chain": [
+              50745
+            ],
+            "first": 50745,
+            "job": 9,
+            "old_chain": [
+              41333
+            ],
+            "old_first": 41333,
+            "parent": 15901
+          },
+          {
+            "chain": [
+              41365,
+              50703
+            ],
+            "first": 41365,
+            "job": 11,
+            "old_chain": [
+              41349
+            ],
+            "old_first": 41349,
+            "parent": 15915
+          },
+          {
+            "chain": [
+              41545,
+              50877
+            ],
+            "first": 41545,
+            "job": 12,
+            "old_chain": [
+              41520
+            ],
+            "old_first": 41520,
+            "parent": 15993
+          }
+        ]
+      },
+      "graph_sha256": {
+        "23": "9dcd2a3682087c1a9e0760a3f9bb09a377f7046790c9971fdf5023c9f6638b0c",
+        "25": "46b0a1459dd420aa8cdf544cf0fdeb5c2ca5c7e1fdcf9d11c9d649e2fbdd507c"
+      },
+      "schedule_sha256": "3d6d969e9fbc6ac0ef97e335a3ecacd700d67a273155aa2b646153dd47b1f14d",
+      "seed": "1"
+    },
+    {
+      "R23": 32693,
+      "R25": 43056,
+      "W": 159592676,
+      "changed_chains": {
+        "23": [
+          {
+            "chain": [
+              26541
+            ],
+            "first": 26541,
+            "job": 0,
+            "old_chain": [
+              30521,
+              34497
+            ],
+            "old_first": 30521,
+            "parent": 11293
+          },
+          {
+            "chain": [
+              39153
+            ],
+            "first": 39153,
+            "job": 1,
+            "old_chain": [
+              30520
+            ],
+            "old_first": 30520,
+            "parent": 11299
+          },
+          {
+            "chain": [
+              26537
+            ],
+            "first": 26537,
+            "job": 3,
+            "old_chain": [
+              30522
+            ],
+            "old_first": 30522,
+            "parent": 11305
+          },
+          {
+            "chain": [
+              35355
+            ],
+            "first": 35355,
+            "job": 4,
+            "old_chain": [
+              31252
+            ],
+            "old_first": 31252,
+            "parent": 11669
+          },
+          {
+            "chain": [
+              35347
+            ],
+            "first": 35347,
+            "job": 5,
+            "old_chain": [
+              31246
+            ],
+            "old_first": 31246,
+            "parent": 11675
+          },
+          {
+            "chain": [
+              29209
+            ],
+            "first": 29209,
+            "job": 8,
+            "old_chain": [
+              33173,
+              37465
+            ],
+            "old_first": 33173,
+            "parent": 12627
+          },
+          {
+            "chain": [
+              43261
+            ],
+            "first": 43261,
+            "job": 9,
+            "old_chain": [
+              33172
+            ],
+            "old_first": 33172,
+            "parent": 12633
+          },
+          {
+            "chain": [
+              43269
+            ],
+            "first": 43269,
+            "job": 11,
+            "old_chain": [
+              33174
+            ],
+            "old_first": 33174,
+            "parent": 12639
+          }
+        ],
+        "25": [
+          {
+            "chain": [
+              59048,
+              75680
+            ],
+            "first": 59048,
+            "job": 0,
+            "old_chain": [
+              59046,
+              109232,
+              112205
+            ],
+            "old_first": 59046,
+            "parent": 25530
+          },
+          {
+            "chain": [
+              60356,
+              78640
+            ],
+            "first": 60356,
+            "job": 2,
+            "old_chain": [
+              60354,
+              111548,
+              112229
+            ],
+            "old_first": 60354,
+            "parent": 25872
+          },
+          {
+            "chain": [
+              38723,
+              48205
+            ],
+            "first": 38723,
+            "job": 4,
+            "old_chain": [
+              38693
+            ],
+            "old_first": 38693,
+            "parent": 14654
+          },
+          {
+            "chain": [
+              38722
+            ],
+            "first": 38722,
+            "job": 5,
+            "old_chain": [
+              38673
+            ],
+            "old_first": 38673,
+            "parent": 14662
+          },
+          {
+            "chain": [
+              48267
+            ],
+            "first": 48267,
+            "job": 6,
+            "old_chain": [
+              38709
+            ],
+            "old_first": 38709,
+            "parent": 14668
+          },
+          {
+            "chain": [
+              49035
+            ],
+            "first": 49035,
+            "job": 7,
+            "old_chain": [
+              39534
+            ],
+            "old_first": 39534,
+            "parent": 15054
+          },
+          {
+            "chain": [
+              41363,
+              50699
+            ],
+            "first": 41363,
+            "job": 9,
+            "old_chain": [
+              41333
+            ],
+            "old_first": 41333,
+            "parent": 15901
+          },
+          {
+            "chain": [
+              50737
+            ],
+            "first": 50737,
+            "job": 10,
+            "old_chain": [
+              41313
+            ],
+            "old_first": 41313,
+            "parent": 15909
+          },
+          {
+            "chain": [
+              50761
+            ],
+            "first": 50761,
+            "job": 11,
+            "old_chain": [
+              41349
+            ],
+            "old_first": 41349,
+            "parent": 15915
+          },
+          {
+            "chain": [
+              41545,
+              50877
+            ],
+            "first": 41545,
+            "job": 12,
+            "old_chain": [
+              41520
+            ],
+            "old_first": 41520,
+            "parent": 15993
+          }
+        ]
+      },
+      "graph_sha256": {
+        "23": "343d3cf9403b5124f25dc406aa1ea19871eeeb3d589f720924d17fb4fe3c2899",
+        "25": "ba6a88d812f4795a0b7a99b03adc5b4480849f77cff9003445543737d589936e"
+      },
+      "schedule_sha256": "48a04b660503ec0a89c6bfe7e48bc098b98fd4777290aa73e15cb70839797906",
+      "seed": "2"
+    },
+    {
+      "R23": 32693,
+      "R25": 43056,
+      "W": 159592676,
+      "changed_chains": {
+        "23": [
+          {
+            "chain": [
+              39153
+            ],
+            "first": 39153,
+            "job": 1,
+            "old_chain": [
+              30520
+            ],
+            "old_first": 30520,
+            "parent": 11299
+          },
+          {
+            "chain": [
+              26547
+            ],
+            "first": 26547,
+            "job": 2,
+            "old_chain": [
+              30523,
+              34501
+            ],
+            "old_first": 30523,
+            "parent": 11303
+          },
+          {
+            "chain": [
+              26537
+            ],
+            "first": 26537,
+            "job": 3,
+            "old_chain": [
+              30522
+            ],
+            "old_first": 30522,
+            "parent": 11305
+          },
+          {
+            "chain": [
+              31257,
+              40285
+            ],
+            "first": 31257,
+            "job": 4,
+            "old_chain": [
+              31252
+            ],
+            "old_first": 31252,
+            "parent": 11669
+          },
+          {
+            "chain": [
+              35347
+            ],
+            "first": 35347,
+            "job": 5,
+            "old_chain": [
+              31246
+            ],
+            "old_first": 31246,
+            "parent": 11675
+          },
+          {
+            "chain": [
+              36739
+            ],
+            "first": 36739,
+            "job": 6,
+            "old_chain": [
+              32492
+            ],
+            "old_first": 32492,
+            "parent": 12291
+          },
+          {
+            "chain": [
+              29209
+            ],
+            "first": 29209,
+            "job": 8,
+            "old_chain": [
+              33173,
+              37465
+            ],
+            "old_first": 33173,
+            "parent": 12627
+          }
+        ],
+        "25": [
+          {
+            "chain": [
+              59048,
+              75680
+            ],
+            "first": 59048,
+            "job": 0,
+            "old_chain": [
+              59046,
+              109232,
+              112205
+            ],
+            "old_first": 59046,
+            "parent": 25530
+          },
+          {
+            "chain": [
+              78638
+            ],
+            "first": 78638,
+            "job": 2,
+            "old_chain": [
+              60354,
+              111548,
+              112229
+            ],
+            "old_first": 60354,
+            "parent": 25872
+          },
+          {
+            "chain": [
+              48039
+            ],
+            "first": 48039,
+            "job": 3,
+            "old_chain": [
+              38476
+            ],
+            "old_first": 38476,
+            "parent": 14552
+          },
+          {
+            "chain": [
+              38723,
+              48205
+            ],
+            "first": 38723,
+            "job": 4,
+            "old_chain": [
+              38693
+            ],
+            "old_first": 38693,
+            "parent": 14654
+          },
+          {
+            "chain": [
+              38725,
+              48209
+            ],
+            "first": 38725,
+            "job": 6,
+            "old_chain": [
+              38709
+            ],
+            "old_first": 38709,
+            "parent": 14668
+          },
+          {
+            "chain": [
+              39547,
+              49003
+            ],
+            "first": 39547,
+            "job": 7,
+            "old_chain": [
+              39534
+            ],
+            "old_first": 39534,
+            "parent": 15054
+          },
+          {
+            "chain": [
+              49993
+            ],
+            "first": 49993,
+            "job": 8,
+            "old_chain": [
+              40550
+            ],
+            "old_first": 40550,
+            "parent": 15533
+          },
+          {
+            "chain": [
+              41363,
+              50699
+            ],
+            "first": 41363,
+            "job": 9,
+            "old_chain": [
+              41333
+            ],
+            "old_first": 41333,
+            "parent": 15901
+          },
+          {
+            "chain": [
+              50737
+            ],
+            "first": 50737,
+            "job": 10,
+            "old_chain": [
+              41313
+            ],
+            "old_first": 41313,
+            "parent": 15909
+          },
+          {
+            "chain": [
+              41545,
+              50877
+            ],
+            "first": 41545,
+            "job": 12,
+            "old_chain": [
+              41520
+            ],
+            "old_first": 41520,
+            "parent": 15993
+          }
+        ]
+      },
+      "graph_sha256": {
+        "23": "7385345ebd3b1beefccbbbb9e3400ba2d337f83c79e68ec74ba59c6d9ae67bb4",
+        "25": "05325da8d58d290f78eed21dda719eb8a2a9c80b7f7a831c15b8acc068f04da9"
+      },
+      "schedule_sha256": "17dae98c7a128c53a0c90bbb593b1560554cc1f7aea59117f10a29de1291f729",
+      "seed": "3"
+    },
+    {
+      "R23": 32693,
+      "R25": 43056,
+      "W": 159592676,
+      "changed_chains": {
+        "23": [
+          {
+            "chain": [
+              26537
+            ],
+            "first": 26537,
+            "job": 3,
+            "old_chain": [
+              30522
+            ],
+            "old_first": 30522,
+            "parent": 11305
+          },
+          {
+            "chain": [
+              35355
+            ],
+            "first": 35355,
+            "job": 4,
+            "old_chain": [
+              31252
+            ],
+            "old_first": 31252,
+            "parent": 11669
+          },
+          {
+            "chain": [
+              32496
+            ],
+            "first": 32496,
+            "job": 7,
+            "old_chain": [
+              32486
+            ],
+            "old_first": 32486,
+            "parent": 12297
+          },
+          {
+            "chain": [
+              29209
+            ],
+            "first": 29209,
+            "job": 8,
+            "old_chain": [
+              33173,
+              37465
+            ],
+            "old_first": 33173,
+            "parent": 12627
+          },
+          {
+            "chain": [
+              43261
+            ],
+            "first": 43261,
+            "job": 9,
+            "old_chain": [
+              33172
+            ],
+            "old_first": 33172,
+            "parent": 12633
+          },
+          {
+            "chain": [
+              29205
+            ],
+            "first": 29205,
+            "job": 11,
+            "old_chain": [
+              33174
+            ],
+            "old_first": 33174,
+            "parent": 12639
+          }
+        ],
+        "25": [
+          {
+            "chain": [
+              75678
+            ],
+            "first": 75678,
+            "job": 0,
+            "old_chain": [
+              59046,
+              109232,
+              112205
+            ],
+            "old_first": 59046,
+            "parent": 25530
+          },
+          {
+            "chain": [
+              77162
+            ],
+            "first": 77162,
+            "job": 1,
+            "old_chain": [
+              59704,
+              110390,
+              112217
+            ],
+            "old_first": 59704,
+            "parent": 25703
+          },
+          {
+            "chain": [
+              38722
+            ],
+            "first": 38722,
+            "job": 5,
+            "old_chain": [
+              38673
+            ],
+            "old_first": 38673,
+            "parent": 14662
+          },
+          {
+            "chain": [
+              48267
+            ],
+            "first": 48267,
+            "job": 6,
+            "old_chain": [
+              38709
+            ],
+            "old_first": 38709,
+            "parent": 14668
+          },
+          {
+            "chain": [
+              40563,
+              49961
+            ],
+            "first": 40563,
+            "job": 8,
+            "old_chain": [
+              40550
+            ],
+            "old_first": 40550,
+            "parent": 15533
+          },
+          {
+            "chain": [
+              50737
+            ],
+            "first": 50737,
+            "job": 10,
+            "old_chain": [
+              41313
+            ],
+            "old_first": 41313,
+            "parent": 15909
+          },
+          {
+            "chain": [
+              41545,
+              50877
+            ],
+            "first": 41545,
+            "job": 12,
+            "old_chain": [
+              41520
+            ],
+            "old_first": 41520,
+            "parent": 15993
+          }
+        ]
+      },
+      "graph_sha256": {
+        "23": "de6d1473a3508de7cd3412b6b9804cae0ebe62102961cd307f64d2e79009f71d",
+        "25": "4be42bfa1b4c34d3e16c693302d16a1c08811a44ef428cf6f284baf749da5c03"
+      },
+      "schedule_sha256": "ea77a2da077fa6c0ca0feac66262a4b18374e754ac55f528b69ba0e96a0fd580",
+      "seed": "4"
+    },
+    {
+      "R23": 32693,
+      "R25": 43056,
+      "W": 159592676,
+      "changed_chains": {
+        "23": [
+          {
+            "chain": [
+              39157
+            ],
+            "first": 39157,
+            "job": 0,
+            "old_chain": [
+              30521,
+              34497
+            ],
+            "old_first": 30521,
+            "parent": 11293
+          },
+          {
+            "chain": [
+              39165
+            ],
+            "first": 39165,
+            "job": 2,
+            "old_chain": [
+              30523,
+              34501
+            ],
+            "old_first": 30523,
+            "parent": 11303
+          },
+          {
+            "chain": [
+              39161
+            ],
+            "first": 39161,
+            "job": 3,
+            "old_chain": [
+              30522
+            ],
+            "old_first": 30522,
+            "parent": 11305
+          },
+          {
+            "chain": [
+              31257,
+              40285
+            ],
+            "first": 31257,
+            "job": 4,
+            "old_chain": [
+              31252
+            ],
+            "old_first": 31252,
+            "parent": 11669
+          },
+          {
+            "chain": [
+              35347
+            ],
+            "first": 35347,
+            "job": 5,
+            "old_chain": [
+              31246
+            ],
+            "old_first": 31246,
+            "parent": 11675
+          },
+          {
+            "chain": [
+              32497,
+              42201
+            ],
+            "first": 32497,
+            "job": 6,
+            "old_chain": [
+              32492
+            ],
+            "old_first": 32492,
+            "parent": 12291
+          },
+          {
+            "chain": [
+              32496
+            ],
+            "first": 32496,
+            "job": 7,
+            "old_chain": [
+              32486
+            ],
+            "old_first": 32486,
+            "parent": 12297
+          },
+          {
+            "chain": [
+              29203
+            ],
+            "first": 29203,
+            "job": 9,
+            "old_chain": [
+              33172
+            ],
+            "old_first": 33172,
+            "parent": 12633
+          },
+          {
+            "chain": [
+              43273
+            ],
+            "first": 43273,
+            "job": 10,
+            "old_chain": [
+              33175,
+              37469
+            ],
+            "old_first": 33175,
+            "parent": 12637
+          }
+        ],
+        "25": [
+          {
+            "chain": [
+              59048,
+              75680
+            ],
+            "first": 59048,
+            "job": 0,
+            "old_chain": [
+              59046,
+              109232,
+              112205
+            ],
+            "old_first": 59046,
+            "parent": 25530
+          },
+          {
+            "chain": [
+              77162
+            ],
+            "first": 77162,
+            "job": 1,
+            "old_chain": [
+              59704,
+              110390,
+              112217
+            ],
+            "old_first": 59704,
+            "parent": 25703
+          },
+          {
+            "chain": [
+              78638
+            ],
+            "first": 78638,
+            "job": 2,
+            "old_chain": [
+              60354,
+              111548,
+              112229
+            ],
+            "old_first": 60354,
+            "parent": 25872
+          },
+          {
+            "chain": [
+              38501,
+              47995
+            ],
+            "first": 38501,
+            "job": 3,
+            "old_chain": [
+              38476
+            ],
+            "old_first": 38476,
+            "parent": 14552
+          },
+          {
+            "chain": [
+              38723,
+              48205
+            ],
+            "first": 38723,
+            "job": 4,
+            "old_chain": [
+              38693
+            ],
+            "old_first": 38693,
+            "parent": 14654
+          },
+          {
+            "chain": [
+              38722
+            ],
+            "first": 38722,
+            "job": 5,
+            "old_chain": [
+              38673
+            ],
+            "old_first": 38673,
+            "parent": 14662
+          },
+          {
+            "chain": [
+              49993
+            ],
+            "first": 49993,
+            "job": 8,
+            "old_chain": [
+              40550
+            ],
+            "old_first": 40550,
+            "parent": 15533
+          },
+          {
+            "chain": [
+              41362
+            ],
+            "first": 41362,
+            "job": 10,
+            "old_chain": [
+              41313
+            ],
+            "old_first": 41313,
+            "parent": 15909
+          },
+          {
+            "chain": [
+              41365,
+              50703
+            ],
+            "first": 41365,
+            "job": 11,
+            "old_chain": [
+              41349
+            ],
+            "old_first": 41349,
+            "parent": 15915
+          },
+          {
+            "chain": [
+              41545,
+              50877
+            ],
+            "first": 41545,
+            "job": 12,
+            "old_chain": [
+              41520
+            ],
+            "old_first": 41520,
+            "parent": 15993
+          }
+        ]
+      },
+      "graph_sha256": {
+        "23": "efaea6a85d4748748afe412debe990b9ce62a9630331adecc0217e5b57bc940d",
+        "25": "eb533ab2b44d17b0d804b568959bf337f50bf82e27579baa70aa49ef466557b0"
+      },
+      "schedule_sha256": "9fc3ab5736f4a8b5c019c1593ff8aa9dce90d53eedcbbc7b0337d06a4570b488",
+      "seed": "5"
+    },
+    {
+      "R23": 32693,
+      "R25": 43056,
+      "W": 159592676,
+      "changed_chains": {
+        "23": [
+          {
+            "chain": [
+              26541
+            ],
+            "first": 26541,
+            "job": 0,
+            "old_chain": [
+              30521,
+              34497
+            ],
+            "old_first": 30521,
+            "parent": 11293
+          },
+          {
+            "chain": [
+              26535
+            ],
+            "first": 26535,
+            "job": 1,
+            "old_chain": [
+              30520
+            ],
+            "old_first": 30520,
+            "parent": 11299
+          },
+          {
+            "chain": [
+              26547
+            ],
+            "first": 26547,
+            "job": 2,
+            "old_chain": [
+              30523,
+              34501
+            ],
+            "old_first": 30523,
+            "parent": 11303
+          },
+          {
+            "chain": [
+              39161
+            ],
+            "first": 39161,
+            "job": 3,
+            "old_chain": [
+              30522
+            ],
+            "old_first": 30522,
+            "parent": 11305
+          },
+          {
+            "chain": [
+              35355
+            ],
+            "first": 35355,
+            "job": 4,
+            "old_chain": [
+              31252
+            ],
+            "old_first": 31252,
+            "parent": 11669
+          },
+          {
+            "chain": [
+              31256
+            ],
+            "first": 31256,
+            "job": 5,
+            "old_chain": [
+              31246
+            ],
+            "old_first": 31246,
+            "parent": 11675
+          },
+          {
+            "chain": [
+              32497,
+              42201
+            ],
+            "first": 32497,
+            "job": 6,
+            "old_chain": [
+              32492
+            ],
+            "old_first": 32492,
+            "parent": 12291
+          },
+          {
+            "chain": [
+              36731
+            ],
+            "first": 36731,
+            "job": 7,
+            "old_chain": [
+              32486
+            ],
+            "old_first": 32486,
+            "parent": 12297
+          },
+          {
+            "chain": [
+              29209
+            ],
+            "first": 29209,
+            "job": 8,
+            "old_chain": [
+              33173,
+              37465
+            ],
+            "old_first": 33173,
+            "parent": 12627
+          },
+          {
+            "chain": [
+              29203
+            ],
+            "first": 29203,
+            "job": 9,
+            "old_chain": [
+              33172
+            ],
+            "old_first": 33172,
+            "parent": 12633
+          },
+          {
+            "chain": [
+              43269
+            ],
+            "first": 43269,
+            "job": 11,
+            "old_chain": [
+              33174
+            ],
+            "old_first": 33174,
+            "parent": 12639
+          }
+        ],
+        "25": [
+          {
+            "chain": [
+              75678
+            ],
+            "first": 75678,
+            "job": 0,
+            "old_chain": [
+              59046,
+              109232,
+              112205
+            ],
+            "old_first": 59046,
+            "parent": 25530
+          },
+          {
+            "chain": [
+              77162
+            ],
+            "first": 77162,
+            "job": 1,
+            "old_chain": [
+              59704,
+              110390,
+              112217
+            ],
+            "old_first": 59704,
+            "parent": 25703
+          },
+          {
+            "chain": [
+              38501,
+              47995
+            ],
+            "first": 38501,
+            "job": 3,
+            "old_chain": [
+              38476
+            ],
+            "old_first": 38476,
+            "parent": 14552
+          },
+          {
+            "chain": [
+              38723,
+              48205
+            ],
+            "first": 38723,
+            "job": 4,
+            "old_chain": [
+              38693
+            ],
+            "old_first": 38693,
+            "parent": 14654
+          },
+          {
+            "chain": [
+              39547,
+              49003
+            ],
+            "first": 39547,
+            "job": 7,
+            "old_chain": [
+              39534
+            ],
+            "old_first": 39534,
+            "parent": 15054
+          },
+          {
+            "chain": [
+              41363,
+              50699
+            ],
+            "first": 41363,
+            "job": 9,
+            "old_chain": [
+              41333
+            ],
+            "old_first": 41333,
+            "parent": 15901
+          },
+          {
+            "chain": [
+              41362
+            ],
+            "first": 41362,
+            "job": 10,
+            "old_chain": [
+              41313
+            ],
+            "old_first": 41313,
+            "parent": 15909
+          }
+        ]
+      },
+      "graph_sha256": {
+        "23": "20d0f5afbb5adacce79d8a80a901bd9da52eb7440ac813220cb6ab4d3770f436",
+        "25": "b5937914b19d8ad39ee8d5c5d4966a827e4e699f2bd3180c82ed2a3848de750e"
+      },
+      "schedule_sha256": "7862d86f431372372aa6ba685af30af0cf2fe5478f8d96712b63af0a61c49e57",
+      "seed": "6"
+    },
+    {
+      "R23": 32693,
+      "R25": 43056,
+      "W": 159592676,
+      "changed_chains": {
+        "23": [
+          {
+            "chain": [
+              39157
+            ],
+            "first": 39157,
+            "job": 0,
+            "old_chain": [
+              30521,
+              34497
+            ],
+            "old_first": 30521,
+            "parent": 11293
+          },
+          {
+            "chain": [
+              39165
+            ],
+            "first": 39165,
+            "job": 2,
+            "old_chain": [
+              30523,
+              34501
+            ],
+            "old_first": 30523,
+            "parent": 11303
+          },
+          {
+            "chain": [
+              26537
+            ],
+            "first": 26537,
+            "job": 3,
+            "old_chain": [
+              30522
+            ],
+            "old_first": 30522,
+            "parent": 11305
+          },
+          {
+            "chain": [
+              31256
+            ],
+            "first": 31256,
+            "job": 5,
+            "old_chain": [
+              31246
+            ],
+            "old_first": 31246,
+            "parent": 11675
+          },
+          {
+            "chain": [
+              32497,
+              42201
+            ],
+            "first": 32497,
+            "job": 6,
+            "old_chain": [
+              32492
+            ],
+            "old_first": 32492,
+            "parent": 12291
+          },
+          {
+            "chain": [
+              43265
+            ],
+            "first": 43265,
+            "job": 8,
+            "old_chain": [
+              33173,
+              37465
+            ],
+            "old_first": 33173,
+            "parent": 12627
+          }
+        ],
+        "25": [
+          {
+            "chain": [
+              59048,
+              75680
+            ],
+            "first": 59048,
+            "job": 0,
+            "old_chain": [
+              59046,
+              109232,
+              112205
+            ],
+            "old_first": 59046,
+            "parent": 25530
+          },
+          {
+            "chain": [
+              77162
+            ],
+            "first": 77162,
+            "job": 1,
+            "old_chain": [
+              59704,
+              110390,
+              112217
+            ],
+            "old_first": 59704,
+            "parent": 25703
+          },
+          {
+            "chain": [
+              78638
+            ],
+            "first": 78638,
+            "job": 2,
+            "old_chain": [
+              60354,
+              111548,
+              112229
+            ],
+            "old_first": 60354,
+            "parent": 25872
+          },
+          {
+            "chain": [
+              38723,
+              48205
+            ],
+            "first": 38723,
+            "job": 4,
+            "old_chain": [
+              38693
+            ],
+            "old_first": 38693,
+            "parent": 14654
+          },
+          {
+            "chain": [
+              38722
+            ],
+            "first": 38722,
+            "job": 5,
+            "old_chain": [
+              38673
+            ],
+            "old_first": 38673,
+            "parent": 14662
+          },
+          {
+            "chain": [
+              40563,
+              49961
+            ],
+            "first": 40563,
+            "job": 8,
+            "old_chain": [
+              40550
+            ],
+            "old_first": 40550,
+            "parent": 15533
+          },
+          {
+            "chain": [
+              41362
+            ],
+            "first": 41362,
+            "job": 10,
+            "old_chain": [
+              41313
+            ],
+            "old_first": 41313,
+            "parent": 15909
+          },
+          {
+            "chain": [
+              50761
+            ],
+            "first": 50761,
+            "job": 11,
+            "old_chain": [
+              41349
+            ],
+            "old_first": 41349,
+            "parent": 15915
+          },
+          {
+            "chain": [
+              41545,
+              50877
+            ],
+            "first": 41545,
+            "job": 12,
+            "old_chain": [
+              41520
+            ],
+            "old_first": 41520,
+            "parent": 15993
+          }
+        ]
+      },
+      "graph_sha256": {
+        "23": "d833bf48de8f44532545d83025f5214afe101d387261e5f100db989b1cb37620",
+        "25": "03f198896326d835f100c56c5fc864eaf8574776dc4a75d02af3d44f74212b44"
+      },
+      "schedule_sha256": "cab3ff1674b80094624f82fd014c4b5eeae4d7e35b23f10fc08b0bbea57e314e",
+      "seed": "7"
+    },
+    {
+      "R23": 32693,
+      "R25": 43056,
+      "W": 159592676,
+      "changed_chains": {
+        "23": [
+          {
+            "chain": [
+              26541
+            ],
+            "first": 26541,
+            "job": 0,
+            "old_chain": [
+              30521,
+              34497
+            ],
+            "old_first": 30521,
+            "parent": 11293
+          },
+          {
+            "chain": [
+              39153
+            ],
+            "first": 39153,
+            "job": 1,
+            "old_chain": [
+              30520
+            ],
+            "old_first": 30520,
+            "parent": 11299
+          },
+          {
+            "chain": [
+              26547
+            ],
+            "first": 26547,
+            "job": 2,
+            "old_chain": [
+              30523,
+              34501
+            ],
+            "old_first": 30523,
+            "parent": 11303
+          },
+          {
+            "chain": [
+              31257,
+              40285
+            ],
+            "first": 31257,
+            "job": 4,
+            "old_chain": [
+              31252
+            ],
+            "old_first": 31252,
+            "parent": 11669
+          },
+          {
+            "chain": [
+              32496
+            ],
+            "first": 32496,
+            "job": 7,
+            "old_chain": [
+              32486
+            ],
+            "old_first": 32486,
+            "parent": 12297
+          },
+          {
+            "chain": [
+              43261
+            ],
+            "first": 43261,
+            "job": 9,
+            "old_chain": [
+              33172
+            ],
+            "old_first": 33172,
+            "parent": 12633
+          },
+          {
+            "chain": [
+              29215
+            ],
+            "first": 29215,
+            "job": 10,
+            "old_chain": [
+              33175,
+              37469
+            ],
+            "old_first": 33175,
+            "parent": 12637
+          }
+        ],
+        "25": [
+          {
+            "chain": [
+              59048,
+              75680
+            ],
+            "first": 59048,
+            "job": 0,
+            "old_chain": [
+              59046,
+              109232,
+              112205
+            ],
+            "old_first": 59046,
+            "parent": 25530
+          },
+          {
+            "chain": [
+              60356,
+              78640
+            ],
+            "first": 60356,
+            "job": 2,
+            "old_chain": [
+              60354,
+              111548,
+              112229
+            ],
+            "old_first": 60354,
+            "parent": 25872
+          },
+          {
+            "chain": [
+              38501,
+              47995
+            ],
+            "first": 38501,
+            "job": 3,
+            "old_chain": [
+              38476
+            ],
+            "old_first": 38476,
+            "parent": 14552
+          },
+          {
+            "chain": [
+              48251
+            ],
+            "first": 48251,
+            "job": 4,
+            "old_chain": [
+              38693
+            ],
+            "old_first": 38693,
+            "parent": 14654
+          },
+          {
+            "chain": [
+              48243
+            ],
+            "first": 48243,
+            "job": 5,
+            "old_chain": [
+              38673
+            ],
+            "old_first": 38673,
+            "parent": 14662
+          },
+          {
+            "chain": [
+              38725,
+              48209
+            ],
+            "first": 38725,
+            "job": 6,
+            "old_chain": [
+              38709
+            ],
+            "old_first": 38709,
+            "parent": 14668
+          },
+          {
+            "chain": [
+              40563,
+              49961
+            ],
+            "first": 40563,
+            "job": 8,
+            "old_chain": [
+              40550
+            ],
+            "old_first": 40550,
+            "parent": 15533
+          },
+          {
+            "chain": [
+              50745
+            ],
+            "first": 50745,
+            "job": 9,
+            "old_chain": [
+              41333
+            ],
+            "old_first": 41333,
+            "parent": 15901
+          },
+          {
+            "chain": [
+              50761
+            ],
+            "first": 50761,
+            "job": 11,
+            "old_chain": [
+              41349
+            ],
+            "old_first": 41349,
+            "parent": 15915
+          },
+          {
+            "chain": [
+              41545,
+              50877
+            ],
+            "first": 41545,
+            "job": 12,
+            "old_chain": [
+              41520
+            ],
+            "old_first": 41520,
+            "parent": 15993
+          }
+        ]
+      },
+      "graph_sha256": {
+        "23": "51f619a1251d68d1d892a55e57d772f7050b903e85c3a18e872e16b698ef3b81",
+        "25": "033b141df293b495b1b8bc016d5d37c02168eef28db083240549f8acee2adeb7"
+      },
+      "schedule_sha256": "be7e2b2d8995fb6518998dd36d28525a0a9e7a822106f09cd3eca08cb392dca6",
+      "seed": "8"
+    }
+  ],
+  "environment": {
+    "platform": "Android-15-aarch64-64bit-ELF",
+    "python": "3.14.6"
+  },
+  "method": "Choose a deterministic SHA-256-indexed final-round continuation chain for each clone; replay every invariant, then screen exact maximum matching cardinality. Matching and profile scores are discovery only.",
+  "pinned_pr54_commit": "7210de7d0f9ccaeb64c3f60f188419e02be08d95",
+  "pinned_producer_commit": "3ffd4021995c959ac02d12920e0279ae97dd03c7",
+  "schema_version": 1,
+  "screen_profiler_sha256": "9fe03c0ffa00a0a3332fe48d162e0ff141d498e7ad75ddbf842cdc5c8ed7a36e",
+  "seeds": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8"
+  ],
+  "selected_matching": {
+    "23": {
+      "edges_sha256": "97e0e06735815aab487ad53bad6f0712b3a09d41eaba7a65a7c6cda892762706",
+      "links_sha256": "6d88d73d3e7de1e73a0e5b245d80a5f8ab8315df877481400cd85d600c2fd073",
+      "matched": 13225
+    },
+    "25": {
+      "edges_sha256": "0111c21075a48bf96375472e0cd3cb057b128ca8d84a002441344cb3de5ef182",
+      "links_sha256": "7c2f3c167f97e596002b8c5ebc025154c2c5bdd268e89e1437a19ddcf9552e71",
+      "matched": 17697
+    }
+  },
+  "selection_rule": "Minimum W, then lexicographically smallest seed; exact full replay is required before any claim.",
+  "source_sha256": {
+    "clone_jobs": {
+      "23": "8433fac1e2484e5905e743b838ad82773298ca735418b291db2168143d08c11c",
+      "25": "83f02dfd55ba03c30e7641cd420b37b0fac60f753d686d317184f0d4ffd1a83e"
+    },
+    "links": {
+      "23": "b9d69517798c792466a68d09a0d69f21fa68eef15cb0436d6bc2fd71149a65a6",
+      "25": "31e37bbfd8459f5094bf40368009f4e39c72c5820ca6f31298e7c648038bac91"
+    },
+    "parameters": "69af7f3a7c097084068f6b2b072d0bd5a901ec6e49fcd18a3c2a3cdf56464993",
+    "role_records": {
+      "23": "ba9d8c0067971b73fa1719f29886f10c44b783f413920a576ed1f95d7627cd0b",
+      "25": "57be3aaefe0d1d0c5d994f7e5f04a1b5f7dd80e25234c301f6ee393055419153"
+    },
+    "search_script": "5aab36145ba4efc08775bcf8815aecedc9def93172e86d32cc618315c48fdbe9",
+    "source_files": {
+      "references/copied-fixed/pr44/profiles.cpp": "2c8c32fdfa0719247e24da41a66da18bd3eef4a8a78e13b5581df86a7be225da",
+      "research/skip-clones/clone_io.py": "d8e88aa31caf6bdb9e2abb82302e808b9ac2e4c5dd146e5249ec891d8e8b30a2",
+      "research/skip-clones/cloned_graph.py": "f862ea9bf3c321b6685b7852fe66bd25cfc9de49dda47df7ae38f1f28fefe6db",
+      "research/skip-clones/profiles.cpp": "b9fbd71c746609948b60c441ba4601e88436956fe636d1810f270ce4ce6a63a6",
+      "research/skip-strips/optimize_matching.py": "b8146942253fd34fafb92f6eaca4d145609e4c277704492635135095a03ddacf",
+      "research/skip-strips/skip_graph.py": "03ee019cdaf73391455aaf4f5dcb4873f4fdcb278179b296c02ea39eafd047e4",
+      "scripts/partial_swap/binary_io.hpp": "7e143eb75bb342ac8f0c82a60005e7c35c9ec827de479bf6fb773151f3af5fa1",
+      "scripts/partial_swap/graph.py": "fd8c567759e26a10d2bad05508fd0355eb70fb116664d4e06e1858d0d8cb2ef9"
+    },
+    "source_manifest_sha256": "9908a7eeba68cc2560c2c6e8418fb25d86ffb1bb163c5dfd0e9e721ea5e52578"
+  }
+}

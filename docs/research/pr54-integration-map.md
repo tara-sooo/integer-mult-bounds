@@ -29,6 +29,8 @@ At the 2026-10-08 status check, PRs 51, 52, 53, and 54 were all open and unmerge
 
 Separate follow-ups track clone-search improvements ([issue 6](https://redirect.github.com/tara-sooo/integer-mult-bounds/issues/6)), applying PR 54 clones to PR 52's layout ([issue 7](https://redirect.github.com/tara-sooo/integer-mult-bounds/issues/7)), and applying PR 54 clones to PR 51's enlarged frames ([issue 8](https://redirect.github.com/tara-sooo/integer-mult-bounds/issues/8)).
 
+The Issue 6 sample search and exact candidate replay are recorded in [`research/skip-clone-search/README.md`](../../research/skip-clone-search/README.md). Eight final-round schedules tied on `R23`, `R25`, and `W`; the selected candidate's exact `kappa` equals the pinned PR 54 baseline. This is not an exhaustive search or an optimality claim.
+
 ## Reproduction and evidence boundary
 
 Run `python3 scripts/replay_pr54_baseline.py` for the focused `make skip-clones-verify` check; add `--full` to run `make verify` as well. Each run writes command logs and an atomic JSON receipt under the ignored `build/pr54-baseline/` directory. The receipt records the pinned and checkout commits, tree, platform, runtime, status, relevant source SHA-256 values, result values, and log hashes.

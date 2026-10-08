@@ -2,7 +2,7 @@
   "additions": 53828,
   "all_additions_disjoint": true,
   "all_partial_outputs_exact": true,
-  "circuit_sha256": "571d1da11d085e98da2b0ad7247d6eda9f623ca7bb0b015aaf8734e2ebb48858",
+  "circuit_sha256": "46b0a1459dd420aa8cdf544cf0fdeb5c2ca5c7e1fdcf9d11c9d649e2fbdd507c",
   "cloned_additions": 353,
   "every_node_has_common_point": true,
   "h": 25,

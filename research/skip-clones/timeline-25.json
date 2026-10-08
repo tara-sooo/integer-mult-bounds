@@ -52,7 +52,7 @@
   "retained_links": 17697,
   "reverse_complement_frame_incidences": 150712,
   "roles": 43056,
-  "selected_links_sha256": "110ddaf97f2d244afd6d80a3f361b1c65dba2cdc36455c2379cf83f9e9ec7d8a",
+  "selected_links_sha256": "38c0b1ad3a3ec3cd93aaf19a30a4817e5937d568b3c688c3e5427d3651e45cc2",
   "status": "independent scalar, rational frames, physical compiler and rank timeline PASS",
   "v": 2300,
   "zero_rank_scope": "Explicit output incidences include no-operation frame checks omitted from native histogram bookkeeping; only positive ranks enter the recurrence"
