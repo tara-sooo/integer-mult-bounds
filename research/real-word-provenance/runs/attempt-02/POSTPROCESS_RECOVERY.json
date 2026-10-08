@@ -1,0 +1,9 @@
+{
+  "canonical_word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad",
+  "compile_count": 1,
+  "evidence_checkpoint": "WORD_HASH_RECEIPT.json and FOCUSED_RAW_TRACE.json were saved before detailed trace construction.",
+  "first_postprocess_failure": "The validator treated both raise events attached to an XOR boundary as if they belonged to the materialized slot; the second event belongs to the control slot.",
+  "observed_peak_rss_kib": 473856,
+  "recovery": "Corrected the event-to-slot validation, resumed from the frozen word after canonical hash equality, and passed the complete trace validator without another compiler call.",
+  "status": "RECOVERED_WITHOUT_RECOMPILE"
+}

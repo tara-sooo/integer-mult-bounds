@@ -1,0 +1,16 @@
+{
+  "status": "BLOCKED_AFTER_WORD_EMISSION",
+  "started_utc": "2026-10-08T21:40:49.687096+00:00",
+  "axis": 23,
+  "compile_count": 1,
+  "compiler_returned": true,
+  "word_emitted_in_memory": true,
+  "trace_error": "TypeError(\"unsupported operand type(s) for <<: 'int' and 'NoneType'\")",
+  "generated_word_hash_match": "NOT_VERIFIED",
+  "resource_gate": {
+    "pre_compile_mem_available_kib": 2785176,
+    "address_space_limit": "NOT_APPLIED: Termux prlimit failed before Python startup",
+    "wall_timeout_seconds": 1800
+  },
+  "repeat_compile": "PROHIBITED"
+}

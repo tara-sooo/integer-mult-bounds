@@ -1,6 +1,19 @@
---- a/pinned/scripts/experiments/rank_pair_compiler.py
-+++ b/pinned/scripts/experiments/rank_pair_compiler.py
-@@ -111,19 +111,60 @@
+--- rank_pair_compiler.py.original
++++ rank_pair_compiler.py.instrumented
+@@ -28,6 +28,12 @@
+  for vec in rows:
+   for row in out:vec=min(vec,vec^row)
+   if vec:out.append(vec)
++ return out
++
++def apply_mask(mask,values):
++ out=0
++ for i,value in enumerate(values):
++  if mask>>i&1:out^=value
+  return out
+ 
+ def build(h):
+@@ -111,19 +117,107 @@
   for g,b in enumerate(blocks):assert len(basis(b['outbasis']+[1<<edges[e][2]for e in b['selected']]))==len(b['outbasis'])+len(b['selected'])
   return edges,chosen,right,stats
  
@@ -11,30 +24,59 @@
   print('built',h,len(blocks),'regions',flush=True,file=sys.stderr)
   edges,chosen,right,stats=match(blocks,uses,matching)
   print('matched',len(chosen),'seconds',time.time()-t0,flush=True,file=sys.stderr)
+- slots=[];frames=[];ops=[];events=[];hist=Counter();assign={};sources={};retired=set();stats['regions']=len(blocks);stats['matched']=len(chosen);stats['multi_node_regions']=sum(len(b['nodes'])>1 for b in blocks)
 + trace=None
 + if trace_spec:
 +  producer=trace_spec['producer'];consumer=trace_spec['consumer'];operand=trace_spec['operand']
 +  assert h==23 and c.args[consumer][operand]==producer
 +  pg=owner[producer];cg=owner[consumer]
 +  occurrences=[(x,p)for x in blocks[cg]['nodes']for p,y in enumerate(c.args[x]or())if y==producer]
++  direct_target_uses=[dict(node=x,operand=p,group=owner[x],same_group=owner[x]==cg,
++                           other_operand=c.args[x][1-p],coefficient=blocks[owner[x]]['coeff'][x])
++                      for x in sorted(c.active)for p,y in enumerate(c.args[x]or())if y==consumer]
 +  compiler_uses=[u for u in value_uses[producer]if uses[u][1]==cg and uses[u][2]is None]
 +  input_index=blocks[cg]['inputs'].index(producer)if pg!=cg else None
 +  assert len(compiler_uses)==(1 if pg!=cg else 0)
 +  trace=dict(logical_use=dict(producer=producer,consumer=consumer,operand=operand),
-+             producer_group=pg,consumer_group=cg,groups={},compiler_use=compiler_uses[0]if compiler_uses else None,
-+             consumer_input_index=input_index,consumer_input_coefficient_mask=blocks[cg]['coeff'][consumer],
-+             consumer_input_coefficient=(blocks[cg]['coeff'][consumer]>>input_index&1)if input_index is not None else None,
-+             coalesced_occurrences=[dict(node=x,operand=p)for x,p in occurrences],
++              producer_group=pg,consumer_group=cg,groups={},compiler_use=compiler_uses[0]if compiler_uses else None,
++              consumer_input_index=input_index,consumer_input_coefficient_mask=blocks[cg]['coeff'][consumer],
++              consumer_input_coefficient=(blocks[cg]['coeff'][consumer]>>input_index&1)if input_index is not None else None,
++              coalesced_occurrences=[dict(node=x,operand=p)for x,p in occurrences],
++              target_direct_graph_uses=direct_target_uses,
++             target_signal_global_mask=signal[consumer],target_signal_global_hex=hex(signal[consumer]),
++             target_materializations=[],
 +             matched=compiler_uses[0]in right if compiler_uses else None,match_edge=right.get(compiler_uses[0])if compiler_uses else None,
 +             source_value_slot=None,source_use_slot=None,consumer_input_slot=None,target_value_slot=None,
 +             source_value_frame_group=None,source_use_frame_group=None,target_value_frame_group=None,
 +             target_outgoing_uses=[])
 +  for g in {pg,cg}:
-+   trace['groups'][g]=dict(frame=blocks[g]['frame'],rank=blocks[g]['rank'],nodes=blocks[g]['nodes'],
++   b=blocks[g]
++   trace['groups'][g]=dict(frame=b['frame'],rank=b['rank'],nodes=b['nodes'],inputs=b['inputs'],
++                          coefficients={x:b['coeff'][x]for x in sorted(set(b['nodes'])|set(b['outvalues'])|set(b['inputs']))},
++                          output_values=b['outvalues'],output_basis=b['outbasis'],
++                          compiler_uses=[dict(index=u,value=uses[u][0],consumer_group=uses[u][1],terminal=uses[u][2])for u in b['uses']],
++                          selected_edges=[dict(edge=e,use=edges[e][1],input_index=edges[e][2],value=uses[edges[e][1]][0])for e in sorted(b['selected'])],
 +                          input_slots=[],value_slots={},operations=[],events=[],timeline=[])
 +  if compiler_uses:
 +   trace['match_input_index']=edges[right[compiler_uses[0]]][2]if compiler_uses[0]in right else None
-  slots=[];frames=[];ops=[];events=[];hist=Counter();assign={};sources={};retired=set();stats['regions']=len(blocks);stats['matched']=len(chosen);stats['multi_node_regions']=sum(len(b['nodes'])>1 for b in blocks)
++ slots=[];frames=[];ops=[];events=[];hist=Counter();assign={};sources={};retired=set();linear_forms={};target_open={};stats['regions']=len(blocks);stats['matched']=len(chosen);stats['multi_node_regions']=sum(len(b['nodes'])>1 for b in blocks)
++ target_signal=signal[trace['logical_use']['consumer']]if trace is not None else None
++ def target_state_changed(s,g,stage,index=None,operation=None,event_indices=()):
++  if trace is None:return
++  exact=slots[s]==target_signal
++  active=target_open.get(s)
++  if exact and active is None:
++   row=dict(slot=s,start=dict(stage=stage,group=g,frame_group=frames[s]))
++   if index is not None:row['start']['index']=index
++   if operation is not None:row['start']['operation']=operation
++   if event_indices:row['start']['raise_event_indices']=list(event_indices)
++   row['frame_events']=[];trace['target_materializations'].append(row);target_open[s]=row
++  elif not exact and active is not None:
++   active['end']=dict(stage=stage,group=g,frame_group=frames[s])
++   if index is not None:active['end']['index']=index
++   if operation is not None:active['end']['operation']=operation
++   if event_indices:active['end']['raise_event_indices']=list(event_indices)
++   del target_open[s]
 + def trace_row(g,kind,row):
 +  if trace is not None and g in trace['groups']:
 +   group=trace['groups'][g]
@@ -51,6 +93,8 @@
 +  if trace is not None and g in trace['groups']:
 +   trace['groups'][g]['events'].append(dict(event_index=idx,event=(s,-1,g),cause='slot_allocation'))
 +   trace_row(g,'event',dict(event_index=idx,event=(s,-1,g),cause='slot_allocation'))
++  if trace is not None and g==trace['consumer_group']:linear_forms[s]=0
++  target_state_changed(s,g,'slot_allocation',idx,event_indices=(idx,))
 +  return s
 + def raise_(s,g,cause='frame_raise'):
 +  old=frames[s];assert contains(blocks[old]['frame'],blocks[g]['frame']);hist[blocks[g]['rank']-blocks[old]['rank']]+=1;frames[s]=g
@@ -58,17 +102,34 @@
 +  if trace is not None and g in trace['groups']:
 +   trace['groups'][g]['events'].append(dict(event_index=idx,event=(s,old,g),cause=cause))
 +   trace_row(g,'event',dict(event_index=idx,event=(s,old,g),cause=cause))
++  if s in target_open:target_open[s]['frame_events'].append(dict(event_index=idx,event=(s,old,g),cause=cause))
++  target_state_changed(s,g,'frame_raise',idx,event_indices=(idx,))
 + def xor(a,b,g,cause='block_synthesis'):
-+  assert a!=b;start=len(events);raise_(a,g,cause+':target');raise_(b,g,cause+':control');slots[a]^=slots[b]
++  assert a!=b
++  if trace is not None and g==trace['consumer_group']:
++   for s in (a,b):
++    if s not in linear_forms:
++     linear_forms[s]=slots[s]
++     trace['groups'][g].setdefault('additional_linear_seeds',[]).append(dict(slot=s,global_form_mask=slots[s],first_op_index=len(ops)))
++  left=linear_forms[a]if trace is not None and g==trace['consumer_group']else None
++  right=linear_forms[b]if trace is not None and g==trace['consumer_group']else None
++  start=len(events);raise_(a,g,cause+':target');raise_(b,g,cause+':control');slots[a]^=slots[b]
++  if trace is not None and g==trace['consumer_group']:
++   assert left^right==slots[a]
++   linear_forms[a]=left^right
 +  idx=len(ops);op=(a,b,g);ops.append(op)
 +  if trace is not None and g in trace['groups']:
 +   record=dict(op_index=idx,op=op,cause=cause,event_indices=(start,start+1))
++   if g==trace['consumer_group']:
++    record.update(physical_target_form_before_global=left,physical_control_form_before_global=right,
++                  physical_target_form_after_global=linear_forms[a])
 +   trace['groups'][g]['operations'].append(record);trace_row(g,'op',record)
++  target_state_changed(a,g,'xor_result',idx,op,(start,start+1))
 + def acquire(g,anchors,cause='new_output'):
    if reclaim:
     bb={}
     def ins(s):
-@@ -141,9 +182,13 @@
+@@ -141,17 +235,29 @@
      assert e>>s&1;e^=1<<s;aa=[]
      while e:
       bit=e&-e;aa.append(bit.bit_length()-1);e^=bit
@@ -85,29 +146,51 @@
   for step,g in enumerate(order):
    b=blocks[g];outuses=[u for u in b['uses']if u not in right];outvalues=sorted({uses[u][0]for u in outuses});assert outvalues==b['outvalues']
    if b['source']:
-@@ -151,7 +196,11 @@
+-   x=b['nodes'][0];s=new(g);sources[x-1]=s;slots[s]=signal[x];value_slots={x:s};spare=[]
++   x=b['nodes'][0];s=new(g);sources[x-1]=s;slots[s]=signal[x];target_state_changed(s,g,'source_value_assignment');value_slots={x:s};spare=[]
    else:
     ins=[assign[next(u for u in value_uses[y]if uses[u][1]==g and uses[u][2]is None)]for y in b['inputs']]
     assert len(set(ins))==len(ins)
 -   for s,y in zip(ins,b['inputs']):assert slots[s]==signal[y];raise_(s,g)
 +   if trace is not None and g in trace['groups']:
 +    trace['groups'][g]['input_slots']=[dict(input_index=i,value=y,slot=s)for i,(s,y)in enumerate(zip(ins,b['inputs']))]
++    if g==trace['consumer_group']:
++     linear_forms.clear()
++     linear_forms.update({s:slots[s] for s in ins})
++     trace['groups'][g]['linear_form_seed']=[dict(input_index=i,value=y,slot=s,row_mask=1<<i,global_form_mask=slots[s])for i,(s,y)in enumerate(zip(ins,b['inputs']))]
 +    if g==trace['consumer_group'] and trace['consumer_input_index']is not None:
 +     trace['consumer_input_slot']=ins[trace['consumer_input_index']]
 +   for s,y in zip(ins,b['inputs']):assert slots[s]==signal[y];raise_(s,g,'block_input')
     # Independent desired output rows first, then preserved input signals,
     # then standard-unit completion. Every row is a literal linear form
     # on incoming physical roles, hence invertible on all dirty inputs.
-@@ -174,7 +223,7 @@
+@@ -165,6 +271,9 @@
+    for i in range(len(ins)):
+     if independent(echelon,1<<i):rows.append(1<<i);labels.append(('retire',i));echelon=basis(rows)
+    assert len(rows)==len(ins)
++   if trace is not None and g==trace['consumer_group']:
++    trace['groups'][g]['synthesis_basis']=[dict(position=i,slot=ins[i],role=kind,reference=key,row_mask=rows[i])
++                                           for i,(kind,key)in enumerate(labels)]
+    rr=rows.copy();elim=[]
+    for i in range(len(ins)):
+     j=next(j for j in range(i,len(ins))if rr[j]>>i&1)
+@@ -174,7 +283,14 @@
      for j in range(len(ins)):
       if j!=i and rr[j]>>i&1:rr[j]^=rr[i];elim.append((j,i))
     assert rr==[1<<i for i in range(len(ins))]
 -   for a,z in reversed(elim):xor(ins[a],ins[z],g)
++   if trace is not None and g==trace['consumer_group']:
++    trace['groups'][g]['gaussian_elimination']=list(elim)
++    trace['groups'][g]['physical_xor_plan']=[dict(target_input=a,control_input=z,target_slot=ins[a],control_slot=ins[z])for a,z in reversed(elim)]
++   synthesis_start=len(ops)
 +   for a,z in reversed(elim):xor(ins[a],ins[z],g,'block_synthesis')
++   if trace is not None and g==trace['consumer_group']:
++    trace['groups'][g]['synthesis_op_indices']=list(range(synthesis_start,len(ops)))
++    assert [linear_forms[s]for s in ins]==[apply_mask(row,[signal[y]for y in b['inputs']])for row in rows]
     value_slots={};spare=[]
     for s,(kind,key)in zip(ins,labels):
      if kind=='value':value_slots[key]=s;assert slots[s]==signal[key]
-@@ -192,21 +241,35 @@
+@@ -192,21 +308,41 @@
      if x in value_slots:continue
      r=b['coeff'][x];e=0
      while r:p=r.bit_length()-1;old,ee=bb[p];r^=old;e^=ee
@@ -138,6 +221,12 @@
 +   if g==trace['consumer_group']:
 +    trace['target_outgoing_uses']=[dict(compiler_use=u,value=uses[u][0],target_group=uses[u][1],terminal=uses[u][2],matched=u in right,slot=assign.get(u))
 +                                   for u in value_uses[trace['logical_use']['consumer']]]
++    if g==trace['consumer_group']:
++     trace['groups'][g]['retired_slots']=list(spare)
++     trace['groups'][g]['linear_end_slot_forms']=[dict(slot=s,global_form_mask=linear_forms[s],
++                                                         values=[x for x,ss in value_slots.items()if ss==s],
++                                                         compiler_uses=[u for u,ss in assign.items()if ss==s])
++                                                 for s in sorted(linear_forms)]
    if step%5000==0:print('compile',h,step,len(slots),'reclaimed',stats['reclaimed'],'seconds',time.time()-t0,flush=True,file=sys.stderr)
   output_slots=[];output_records=[];scatter=[0]*v;J=[]
   for u,(x,g,target)in enumerate(uses):
@@ -147,7 +236,7 @@
    common,triple=target;output_records.append((s,g,common,triple))
    targets=[i for i,t in enumerate(c.inputs)if common in t]if len(triple)==1 else[c.inputs.index(triple)]
    for i in targets:scatter[i]^=slots[s];J.append((v+i,2*v+s))
-@@ -228,7 +291,12 @@
+@@ -228,7 +364,13 @@
     assert values[2*v:]==initial[2*v:]
     if dual:assert values[:v]==[initial[i]^initial[v+i]for i in range(v)]and values[v:2*v]==initial[v:2*v]
     else:assert values[v:2*v]==[initial[i]^initial[v+i]for i in range(v)]and values[:v]==initial[:v]
@@ -155,6 +244,7 @@
 + result=dict(h=h,mode=dict(matching=matching,reclaim=reclaim),roles=R,baseline_pr48_roles={23:36432,25:48329}[h],histogram=dict(hist),rank_mass=mass,elementary_xors=len(ops),stats=dict(stats),dirty_basis_vectors=2*v+R,complete_dirty_basis_both_orientations=dirty,all_physical_frame_inclusions=True,seconds=time.time()-t0)
 + word=dict(h=h,v=v,R=R,ops=ops,sources=sources,scatter=J,outputs=output_records,frames=[b['frame']for b in blocks],events=events)
 + if trace is not None:
++  for s,row in target_open.items():row['end']=dict(stage='compiler_return',group=frames[s],frame_group=frames[s])
 +  trace['matched_carrier_slot']=assign.get(trace['compiler_use'])if trace['compiler_use']is not None else None
 +  return result,word,trace
 + return result,word

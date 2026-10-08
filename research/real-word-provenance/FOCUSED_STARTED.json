@@ -1,16 +1,20 @@
 {
-  "status": "BLOCKED_AFTER_WORD_EMISSION",
-  "started_utc": "2026-10-08T21:40:49.687096+00:00",
   "axis": 23,
   "compile_count": 1,
-  "compiler_returned": true,
-  "word_emitted_in_memory": true,
-  "trace_error": "TypeError(\"unsupported operand type(s) for <<: 'int' and 'NoneType'\")",
-  "generated_word_hash_match": "NOT_VERIFIED",
+  "compile_peak_rss_kib": 286532,
+  "compile_seconds": 89.21171756999684,
+  "completed_utc": "2026-10-08T22:23:17.506416+00:00",
+  "peak_rss_kib": 473856,
   "resource_gate": {
-    "pre_compile_mem_available_kib": 2785176,
-    "address_space_limit": "NOT_APPLIED: Termux prlimit failed before Python startup",
+    "address_space_limit": "NOT_APPLIED",
+    "minimum_available_kib": 2621440,
+    "pre_compile_free_disk_kib": 37926468,
+    "pre_compile_mem_available_kib": 3547932,
     "wall_timeout_seconds": 1800
   },
-  "repeat_compile": "PROHIBITED"
+  "source_commit": "aa7701b68540b7863d3b66a414e4319915d6282d",
+  "started_utc": "2026-10-08T22:14:19.444054+00:00",
+  "status": "COMPLETED_FROM_SAVED_WORD_CHECKPOINT",
+  "total_runtime_seconds": 89.9516961639747,
+  "word_hash": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
 }

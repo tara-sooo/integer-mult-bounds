@@ -1,0 +1,16 @@
+{
+  "peak_rss_kib": 26300,
+  "status": "PASS",
+  "tests": [
+    "exact rational frame edge",
+    "GF(2) combination solver",
+    "virtual-form reconstruction",
+    "reverse operation cone",
+    "exact ops/events coverage",
+    "wrong order rejection",
+    "missing copy/clear rejection",
+    "missing raise rejection",
+    "gzip filename metadata comparison"
+  ],
+  "wall_seconds": 0.02966677100630477
+}

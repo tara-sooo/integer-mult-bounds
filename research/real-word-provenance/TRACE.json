@@ -1,58 +1,4084 @@
 {
-  "status": "BLOCKED_AFTER_WORD_EMISSION",
-  "axis": 23,
+  "blocks": {
+    "consumer_group": 1929,
+    "consumer_input_frame_group": 1929,
+    "producer_frame_group": 1908,
+    "producer_group": 1908,
+    "selected_use_frame_group": 1908,
+    "target_frame_group": null
+  },
+  "carriers": {
+    "consumer_input_slot": 17581,
+    "match_edge_index": null,
+    "match_input_index": null,
+    "matched": false,
+    "selected_use_slot": 17581,
+    "source_use_equals_consumer_input": true,
+    "source_value_slot": 17581,
+    "target_outgoing_uses": [],
+    "target_value_slot": null
+  },
+  "compiled_summary": {
+    "dirty_basis_replay": "NOT RUN",
+    "elementary_xors": 149172,
+    "generated_events": 444594,
+    "generated_word_operations": 621482,
+    "rank_mass": 642620,
+    "roles": 27918,
+    "statistics": {
+      "augmentations": 220,
+      "clearing_xors": 1612,
+      "matched": 37025,
+      "multi_node_regions": 10350,
+      "reclaimed": 801,
+      "regions": 52473
+    }
+  },
+  "correspondence": {
+    "cardinality": "MATERIALIZED_PLUS_BLOCK_CONE",
+    "consumer_input_coefficients": [
+      {
+        "coefficient": false,
+        "global_form_mask": 20909500897148025679461395906334079687065600,
+        "input_index": 0,
+        "present_in_target_cone": false,
+        "slot": 21455,
+        "value": 1952
+      },
+      {
+        "coefficient": true,
+        "global_form_mask": 48742741927258349823179908222981828049135059831152942518016,
+        "input_index": 1,
+        "present_in_target_cone": true,
+        "slot": 1078,
+        "value": 2020
+      },
+      {
+        "coefficient": true,
+        "global_form_mask": 3447503180061888063743055616772661668553922144395143762134063772532976,
+        "input_index": 2,
+        "present_in_target_cone": true,
+        "slot": 17581,
+        "value": 2039
+      }
+    ],
+    "consumer_to_Y2_op_indices": [
+      75970,
+      75972
+    ],
+    "one_to_one_assumed": false,
+    "operation_relation": "producer creation and consumer GF(2) output-form cones; shared block operations remain shared",
+    "producer_input_slot_support": [
+      160,
+      733,
+      740,
+      17581
+    ],
+    "producer_to_use_op_indices": [
+      55648,
+      55650,
+      55655
+    ],
+    "source_slot_in_Y2_emission_cone": true,
+    "source_to_target_input_coefficient": 1,
+    "standalone_use_cost": "UNRESOLVED: shared block transformations, copy/clear preparation, wrapper multiplicity, and source-paper child assignment are not apportioned to this graph occurrence",
+    "supporting_event_rank_sum_if_complete": 24,
+    "supporting_event_ranks_Q_23": [
+      {
+        "cause": "block_input",
+        "event": [
+          733,
+          1895,
+          1908
+        ],
+        "event_index": 166275,
+        "rank_Q_23": 2
+      },
+      {
+        "cause": "block_input",
+        "event": [
+          740,
+          1896,
+          1908
+        ],
+        "event_index": 166276,
+        "rank_Q_23": 4
+      },
+      {
+        "cause": "block_input",
+        "event": [
+          17581,
+          1810,
+          1908
+        ],
+        "event_index": 166277,
+        "rank_Q_23": 6
+      },
+      {
+        "cause": "block_input",
+        "event": [
+          160,
+          1905,
+          1908
+        ],
+        "event_index": 166278,
+        "rank_Q_23": 4
+      },
+      {
+        "cause": "block_synthesis:target",
+        "event": [
+          17581,
+          1908,
+          1908
+        ],
+        "event_index": 166279,
+        "rank_Q_23": 0
+      },
+      {
+        "cause": "block_synthesis:control",
+        "event": [
+          160,
+          1908,
+          1908
+        ],
+        "event_index": 166280,
+        "rank_Q_23": 0
+      },
+      {
+        "cause": "block_synthesis:target",
+        "event": [
+          733,
+          1908,
+          1908
+        ],
+        "event_index": 166283,
+        "rank_Q_23": 0
+      },
+      {
+        "cause": "block_synthesis:control",
+        "event": [
+          740,
+          1908,
+          1908
+        ],
+        "event_index": 166284,
+        "rank_Q_23": 0
+      },
+      {
+        "cause": "block_synthesis:target",
+        "event": [
+          17581,
+          1908,
+          1908
+        ],
+        "event_index": 166293,
+        "rank_Q_23": 0
+      },
+      {
+        "cause": "block_synthesis:control",
+        "event": [
+          733,
+          1908,
+          1908
+        ],
+        "event_index": 166294,
+        "rank_Q_23": 0
+      },
+      {
+        "cause": "block_input",
+        "event": [
+          1078,
+          1920,
+          1929
+        ],
+        "event_index": 226455,
+        "rank_Q_23": 4
+      },
+      {
+        "cause": "block_input",
+        "event": [
+          17581,
+          1908,
+          1929
+        ],
+        "event_index": 226456,
+        "rank_Q_23": 4
+      },
+      {
+        "cause": "block_synthesis:target",
+        "event": [
+          17581,
+          1929,
+          1929
+        ],
+        "event_index": 226459,
+        "rank_Q_23": 0
+      },
+      {
+        "cause": "block_synthesis:control",
+        "event": [
+          1078,
+          1929,
+          1929
+        ],
+        "event_index": 226460,
+        "rank_Q_23": 0
+      },
+      {
+        "cause": "block_synthesis:target",
+        "event": [
+          17581,
+          1929,
+          1929
+        ],
+        "event_index": 226463,
+        "rank_Q_23": 0
+      },
+      {
+        "cause": "block_synthesis:control",
+        "event": [
+          21455,
+          1929,
+          1929
+        ],
+        "event_index": 226464,
+        "rank_Q_23": 0
+      }
+    ],
+    "supporting_event_ranks_complete": true,
+    "supporting_known_rank_partial_sum": 24,
+    "target_group_auxiliary_operations": [
+      {
+        "axis": 23,
+        "cause": "block_synthesis",
+        "collection": "ops",
+        "frame_group": 1929,
+        "index": 75969,
+        "operation": [
+          21455,
+          17581,
+          1929
+        ],
+        "raise_event_indices": [
+          226457,
+          226458
+        ],
+        "trace_relation": [
+          "block_group_context_only"
+        ],
+        "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+      },
+      {
+        "axis": 23,
+        "cause": "block_synthesis",
+        "collection": "ops",
+        "frame_group": 1929,
+        "index": 75971,
+        "operation": [
+          21455,
+          1078,
+          1929
+        ],
+        "raise_event_indices": [
+          226461,
+          226462
+        ],
+        "trace_relation": [
+          "block_group_context_only"
+        ],
+        "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+      },
+      {
+        "axis": 23,
+        "cause": "duplicate_use_copy",
+        "collection": "ops",
+        "frame_group": 1929,
+        "index": 75973,
+        "operation": [
+          22506,
+          21455,
+          1929
+        ],
+        "raise_event_indices": [
+          226466,
+          226467
+        ],
+        "trace_relation": [
+          "copy_or_clear_in_related_block"
+        ],
+        "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+      },
+      {
+        "axis": 23,
+        "cause": "duplicate_use_copy",
+        "collection": "ops",
+        "frame_group": 1929,
+        "index": 75974,
+        "operation": [
+          22507,
+          21455,
+          1929
+        ],
+        "raise_event_indices": [
+          226469,
+          226470
+        ],
+        "trace_relation": [
+          "copy_or_clear_in_related_block"
+        ],
+        "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+      },
+      {
+        "axis": 23,
+        "cause": "duplicate_use_copy",
+        "collection": "ops",
+        "frame_group": 1929,
+        "index": 75975,
+        "operation": [
+          22508,
+          21455,
+          1929
+        ],
+        "raise_event_indices": [
+          226472,
+          226473
+        ],
+        "trace_relation": [
+          "copy_or_clear_in_related_block"
+        ],
+        "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+      }
+    ],
+    "target_supporting_event_indices": [
+      166275,
+      166276,
+      166277,
+      166278,
+      166279,
+      166280,
+      166283,
+      166284,
+      166293,
+      166294,
+      226455,
+      226456,
+      226459,
+      226460,
+      226463,
+      226464
+    ]
+  },
+  "events": [
+    {
+      "axis": 23,
+      "cause": "block_input",
+      "collection": "events",
+      "event": [
+        733,
+        1895,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166275,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 3933121
+      },
+      "old_group": 1895,
+      "rank_Q_23_factor": 2,
+      "rank_Q_575_per_h25_triple_context": 2,
+      "section4_child": "UNRESOLVED",
+      "slot": 733,
+      "trace_relation": [
+        "FSa_producer_input_support_raise"
+      ],
+      "transition": "NESTED_RATIONAL_FRAME_EDGE",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_input",
+      "collection": "events",
+      "event": [
+        740,
+        1896,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166276,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 4195267
+      },
+      "old_group": 1896,
+      "rank_Q_23_factor": 4,
+      "rank_Q_575_per_h25_triple_context": 4,
+      "section4_child": "UNRESOLVED",
+      "slot": 740,
+      "trace_relation": [
+        "FSa_producer_input_support_raise"
+      ],
+      "transition": "NESTED_RATIONAL_FRAME_EDGE",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_input",
+      "collection": "events",
+      "event": [
+        17581,
+        1810,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166277,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 961
+      },
+      "old_group": 1810,
+      "rank_Q_23_factor": 6,
+      "rank_Q_575_per_h25_triple_context": 6,
+      "section4_child": "UNRESOLVED",
+      "slot": 17581,
+      "trace_relation": [
+        "FSa_producer_input_support_raise",
+        "selected_use_consumer_input_raise",
+        "selected_value_or_carrier_slot"
+      ],
+      "transition": "NESTED_RATIONAL_FRAME_EDGE",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_input",
+      "collection": "events",
+      "event": [
+        160,
+        1905,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166278,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1905,
+      "rank_Q_23_factor": 4,
+      "rank_Q_575_per_h25_triple_context": 4,
+      "section4_child": "UNRESOLVED",
+      "slot": 160,
+      "trace_relation": [
+        "FSa_producer_input_support_raise"
+      ],
+      "transition": "NESTED_RATIONAL_FRAME_EDGE",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:target",
+      "collection": "events",
+      "event": [
+        17581,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166279,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 17581,
+      "trace_relation": [
+        "producer_value_to_selected_use",
+        "selected_value_or_carrier_slot"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:control",
+      "collection": "events",
+      "event": [
+        160,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166280,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 160,
+      "trace_relation": [
+        "producer_value_to_selected_use"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:target",
+      "collection": "events",
+      "event": [
+        160,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166281,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 160,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:control",
+      "collection": "events",
+      "event": [
+        17581,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166282,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 17581,
+      "trace_relation": [
+        "block_group_context_only",
+        "selected_value_or_carrier_slot"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:target",
+      "collection": "events",
+      "event": [
+        733,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166283,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 733,
+      "trace_relation": [
+        "producer_value_to_selected_use"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:control",
+      "collection": "events",
+      "event": [
+        740,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166284,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 740,
+      "trace_relation": [
+        "producer_value_to_selected_use"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:target",
+      "collection": "events",
+      "event": [
+        740,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166285,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 740,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:control",
+      "collection": "events",
+      "event": [
+        160,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166286,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 160,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:target",
+      "collection": "events",
+      "event": [
+        160,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166287,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 160,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:control",
+      "collection": "events",
+      "event": [
+        740,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166288,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 740,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:target",
+      "collection": "events",
+      "event": [
+        740,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166289,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 740,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:control",
+      "collection": "events",
+      "event": [
+        160,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166290,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 160,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:target",
+      "collection": "events",
+      "event": [
+        160,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166291,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 160,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:control",
+      "collection": "events",
+      "event": [
+        733,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166292,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 733,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:target",
+      "collection": "events",
+      "event": [
+        17581,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166293,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 17581,
+      "trace_relation": [
+        "producer_value_to_selected_use",
+        "selected_value_or_carrier_slot"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:control",
+      "collection": "events",
+      "event": [
+        733,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166294,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 733,
+      "trace_relation": [
+        "producer_value_to_selected_use"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:target",
+      "collection": "events",
+      "event": [
+        740,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166295,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 740,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:control",
+      "collection": "events",
+      "event": [
+        733,
+        1908,
+        1908
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 166296,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "new_group": 1908,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8126467
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 733,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_input",
+      "collection": "events",
+      "event": [
+        21455,
+        1891,
+        1929
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 226454,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 16321
+      },
+      "old_group": 1891,
+      "rank_Q_23_factor": 6,
+      "rank_Q_575_per_h25_triple_context": 6,
+      "section4_child": "UNRESOLVED",
+      "slot": 21455,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "NESTED_RATIONAL_FRAME_EDGE",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_input",
+      "collection": "events",
+      "event": [
+        1078,
+        1920,
+        1929
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 226455,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8141827
+      },
+      "old_group": 1920,
+      "rank_Q_23_factor": 4,
+      "rank_Q_575_per_h25_triple_context": 4,
+      "section4_child": "UNRESOLVED",
+      "slot": 1078,
+      "trace_relation": [
+        "Y2_linear_input_support_raise"
+      ],
+      "transition": "NESTED_RATIONAL_FRAME_EDGE",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_input",
+      "collection": "events",
+      "event": [
+        17581,
+        1908,
+        1929
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 226456,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "old_group": 1908,
+      "rank_Q_23_factor": 4,
+      "rank_Q_575_per_h25_triple_context": 4,
+      "section4_child": "UNRESOLVED",
+      "slot": 17581,
+      "trace_relation": [
+        "Y2_linear_input_support_raise",
+        "selected_use_consumer_input_raise",
+        "selected_value_or_carrier_slot"
+      ],
+      "transition": "NESTED_RATIONAL_FRAME_EDGE",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:target",
+      "collection": "events",
+      "event": [
+        21455,
+        1929,
+        1929
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 226457,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "old_group": 1929,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 21455,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:control",
+      "collection": "events",
+      "event": [
+        17581,
+        1929,
+        1929
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 226458,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "old_group": 1929,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 17581,
+      "trace_relation": [
+        "block_group_context_only",
+        "selected_value_or_carrier_slot"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:target",
+      "collection": "events",
+      "event": [
+        17581,
+        1929,
+        1929
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 226459,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "old_group": 1929,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 17581,
+      "trace_relation": [
+        "block_linear_form_for_Y2",
+        "selected_value_or_carrier_slot"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:control",
+      "collection": "events",
+      "event": [
+        1078,
+        1929,
+        1929
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 226460,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "old_group": 1929,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 1078,
+      "trace_relation": [
+        "block_linear_form_for_Y2"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:target",
+      "collection": "events",
+      "event": [
+        21455,
+        1929,
+        1929
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 226461,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "old_group": 1929,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 21455,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:control",
+      "collection": "events",
+      "event": [
+        1078,
+        1929,
+        1929
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 226462,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "old_group": 1929,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 1078,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:target",
+      "collection": "events",
+      "event": [
+        17581,
+        1929,
+        1929
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 226463,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "old_group": 1929,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 17581,
+      "trace_relation": [
+        "block_linear_form_for_Y2",
+        "selected_value_or_carrier_slot"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis:control",
+      "collection": "events",
+      "event": [
+        21455,
+        1929,
+        1929
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 226464,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "old_group": 1929,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 21455,
+      "trace_relation": [
+        "block_linear_form_for_Y2"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "slot_allocation",
+      "collection": "events",
+      "event": [
+        22506,
+        -1,
+        1929
+      ],
+      "h25_triple_context": "UNRESOLVED",
+      "index": 226465,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": null,
+      "old_group": -1,
+      "rank_Q_23_factor": null,
+      "rank_Q_575_per_h25_triple_context": null,
+      "section4_child": "UNRESOLVED",
+      "slot": 22506,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "ALLOCATION_WITHOUT_OLD_FRAME",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "duplicate_use_copy:target",
+      "collection": "events",
+      "event": [
+        22506,
+        1929,
+        1929
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 226466,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "old_group": 1929,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 22506,
+      "trace_relation": [
+        "copy_or_clear_in_related_block"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "duplicate_use_copy:control",
+      "collection": "events",
+      "event": [
+        21455,
+        1929,
+        1929
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 226467,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "old_group": 1929,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 21455,
+      "trace_relation": [
+        "copy_or_clear_in_related_block"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "slot_allocation",
+      "collection": "events",
+      "event": [
+        22507,
+        -1,
+        1929
+      ],
+      "h25_triple_context": "UNRESOLVED",
+      "index": 226468,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": null,
+      "old_group": -1,
+      "rank_Q_23_factor": null,
+      "rank_Q_575_per_h25_triple_context": null,
+      "section4_child": "UNRESOLVED",
+      "slot": 22507,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "ALLOCATION_WITHOUT_OLD_FRAME",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "duplicate_use_copy:target",
+      "collection": "events",
+      "event": [
+        22507,
+        1929,
+        1929
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 226469,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "old_group": 1929,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 22507,
+      "trace_relation": [
+        "copy_or_clear_in_related_block"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "duplicate_use_copy:control",
+      "collection": "events",
+      "event": [
+        21455,
+        1929,
+        1929
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 226470,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "old_group": 1929,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 21455,
+      "trace_relation": [
+        "copy_or_clear_in_related_block"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "slot_allocation",
+      "collection": "events",
+      "event": [
+        22508,
+        -1,
+        1929
+      ],
+      "h25_triple_context": "UNRESOLVED",
+      "index": 226471,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": null,
+      "old_group": -1,
+      "rank_Q_23_factor": null,
+      "rank_Q_575_per_h25_triple_context": null,
+      "section4_child": "UNRESOLVED",
+      "slot": 22508,
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "transition": "ALLOCATION_WITHOUT_OLD_FRAME",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "duplicate_use_copy:target",
+      "collection": "events",
+      "event": [
+        22508,
+        1929,
+        1929
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 226472,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "old_group": 1929,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 22508,
+      "trace_relation": [
+        "copy_or_clear_in_related_block"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "duplicate_use_copy:control",
+      "collection": "events",
+      "event": [
+        21455,
+        1929,
+        1929
+      ],
+      "h25_triple_context": "uniform over all 2300 source triple lines",
+      "index": 226473,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "new_group": 1929,
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "old_group": 1929,
+      "rank_Q_23_factor": 0,
+      "rank_Q_575_per_h25_triple_context": 0,
+      "section4_child": "UNRESOLVED",
+      "slot": 21455,
+      "trace_relation": [
+        "copy_or_clear_in_related_block"
+      ],
+      "transition": "SAME_FRAME_NO_TRANSITION",
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    }
+  ],
+  "execution": {
+    "full_forward_or_reverse_word_replay": "NOT_RUN",
+    "operation_indices": "compiler ops[] and events[] entries in the frozen serialized word",
+    "orientation": "NOT_ENCODED_BY_ARRAY_ENTRY"
+  },
+  "groups": {
+    "1908": {
+      "coefficient_rows": {
+        "1958": 1,
+        "1959": 2,
+        "1975": 4,
+        "1985": 3,
+        "1996": 8,
+        "2006": 7,
+        "2039": 15
+      },
+      "compiler_uses": [
+        {
+          "consumer_group": 1909,
+          "index": 380,
+          "terminal": null,
+          "value": 1985
+        },
+        {
+          "consumer_group": 1913,
+          "index": 398,
+          "terminal": null,
+          "value": 2006
+        },
+        {
+          "consumer_group": 1928,
+          "index": 451,
+          "terminal": null,
+          "value": 2006
+        },
+        {
+          "consumer_group": 1929,
+          "index": 455,
+          "terminal": null,
+          "value": 2039
+        }
+      ],
+      "emission_timeline": [
+        {
+          "cause": "block_input",
+          "event": [
+            733,
+            1895,
+            1908
+          ],
+          "event_index": 166275,
+          "record_kind": "event",
+          "sequence": 0
+        },
+        {
+          "cause": "block_input",
+          "event": [
+            740,
+            1896,
+            1908
+          ],
+          "event_index": 166276,
+          "record_kind": "event",
+          "sequence": 1
+        },
+        {
+          "cause": "block_input",
+          "event": [
+            17581,
+            1810,
+            1908
+          ],
+          "event_index": 166277,
+          "record_kind": "event",
+          "sequence": 2
+        },
+        {
+          "cause": "block_input",
+          "event": [
+            160,
+            1905,
+            1908
+          ],
+          "event_index": 166278,
+          "record_kind": "event",
+          "sequence": 3
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            17581,
+            1908,
+            1908
+          ],
+          "event_index": 166279,
+          "record_kind": "event",
+          "sequence": 4
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166280,
+          "record_kind": "event",
+          "sequence": 5
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166279,
+            166280
+          ],
+          "op": [
+            17581,
+            160,
+            1908
+          ],
+          "op_index": 55648,
+          "record_kind": "op",
+          "sequence": 6
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166281,
+          "record_kind": "event",
+          "sequence": 7
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            17581,
+            1908,
+            1908
+          ],
+          "event_index": 166282,
+          "record_kind": "event",
+          "sequence": 8
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166281,
+            166282
+          ],
+          "op": [
+            160,
+            17581,
+            1908
+          ],
+          "op_index": 55649,
+          "record_kind": "op",
+          "sequence": 9
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            733,
+            1908,
+            1908
+          ],
+          "event_index": 166283,
+          "record_kind": "event",
+          "sequence": 10
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            740,
+            1908,
+            1908
+          ],
+          "event_index": 166284,
+          "record_kind": "event",
+          "sequence": 11
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166283,
+            166284
+          ],
+          "op": [
+            733,
+            740,
+            1908
+          ],
+          "op_index": 55650,
+          "record_kind": "op",
+          "sequence": 12
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            740,
+            1908,
+            1908
+          ],
+          "event_index": 166285,
+          "record_kind": "event",
+          "sequence": 13
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166286,
+          "record_kind": "event",
+          "sequence": 14
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166285,
+            166286
+          ],
+          "op": [
+            740,
+            160,
+            1908
+          ],
+          "op_index": 55651,
+          "record_kind": "op",
+          "sequence": 15
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166287,
+          "record_kind": "event",
+          "sequence": 16
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            740,
+            1908,
+            1908
+          ],
+          "event_index": 166288,
+          "record_kind": "event",
+          "sequence": 17
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166287,
+            166288
+          ],
+          "op": [
+            160,
+            740,
+            1908
+          ],
+          "op_index": 55652,
+          "record_kind": "op",
+          "sequence": 18
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            740,
+            1908,
+            1908
+          ],
+          "event_index": 166289,
+          "record_kind": "event",
+          "sequence": 19
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166290,
+          "record_kind": "event",
+          "sequence": 20
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166289,
+            166290
+          ],
+          "op": [
+            740,
+            160,
+            1908
+          ],
+          "op_index": 55653,
+          "record_kind": "op",
+          "sequence": 21
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166291,
+          "record_kind": "event",
+          "sequence": 22
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            733,
+            1908,
+            1908
+          ],
+          "event_index": 166292,
+          "record_kind": "event",
+          "sequence": 23
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166291,
+            166292
+          ],
+          "op": [
+            160,
+            733,
+            1908
+          ],
+          "op_index": 55654,
+          "record_kind": "op",
+          "sequence": 24
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            17581,
+            1908,
+            1908
+          ],
+          "event_index": 166293,
+          "record_kind": "event",
+          "sequence": 25
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            733,
+            1908,
+            1908
+          ],
+          "event_index": 166294,
+          "record_kind": "event",
+          "sequence": 26
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166293,
+            166294
+          ],
+          "op": [
+            17581,
+            733,
+            1908
+          ],
+          "op_index": 55655,
+          "record_kind": "op",
+          "sequence": 27
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            740,
+            1908,
+            1908
+          ],
+          "event_index": 166295,
+          "record_kind": "event",
+          "sequence": 28
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            733,
+            1908,
+            1908
+          ],
+          "event_index": 166296,
+          "record_kind": "event",
+          "sequence": 29
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166295,
+            166296
+          ],
+          "op": [
+            740,
+            733,
+            1908
+          ],
+          "op_index": 55656,
+          "record_kind": "op",
+          "sequence": 30
+        }
+      ],
+      "event_indices": [
+        166275,
+        166276,
+        166277,
+        166278,
+        166279,
+        166280,
+        166281,
+        166282,
+        166283,
+        166284,
+        166285,
+        166286,
+        166287,
+        166288,
+        166289,
+        166290,
+        166291,
+        166292,
+        166293,
+        166294,
+        166295,
+        166296
+      ],
+      "frame": {
+        "core_mask": 1,
+        "cover_mask": 8127427
+      },
+      "input_slots": [
+        {
+          "input_index": 0,
+          "slot": 733,
+          "value": 1958
+        },
+        {
+          "input_index": 1,
+          "slot": 740,
+          "value": 1959
+        },
+        {
+          "input_index": 2,
+          "slot": 17581,
+          "value": 1975
+        },
+        {
+          "input_index": 3,
+          "slot": 160,
+          "value": 1996
+        }
+      ],
+      "logical_nodes": [
+        1985,
+        2006,
+        2039
+      ],
+      "operation_indices": [
+        55648,
+        55649,
+        55650,
+        55651,
+        55652,
+        55653,
+        55654,
+        55655,
+        55656
+      ],
+      "output_basis": [
+        3,
+        4,
+        8
+      ],
+      "output_values": [
+        1985,
+        2006,
+        2039
+      ],
+      "rank": 10,
+      "selected_edges": [],
+      "value_slots": {
+        "1985": 733,
+        "2006": 740,
+        "2039": 17581
+      }
+    },
+    "1929": {
+      "coefficient_rows": {
+        "1952": 1,
+        "2020": 2,
+        "2039": 4,
+        "2044": 6,
+        "2048": 7
+      },
+      "compiler_uses": [
+        {
+          "consumer_group": 1954,
+          "index": 522,
+          "terminal": null,
+          "value": 2048
+        },
+        {
+          "consumer_group": 1974,
+          "index": 571,
+          "terminal": null,
+          "value": 2048
+        },
+        {
+          "consumer_group": 2066,
+          "index": 801,
+          "terminal": null,
+          "value": 2048
+        },
+        {
+          "consumer_group": 2086,
+          "index": 851,
+          "terminal": null,
+          "value": 2048
+        }
+      ],
+      "emission_timeline": [
+        {
+          "cause": "block_input",
+          "event": [
+            21455,
+            1891,
+            1929
+          ],
+          "event_index": 226454,
+          "record_kind": "event",
+          "sequence": 0
+        },
+        {
+          "cause": "block_input",
+          "event": [
+            1078,
+            1920,
+            1929
+          ],
+          "event_index": 226455,
+          "record_kind": "event",
+          "sequence": 1
+        },
+        {
+          "cause": "block_input",
+          "event": [
+            17581,
+            1908,
+            1929
+          ],
+          "event_index": 226456,
+          "record_kind": "event",
+          "sequence": 2
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226457,
+          "record_kind": "event",
+          "sequence": 3
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            17581,
+            1929,
+            1929
+          ],
+          "event_index": 226458,
+          "record_kind": "event",
+          "sequence": 4
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            226457,
+            226458
+          ],
+          "op": [
+            21455,
+            17581,
+            1929
+          ],
+          "op_index": 75969,
+          "physical_control_form_before_global": 3447503180061888063743055616772661668553922144395143762134063772532976,
+          "physical_target_form_after_global": 3447503180061888063743055637682162565701947823856539668468143459598576,
+          "physical_target_form_before_global": 20909500897148025679461395906334079687065600,
+          "record_kind": "op",
+          "sequence": 5
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            17581,
+            1929,
+            1929
+          ],
+          "event_index": 226459,
+          "record_kind": "event",
+          "sequence": 6
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            1078,
+            1929,
+            1929
+          ],
+          "event_index": 226460,
+          "record_kind": "event",
+          "sequence": 7
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            226459,
+            226460
+          ],
+          "op": [
+            17581,
+            1078,
+            1929
+          ],
+          "op_index": 75970,
+          "physical_control_form_before_global": 48742741927258349823179908222981828049135059831152942518016,
+          "physical_target_form_after_global": 3447503180110630805670313966595841576776903972444278821965216715050992,
+          "physical_target_form_before_global": 3447503180061888063743055616772661668553922144395143762134063772532976,
+          "record_kind": "op",
+          "sequence": 8
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226461,
+          "record_kind": "event",
+          "sequence": 9
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            1078,
+            1929,
+            1929
+          ],
+          "event_index": 226462,
+          "record_kind": "event",
+          "sequence": 10
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            226461,
+            226462
+          ],
+          "op": [
+            21455,
+            1078,
+            1929
+          ],
+          "op_index": 75971,
+          "physical_control_form_before_global": 48742741927258349823179908222981828049135059831152942518016,
+          "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_before_global": 3447503180061888063743055637682162565701947823856539668468143459598576,
+          "record_kind": "op",
+          "sequence": 11
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            17581,
+            1929,
+            1929
+          ],
+          "event_index": 226463,
+          "record_kind": "event",
+          "sequence": 12
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226464,
+          "record_kind": "event",
+          "sequence": 13
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            226463,
+            226464
+          ],
+          "op": [
+            17581,
+            21455,
+            1929
+          ],
+          "op_index": 75972,
+          "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_after_global": 20909500897148025679461395906334079687065600,
+          "physical_target_form_before_global": 3447503180110630805670313966595841576776903972444278821965216715050992,
+          "record_kind": "op",
+          "sequence": 14
+        },
+        {
+          "cause": "slot_allocation",
+          "event": [
+            22506,
+            -1,
+            1929
+          ],
+          "event_index": 226465,
+          "record_kind": "event",
+          "sequence": 15
+        },
+        {
+          "cause": "duplicate_use_copy",
+          "kind": "new",
+          "record_kind": "acquire",
+          "sequence": 16,
+          "slot": 22506
+        },
+        {
+          "cause": "duplicate_use_copy:target",
+          "event": [
+            22506,
+            1929,
+            1929
+          ],
+          "event_index": 226466,
+          "record_kind": "event",
+          "sequence": 17
+        },
+        {
+          "cause": "duplicate_use_copy:control",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226467,
+          "record_kind": "event",
+          "sequence": 18
+        },
+        {
+          "cause": "duplicate_use_copy",
+          "event_indices": [
+            226466,
+            226467
+          ],
+          "op": [
+            22506,
+            21455,
+            1929
+          ],
+          "op_index": 75973,
+          "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_before_global": 0,
+          "record_kind": "op",
+          "sequence": 19
+        },
+        {
+          "cause": "slot_allocation",
+          "event": [
+            22507,
+            -1,
+            1929
+          ],
+          "event_index": 226468,
+          "record_kind": "event",
+          "sequence": 20
+        },
+        {
+          "cause": "duplicate_use_copy",
+          "kind": "new",
+          "record_kind": "acquire",
+          "sequence": 21,
+          "slot": 22507
+        },
+        {
+          "cause": "duplicate_use_copy:target",
+          "event": [
+            22507,
+            1929,
+            1929
+          ],
+          "event_index": 226469,
+          "record_kind": "event",
+          "sequence": 22
+        },
+        {
+          "cause": "duplicate_use_copy:control",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226470,
+          "record_kind": "event",
+          "sequence": 23
+        },
+        {
+          "cause": "duplicate_use_copy",
+          "event_indices": [
+            226469,
+            226470
+          ],
+          "op": [
+            22507,
+            21455,
+            1929
+          ],
+          "op_index": 75974,
+          "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_before_global": 0,
+          "record_kind": "op",
+          "sequence": 24
+        },
+        {
+          "cause": "slot_allocation",
+          "event": [
+            22508,
+            -1,
+            1929
+          ],
+          "event_index": 226471,
+          "record_kind": "event",
+          "sequence": 25
+        },
+        {
+          "cause": "duplicate_use_copy",
+          "kind": "new",
+          "record_kind": "acquire",
+          "sequence": 26,
+          "slot": 22508
+        },
+        {
+          "cause": "duplicate_use_copy:target",
+          "event": [
+            22508,
+            1929,
+            1929
+          ],
+          "event_index": 226472,
+          "record_kind": "event",
+          "sequence": 27
+        },
+        {
+          "cause": "duplicate_use_copy:control",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226473,
+          "record_kind": "event",
+          "sequence": 28
+        },
+        {
+          "cause": "duplicate_use_copy",
+          "event_indices": [
+            226472,
+            226473
+          ],
+          "op": [
+            22508,
+            21455,
+            1929
+          ],
+          "op_index": 75975,
+          "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_before_global": 0,
+          "record_kind": "op",
+          "sequence": 29
+        }
+      ],
+      "event_indices": [
+        226454,
+        226455,
+        226456,
+        226457,
+        226458,
+        226459,
+        226460,
+        226461,
+        226462,
+        226463,
+        226464,
+        226465,
+        226466,
+        226467,
+        226468,
+        226469,
+        226470,
+        226471,
+        226472,
+        226473
+      ],
+      "frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "input_slots": [
+        {
+          "input_index": 0,
+          "slot": 21455,
+          "value": 1952
+        },
+        {
+          "input_index": 1,
+          "slot": 1078,
+          "value": 2020
+        },
+        {
+          "input_index": 2,
+          "slot": 17581,
+          "value": 2039
+        }
+      ],
+      "logical_nodes": [
+        2044,
+        2048
+      ],
+      "operation_indices": [
+        75969,
+        75970,
+        75971,
+        75972,
+        75973,
+        75974,
+        75975
+      ],
+      "output_basis": [
+        7
+      ],
+      "output_values": [
+        2048
+      ],
+      "rank": 14,
+      "selected_edges": [
+        {
+          "edge": 82,
+          "input_index": 1,
+          "use": 427,
+          "value": 2020
+        }
+      ],
+      "value_slots": {
+        "2048": 21455
+      }
+    }
+  },
+  "hash_verification": {
+    "canonical_json_bytes_identical": true,
+    "canonical_json_matches_frozen": true,
+    "canonical_json_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad",
+    "checkpoint_written_before_trace_analysis": true,
+    "compile_peak_rss_kib": 286532,
+    "compile_seconds": 89.21171756999684,
+    "compiled_baseline_checks": {
+      "elementary_xors": true,
+      "histogram": true,
+      "rank_mass": true,
+      "roles": true,
+      "stats": true
+    },
+    "deterministic_gzip_matches_frozen": true,
+    "deterministic_gzip_sha256": "1a57c143380a063211653f1f35e7cc9710539523b0b34c90f354a0425c34bd59",
+    "expected_canonical_bytes": 12338199,
+    "expected_canonical_json_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad",
+    "expected_gzip_sha256": "1a57c143380a063211653f1f35e7cc9710539523b0b34c90f354a0425c34bd59",
+    "frozen_gzip_bytes": 2513532,
+    "generated_canonical_bytes": 12338199,
+    "generated_gzip_bytes": 2513532,
+    "gzip_comparison": {
+      "deflate_payload_equal": true,
+      "frozen_header": {
+        "comment": null,
+        "extra_hex": null,
+        "filename": "frame-word-23.json",
+        "flags": 8,
+        "mtime": 0,
+        "os": 255,
+        "xfl": 2
+      },
+      "generated_header": {
+        "comment": null,
+        "extra_hex": null,
+        "filename": "frame-word-23.json",
+        "flags": 8,
+        "mtime": 0,
+        "os": 255,
+        "xfl": 2
+      },
+      "header_bytes_equal": true,
+      "outcome": "EXACT_MATCH",
+      "trailer_equal": true
+    },
+    "gzip_writer": {
+      "compresslevel": 9,
+      "filename": "frame-word-23.json.gz",
+      "format": "gzip.GzipFile",
+      "mtime": 0,
+      "python": "3.14.6",
+      "zlib_compile": "1.3.2",
+      "zlib_runtime": "1.3.2"
+    },
+    "initial_bytesio_gzip_variant": {
+      "bytes": 2513513,
+      "filename": null,
+      "matches_frozen": false,
+      "sha256": "ef177e45ef6253f92fd18adf0292ead936789aa5a089e24a14fec3e1c8e3741a"
+    },
+    "post_compile_free_disk_kib": 37948100,
+    "word_stats": {
+      "canonical_bytes": 12338199,
+      "elementary_xors": 149172,
+      "events": 444594,
+      "frames": 52473,
+      "gzip_bytes": 2513532,
+      "histogram": {
+        "0": 302093,
+        "1": 42694,
+        "10": 449,
+        "12": 464,
+        "13": 22,
+        "14": 2005,
+        "15": 544,
+        "16": 547,
+        "17": 368,
+        "18": 4220,
+        "19": 7820,
+        "2": 82741,
+        "21": 165,
+        "22": 23,
+        "3": 11086,
+        "4": 10683,
+        "5": 7757,
+        "6": 2005,
+        "7": 275,
+        "8": 1362,
+        "9": 525
+      },
+      "rank_mass": 642620,
+      "roles": 27918,
+      "scatter": 10626,
+      "sources": 1771,
+      "statistics": {
+        "augmentations": 220,
+        "clearing_xors": 1612,
+        "matched": 37025,
+        "multi_node_regions": 10350,
+        "reclaimed": 801,
+        "regions": 52473
+      }
+    }
+  },
+  "linear_form": {
+    "additional_physical_seeds": [],
+    "all_exit_slot_forms": [
+      {
+        "assigned_logical_values": [],
+        "compiler_uses": [
+          {
+            "index": 427,
+            "input_index": 1,
+            "role": "matched_input_carry",
+            "value": 2020
+          }
+        ],
+        "global_form_mask": "0x7c3e1f87f0e00000000000000000000000000000000000f00",
+        "retired": false,
+        "slot": 1078
+      },
+      {
+        "assigned_logical_values": [],
+        "compiler_uses": [],
+        "global_form_mask": "0xf007801e003c000000000000000000000000",
+        "retired": true,
+        "slot": 17581
+      },
+      {
+        "assigned_logical_values": [
+          2048
+        ],
+        "compiler_uses": [
+          {
+            "index": 522,
+            "role": "block_output_use",
+            "target_group": 1954,
+            "terminal": null,
+            "value": 2048
+          }
+        ],
+        "global_form_mask": "0x7fe0000007c3e1f87f0ff0ff87fe1ffc3f8000000000000000001f0ff0",
+        "retired": false,
+        "slot": 21455
+      },
+      {
+        "assigned_logical_values": [],
+        "compiler_uses": [
+          {
+            "index": 571,
+            "role": "block_output_use",
+            "target_group": 1974,
+            "terminal": null,
+            "value": 2048
+          }
+        ],
+        "global_form_mask": "0x7fe0000007c3e1f87f0ff0ff87fe1ffc3f8000000000000000001f0ff0",
+        "retired": false,
+        "slot": 22506
+      },
+      {
+        "assigned_logical_values": [],
+        "compiler_uses": [
+          {
+            "index": 801,
+            "role": "block_output_use",
+            "target_group": 2066,
+            "terminal": null,
+            "value": 2048
+          }
+        ],
+        "global_form_mask": "0x7fe0000007c3e1f87f0ff0ff87fe1ffc3f8000000000000000001f0ff0",
+        "retired": false,
+        "slot": 22507
+      },
+      {
+        "assigned_logical_values": [],
+        "compiler_uses": [
+          {
+            "index": 851,
+            "role": "block_output_use",
+            "target_group": 2086,
+            "terminal": null,
+            "value": 2048
+          }
+        ],
+        "global_form_mask": "0x7fe0000007c3e1f87f0ff0ff87fe1ffc3f8000000000000000001f0ff0",
+        "retired": false,
+        "slot": 22508
+      }
+    ],
+    "coalesced_output_absorption": [
+      {
+        "child_node": 2048,
+        "coefficient_input_values": [
+          1952,
+          2020,
+          2039
+        ],
+        "coefficient_mask": 7,
+        "external_output": true,
+        "relation_to_Y2": {
+          "coefficient_difference": 1,
+          "xor_input_values": [
+            1952
+          ]
+        }
+      }
+    ],
+    "coefficient_matches_graph_signal": true,
+    "dedicated_logical_value_slot": null,
+    "emission_timeline": [
+      {
+        "cause": "block_input",
+        "event": [
+          21455,
+          1891,
+          1929
+        ],
+        "event_index": 226454,
+        "record_kind": "event",
+        "sequence": 0
+      },
+      {
+        "cause": "block_input",
+        "event": [
+          1078,
+          1920,
+          1929
+        ],
+        "event_index": 226455,
+        "record_kind": "event",
+        "sequence": 1
+      },
+      {
+        "cause": "block_input",
+        "event": [
+          17581,
+          1908,
+          1929
+        ],
+        "event_index": 226456,
+        "record_kind": "event",
+        "sequence": 2
+      },
+      {
+        "cause": "block_synthesis:target",
+        "event": [
+          21455,
+          1929,
+          1929
+        ],
+        "event_index": 226457,
+        "record_kind": "event",
+        "sequence": 3
+      },
+      {
+        "cause": "block_synthesis:control",
+        "event": [
+          17581,
+          1929,
+          1929
+        ],
+        "event_index": 226458,
+        "record_kind": "event",
+        "sequence": 4
+      },
+      {
+        "cause": "block_synthesis",
+        "event_indices": [
+          226457,
+          226458
+        ],
+        "op": [
+          21455,
+          17581,
+          1929
+        ],
+        "op_index": 75969,
+        "physical_control_form_before_global": 3447503180061888063743055616772661668553922144395143762134063772532976,
+        "physical_target_form_after_global": 3447503180061888063743055637682162565701947823856539668468143459598576,
+        "physical_target_form_before_global": 20909500897148025679461395906334079687065600,
+        "record_kind": "op",
+        "sequence": 5
+      },
+      {
+        "cause": "block_synthesis:target",
+        "event": [
+          17581,
+          1929,
+          1929
+        ],
+        "event_index": 226459,
+        "record_kind": "event",
+        "sequence": 6
+      },
+      {
+        "cause": "block_synthesis:control",
+        "event": [
+          1078,
+          1929,
+          1929
+        ],
+        "event_index": 226460,
+        "record_kind": "event",
+        "sequence": 7
+      },
+      {
+        "cause": "block_synthesis",
+        "event_indices": [
+          226459,
+          226460
+        ],
+        "op": [
+          17581,
+          1078,
+          1929
+        ],
+        "op_index": 75970,
+        "physical_control_form_before_global": 48742741927258349823179908222981828049135059831152942518016,
+        "physical_target_form_after_global": 3447503180110630805670313966595841576776903972444278821965216715050992,
+        "physical_target_form_before_global": 3447503180061888063743055616772661668553922144395143762134063772532976,
+        "record_kind": "op",
+        "sequence": 8
+      },
+      {
+        "cause": "block_synthesis:target",
+        "event": [
+          21455,
+          1929,
+          1929
+        ],
+        "event_index": 226461,
+        "record_kind": "event",
+        "sequence": 9
+      },
+      {
+        "cause": "block_synthesis:control",
+        "event": [
+          1078,
+          1929,
+          1929
+        ],
+        "event_index": 226462,
+        "record_kind": "event",
+        "sequence": 10
+      },
+      {
+        "cause": "block_synthesis",
+        "event_indices": [
+          226461,
+          226462
+        ],
+        "op": [
+          21455,
+          1078,
+          1929
+        ],
+        "op_index": 75971,
+        "physical_control_form_before_global": 48742741927258349823179908222981828049135059831152942518016,
+        "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "physical_target_form_before_global": 3447503180061888063743055637682162565701947823856539668468143459598576,
+        "record_kind": "op",
+        "sequence": 11
+      },
+      {
+        "cause": "block_synthesis:target",
+        "event": [
+          17581,
+          1929,
+          1929
+        ],
+        "event_index": 226463,
+        "record_kind": "event",
+        "sequence": 12
+      },
+      {
+        "cause": "block_synthesis:control",
+        "event": [
+          21455,
+          1929,
+          1929
+        ],
+        "event_index": 226464,
+        "record_kind": "event",
+        "sequence": 13
+      },
+      {
+        "cause": "block_synthesis",
+        "event_indices": [
+          226463,
+          226464
+        ],
+        "op": [
+          17581,
+          21455,
+          1929
+        ],
+        "op_index": 75972,
+        "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "physical_target_form_after_global": 20909500897148025679461395906334079687065600,
+        "physical_target_form_before_global": 3447503180110630805670313966595841576776903972444278821965216715050992,
+        "record_kind": "op",
+        "sequence": 14
+      },
+      {
+        "cause": "slot_allocation",
+        "event": [
+          22506,
+          -1,
+          1929
+        ],
+        "event_index": 226465,
+        "record_kind": "event",
+        "sequence": 15
+      },
+      {
+        "cause": "duplicate_use_copy",
+        "kind": "new",
+        "record_kind": "acquire",
+        "sequence": 16,
+        "slot": 22506
+      },
+      {
+        "cause": "duplicate_use_copy:target",
+        "event": [
+          22506,
+          1929,
+          1929
+        ],
+        "event_index": 226466,
+        "record_kind": "event",
+        "sequence": 17
+      },
+      {
+        "cause": "duplicate_use_copy:control",
+        "event": [
+          21455,
+          1929,
+          1929
+        ],
+        "event_index": 226467,
+        "record_kind": "event",
+        "sequence": 18
+      },
+      {
+        "cause": "duplicate_use_copy",
+        "event_indices": [
+          226466,
+          226467
+        ],
+        "op": [
+          22506,
+          21455,
+          1929
+        ],
+        "op_index": 75973,
+        "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "physical_target_form_before_global": 0,
+        "record_kind": "op",
+        "sequence": 19
+      },
+      {
+        "cause": "slot_allocation",
+        "event": [
+          22507,
+          -1,
+          1929
+        ],
+        "event_index": 226468,
+        "record_kind": "event",
+        "sequence": 20
+      },
+      {
+        "cause": "duplicate_use_copy",
+        "kind": "new",
+        "record_kind": "acquire",
+        "sequence": 21,
+        "slot": 22507
+      },
+      {
+        "cause": "duplicate_use_copy:target",
+        "event": [
+          22507,
+          1929,
+          1929
+        ],
+        "event_index": 226469,
+        "record_kind": "event",
+        "sequence": 22
+      },
+      {
+        "cause": "duplicate_use_copy:control",
+        "event": [
+          21455,
+          1929,
+          1929
+        ],
+        "event_index": 226470,
+        "record_kind": "event",
+        "sequence": 23
+      },
+      {
+        "cause": "duplicate_use_copy",
+        "event_indices": [
+          226469,
+          226470
+        ],
+        "op": [
+          22507,
+          21455,
+          1929
+        ],
+        "op_index": 75974,
+        "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "physical_target_form_before_global": 0,
+        "record_kind": "op",
+        "sequence": 24
+      },
+      {
+        "cause": "slot_allocation",
+        "event": [
+          22508,
+          -1,
+          1929
+        ],
+        "event_index": 226471,
+        "record_kind": "event",
+        "sequence": 25
+      },
+      {
+        "cause": "duplicate_use_copy",
+        "kind": "new",
+        "record_kind": "acquire",
+        "sequence": 26,
+        "slot": 22508
+      },
+      {
+        "cause": "duplicate_use_copy:target",
+        "event": [
+          22508,
+          1929,
+          1929
+        ],
+        "event_index": 226472,
+        "record_kind": "event",
+        "sequence": 27
+      },
+      {
+        "cause": "duplicate_use_copy:control",
+        "event": [
+          21455,
+          1929,
+          1929
+        ],
+        "event_index": 226473,
+        "record_kind": "event",
+        "sequence": 28
+      },
+      {
+        "cause": "duplicate_use_copy",
+        "event_indices": [
+          226472,
+          226473
+        ],
+        "op": [
+          22508,
+          21455,
+          1929
+        ],
+        "op_index": 75975,
+        "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "physical_target_form_before_global": 0,
+        "record_kind": "op",
+        "sequence": 29
+      }
+    ],
+    "end_slot_form_records": [
+      {
+        "compiler_uses": [
+          2639,
+          202,
+          723,
+          348,
+          421,
+          454,
+          427
+        ],
+        "global_form_mask": 48742741927258349823179908222981828049135059831152942518016,
+        "slot": 1078,
+        "values": []
+      },
+      {
+        "compiler_uses": [
+          376,
+          455
+        ],
+        "global_form_mask": 20909500897148025679461395906334079687065600,
+        "slot": 17581,
+        "values": []
+      },
+      {
+        "compiler_uses": [
+          453,
+          522
+        ],
+        "global_form_mask": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "slot": 21455,
+        "values": [
+          2048
+        ]
+      },
+      {
+        "compiler_uses": [
+          571
+        ],
+        "global_form_mask": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "slot": 22506,
+        "values": []
+      },
+      {
+        "compiler_uses": [
+          801
+        ],
+        "global_form_mask": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "slot": 22507,
+        "values": []
+      },
+      {
+        "compiler_uses": [
+          851
+        ],
+        "global_form_mask": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "slot": 22508,
+        "values": []
+      }
+    ],
+    "exit_slot_representation": {
+      "reconstructed_global_form": "0x7fe0000007c3e1f87f0ff00f807e01fc038000000000000000001f0ff0",
+      "status": "VIRTUAL_LINEAR_FORM",
+      "support_slots": [
+        21455,
+        17581
+      ],
+      "terms": [
+        {
+          "compiler_uses": [
+            {
+              "index": 522,
+              "role": "block_output_use",
+              "target_group": 1954,
+              "terminal": null,
+              "value": 2048
+            }
+          ],
+          "global_form_mask": "0x7fe0000007c3e1f87f0ff0ff87fe1ffc3f8000000000000000001f0ff0",
+          "logical_values": [
+            2048
+          ],
+          "retired": false,
+          "slot": 21455
+        },
+        {
+          "compiler_uses": [],
+          "global_form_mask": "0xf007801e003c000000000000000000000000",
+          "logical_values": [],
+          "retired": true,
+          "slot": 17581
+        }
+      ]
+    },
+    "gaussian_elimination": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "input_global_form_masks": [
+      "0xf007801e003c000000000000000000000000",
+      "0x7c3e1f87f0e00000000000000000000000000000000000f00",
+      "0x7fe00000000000000001f00f807e01fc038000000000000000001f00f0"
+    ],
+    "input_seeds": [
+      {
+        "global_form_mask": 20909500897148025679461395906334079687065600,
+        "input_index": 0,
+        "row_mask": 1,
+        "slot": 21455,
+        "value": 1952
+      },
+      {
+        "global_form_mask": 48742741927258349823179908222981828049135059831152942518016,
+        "input_index": 1,
+        "row_mask": 2,
+        "slot": 1078,
+        "value": 2020
+      },
+      {
+        "global_form_mask": 3447503180061888063743055616772661668553922144395143762134063772532976,
+        "input_index": 2,
+        "row_mask": 4,
+        "slot": 17581,
+        "value": 2039
+      }
+    ],
+    "input_values": [
+      1952,
+      2020,
+      2039
+    ],
+    "materialization_intervals": [
+      {
+        "end": {
+          "frame_group": 1929,
+          "group": 1929,
+          "index": 75972,
+          "operation": [
+            17581,
+            21455,
+            1929
+          ],
+          "raise_event_indices": [
+            226463,
+            226464
+          ],
+          "stage": "xor_result"
+        },
+        "frame_events": [
+          {
+            "cause": "block_synthesis:target",
+            "event": [
+              17581,
+              1929,
+              1929
+            ],
+            "event_index": 226463
+          }
+        ],
+        "slot": 17581,
+        "start": {
+          "frame_group": 1929,
+          "group": 1929,
+          "index": 75970,
+          "operation": [
+            17581,
+            1078,
+            1929
+          ],
+          "raise_event_indices": [
+            226459,
+            226460
+          ],
+          "stage": "xor_result"
+        }
+      }
+    ],
+    "materialized_end_slots": [],
+    "operation_form_records": [
+      {
+        "cause": "block_synthesis",
+        "event_indices": [
+          226457,
+          226458
+        ],
+        "op": [
+          21455,
+          17581,
+          1929
+        ],
+        "op_index": 75969,
+        "physical_control_form_before_global": 3447503180061888063743055616772661668553922144395143762134063772532976,
+        "physical_target_form_after_global": 3447503180061888063743055637682162565701947823856539668468143459598576,
+        "physical_target_form_before_global": 20909500897148025679461395906334079687065600
+      },
+      {
+        "cause": "block_synthesis",
+        "event_indices": [
+          226459,
+          226460
+        ],
+        "op": [
+          17581,
+          1078,
+          1929
+        ],
+        "op_index": 75970,
+        "physical_control_form_before_global": 48742741927258349823179908222981828049135059831152942518016,
+        "physical_target_form_after_global": 3447503180110630805670313966595841576776903972444278821965216715050992,
+        "physical_target_form_before_global": 3447503180061888063743055616772661668553922144395143762134063772532976
+      },
+      {
+        "cause": "block_synthesis",
+        "event_indices": [
+          226461,
+          226462
+        ],
+        "op": [
+          21455,
+          1078,
+          1929
+        ],
+        "op_index": 75971,
+        "physical_control_form_before_global": 48742741927258349823179908222981828049135059831152942518016,
+        "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "physical_target_form_before_global": 3447503180061888063743055637682162565701947823856539668468143459598576
+      },
+      {
+        "cause": "block_synthesis",
+        "event_indices": [
+          226463,
+          226464
+        ],
+        "op": [
+          17581,
+          21455,
+          1929
+        ],
+        "op_index": 75972,
+        "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "physical_target_form_after_global": 20909500897148025679461395906334079687065600,
+        "physical_target_form_before_global": 3447503180110630805670313966595841576776903972444278821965216715050992
+      },
+      {
+        "cause": "duplicate_use_copy",
+        "event_indices": [
+          226466,
+          226467
+        ],
+        "op": [
+          22506,
+          21455,
+          1929
+        ],
+        "op_index": 75973,
+        "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "physical_target_form_before_global": 0
+      },
+      {
+        "cause": "duplicate_use_copy",
+        "event_indices": [
+          226469,
+          226470
+        ],
+        "op": [
+          22507,
+          21455,
+          1929
+        ],
+        "op_index": 75974,
+        "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "physical_target_form_before_global": 0
+      },
+      {
+        "cause": "duplicate_use_copy",
+        "event_indices": [
+          226472,
+          226473
+        ],
+        "op": [
+          22508,
+          21455,
+          1929
+        ],
+        "op_index": 75975,
+        "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+        "physical_target_form_before_global": 0
+      }
+    ],
+    "physical_xor_form_replay": "PASS",
+    "physical_xor_plan": [
+      {
+        "control_input": 2,
+        "control_slot": 17581,
+        "target_input": 0,
+        "target_slot": 21455
+      },
+      {
+        "control_input": 1,
+        "control_slot": 1078,
+        "target_input": 2,
+        "target_slot": 17581
+      },
+      {
+        "control_input": 1,
+        "control_slot": 1078,
+        "target_input": 0,
+        "target_slot": 21455
+      },
+      {
+        "control_input": 0,
+        "control_slot": 21455,
+        "target_input": 2,
+        "target_slot": 17581
+      }
+    ],
+    "physical_xor_plan_verified": true,
+    "retired_slots": [
+      17581
+    ],
+    "source_to_target_input_support_slots": [
+      1078,
+      17581
+    ],
+    "status": "MATERIALIZED",
+    "synthesis_basis": [
+      {
+        "position": 0,
+        "reference": 2048,
+        "role": "value",
+        "row_mask": 7,
+        "slot": 21455
+      },
+      {
+        "position": 1,
+        "reference": 427,
+        "role": "carry",
+        "row_mask": 2,
+        "slot": 1078
+      },
+      {
+        "position": 2,
+        "reference": 0,
+        "role": "retire",
+        "row_mask": 1,
+        "slot": 17581
+      }
+    ],
+    "synthesis_op_indices": [
+      75969,
+      75970,
+      75971,
+      75972
+    ],
+    "target_coefficient_mask": 6,
+    "target_global_form_mask": "0x7fe0000007c3e1f87f0ff00f807e01fc038000000000000000001f0ff0",
+    "target_input_values": [
+      2020,
+      2039
+    ],
+    "target_linear_operation_indices": [
+      75970,
+      75972
+    ],
+    "variables": "the consumer block external input values in listed order"
+  },
   "logical_use": {
-    "stable_id": "graph:h23:producer2039:consumer2044:operand0",
-    "producer_node": 2039,
+    "coalesced_occurrences": [
+      {
+        "node": 2044,
+        "operand": 0
+      }
+    ],
+    "compiler_use_index": 455,
     "consumer_node": 2044,
-    "operand_position": 0,
-    "graph_sha256": "3d47e89d2649c90800a276bdd0480131def50e0bdf92c122a19494b55bf17420"
+    "operand": 0,
+    "producer_node": 2039,
+    "stable_id": "graph:h23:producer2039:consumer2044:operand0"
   },
-  "pinned_baseline": {
-    "source_commit": "aa7701b68540b7863d3b66a414e4319915d6282d",
-    "compiler_sha256": "9984aaccf880e4840402322d76678bfddb33ce7e494af78430a43429f51b85fd",
-    "word_gzip_sha256": "1a57c143380a063211653f1f35e7cc9710539523b0b34c90f354a0425c34bd59",
-    "canonical_word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad",
-    "local_pin_integrity": "PASS",
-    "generated_word_match": "NOT_VERIFIED"
+  "negative_controls": {
+    "cases": [
+      "wrong producer/use operand identity",
+      "swapped physical slots",
+      "wrong GF(2) input coefficient",
+      "wrong physical slot in virtual linear form",
+      "wrong physical elimination slot",
+      "wrong compiler op index",
+      "wrong op frame group",
+      "omitted copy/clear operation record",
+      "omitted frame-raise event",
+      "stale matching decision",
+      "stale pinned compiler hash",
+      "wrong frame-event group",
+      "swapped emission timeline",
+      "stale frozen word hash",
+      "lost hash checkpoint when dedicated Y2 slot is None",
+      "invented execution orientation",
+      "forced one-XOR bijection"
+    ],
+    "fixture_only": false,
+    "status": "PASS"
   },
-  "single_compile": {
-    "compiler_returned": true,
-    "word_emitted_in_memory": true,
-    "canonical_json_serialized": true,
-    "generated_digest_computation_reached": true,
-    "generated_canonical_sha256": null,
-    "generated_gzip_sha256": null,
-    "digest_values_persisted": false,
-    "receipt_assertions": "PASS: whole-axis roles, rank_mass, elementary_xors, stats, and histogram matched the pinned receipt",
-    "repeat_compile": "PROHIBITED"
-  },
-  "physical_trace": {
-    "producer_group": "UNRESOLVED",
-    "consumer_group": "UNRESOLVED",
-    "selected_use_slot": "UNRESOLVED",
-    "consumer_input_slot": "UNRESOLVED",
-    "consumer_Y2_value_slot": null,
-    "ops_refs": "UNRESOLVED",
-    "event_refs": "UNRESOLVED",
-    "orientation": "NOT_RUN",
-    "logical_to_physical_cardinality": "UNRESOLVED",
-    "one_to_one_assumed": false
-  },
-  "failure": {
-    "stage": "trace post-processing after word emission",
-    "target_value_slot_observed": null,
-    "error": "TypeError: unsupported operand type(s) for <<: 'int' and 'NoneType'",
-    "cause": "The cone walker received the absent Y2 value slot. The process ended before the canonical and gzip digests were compared with the pinned word or written to disk."
-  },
-  "resource_record": {
-    "pre_compile_mem_available_kib": 2785176,
-    "memory_limit": "No address-space cap: Termux prlimit launch failed before Python startup; 30 minute wall timeout retained",
-    "matching_seconds_reported": 36.665491,
-    "compile_progress_seconds_at_step_50000": 92.374,
-    "peak_rss_kib": "NOT_RETAINED",
+  "operations": [
+    {
+      "axis": 23,
+      "cause": "block_synthesis",
+      "collection": "ops",
+      "frame_group": 1908,
+      "index": 55648,
+      "operation": [
+        17581,
+        160,
+        1908
+      ],
+      "raise_event_indices": [
+        166279,
+        166280
+      ],
+      "trace_relation": [
+        "producer_value_to_selected_use"
+      ],
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis",
+      "collection": "ops",
+      "frame_group": 1908,
+      "index": 55649,
+      "operation": [
+        160,
+        17581,
+        1908
+      ],
+      "raise_event_indices": [
+        166281,
+        166282
+      ],
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis",
+      "collection": "ops",
+      "frame_group": 1908,
+      "index": 55650,
+      "operation": [
+        733,
+        740,
+        1908
+      ],
+      "raise_event_indices": [
+        166283,
+        166284
+      ],
+      "trace_relation": [
+        "producer_value_to_selected_use"
+      ],
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis",
+      "collection": "ops",
+      "frame_group": 1908,
+      "index": 55651,
+      "operation": [
+        740,
+        160,
+        1908
+      ],
+      "raise_event_indices": [
+        166285,
+        166286
+      ],
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis",
+      "collection": "ops",
+      "frame_group": 1908,
+      "index": 55652,
+      "operation": [
+        160,
+        740,
+        1908
+      ],
+      "raise_event_indices": [
+        166287,
+        166288
+      ],
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis",
+      "collection": "ops",
+      "frame_group": 1908,
+      "index": 55653,
+      "operation": [
+        740,
+        160,
+        1908
+      ],
+      "raise_event_indices": [
+        166289,
+        166290
+      ],
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis",
+      "collection": "ops",
+      "frame_group": 1908,
+      "index": 55654,
+      "operation": [
+        160,
+        733,
+        1908
+      ],
+      "raise_event_indices": [
+        166291,
+        166292
+      ],
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis",
+      "collection": "ops",
+      "frame_group": 1908,
+      "index": 55655,
+      "operation": [
+        17581,
+        733,
+        1908
+      ],
+      "raise_event_indices": [
+        166293,
+        166294
+      ],
+      "trace_relation": [
+        "producer_value_to_selected_use"
+      ],
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis",
+      "collection": "ops",
+      "frame_group": 1908,
+      "index": 55656,
+      "operation": [
+        740,
+        733,
+        1908
+      ],
+      "raise_event_indices": [
+        166295,
+        166296
+      ],
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis",
+      "collection": "ops",
+      "frame_group": 1929,
+      "index": 75969,
+      "operation": [
+        21455,
+        17581,
+        1929
+      ],
+      "raise_event_indices": [
+        226457,
+        226458
+      ],
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis",
+      "collection": "ops",
+      "frame_group": 1929,
+      "index": 75970,
+      "operation": [
+        17581,
+        1078,
+        1929
+      ],
+      "raise_event_indices": [
+        226459,
+        226460
+      ],
+      "trace_relation": [
+        "block_linear_form_for_Y2"
+      ],
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis",
+      "collection": "ops",
+      "frame_group": 1929,
+      "index": 75971,
+      "operation": [
+        21455,
+        1078,
+        1929
+      ],
+      "raise_event_indices": [
+        226461,
+        226462
+      ],
+      "trace_relation": [
+        "block_group_context_only"
+      ],
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "block_synthesis",
+      "collection": "ops",
+      "frame_group": 1929,
+      "index": 75972,
+      "operation": [
+        17581,
+        21455,
+        1929
+      ],
+      "raise_event_indices": [
+        226463,
+        226464
+      ],
+      "trace_relation": [
+        "block_linear_form_for_Y2"
+      ],
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "duplicate_use_copy",
+      "collection": "ops",
+      "frame_group": 1929,
+      "index": 75973,
+      "operation": [
+        22506,
+        21455,
+        1929
+      ],
+      "raise_event_indices": [
+        226466,
+        226467
+      ],
+      "trace_relation": [
+        "copy_or_clear_in_related_block"
+      ],
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "duplicate_use_copy",
+      "collection": "ops",
+      "frame_group": 1929,
+      "index": 75974,
+      "operation": [
+        22507,
+        21455,
+        1929
+      ],
+      "raise_event_indices": [
+        226469,
+        226470
+      ],
+      "trace_relation": [
+        "copy_or_clear_in_related_block"
+      ],
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    },
+    {
+      "axis": 23,
+      "cause": "duplicate_use_copy",
+      "collection": "ops",
+      "frame_group": 1929,
+      "index": 75975,
+      "operation": [
+        22508,
+        21455,
+        1929
+      ],
+      "raise_event_indices": [
+        226472,
+        226473
+      ],
+      "trace_relation": [
+        "copy_or_clear_in_related_block"
+      ],
+      "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+    }
+  ],
+  "resources": {
+    "compile_peak_rss_kib": 286532,
+    "compile_seconds": 89.21171756999684,
+    "free_disk_kib_after_run": 37776820,
+    "full_compile": "NOT_RUN",
     "full_word_replay": "NOT_RUN",
-    "h25_compile": "NOT_RUN",
-    "CRT_regeneration": "NOT_RUN"
-  }
+    "h25": "NOT_RUN",
+    "peak_rss_kib": 473856,
+    "postprocess_only_recovery": true,
+    "postprocess_seconds": 0.7399785939778667,
+    "runtime_seconds": 89.9516961639747,
+    "total_runtime_seconds": 89.9516961639747
+  },
+  "source": {
+    "axis": 23,
+    "frozen_compiler_sha256": "9984aaccf880e4840402322d76678bfddb33ce7e494af78430a43429f51b85fd",
+    "frozen_word_gzip_sha256": "1a57c143380a063211653f1f35e7cc9710539523b0b34c90f354a0425c34bd59",
+    "frozen_word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad",
+    "global_frame_contract_commit": "8d4fb37796f9eb2badeca1ef0dd1c810ae23245c",
+    "graph_sha256": "3d47e89d2649c90800a276bdd0480131def50e0bdf92c122a19494b55bf17420",
+    "h23_product_frame": "P_T(25) tensor P_hat_group(23)",
+    "h25_triple_contexts": 2300,
+    "instrumented_compiler_sha256": "e2eb7063e5ca6788dd86b3c2affdc49b470efc3ba57ca89ef820e76e6843bb89",
+    "pr63_commit": "aa7701b68540b7863d3b66a414e4319915d6282d",
+    "word_gzip_sha256": "1a57c143380a063211653f1f35e7cc9710539523b0b34c90f354a0425c34bd59",
+    "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+  },
+  "status": "MATERIALIZED",
+  "target_materialization_frame_events": [
+    {
+      "event": [
+        17581,
+        1929,
+        1929
+      ],
+      "event_index": 226459,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "rank_Q_23": 0,
+      "slot": 17581
+    },
+    {
+      "event": [
+        1078,
+        1929,
+        1929
+      ],
+      "event_index": 226460,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "rank_Q_23": 0,
+      "slot": 1078
+    },
+    {
+      "event": [
+        17581,
+        1929,
+        1929
+      ],
+      "event_index": 226463,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "rank_Q_23": 0,
+      "slot": 17581
+    },
+    {
+      "event": [
+        21455,
+        1929,
+        1929
+      ],
+      "event_index": 226464,
+      "new_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "old_frame": {
+        "core_mask": 1,
+        "cover_mask": 8142787
+      },
+      "rank_Q_23": 0,
+      "slot": 21455
+    }
+  ]
 }

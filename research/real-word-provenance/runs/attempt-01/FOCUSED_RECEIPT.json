@@ -1,0 +1,17 @@
+{
+  "status": "BLOCKED_AFTER_WORD_EMISSION",
+  "axis": 23,
+  "source_commit": "aa7701b68540b7863d3b66a414e4319915d6282d",
+  "started_utc": "2026-10-08T21:40:49.687096+00:00",
+  "compile_count": 1,
+  "compiler_returned": true,
+  "word_emitted_and_canonicalized_in_memory": true,
+  "receipt_assertions": "PASS",
+  "generated_canonical_sha256": null,
+  "expected_canonical_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad",
+  "generated_gzip_sha256": null,
+  "expected_gzip_sha256": "1a57c143380a063211653f1f35e7cc9710539523b0b34c90f354a0425c34bd59",
+  "word_match": "NOT_VERIFIED",
+  "trace_error": "TypeError: unsupported operand type(s) for <<: 'int' and 'NoneType'",
+  "repeat_compile": "PROHIBITED"
+}

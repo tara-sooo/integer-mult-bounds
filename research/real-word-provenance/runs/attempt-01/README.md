@@ -1,0 +1,1 @@
+Archived artifacts from the previous h=23 attempt. The compiler returned and emitted a canonical word in memory, then trace processing failed on the absent dedicated Y2 value slot before hash comparison. Preserved as committed attempt-01 evidence.

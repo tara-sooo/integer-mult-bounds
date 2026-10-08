@@ -1,20 +1,33 @@
-# Trace schema
+# Real-word trace schema
 
-The sidecar uses IDs only where the source or generated arrays provide them.
+The record follows Issue 18's identity layers and keeps compiler-local IDs scoped to this exact pinned word.
 
-| Entity | Identity in this experiment | Cardinality / unknown handling |
+| Entity | Identity | Interpretation |
 |---|---|---|
-| Logical producer node | PR 63 graph node `2039` (`FSa`) | A value node, not an operand occurrence. |
-| Logical use | `(axis=23, producer=2039, consumer=2044, operand=0)` | Stable graph-occurrence key; other occurrences of producer `2039` inside the same block are listed as coalesced occurrences. |
-| Envelope block | `compile_` group index plus `(core_mask, cover_mask)` | Several scalar nodes may share one group. |
-| Compiler use | Integer index in `uses[]` | Present only for an external block input. It is compiler-local, not a stable graph edge ID. No index is emitted for an intra-block operand. |
-| Matched carrier | Actual `right[compiler_use]` edge, if selected | `UNRESOLVED`/absent when the use is unmatched; no carrier is inferred from node count. |
-| Physical slot | Slot integer from the compiler's actual `assign`, `value_slots`, and input arrays | Meaning is scoped by this exact word hash and its event history. |
-| Physical XOR | `(word_sha256, axis=23, collection="ops", index=k)` and exact tuple | One logical use may depend on zero or many compiler ops. Causes describe the source call site. |
-| Frame event | `(word_sha256, axis=23, collection="events", index=j)` and exact tuple | Includes allocations, same-frame raises, and actual frame changes; these are distinct from XORs. |
-| Orientation | The saved arrays have no orientation field | `NOT_ENCODED_BY_ARRAY_ENTRY`; full forward/reverse execution is `NOT_RUN`. |
-| Rational frame edge | Old/new frame group keys, exact h=23 factor rank, and the product-context rank per h=25 triple line | The inherited product family is `P_T(25) tensor P_hat_g(23)`, with `rank(P_T)=1` for every one of the 2,300 triples. A known old/new edge therefore has the same exact rank in Q^575 as in its 23 factor. Same-frame raises cost rank 0; allocation has no old frame and rank is `UNRESOLVED`. A Section 4 pivot/child identity remains `UNRESOLVED`. |
+| Logical producer | Graph node `2039` (`FSa`) | One scalar value, separate from an operand occurrence. |
+| Logical use | `(axis=23, producer=2039, consumer=2044, operand=0)` | Stable graph occurrence under the pinned graph hash. |
+| Block | `compile_` group plus `(core_mask, cover_mask)` | Multiple scalar nodes share a block. Its external `inputs` are value-deduplicated. |
+| Compiler use | Index in `uses[]` | Present only for a cross-block input/output role. It is not a stable graph use ID. |
+| Match/carrier | Actual `right[compiler_use]` and assigned slot | `matched=false` for the selected FSa use. The producer slot is passed to the consumer input directly. |
+| Physical slot | Slot integer in the exact word and event history | A slot can change linear form, retire, be cleared, or be reused. |
+| Physical XOR | `(word_sha256, axis=23, collection="ops", index)` plus exact tuple | May support several logical values, or one logical value may require several XORs. |
+| Frame event | `(word_sha256, axis=23, collection="events", index)` plus exact tuple | Allocation has `old_group=-1`; a same-group raise has rank 0; an old/new group transition is ranked directly. |
+| Linear form | GF(2) mask over listed block inputs and exact global source-variable mask | Replayed around each captured operation. `VIRTUAL_LINEAR_FORM` has no dedicated output slot and is not free to reuse. |
+| Orientation | Not encoded on each array entry | `NOT_ENCODED_BY_ARRAY_ENTRY`; complete forward/reverse replay is `NOT_RUN`. |
+| Rational edge | Actual old/new frame groups and exact rank | Product-context rank is equal per h=25 triple line because its factor rank is one. Pivot and Section 4 child remain unresolved. |
 
-On a successful run, the trace stores all `ops[]` and `events[]` entries emitted in the producer and consumer groups, the exact group-wide index sets, and the backward operation cone for the producer's assigned use slot and the consumer's `Y2` output slot. A distinct-block join is confirmed only if the selected compiler use's assigned slot equals the consumer's input slot and exact block-row dataflow shows that slot in the `Y2` output cone. In this run the captured `Y2` output slot was `None`; the post-processor failed before writing a production sidecar. `TRACE.json` records that failure without inventing operation or event IDs.
+## State labels
 
-The record does not assign a one-to-one cardinality. It lists the exact producer-value-to-carrier and input-to-`Y2` operation cones separately; operations can be shared by several outputs in a block. No physical operation or event ID is created by the trace code. `NO_EVENT` is reserved for a completed scoped search proving absence; otherwise fields stay `UNRESOLVED`.
+- `MATERIALIZED`: some real physical slot equals the target's exact global GF(2) form during the recorded interval. It does not imply `value_slots` exports that logical name.
+- `VIRTUAL_LINEAR_FORM`: in the scoped state (here, block exit) no single slot is assigned the target form, but the saved slot forms exactly reconstruct it. A value may have been materialized earlier.
+- `UNRESOLVED`: neither physical equality nor an exact linear solution is established.
+
+The top-level target state is `MATERIALIZED`: slot 17581 contains `Y2` after `ops[75970]` and changes away from it at `ops[75972]`. The independent block-exit representation state is `VIRTUAL_LINEAR_FORM`: `Y2 = slot 21455 XOR slot 17581`, where slot 21455 carries external output `2048` and slot 17581 is a retired slot carrying input `1952`.
+
+## Validation and cardinality
+
+`TRACE.json` stores the producer and consumer block input/coefficient/output rows; the Gaussian elimination and exact physical XOR plan; every `ops[]` and `events[]` entry in both groups; exact raising-event references and rational ranks; producer and target linear cones; and the temporary target-valued slot interval. The separate `FOCUSED_RAW_TRACE.json` was written before analysis.
+
+Linear replay initializes the actual block input slot forms, seeds any reclaimed slot at first use, checks every target/control form before each physical XOR, and checks the exit slot forms. The consumer block verifies `Y2`'s coefficient row as `2020 XOR 2039`, while its sole output row is `Y2048 = 1952 XOR 2020 XOR 2039`. The graph child `Y2 -> 2048` and output row explain why Y2 has no standalone output slot.
+
+All slot, operation, and event references are verified against arrays in the hash-matching word. Negative controls reject changed operand identity, wrong coefficients/slots, operation reordering, omitted operation/copy/clear entries, missing frame raises, stale matching, and a missing hash checkpoint when `target_value_slot` is `None`. No one-to-one logical-XOR mapping is assumed. The source-paper cost and Section 4 child remain unallocated where shared work prevents an evidence-backed attribution.

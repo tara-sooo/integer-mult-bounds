@@ -1,0 +1,1787 @@
+{
+  "coalesced_occurrences": [
+    {
+      "node": 2044,
+      "operand": 0
+    }
+  ],
+  "compiler_use": 455,
+  "consumer_group": 1929,
+  "consumer_input_coefficient": 1,
+  "consumer_input_coefficient_mask": 6,
+  "consumer_input_index": 2,
+  "consumer_input_slot": 17581,
+  "groups": {
+    "1908": {
+      "coefficients": {
+        "1958": 1,
+        "1959": 2,
+        "1975": 4,
+        "1985": 3,
+        "1996": 8,
+        "2006": 7,
+        "2039": 15
+      },
+      "compiler_uses": [
+        {
+          "consumer_group": 1909,
+          "index": 380,
+          "terminal": null,
+          "value": 1985
+        },
+        {
+          "consumer_group": 1913,
+          "index": 398,
+          "terminal": null,
+          "value": 2006
+        },
+        {
+          "consumer_group": 1928,
+          "index": 451,
+          "terminal": null,
+          "value": 2006
+        },
+        {
+          "consumer_group": 1929,
+          "index": 455,
+          "terminal": null,
+          "value": 2039
+        }
+      ],
+      "events": [
+        {
+          "cause": "block_input",
+          "event": [
+            733,
+            1895,
+            1908
+          ],
+          "event_index": 166275
+        },
+        {
+          "cause": "block_input",
+          "event": [
+            740,
+            1896,
+            1908
+          ],
+          "event_index": 166276
+        },
+        {
+          "cause": "block_input",
+          "event": [
+            17581,
+            1810,
+            1908
+          ],
+          "event_index": 166277
+        },
+        {
+          "cause": "block_input",
+          "event": [
+            160,
+            1905,
+            1908
+          ],
+          "event_index": 166278
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            17581,
+            1908,
+            1908
+          ],
+          "event_index": 166279
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166280
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166281
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            17581,
+            1908,
+            1908
+          ],
+          "event_index": 166282
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            733,
+            1908,
+            1908
+          ],
+          "event_index": 166283
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            740,
+            1908,
+            1908
+          ],
+          "event_index": 166284
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            740,
+            1908,
+            1908
+          ],
+          "event_index": 166285
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166286
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166287
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            740,
+            1908,
+            1908
+          ],
+          "event_index": 166288
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            740,
+            1908,
+            1908
+          ],
+          "event_index": 166289
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166290
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166291
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            733,
+            1908,
+            1908
+          ],
+          "event_index": 166292
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            17581,
+            1908,
+            1908
+          ],
+          "event_index": 166293
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            733,
+            1908,
+            1908
+          ],
+          "event_index": 166294
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            740,
+            1908,
+            1908
+          ],
+          "event_index": 166295
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            733,
+            1908,
+            1908
+          ],
+          "event_index": 166296
+        }
+      ],
+      "frame": [
+        1,
+        8127427
+      ],
+      "input_slots": [
+        {
+          "input_index": 0,
+          "slot": 733,
+          "value": 1958
+        },
+        {
+          "input_index": 1,
+          "slot": 740,
+          "value": 1959
+        },
+        {
+          "input_index": 2,
+          "slot": 17581,
+          "value": 1975
+        },
+        {
+          "input_index": 3,
+          "slot": 160,
+          "value": 1996
+        }
+      ],
+      "inputs": [
+        1958,
+        1959,
+        1975,
+        1996
+      ],
+      "nodes": [
+        1985,
+        2006,
+        2039
+      ],
+      "operations": [
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166279,
+            166280
+          ],
+          "op": [
+            17581,
+            160,
+            1908
+          ],
+          "op_index": 55648
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166281,
+            166282
+          ],
+          "op": [
+            160,
+            17581,
+            1908
+          ],
+          "op_index": 55649
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166283,
+            166284
+          ],
+          "op": [
+            733,
+            740,
+            1908
+          ],
+          "op_index": 55650
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166285,
+            166286
+          ],
+          "op": [
+            740,
+            160,
+            1908
+          ],
+          "op_index": 55651
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166287,
+            166288
+          ],
+          "op": [
+            160,
+            740,
+            1908
+          ],
+          "op_index": 55652
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166289,
+            166290
+          ],
+          "op": [
+            740,
+            160,
+            1908
+          ],
+          "op_index": 55653
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166291,
+            166292
+          ],
+          "op": [
+            160,
+            733,
+            1908
+          ],
+          "op_index": 55654
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166293,
+            166294
+          ],
+          "op": [
+            17581,
+            733,
+            1908
+          ],
+          "op_index": 55655
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166295,
+            166296
+          ],
+          "op": [
+            740,
+            733,
+            1908
+          ],
+          "op_index": 55656
+        }
+      ],
+      "output_basis": [
+        3,
+        4,
+        8
+      ],
+      "output_values": [
+        1985,
+        2006,
+        2039
+      ],
+      "rank": 10,
+      "selected_edges": [],
+      "timeline": [
+        {
+          "cause": "block_input",
+          "event": [
+            733,
+            1895,
+            1908
+          ],
+          "event_index": 166275,
+          "record_kind": "event",
+          "sequence": 0
+        },
+        {
+          "cause": "block_input",
+          "event": [
+            740,
+            1896,
+            1908
+          ],
+          "event_index": 166276,
+          "record_kind": "event",
+          "sequence": 1
+        },
+        {
+          "cause": "block_input",
+          "event": [
+            17581,
+            1810,
+            1908
+          ],
+          "event_index": 166277,
+          "record_kind": "event",
+          "sequence": 2
+        },
+        {
+          "cause": "block_input",
+          "event": [
+            160,
+            1905,
+            1908
+          ],
+          "event_index": 166278,
+          "record_kind": "event",
+          "sequence": 3
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            17581,
+            1908,
+            1908
+          ],
+          "event_index": 166279,
+          "record_kind": "event",
+          "sequence": 4
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166280,
+          "record_kind": "event",
+          "sequence": 5
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166279,
+            166280
+          ],
+          "op": [
+            17581,
+            160,
+            1908
+          ],
+          "op_index": 55648,
+          "record_kind": "op",
+          "sequence": 6
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166281,
+          "record_kind": "event",
+          "sequence": 7
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            17581,
+            1908,
+            1908
+          ],
+          "event_index": 166282,
+          "record_kind": "event",
+          "sequence": 8
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166281,
+            166282
+          ],
+          "op": [
+            160,
+            17581,
+            1908
+          ],
+          "op_index": 55649,
+          "record_kind": "op",
+          "sequence": 9
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            733,
+            1908,
+            1908
+          ],
+          "event_index": 166283,
+          "record_kind": "event",
+          "sequence": 10
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            740,
+            1908,
+            1908
+          ],
+          "event_index": 166284,
+          "record_kind": "event",
+          "sequence": 11
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166283,
+            166284
+          ],
+          "op": [
+            733,
+            740,
+            1908
+          ],
+          "op_index": 55650,
+          "record_kind": "op",
+          "sequence": 12
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            740,
+            1908,
+            1908
+          ],
+          "event_index": 166285,
+          "record_kind": "event",
+          "sequence": 13
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166286,
+          "record_kind": "event",
+          "sequence": 14
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166285,
+            166286
+          ],
+          "op": [
+            740,
+            160,
+            1908
+          ],
+          "op_index": 55651,
+          "record_kind": "op",
+          "sequence": 15
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166287,
+          "record_kind": "event",
+          "sequence": 16
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            740,
+            1908,
+            1908
+          ],
+          "event_index": 166288,
+          "record_kind": "event",
+          "sequence": 17
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166287,
+            166288
+          ],
+          "op": [
+            160,
+            740,
+            1908
+          ],
+          "op_index": 55652,
+          "record_kind": "op",
+          "sequence": 18
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            740,
+            1908,
+            1908
+          ],
+          "event_index": 166289,
+          "record_kind": "event",
+          "sequence": 19
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166290,
+          "record_kind": "event",
+          "sequence": 20
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166289,
+            166290
+          ],
+          "op": [
+            740,
+            160,
+            1908
+          ],
+          "op_index": 55653,
+          "record_kind": "op",
+          "sequence": 21
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            160,
+            1908,
+            1908
+          ],
+          "event_index": 166291,
+          "record_kind": "event",
+          "sequence": 22
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            733,
+            1908,
+            1908
+          ],
+          "event_index": 166292,
+          "record_kind": "event",
+          "sequence": 23
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166291,
+            166292
+          ],
+          "op": [
+            160,
+            733,
+            1908
+          ],
+          "op_index": 55654,
+          "record_kind": "op",
+          "sequence": 24
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            17581,
+            1908,
+            1908
+          ],
+          "event_index": 166293,
+          "record_kind": "event",
+          "sequence": 25
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            733,
+            1908,
+            1908
+          ],
+          "event_index": 166294,
+          "record_kind": "event",
+          "sequence": 26
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166293,
+            166294
+          ],
+          "op": [
+            17581,
+            733,
+            1908
+          ],
+          "op_index": 55655,
+          "record_kind": "op",
+          "sequence": 27
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            740,
+            1908,
+            1908
+          ],
+          "event_index": 166295,
+          "record_kind": "event",
+          "sequence": 28
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            733,
+            1908,
+            1908
+          ],
+          "event_index": 166296,
+          "record_kind": "event",
+          "sequence": 29
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            166295,
+            166296
+          ],
+          "op": [
+            740,
+            733,
+            1908
+          ],
+          "op_index": 55656,
+          "record_kind": "op",
+          "sequence": 30
+        }
+      ],
+      "value_slots": {
+        "1985": 733,
+        "2006": 740,
+        "2039": 17581
+      }
+    },
+    "1929": {
+      "coefficients": {
+        "1952": 1,
+        "2020": 2,
+        "2039": 4,
+        "2044": 6,
+        "2048": 7
+      },
+      "compiler_uses": [
+        {
+          "consumer_group": 1954,
+          "index": 522,
+          "terminal": null,
+          "value": 2048
+        },
+        {
+          "consumer_group": 1974,
+          "index": 571,
+          "terminal": null,
+          "value": 2048
+        },
+        {
+          "consumer_group": 2066,
+          "index": 801,
+          "terminal": null,
+          "value": 2048
+        },
+        {
+          "consumer_group": 2086,
+          "index": 851,
+          "terminal": null,
+          "value": 2048
+        }
+      ],
+      "events": [
+        {
+          "cause": "block_input",
+          "event": [
+            21455,
+            1891,
+            1929
+          ],
+          "event_index": 226454
+        },
+        {
+          "cause": "block_input",
+          "event": [
+            1078,
+            1920,
+            1929
+          ],
+          "event_index": 226455
+        },
+        {
+          "cause": "block_input",
+          "event": [
+            17581,
+            1908,
+            1929
+          ],
+          "event_index": 226456
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226457
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            17581,
+            1929,
+            1929
+          ],
+          "event_index": 226458
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            17581,
+            1929,
+            1929
+          ],
+          "event_index": 226459
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            1078,
+            1929,
+            1929
+          ],
+          "event_index": 226460
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226461
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            1078,
+            1929,
+            1929
+          ],
+          "event_index": 226462
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            17581,
+            1929,
+            1929
+          ],
+          "event_index": 226463
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226464
+        },
+        {
+          "cause": "slot_allocation",
+          "event": [
+            22506,
+            -1,
+            1929
+          ],
+          "event_index": 226465
+        },
+        {
+          "cause": "duplicate_use_copy:target",
+          "event": [
+            22506,
+            1929,
+            1929
+          ],
+          "event_index": 226466
+        },
+        {
+          "cause": "duplicate_use_copy:control",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226467
+        },
+        {
+          "cause": "slot_allocation",
+          "event": [
+            22507,
+            -1,
+            1929
+          ],
+          "event_index": 226468
+        },
+        {
+          "cause": "duplicate_use_copy:target",
+          "event": [
+            22507,
+            1929,
+            1929
+          ],
+          "event_index": 226469
+        },
+        {
+          "cause": "duplicate_use_copy:control",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226470
+        },
+        {
+          "cause": "slot_allocation",
+          "event": [
+            22508,
+            -1,
+            1929
+          ],
+          "event_index": 226471
+        },
+        {
+          "cause": "duplicate_use_copy:target",
+          "event": [
+            22508,
+            1929,
+            1929
+          ],
+          "event_index": 226472
+        },
+        {
+          "cause": "duplicate_use_copy:control",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226473
+        }
+      ],
+      "frame": [
+        1,
+        8142787
+      ],
+      "gaussian_elimination": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "input_slots": [
+        {
+          "input_index": 0,
+          "slot": 21455,
+          "value": 1952
+        },
+        {
+          "input_index": 1,
+          "slot": 1078,
+          "value": 2020
+        },
+        {
+          "input_index": 2,
+          "slot": 17581,
+          "value": 2039
+        }
+      ],
+      "inputs": [
+        1952,
+        2020,
+        2039
+      ],
+      "linear_end_slot_forms": [
+        {
+          "compiler_uses": [
+            2639,
+            202,
+            723,
+            348,
+            421,
+            454,
+            427
+          ],
+          "global_form_mask": 48742741927258349823179908222981828049135059831152942518016,
+          "slot": 1078,
+          "values": []
+        },
+        {
+          "compiler_uses": [
+            376,
+            455
+          ],
+          "global_form_mask": 20909500897148025679461395906334079687065600,
+          "slot": 17581,
+          "values": []
+        },
+        {
+          "compiler_uses": [
+            453,
+            522
+          ],
+          "global_form_mask": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "slot": 21455,
+          "values": [
+            2048
+          ]
+        },
+        {
+          "compiler_uses": [
+            571
+          ],
+          "global_form_mask": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "slot": 22506,
+          "values": []
+        },
+        {
+          "compiler_uses": [
+            801
+          ],
+          "global_form_mask": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "slot": 22507,
+          "values": []
+        },
+        {
+          "compiler_uses": [
+            851
+          ],
+          "global_form_mask": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "slot": 22508,
+          "values": []
+        }
+      ],
+      "linear_form_seed": [
+        {
+          "global_form_mask": 20909500897148025679461395906334079687065600,
+          "input_index": 0,
+          "row_mask": 1,
+          "slot": 21455,
+          "value": 1952
+        },
+        {
+          "global_form_mask": 48742741927258349823179908222981828049135059831152942518016,
+          "input_index": 1,
+          "row_mask": 2,
+          "slot": 1078,
+          "value": 2020
+        },
+        {
+          "global_form_mask": 3447503180061888063743055616772661668553922144395143762134063772532976,
+          "input_index": 2,
+          "row_mask": 4,
+          "slot": 17581,
+          "value": 2039
+        }
+      ],
+      "nodes": [
+        2044,
+        2048
+      ],
+      "operations": [
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            226457,
+            226458
+          ],
+          "op": [
+            21455,
+            17581,
+            1929
+          ],
+          "op_index": 75969,
+          "physical_control_form_before_global": 3447503180061888063743055616772661668553922144395143762134063772532976,
+          "physical_target_form_after_global": 3447503180061888063743055637682162565701947823856539668468143459598576,
+          "physical_target_form_before_global": 20909500897148025679461395906334079687065600
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            226459,
+            226460
+          ],
+          "op": [
+            17581,
+            1078,
+            1929
+          ],
+          "op_index": 75970,
+          "physical_control_form_before_global": 48742741927258349823179908222981828049135059831152942518016,
+          "physical_target_form_after_global": 3447503180110630805670313966595841576776903972444278821965216715050992,
+          "physical_target_form_before_global": 3447503180061888063743055616772661668553922144395143762134063772532976
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            226461,
+            226462
+          ],
+          "op": [
+            21455,
+            1078,
+            1929
+          ],
+          "op_index": 75971,
+          "physical_control_form_before_global": 48742741927258349823179908222981828049135059831152942518016,
+          "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_before_global": 3447503180061888063743055637682162565701947823856539668468143459598576
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            226463,
+            226464
+          ],
+          "op": [
+            17581,
+            21455,
+            1929
+          ],
+          "op_index": 75972,
+          "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_after_global": 20909500897148025679461395906334079687065600,
+          "physical_target_form_before_global": 3447503180110630805670313966595841576776903972444278821965216715050992
+        },
+        {
+          "cause": "duplicate_use_copy",
+          "event_indices": [
+            226466,
+            226467
+          ],
+          "op": [
+            22506,
+            21455,
+            1929
+          ],
+          "op_index": 75973,
+          "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_before_global": 0
+        },
+        {
+          "cause": "duplicate_use_copy",
+          "event_indices": [
+            226469,
+            226470
+          ],
+          "op": [
+            22507,
+            21455,
+            1929
+          ],
+          "op_index": 75974,
+          "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_before_global": 0
+        },
+        {
+          "cause": "duplicate_use_copy",
+          "event_indices": [
+            226472,
+            226473
+          ],
+          "op": [
+            22508,
+            21455,
+            1929
+          ],
+          "op_index": 75975,
+          "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_before_global": 0
+        }
+      ],
+      "output_basis": [
+        7
+      ],
+      "output_values": [
+        2048
+      ],
+      "physical_xor_plan": [
+        {
+          "control_input": 2,
+          "control_slot": 17581,
+          "target_input": 0,
+          "target_slot": 21455
+        },
+        {
+          "control_input": 1,
+          "control_slot": 1078,
+          "target_input": 2,
+          "target_slot": 17581
+        },
+        {
+          "control_input": 1,
+          "control_slot": 1078,
+          "target_input": 0,
+          "target_slot": 21455
+        },
+        {
+          "control_input": 0,
+          "control_slot": 21455,
+          "target_input": 2,
+          "target_slot": 17581
+        }
+      ],
+      "rank": 14,
+      "retired_slots": [
+        17581
+      ],
+      "selected_edges": [
+        {
+          "edge": 82,
+          "input_index": 1,
+          "use": 427,
+          "value": 2020
+        }
+      ],
+      "synthesis_basis": [
+        {
+          "position": 0,
+          "reference": 2048,
+          "role": "value",
+          "row_mask": 7,
+          "slot": 21455
+        },
+        {
+          "position": 1,
+          "reference": 427,
+          "role": "carry",
+          "row_mask": 2,
+          "slot": 1078
+        },
+        {
+          "position": 2,
+          "reference": 0,
+          "role": "retire",
+          "row_mask": 1,
+          "slot": 17581
+        }
+      ],
+      "synthesis_op_indices": [
+        75969,
+        75970,
+        75971,
+        75972
+      ],
+      "timeline": [
+        {
+          "cause": "block_input",
+          "event": [
+            21455,
+            1891,
+            1929
+          ],
+          "event_index": 226454,
+          "record_kind": "event",
+          "sequence": 0
+        },
+        {
+          "cause": "block_input",
+          "event": [
+            1078,
+            1920,
+            1929
+          ],
+          "event_index": 226455,
+          "record_kind": "event",
+          "sequence": 1
+        },
+        {
+          "cause": "block_input",
+          "event": [
+            17581,
+            1908,
+            1929
+          ],
+          "event_index": 226456,
+          "record_kind": "event",
+          "sequence": 2
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226457,
+          "record_kind": "event",
+          "sequence": 3
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            17581,
+            1929,
+            1929
+          ],
+          "event_index": 226458,
+          "record_kind": "event",
+          "sequence": 4
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            226457,
+            226458
+          ],
+          "op": [
+            21455,
+            17581,
+            1929
+          ],
+          "op_index": 75969,
+          "physical_control_form_before_global": 3447503180061888063743055616772661668553922144395143762134063772532976,
+          "physical_target_form_after_global": 3447503180061888063743055637682162565701947823856539668468143459598576,
+          "physical_target_form_before_global": 20909500897148025679461395906334079687065600,
+          "record_kind": "op",
+          "sequence": 5
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            17581,
+            1929,
+            1929
+          ],
+          "event_index": 226459,
+          "record_kind": "event",
+          "sequence": 6
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            1078,
+            1929,
+            1929
+          ],
+          "event_index": 226460,
+          "record_kind": "event",
+          "sequence": 7
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            226459,
+            226460
+          ],
+          "op": [
+            17581,
+            1078,
+            1929
+          ],
+          "op_index": 75970,
+          "physical_control_form_before_global": 48742741927258349823179908222981828049135059831152942518016,
+          "physical_target_form_after_global": 3447503180110630805670313966595841576776903972444278821965216715050992,
+          "physical_target_form_before_global": 3447503180061888063743055616772661668553922144395143762134063772532976,
+          "record_kind": "op",
+          "sequence": 8
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226461,
+          "record_kind": "event",
+          "sequence": 9
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            1078,
+            1929,
+            1929
+          ],
+          "event_index": 226462,
+          "record_kind": "event",
+          "sequence": 10
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            226461,
+            226462
+          ],
+          "op": [
+            21455,
+            1078,
+            1929
+          ],
+          "op_index": 75971,
+          "physical_control_form_before_global": 48742741927258349823179908222981828049135059831152942518016,
+          "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_before_global": 3447503180061888063743055637682162565701947823856539668468143459598576,
+          "record_kind": "op",
+          "sequence": 11
+        },
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            17581,
+            1929,
+            1929
+          ],
+          "event_index": 226463,
+          "record_kind": "event",
+          "sequence": 12
+        },
+        {
+          "cause": "block_synthesis:control",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226464,
+          "record_kind": "event",
+          "sequence": 13
+        },
+        {
+          "cause": "block_synthesis",
+          "event_indices": [
+            226463,
+            226464
+          ],
+          "op": [
+            17581,
+            21455,
+            1929
+          ],
+          "op_index": 75972,
+          "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_after_global": 20909500897148025679461395906334079687065600,
+          "physical_target_form_before_global": 3447503180110630805670313966595841576776903972444278821965216715050992,
+          "record_kind": "op",
+          "sequence": 14
+        },
+        {
+          "cause": "slot_allocation",
+          "event": [
+            22506,
+            -1,
+            1929
+          ],
+          "event_index": 226465,
+          "record_kind": "event",
+          "sequence": 15
+        },
+        {
+          "cause": "duplicate_use_copy",
+          "kind": "new",
+          "record_kind": "acquire",
+          "sequence": 16,
+          "slot": 22506
+        },
+        {
+          "cause": "duplicate_use_copy:target",
+          "event": [
+            22506,
+            1929,
+            1929
+          ],
+          "event_index": 226466,
+          "record_kind": "event",
+          "sequence": 17
+        },
+        {
+          "cause": "duplicate_use_copy:control",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226467,
+          "record_kind": "event",
+          "sequence": 18
+        },
+        {
+          "cause": "duplicate_use_copy",
+          "event_indices": [
+            226466,
+            226467
+          ],
+          "op": [
+            22506,
+            21455,
+            1929
+          ],
+          "op_index": 75973,
+          "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_before_global": 0,
+          "record_kind": "op",
+          "sequence": 19
+        },
+        {
+          "cause": "slot_allocation",
+          "event": [
+            22507,
+            -1,
+            1929
+          ],
+          "event_index": 226468,
+          "record_kind": "event",
+          "sequence": 20
+        },
+        {
+          "cause": "duplicate_use_copy",
+          "kind": "new",
+          "record_kind": "acquire",
+          "sequence": 21,
+          "slot": 22507
+        },
+        {
+          "cause": "duplicate_use_copy:target",
+          "event": [
+            22507,
+            1929,
+            1929
+          ],
+          "event_index": 226469,
+          "record_kind": "event",
+          "sequence": 22
+        },
+        {
+          "cause": "duplicate_use_copy:control",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226470,
+          "record_kind": "event",
+          "sequence": 23
+        },
+        {
+          "cause": "duplicate_use_copy",
+          "event_indices": [
+            226469,
+            226470
+          ],
+          "op": [
+            22507,
+            21455,
+            1929
+          ],
+          "op_index": 75974,
+          "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_before_global": 0,
+          "record_kind": "op",
+          "sequence": 24
+        },
+        {
+          "cause": "slot_allocation",
+          "event": [
+            22508,
+            -1,
+            1929
+          ],
+          "event_index": 226471,
+          "record_kind": "event",
+          "sequence": 25
+        },
+        {
+          "cause": "duplicate_use_copy",
+          "kind": "new",
+          "record_kind": "acquire",
+          "sequence": 26,
+          "slot": 22508
+        },
+        {
+          "cause": "duplicate_use_copy:target",
+          "event": [
+            22508,
+            1929,
+            1929
+          ],
+          "event_index": 226472,
+          "record_kind": "event",
+          "sequence": 27
+        },
+        {
+          "cause": "duplicate_use_copy:control",
+          "event": [
+            21455,
+            1929,
+            1929
+          ],
+          "event_index": 226473,
+          "record_kind": "event",
+          "sequence": 28
+        },
+        {
+          "cause": "duplicate_use_copy",
+          "event_indices": [
+            226472,
+            226473
+          ],
+          "op": [
+            22508,
+            21455,
+            1929
+          ],
+          "op_index": 75975,
+          "physical_control_form_before_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_after_global": 3447503180110630805670313987505342473924929651905674728299296402116592,
+          "physical_target_form_before_global": 0,
+          "record_kind": "op",
+          "sequence": 29
+        }
+      ],
+      "value_slots": {
+        "2048": 21455
+      }
+    }
+  },
+  "logical_use": {
+    "consumer": 2044,
+    "operand": 0,
+    "producer": 2039
+  },
+  "match_edge": null,
+  "match_input_index": null,
+  "matched": false,
+  "matched_carrier_slot": 17581,
+  "producer_group": 1908,
+  "source_use_frame_group": 1908,
+  "source_use_slot": 17581,
+  "source_value_frame_group": 1908,
+  "source_value_slot": 17581,
+  "target_direct_graph_uses": [
+    {
+      "coefficient": 7,
+      "group": 1929,
+      "node": 2048,
+      "operand": 1,
+      "other_operand": 1952,
+      "same_group": true
+    }
+  ],
+  "target_materializations": [
+    {
+      "end": {
+        "frame_group": 1929,
+        "group": 1929,
+        "index": 75972,
+        "operation": [
+          17581,
+          21455,
+          1929
+        ],
+        "raise_event_indices": [
+          226463,
+          226464
+        ],
+        "stage": "xor_result"
+      },
+      "frame_events": [
+        {
+          "cause": "block_synthesis:target",
+          "event": [
+            17581,
+            1929,
+            1929
+          ],
+          "event_index": 226463
+        }
+      ],
+      "slot": 17581,
+      "start": {
+        "frame_group": 1929,
+        "group": 1929,
+        "index": 75970,
+        "operation": [
+          17581,
+          1078,
+          1929
+        ],
+        "raise_event_indices": [
+          226459,
+          226460
+        ],
+        "stage": "xor_result"
+      }
+    }
+  ],
+  "target_outgoing_uses": [],
+  "target_signal_global_hex": "0x7fe0000007c3e1f87f0ff00f807e01fc038000000000000000001f0ff0",
+  "target_signal_global_mask": 3447503180110630805670313966595841576776903972444278821965216715050992,
+  "target_value_frame_group": null,
+  "target_value_slot": null
+}

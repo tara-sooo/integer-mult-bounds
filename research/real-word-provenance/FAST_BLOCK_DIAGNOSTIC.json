@@ -1,0 +1,103 @@
+{
+  "status": "FAST_BUILD_ONLY",
+  "axis": 23,
+  "source_commit": "aa7701b68540b7863d3b66a414e4319915d6282d",
+  "graph_sha256": "3d47e89d2649c90800a276bdd0480131def50e0bdf92c122a19494b55bf17420",
+  "frozen_compiler_sha256": "9984aaccf880e4840402322d76678bfddb33ce7e494af78430a43429f51b85fd",
+  "build_seconds": 1.3352566140238196,
+  "peak_rss_kib": 203976,
+  "matching": "NOT_RUN",
+  "word_emission": "NOT_RUN",
+  "producer": {
+    "node": 2039,
+    "coefficient_mask": 15,
+    "coefficient_input_values": [
+      1958,
+      1959,
+      1975,
+      1996
+    ]
+  },
+  "consumer_block": {
+    "group": 1929,
+    "frame": [
+      1,
+      8142787
+    ],
+    "rank": 14,
+    "nodes": [
+      2044,
+      2048
+    ],
+    "inputs": [
+      1952,
+      2020,
+      2039
+    ],
+    "node_coefficients": [
+      {
+        "node": 1952,
+        "coefficient_mask": 1,
+        "coefficient_input_values": [
+          1952
+        ]
+      },
+      {
+        "node": 2020,
+        "coefficient_mask": 2,
+        "coefficient_input_values": [
+          2020
+        ]
+      },
+      {
+        "node": 2039,
+        "coefficient_mask": 4,
+        "coefficient_input_values": [
+          2039
+        ]
+      },
+      {
+        "node": 2044,
+        "coefficient_mask": 6,
+        "coefficient_input_values": [
+          2020,
+          2039
+        ]
+      },
+      {
+        "node": 2048,
+        "coefficient_mask": 7,
+        "coefficient_input_values": [
+          1952,
+          2020,
+          2039
+        ]
+      }
+    ],
+    "outvalues": [
+      2048
+    ],
+    "outbasis": [
+      7
+    ],
+    "target_is_external_output": false,
+    "external_compiler_uses_of_target": [],
+    "compiler_use_indices": [
+      522,
+      571,
+      801,
+      851
+    ],
+    "direct_graph_uses_of_target": [
+      {
+        "producer": 2044,
+        "consumer": 2048,
+        "operand": 1,
+        "consumer_group": 1929,
+        "same_block": true,
+        "consumer_coefficient_mask": 7
+      }
+    ]
+  },
+  "explanation": "Y2 and Y2048 share block 1929. The block only exports values with cross-block compiler uses; Y2 has none. Its coefficient is 0b110 = 2020 XOR 2039, and Y2048 coefficient 0b111 adds input 1952. Thus Y2 is an internal logical intermediate, not an omitted external output slot."
+}
