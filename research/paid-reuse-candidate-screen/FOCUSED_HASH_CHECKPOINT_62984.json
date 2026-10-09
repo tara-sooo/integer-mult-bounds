@@ -1,0 +1,15 @@
+{
+  "alternative_compile_seconds": 57.336042739014374,
+  "alternative_word_gzip_sha256": "f9de85947815de1b0af8f5df4531e543e9ff1b036e04bc0b531e8063c4ccc54e",
+  "alternative_word_sha256": "623778f170ee40968533261f5b0ea5e1667bbc3edc4607c45f485740a47be0b5",
+  "baseline_compile_seconds": 55.71482893699431,
+  "baseline_elementary_xors": 149172,
+  "baseline_rank_mass": 642620,
+  "baseline_roles": 27918,
+  "baseline_word_gzip_sha256": "1a57c143380a063211653f1f35e7cc9710539523b0b34c90f354a0425c34bd59",
+  "baseline_word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad",
+  "peak_rss_kib": 493920,
+  "pr63_commit": "aa7701b68540b7863d3b66a414e4319915d6282d",
+  "runtime_instrumentation_sha256": "ab8f1d5373aed392242cca9bf8771a019699db00307b7251c4662e4a667f8093",
+  "status": "BOTH_WORD_HASHES_CHECKED"
+}

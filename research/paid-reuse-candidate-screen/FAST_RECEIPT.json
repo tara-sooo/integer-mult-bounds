@@ -1,0 +1,2725 @@
+{
+  "candidate_ranking": {
+    "broad_finalists": [
+      62984,
+      62985,
+      62986
+    ],
+    "copy_finalists": [
+      21,
+      460,
+      819
+    ],
+    "focused_values": [
+      62984,
+      62985,
+      62986
+    ],
+    "interpretation": "Compiler candidate edges are frame-legal and independent of the block output basis, but may require a matching exchange or another competing row to move; the copy bound is optimistic. Joint exchanges, physical role lifetimes, reconstruction and endpoints remain to be charged.",
+    "serial_finalists": [
+      2525,
+      2696,
+      2876
+    ]
+  },
+  "copy_finalist_summaries": [
+    {
+      "baseline_duplicate_use_copy_xors": 9,
+      "carrier_slots": [
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        21426
+      ],
+      "carry_screen": {
+        "eligible_carry_edge_count": 3,
+        "eligible_carry_edges": [
+          {
+            "exact_Q23_rank": 4,
+            "from_group": 51825,
+            "input_index": 0,
+            "new_rank": 14,
+            "old_rank": 10,
+            "target_already_matched": true,
+            "to_group": 51828,
+            "use_id": 111361
+          },
+          {
+            "exact_Q23_rank": 8,
+            "from_group": 51825,
+            "input_index": 0,
+            "new_rank": 18,
+            "old_rank": 10,
+            "target_already_matched": true,
+            "to_group": 51831,
+            "use_id": 111368
+          },
+          {
+            "exact_Q23_rank": 4,
+            "from_group": 51828,
+            "input_index": 0,
+            "new_rank": 18,
+            "old_rank": 14,
+            "target_already_matched": true,
+            "to_group": 51831,
+            "use_id": 111368
+          }
+        ],
+        "optimistic_duplicate_copy_saving_bound": 0,
+        "unmatched_target_uses_with_eligible_edge": 0
+      },
+      "compiler_demand_count": 12,
+      "distinct_carrier_slots": 11,
+      "distinct_demand_groups": 12,
+      "graph_use_count": 12,
+      "graph_uses": [
+        {
+          "consumer": 1995,
+          "consumer_group": 1905,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 2025,
+          "consumer_group": 1922,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 2026,
+          "consumer_group": 1923,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 5263,
+          "consumer_group": 4669,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 5293,
+          "consumer_group": 4686,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 5294,
+          "consumer_group": 4687,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 62924,
+          "consumer_group": 51689,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 63051,
+          "consumer_group": 51698,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63055,
+          "consumer_group": 51822,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 63059,
+          "consumer_group": 51825,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 63063,
+          "consumer_group": 51828,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 63067,
+          "consumer_group": 51831,
+          "operand": 1,
+          "same_group": false
+        }
+      ],
+      "graph_uses_coalesced_by_consumer_group": 0,
+      "matched_demand_count": 2,
+      "physical_demands": [
+        {
+          "carrier_slot": 160,
+          "consumer_group": 1905,
+          "event": [
+            160,
+            20,
+            1905
+          ],
+          "event_index": 106486,
+          "exact_Q23_rank": 5,
+          "matched": false,
+          "terminal": null,
+          "use_id": 361
+        },
+        {
+          "carrier_slot": 161,
+          "consumer_group": 1922,
+          "event": [
+            161,
+            20,
+            1922
+          ],
+          "event_index": 166371,
+          "exact_Q23_rank": 9,
+          "matched": false,
+          "terminal": null,
+          "use_id": 428
+        },
+        {
+          "carrier_slot": 162,
+          "consumer_group": 1923,
+          "event": [
+            162,
+            20,
+            1923
+          ],
+          "event_index": 166397,
+          "exact_Q23_rank": 9,
+          "matched": false,
+          "terminal": null,
+          "use_id": 432
+        },
+        {
+          "carrier_slot": 163,
+          "consumer_group": 4669,
+          "event": [
+            163,
+            20,
+            4669
+          ],
+          "event_index": 108395,
+          "exact_Q23_rank": 5,
+          "matched": false,
+          "terminal": null,
+          "use_id": 6393
+        },
+        {
+          "carrier_slot": 164,
+          "consumer_group": 4686,
+          "event": [
+            164,
+            20,
+            4686
+          ],
+          "event_index": 168073,
+          "exact_Q23_rank": 9,
+          "matched": false,
+          "terminal": null,
+          "use_id": 6460
+        },
+        {
+          "carrier_slot": 165,
+          "consumer_group": 4687,
+          "event": [
+            165,
+            20,
+            4687
+          ],
+          "event_index": 168099,
+          "exact_Q23_rank": 9,
+          "matched": false,
+          "terminal": null,
+          "use_id": 6464
+        },
+        {
+          "carrier_slot": 166,
+          "consumer_group": 51689,
+          "event": [
+            166,
+            20,
+            51689
+          ],
+          "event_index": 105249,
+          "exact_Q23_rank": 3,
+          "matched": false,
+          "terminal": null,
+          "use_id": 110924
+        },
+        {
+          "carrier_slot": 167,
+          "consumer_group": 51698,
+          "event": [
+            167,
+            20,
+            51698
+          ],
+          "event_index": 105412,
+          "exact_Q23_rank": 3,
+          "matched": false,
+          "terminal": null,
+          "use_id": 110953
+        },
+        {
+          "carrier_slot": 168,
+          "consumer_group": 51822,
+          "event": [
+            168,
+            20,
+            51822
+          ],
+          "event_index": 137542,
+          "exact_Q23_rank": 5,
+          "matched": false,
+          "terminal": null,
+          "use_id": 111347
+        },
+        {
+          "carrier_slot": 169,
+          "consumer_group": 51825,
+          "event": [
+            169,
+            20,
+            51825
+          ],
+          "event_index": 195530,
+          "exact_Q23_rank": 9,
+          "matched": false,
+          "terminal": null,
+          "use_id": 111354
+        },
+        {
+          "carrier_slot": 21426,
+          "consumer_group": 51828,
+          "event": [
+            21426,
+            51825,
+            51828
+          ],
+          "event_index": 260629,
+          "exact_Q23_rank": 4,
+          "matched": true,
+          "terminal": null,
+          "use_id": 111361
+        },
+        {
+          "carrier_slot": 168,
+          "consumer_group": 51831,
+          "event": [
+            168,
+            51828,
+            51831
+          ],
+          "event_index": 357612,
+          "exact_Q23_rank": 4,
+          "matched": true,
+          "terminal": null,
+          "use_id": 111368
+        }
+      ],
+      "producer_frame": [
+        4194307,
+        4194307
+      ],
+      "producer_frame_rank": 1,
+      "producer_group": 20,
+      "recursive_child_relation": "NOT_SHOWN: graph/compiler block groups are not a Section 4 call identity",
+      "retention_screen": {
+        "pairwise_demand_frames_compatible": false,
+        "result": "NO_SINGLE_CARRIER_FRAME_PATH",
+        "serial_frame_chain_compatible": false,
+        "source_to_each_consumer_compatible": true,
+        "terminal_use_present": false,
+        "transitions": [
+          {
+            "compatible": true,
+            "exact_Q23_rank": 3,
+            "new_group": 51689,
+            "new_rank": 4,
+            "old_group": 20,
+            "old_rank": 1,
+            "rank_method": "exact pinned Q23 frame-dimension identity"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 51698,
+            "new_rank": 4,
+            "old_group": 51689,
+            "old_rank": 4,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 1905,
+            "new_rank": 6,
+            "old_group": 51698,
+            "old_rank": 4,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 4669,
+            "new_rank": 6,
+            "old_group": 1905,
+            "old_rank": 6,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 51822,
+            "new_rank": 6,
+            "old_group": 4669,
+            "old_rank": 6,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 1922,
+            "new_rank": 10,
+            "old_group": 51822,
+            "old_rank": 6,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 1923,
+            "new_rank": 10,
+            "old_group": 1922,
+            "old_rank": 10,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 4686,
+            "new_rank": 10,
+            "old_group": 1923,
+            "old_rank": 10,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 4687,
+            "new_rank": 10,
+            "old_group": 4686,
+            "old_rank": 10,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 51825,
+            "new_rank": 10,
+            "old_group": 4687,
+            "old_rank": 10,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": true,
+            "exact_Q23_rank": 4,
+            "new_group": 51828,
+            "new_rank": 14,
+            "old_group": 51825,
+            "old_rank": 10,
+            "rank_method": "exact pinned Q23 frame-dimension identity"
+          },
+          {
+            "compatible": true,
+            "exact_Q23_rank": 4,
+            "new_group": 51831,
+            "new_rank": 18,
+            "old_group": 51828,
+            "old_rank": 14,
+            "rank_method": "exact pinned Q23 frame-dimension identity"
+          }
+        ]
+      },
+      "same_group_graph_uses": 0,
+      "unmatched_demand_count": 10,
+      "value": 21
+    },
+    {
+      "baseline_duplicate_use_copy_xors": 9,
+      "carrier_slots": [
+        2969,
+        2970,
+        2971,
+        2972,
+        2973,
+        2974,
+        2975,
+        2976,
+        2977,
+        2978,
+        21400,
+        21401
+      ],
+      "carry_screen": {
+        "eligible_carry_edge_count": 3,
+        "eligible_carry_edges": [
+          {
+            "exact_Q23_rank": 4,
+            "from_group": 51805,
+            "input_index": 0,
+            "new_rank": 14,
+            "old_rank": 10,
+            "target_already_matched": true,
+            "to_group": 51808,
+            "use_id": 111311
+          },
+          {
+            "exact_Q23_rank": 8,
+            "from_group": 51805,
+            "input_index": 0,
+            "new_rank": 18,
+            "old_rank": 10,
+            "target_already_matched": true,
+            "to_group": 51811,
+            "use_id": 111318
+          },
+          {
+            "exact_Q23_rank": 4,
+            "from_group": 51808,
+            "input_index": 0,
+            "new_rank": 18,
+            "old_rank": 14,
+            "target_already_matched": true,
+            "to_group": 51811,
+            "use_id": 111318
+          }
+        ],
+        "optimistic_duplicate_copy_saving_bound": 0,
+        "unmatched_target_uses_with_eligible_edge": 0
+      },
+      "compiler_demand_count": 12,
+      "distinct_carrier_slots": 12,
+      "distinct_demand_groups": 12,
+      "graph_use_count": 12,
+      "graph_uses": [
+        {
+          "consumer": 8432,
+          "consumer_group": 7334,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 8462,
+          "consumer_group": 7351,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 8463,
+          "consumer_group": 7352,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 11619,
+          "consumer_group": 10017,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 11649,
+          "consumer_group": 10034,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 11650,
+          "consumer_group": 10035,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 62923,
+          "consumer_group": 51689,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 63026,
+          "consumer_group": 51707,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63030,
+          "consumer_group": 51750,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 63034,
+          "consumer_group": 51805,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 63038,
+          "consumer_group": 51808,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 63042,
+          "consumer_group": 51811,
+          "operand": 1,
+          "same_group": false
+        }
+      ],
+      "graph_uses_coalesced_by_consumer_group": 0,
+      "matched_demand_count": 2,
+      "physical_demands": [
+        {
+          "carrier_slot": 2969,
+          "consumer_group": 7334,
+          "event": [
+            2969,
+            459,
+            7334
+          ],
+          "event_index": 110244,
+          "exact_Q23_rank": 5,
+          "matched": false,
+          "terminal": null,
+          "use_id": 12227
+        },
+        {
+          "carrier_slot": 2970,
+          "consumer_group": 7351,
+          "event": [
+            2970,
+            459,
+            7351
+          ],
+          "event_index": 169715,
+          "exact_Q23_rank": 9,
+          "matched": false,
+          "terminal": null,
+          "use_id": 12294
+        },
+        {
+          "carrier_slot": 2971,
+          "consumer_group": 7352,
+          "event": [
+            2971,
+            459,
+            7352
+          ],
+          "event_index": 169741,
+          "exact_Q23_rank": 9,
+          "matched": false,
+          "terminal": null,
+          "use_id": 12298
+        },
+        {
+          "carrier_slot": 2972,
+          "consumer_group": 10017,
+          "event": [
+            2972,
+            459,
+            10017
+          ],
+          "event_index": 112059,
+          "exact_Q23_rank": 5,
+          "matched": false,
+          "terminal": null,
+          "use_id": 18097
+        },
+        {
+          "carrier_slot": 2973,
+          "consumer_group": 10034,
+          "event": [
+            2973,
+            459,
+            10034
+          ],
+          "event_index": 171347,
+          "exact_Q23_rank": 9,
+          "matched": false,
+          "terminal": null,
+          "use_id": 18164
+        },
+        {
+          "carrier_slot": 2974,
+          "consumer_group": 10035,
+          "event": [
+            2974,
+            459,
+            10035
+          ],
+          "event_index": 171373,
+          "exact_Q23_rank": 9,
+          "matched": false,
+          "terminal": null,
+          "use_id": 18168
+        },
+        {
+          "carrier_slot": 2975,
+          "consumer_group": 51689,
+          "event": [
+            2975,
+            459,
+            51689
+          ],
+          "event_index": 105252,
+          "exact_Q23_rank": 3,
+          "matched": false,
+          "terminal": null,
+          "use_id": 110927
+        },
+        {
+          "carrier_slot": 2976,
+          "consumer_group": 51707,
+          "event": [
+            2976,
+            459,
+            51707
+          ],
+          "event_index": 105571,
+          "exact_Q23_rank": 3,
+          "matched": false,
+          "terminal": null,
+          "use_id": 110981
+        },
+        {
+          "carrier_slot": 2977,
+          "consumer_group": 51750,
+          "event": [
+            2977,
+            459,
+            51750
+          ],
+          "event_index": 137328,
+          "exact_Q23_rank": 5,
+          "matched": false,
+          "terminal": null,
+          "use_id": 111126
+        },
+        {
+          "carrier_slot": 2978,
+          "consumer_group": 51805,
+          "event": [
+            2978,
+            459,
+            51805
+          ],
+          "event_index": 195513,
+          "exact_Q23_rank": 9,
+          "matched": false,
+          "terminal": null,
+          "use_id": 111304
+        },
+        {
+          "carrier_slot": 21400,
+          "consumer_group": 51808,
+          "event": [
+            21400,
+            51805,
+            51808
+          ],
+          "event_index": 260612,
+          "exact_Q23_rank": 4,
+          "matched": true,
+          "terminal": null,
+          "use_id": 111311
+        },
+        {
+          "carrier_slot": 21401,
+          "consumer_group": 51811,
+          "event": [
+            21401,
+            51808,
+            51811
+          ],
+          "event_index": 357587,
+          "exact_Q23_rank": 4,
+          "matched": true,
+          "terminal": null,
+          "use_id": 111318
+        }
+      ],
+      "producer_frame": [
+        4194316,
+        4194316
+      ],
+      "producer_frame_rank": 1,
+      "producer_group": 459,
+      "recursive_child_relation": "NOT_SHOWN: graph/compiler block groups are not a Section 4 call identity",
+      "retention_screen": {
+        "pairwise_demand_frames_compatible": false,
+        "result": "NO_SINGLE_CARRIER_FRAME_PATH",
+        "serial_frame_chain_compatible": false,
+        "source_to_each_consumer_compatible": true,
+        "terminal_use_present": false,
+        "transitions": [
+          {
+            "compatible": true,
+            "exact_Q23_rank": 3,
+            "new_group": 51689,
+            "new_rank": 4,
+            "old_group": 459,
+            "old_rank": 1,
+            "rank_method": "exact pinned Q23 frame-dimension identity"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 51707,
+            "new_rank": 4,
+            "old_group": 51689,
+            "old_rank": 4,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 7334,
+            "new_rank": 6,
+            "old_group": 51707,
+            "old_rank": 4,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 10017,
+            "new_rank": 6,
+            "old_group": 7334,
+            "old_rank": 6,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 51750,
+            "new_rank": 6,
+            "old_group": 10017,
+            "old_rank": 6,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 7351,
+            "new_rank": 10,
+            "old_group": 51750,
+            "old_rank": 6,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 7352,
+            "new_rank": 10,
+            "old_group": 7351,
+            "old_rank": 10,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 10034,
+            "new_rank": 10,
+            "old_group": 7352,
+            "old_rank": 10,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 10035,
+            "new_rank": 10,
+            "old_group": 10034,
+            "old_rank": 10,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 51805,
+            "new_rank": 10,
+            "old_group": 10035,
+            "old_rank": 10,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": true,
+            "exact_Q23_rank": 4,
+            "new_group": 51808,
+            "new_rank": 14,
+            "old_group": 51805,
+            "old_rank": 10,
+            "rank_method": "exact pinned Q23 frame-dimension identity"
+          },
+          {
+            "compatible": true,
+            "exact_Q23_rank": 4,
+            "new_group": 51811,
+            "new_rank": 18,
+            "old_group": 51808,
+            "old_rank": 14,
+            "rank_method": "exact pinned Q23 frame-dimension identity"
+          }
+        ]
+      },
+      "same_group_graph_uses": 0,
+      "unmatched_demand_count": 10,
+      "value": 460
+    },
+    {
+      "baseline_duplicate_use_copy_xors": 9,
+      "carrier_slots": [
+        5276,
+        5277,
+        5278,
+        5279,
+        5280,
+        5281,
+        5282,
+        5283,
+        5284,
+        5285,
+        21430
+      ],
+      "carry_screen": {
+        "eligible_carry_edge_count": 3,
+        "eligible_carry_edges": [
+          {
+            "exact_Q23_rank": 4,
+            "from_group": 51862,
+            "input_index": 0,
+            "new_rank": 14,
+            "old_rank": 10,
+            "target_already_matched": true,
+            "to_group": 51865,
+            "use_id": 111454
+          },
+          {
+            "exact_Q23_rank": 8,
+            "from_group": 51862,
+            "input_index": 0,
+            "new_rank": 18,
+            "old_rank": 10,
+            "target_already_matched": true,
+            "to_group": 51868,
+            "use_id": 111461
+          },
+          {
+            "exact_Q23_rank": 4,
+            "from_group": 51865,
+            "input_index": 0,
+            "new_rank": 18,
+            "old_rank": 14,
+            "target_already_matched": true,
+            "to_group": 51868,
+            "use_id": 111461
+          }
+        ],
+        "optimistic_duplicate_copy_saving_bound": 0,
+        "unmatched_target_uses_with_eligible_edge": 0
+      },
+      "compiler_demand_count": 12,
+      "distinct_carrier_slots": 11,
+      "distinct_demand_groups": 12,
+      "graph_use_count": 12,
+      "graph_uses": [
+        {
+          "consumer": 14690,
+          "consumer_group": 12584,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 14720,
+          "consumer_group": 12601,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 14721,
+          "consumer_group": 12602,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 17794,
+          "consumer_group": 15184,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 17824,
+          "consumer_group": 15201,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 17825,
+          "consumer_group": 15202,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 62926,
+          "consumer_group": 51708,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 63098,
+          "consumer_group": 51715,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63102,
+          "consumer_group": 51859,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 63106,
+          "consumer_group": 51862,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 63110,
+          "consumer_group": 51865,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 63114,
+          "consumer_group": 51868,
+          "operand": 1,
+          "same_group": false
+        }
+      ],
+      "graph_uses_coalesced_by_consumer_group": 0,
+      "matched_demand_count": 2,
+      "physical_demands": [
+        {
+          "carrier_slot": 5276,
+          "consumer_group": 12584,
+          "event": [
+            5276,
+            818,
+            12584
+          ],
+          "event_index": 113814,
+          "exact_Q23_rank": 5,
+          "matched": false,
+          "terminal": null,
+          "use_id": 23735
+        },
+        {
+          "carrier_slot": 5277,
+          "consumer_group": 12601,
+          "event": [
+            5277,
+            818,
+            12601
+          ],
+          "event_index": 172919,
+          "exact_Q23_rank": 9,
+          "matched": false,
+          "terminal": null,
+          "use_id": 23802
+        },
+        {
+          "carrier_slot": 5278,
+          "consumer_group": 12602,
+          "event": [
+            5278,
+            818,
+            12602
+          ],
+          "event_index": 172945,
+          "exact_Q23_rank": 9,
+          "matched": false,
+          "terminal": null,
+          "use_id": 23806
+        },
+        {
+          "carrier_slot": 5279,
+          "consumer_group": 15184,
+          "event": [
+            5279,
+            818,
+            15184
+          ],
+          "event_index": 115535,
+          "exact_Q23_rank": 5,
+          "matched": false,
+          "terminal": null,
+          "use_id": 29439
+        },
+        {
+          "carrier_slot": 5280,
+          "consumer_group": 15201,
+          "event": [
+            5280,
+            818,
+            15201
+          ],
+          "event_index": 174481,
+          "exact_Q23_rank": 9,
+          "matched": false,
+          "terminal": null,
+          "use_id": 29506
+        },
+        {
+          "carrier_slot": 5281,
+          "consumer_group": 15202,
+          "event": [
+            5281,
+            818,
+            15202
+          ],
+          "event_index": 174507,
+          "exact_Q23_rank": 9,
+          "matched": false,
+          "terminal": null,
+          "use_id": 29510
+        },
+        {
+          "carrier_slot": 5282,
+          "consumer_group": 51708,
+          "event": [
+            5282,
+            818,
+            51708
+          ],
+          "event_index": 105594,
+          "exact_Q23_rank": 3,
+          "matched": false,
+          "terminal": null,
+          "use_id": 110985
+        },
+        {
+          "carrier_slot": 5283,
+          "consumer_group": 51715,
+          "event": [
+            5283,
+            818,
+            51715
+          ],
+          "event_index": 105723,
+          "exact_Q23_rank": 3,
+          "matched": false,
+          "terminal": null,
+          "use_id": 111008
+        },
+        {
+          "carrier_slot": 5284,
+          "consumer_group": 51859,
+          "event": [
+            5284,
+            818,
+            51859
+          ],
+          "event_index": 137593,
+          "exact_Q23_rank": 5,
+          "matched": false,
+          "terminal": null,
+          "use_id": 111440
+        },
+        {
+          "carrier_slot": 5285,
+          "consumer_group": 51862,
+          "event": [
+            5285,
+            818,
+            51862
+          ],
+          "event_index": 195566,
+          "exact_Q23_rank": 9,
+          "matched": false,
+          "terminal": null,
+          "use_id": 111447
+        },
+        {
+          "carrier_slot": 21430,
+          "consumer_group": 51865,
+          "event": [
+            21430,
+            51862,
+            51865
+          ],
+          "event_index": 260663,
+          "exact_Q23_rank": 4,
+          "matched": true,
+          "terminal": null,
+          "use_id": 111454
+        },
+        {
+          "carrier_slot": 5284,
+          "consumer_group": 51868,
+          "event": [
+            5284,
+            51865,
+            51868
+          ],
+          "event_index": 357668,
+          "exact_Q23_rank": 4,
+          "matched": true,
+          "terminal": null,
+          "use_id": 111461
+        }
+      ],
+      "producer_frame": [
+        4194352,
+        4194352
+      ],
+      "producer_frame_rank": 1,
+      "producer_group": 818,
+      "recursive_child_relation": "NOT_SHOWN: graph/compiler block groups are not a Section 4 call identity",
+      "retention_screen": {
+        "pairwise_demand_frames_compatible": false,
+        "result": "NO_SINGLE_CARRIER_FRAME_PATH",
+        "serial_frame_chain_compatible": false,
+        "source_to_each_consumer_compatible": true,
+        "terminal_use_present": false,
+        "transitions": [
+          {
+            "compatible": true,
+            "exact_Q23_rank": 3,
+            "new_group": 51708,
+            "new_rank": 4,
+            "old_group": 818,
+            "old_rank": 1,
+            "rank_method": "exact pinned Q23 frame-dimension identity"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 51715,
+            "new_rank": 4,
+            "old_group": 51708,
+            "old_rank": 4,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 12584,
+            "new_rank": 6,
+            "old_group": 51715,
+            "old_rank": 4,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 15184,
+            "new_rank": 6,
+            "old_group": 12584,
+            "old_rank": 6,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 51859,
+            "new_rank": 6,
+            "old_group": 15184,
+            "old_rank": 6,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 12601,
+            "new_rank": 10,
+            "old_group": 51859,
+            "old_rank": 6,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 12602,
+            "new_rank": 10,
+            "old_group": 12601,
+            "old_rank": 10,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 15201,
+            "new_rank": 10,
+            "old_group": 12602,
+            "old_rank": 10,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 15202,
+            "new_rank": 10,
+            "old_group": 15201,
+            "old_rank": 10,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 51862,
+            "new_rank": 10,
+            "old_group": 15202,
+            "old_rank": 10,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": true,
+            "exact_Q23_rank": 4,
+            "new_group": 51865,
+            "new_rank": 14,
+            "old_group": 51862,
+            "old_rank": 10,
+            "rank_method": "exact pinned Q23 frame-dimension identity"
+          },
+          {
+            "compatible": true,
+            "exact_Q23_rank": 4,
+            "new_group": 51868,
+            "new_rank": 18,
+            "old_group": 51865,
+            "old_rank": 14,
+            "rank_method": "exact pinned Q23 frame-dimension identity"
+          }
+        ]
+      },
+      "same_group_graph_uses": 0,
+      "unmatched_demand_count": 10,
+      "value": 819
+    }
+  ],
+  "counts": {
+    "frame_path_rejected_count": 10636,
+    "graph_multi_but_one_physical_demand": 1035,
+    "graph_multi_value_count": 16137,
+    "multi_group_frame_path_rejected_count": 10636,
+    "multiple_external_group_values": 15102,
+    "physical_multi_demand_count": 15102,
+    "serial_frame_path_count": 5501,
+    "serial_multi_group_path_count": 4466,
+    "serial_with_copy_opportunity_count": 220,
+    "single_group_or_terminal_only_values": 1035
+  },
+  "finalist_summaries": [
+    {
+      "baseline_duplicate_use_copy_xors": 5,
+      "carrier_slots": [
+        5981,
+        8914,
+        19993,
+        21417,
+        22030,
+        22498
+      ],
+      "carry_screen": {
+        "eligible_carry_edge_count": 4,
+        "eligible_carry_edges": [
+          {
+            "exact_Q23_rank": 1,
+            "from_group": 52033,
+            "input_index": 1,
+            "new_rank": 20,
+            "old_rank": 19,
+            "rational_projector_check": "PASS",
+            "target_already_matched": false,
+            "to_group": 51838,
+            "use_id": 111388
+          },
+          {
+            "exact_Q23_rank": 1,
+            "from_group": 52034,
+            "input_index": 1,
+            "new_rank": 20,
+            "old_rank": 19,
+            "rational_projector_check": "PASS",
+            "target_already_matched": false,
+            "to_group": 51838,
+            "use_id": 111388
+          },
+          {
+            "exact_Q23_rank": 1,
+            "from_group": 52035,
+            "input_index": 1,
+            "new_rank": 20,
+            "old_rank": 19,
+            "rational_projector_check": "PASS",
+            "target_already_matched": false,
+            "to_group": 51818,
+            "use_id": 111339
+          },
+          {
+            "exact_Q23_rank": 1,
+            "from_group": 52036,
+            "input_index": 1,
+            "new_rank": 20,
+            "old_rank": 19,
+            "rational_projector_check": "PASS",
+            "target_already_matched": false,
+            "to_group": 51818,
+            "use_id": 111339
+          }
+        ],
+        "optimistic_duplicate_copy_saving_bound": 2,
+        "unmatched_target_uses_with_eligible_edge": 2
+      },
+      "compiler_demand_count": 6,
+      "distinct_carrier_slots": 6,
+      "distinct_demand_groups": 6,
+      "graph_use_count": 6,
+      "graph_uses": [
+        {
+          "consumer": 63266,
+          "consumer_group": 51818,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63267,
+          "consumer_group": 51838,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63406,
+          "consumer_group": 52033,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63407,
+          "consumer_group": 52034,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63408,
+          "consumer_group": 52035,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63409,
+          "consumer_group": 52036,
+          "operand": 0,
+          "same_group": false
+        }
+      ],
+      "graph_uses_coalesced_by_consumer_group": 0,
+      "matched_demand_count": 0,
+      "physical_demands": [
+        {
+          "carrier_slot": 22498,
+          "consumer_group": 51818,
+          "event": [
+            22498,
+            51776,
+            51818
+          ],
+          "event_index": 436361,
+          "exact_Q23_rank": 2,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 111339
+        },
+        {
+          "carrier_slot": 5981,
+          "consumer_group": 51838,
+          "event": [
+            5981,
+            51776,
+            51838
+          ],
+          "event_index": 436371,
+          "exact_Q23_rank": 2,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 111388
+        },
+        {
+          "carrier_slot": 19993,
+          "consumer_group": 52033,
+          "event": [
+            19993,
+            51776,
+            52033
+          ],
+          "event_index": 379128,
+          "exact_Q23_rank": 1,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 111897
+        },
+        {
+          "carrier_slot": 21417,
+          "consumer_group": 52034,
+          "event": [
+            21417,
+            51776,
+            52034
+          ],
+          "event_index": 379134,
+          "exact_Q23_rank": 1,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 111899
+        },
+        {
+          "carrier_slot": 22030,
+          "consumer_group": 52035,
+          "event": [
+            22030,
+            51776,
+            52035
+          ],
+          "event_index": 379140,
+          "exact_Q23_rank": 1,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 111901
+        },
+        {
+          "carrier_slot": 8914,
+          "consumer_group": 52036,
+          "event": [
+            8914,
+            51776,
+            52036
+          ],
+          "event_index": 379146,
+          "exact_Q23_rank": 1,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 111903
+        }
+      ],
+      "producer_frame": [
+        4194304,
+        8388592
+      ],
+      "producer_frame_rank": 18,
+      "producer_group": 51776,
+      "recursive_child_relation": "NOT_SHOWN: graph/compiler block groups are not a Section 4 call identity",
+      "retention_screen": {
+        "pairwise_demand_frames_compatible": false,
+        "result": "NO_SINGLE_CARRIER_FRAME_PATH",
+        "serial_frame_chain_compatible": false,
+        "source_to_each_consumer_compatible": true,
+        "terminal_use_present": false,
+        "transitions": [
+          {
+            "compatible": true,
+            "exact_Q23_rank": 1,
+            "new_group": 52033,
+            "new_rank": 19,
+            "old_group": 51776,
+            "old_rank": 18,
+            "rank_method": "exact pinned Q23 frame-dimension identity",
+            "rational_projector_check": "PASS"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 52034,
+            "new_rank": 19,
+            "old_group": 52033,
+            "old_rank": 19,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 52035,
+            "new_rank": 19,
+            "old_group": 52034,
+            "old_rank": 19,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 52036,
+            "new_rank": 19,
+            "old_group": 52035,
+            "old_rank": 19,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": true,
+            "exact_Q23_rank": 1,
+            "new_group": 51818,
+            "new_rank": 20,
+            "old_group": 52036,
+            "old_rank": 19,
+            "rank_method": "exact pinned Q23 frame-dimension identity",
+            "rational_projector_check": "PASS"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 51838,
+            "new_rank": 20,
+            "old_group": 51818,
+            "old_rank": 20,
+            "rank_method": "UNDEFINED: incompatible frames"
+          }
+        ]
+      },
+      "same_group_graph_uses": 0,
+      "unmatched_demand_count": 6,
+      "value": 62984
+    },
+    {
+      "baseline_duplicate_use_copy_xors": 5,
+      "carrier_slots": [
+        167,
+        8587,
+        11046,
+        19997,
+        21426,
+        22033
+      ],
+      "carry_screen": {
+        "eligible_carry_edge_count": 4,
+        "eligible_carry_edges": [
+          {
+            "exact_Q23_rank": 1,
+            "from_group": 52185,
+            "input_index": 1,
+            "new_rank": 20,
+            "old_rank": 19,
+            "rational_projector_check": "PASS",
+            "target_already_matched": false,
+            "to_group": 51875,
+            "use_id": 111481
+          },
+          {
+            "exact_Q23_rank": 1,
+            "from_group": 52186,
+            "input_index": 1,
+            "new_rank": 20,
+            "old_rank": 19,
+            "rational_projector_check": "PASS",
+            "target_already_matched": false,
+            "to_group": 51875,
+            "use_id": 111481
+          },
+          {
+            "exact_Q23_rank": 1,
+            "from_group": 52187,
+            "input_index": 1,
+            "new_rank": 20,
+            "old_rank": 19,
+            "rational_projector_check": "PASS",
+            "target_already_matched": false,
+            "to_group": 51855,
+            "use_id": 111432
+          },
+          {
+            "exact_Q23_rank": 1,
+            "from_group": 52188,
+            "input_index": 1,
+            "new_rank": 20,
+            "old_rank": 19,
+            "rational_projector_check": "PASS",
+            "target_already_matched": false,
+            "to_group": 51855,
+            "use_id": 111432
+          }
+        ],
+        "optimistic_duplicate_copy_saving_bound": 2,
+        "unmatched_target_uses_with_eligible_edge": 2
+      },
+      "compiler_demand_count": 6,
+      "distinct_carrier_slots": 6,
+      "distinct_demand_groups": 6,
+      "graph_use_count": 6,
+      "graph_uses": [
+        {
+          "consumer": 63268,
+          "consumer_group": 51855,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63269,
+          "consumer_group": 51875,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63634,
+          "consumer_group": 52185,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63635,
+          "consumer_group": 52186,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63636,
+          "consumer_group": 52187,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63637,
+          "consumer_group": 52188,
+          "operand": 0,
+          "same_group": false
+        }
+      ],
+      "graph_uses_coalesced_by_consumer_group": 0,
+      "matched_demand_count": 0,
+      "physical_demands": [
+        {
+          "carrier_slot": 22033,
+          "consumer_group": 51855,
+          "event": [
+            22033,
+            51779,
+            51855
+          ],
+          "event_index": 436383,
+          "exact_Q23_rank": 2,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 111432
+        },
+        {
+          "carrier_slot": 11046,
+          "consumer_group": 51875,
+          "event": [
+            11046,
+            51779,
+            51875
+          ],
+          "event_index": 436393,
+          "exact_Q23_rank": 2,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 111481
+        },
+        {
+          "carrier_slot": 19997,
+          "consumer_group": 52185,
+          "event": [
+            19997,
+            51779,
+            52185
+          ],
+          "event_index": 379584,
+          "exact_Q23_rank": 1,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 112277
+        },
+        {
+          "carrier_slot": 21426,
+          "consumer_group": 52186,
+          "event": [
+            21426,
+            51779,
+            52186
+          ],
+          "event_index": 379590,
+          "exact_Q23_rank": 1,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 112279
+        },
+        {
+          "carrier_slot": 167,
+          "consumer_group": 52187,
+          "event": [
+            167,
+            51779,
+            52187
+          ],
+          "event_index": 379596,
+          "exact_Q23_rank": 1,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 112281
+        },
+        {
+          "carrier_slot": 8587,
+          "consumer_group": 52188,
+          "event": [
+            8587,
+            51779,
+            52188
+          ],
+          "event_index": 379602,
+          "exact_Q23_rank": 1,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 112283
+        }
+      ],
+      "producer_frame": [
+        4194304,
+        8388367
+      ],
+      "producer_frame_rank": 18,
+      "producer_group": 51779,
+      "recursive_child_relation": "NOT_SHOWN: graph/compiler block groups are not a Section 4 call identity",
+      "retention_screen": {
+        "pairwise_demand_frames_compatible": false,
+        "result": "NO_SINGLE_CARRIER_FRAME_PATH",
+        "serial_frame_chain_compatible": false,
+        "source_to_each_consumer_compatible": true,
+        "terminal_use_present": false,
+        "transitions": [
+          {
+            "compatible": true,
+            "exact_Q23_rank": 1,
+            "new_group": 52185,
+            "new_rank": 19,
+            "old_group": 51779,
+            "old_rank": 18,
+            "rank_method": "exact pinned Q23 frame-dimension identity",
+            "rational_projector_check": "PASS"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 52186,
+            "new_rank": 19,
+            "old_group": 52185,
+            "old_rank": 19,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 52187,
+            "new_rank": 19,
+            "old_group": 52186,
+            "old_rank": 19,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 52188,
+            "new_rank": 19,
+            "old_group": 52187,
+            "old_rank": 19,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": true,
+            "exact_Q23_rank": 1,
+            "new_group": 51855,
+            "new_rank": 20,
+            "old_group": 52188,
+            "old_rank": 19,
+            "rank_method": "exact pinned Q23 frame-dimension identity",
+            "rational_projector_check": "PASS"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 51875,
+            "new_rank": 20,
+            "old_group": 51855,
+            "old_rank": 20,
+            "rank_method": "UNDEFINED: incompatible frames"
+          }
+        ]
+      },
+      "same_group_graph_uses": 0,
+      "unmatched_demand_count": 6,
+      "value": 62985
+    },
+    {
+      "baseline_duplicate_use_copy_xors": 5,
+      "carrier_slots": [
+        166,
+        7722,
+        21402,
+        21420,
+        21422,
+        22023
+      ],
+      "carry_screen": {
+        "eligible_carry_edge_count": 4,
+        "eligible_carry_edges": [
+          {
+            "exact_Q23_rank": 1,
+            "from_group": 52305,
+            "input_index": 1,
+            "new_rank": 20,
+            "old_rank": 19,
+            "rational_projector_check": "PASS",
+            "target_already_matched": false,
+            "to_group": 51913,
+            "use_id": 111576
+          },
+          {
+            "exact_Q23_rank": 1,
+            "from_group": 52306,
+            "input_index": 1,
+            "new_rank": 20,
+            "old_rank": 19,
+            "rational_projector_check": "PASS",
+            "target_already_matched": false,
+            "to_group": 51913,
+            "use_id": 111576
+          },
+          {
+            "exact_Q23_rank": 1,
+            "from_group": 52307,
+            "input_index": 1,
+            "new_rank": 20,
+            "old_rank": 19,
+            "rational_projector_check": "PASS",
+            "target_already_matched": false,
+            "to_group": 51893,
+            "use_id": 111527
+          },
+          {
+            "exact_Q23_rank": 1,
+            "from_group": 52308,
+            "input_index": 1,
+            "new_rank": 20,
+            "old_rank": 19,
+            "rational_projector_check": "PASS",
+            "target_already_matched": false,
+            "to_group": 51893,
+            "use_id": 111527
+          }
+        ],
+        "optimistic_duplicate_copy_saving_bound": 2,
+        "unmatched_target_uses_with_eligible_edge": 2
+      },
+      "compiler_demand_count": 6,
+      "distinct_carrier_slots": 6,
+      "distinct_demand_groups": 6,
+      "graph_use_count": 6,
+      "graph_uses": [
+        {
+          "consumer": 63270,
+          "consumer_group": 51893,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63271,
+          "consumer_group": 51913,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63814,
+          "consumer_group": 52305,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63815,
+          "consumer_group": 52306,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63816,
+          "consumer_group": 52307,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 63817,
+          "consumer_group": 52308,
+          "operand": 0,
+          "same_group": false
+        }
+      ],
+      "graph_uses_coalesced_by_consumer_group": 0,
+      "matched_demand_count": 0,
+      "physical_demands": [
+        {
+          "carrier_slot": 21422,
+          "consumer_group": 51893,
+          "event": [
+            21422,
+            51781,
+            51893
+          ],
+          "event_index": 436405,
+          "exact_Q23_rank": 2,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 111527
+        },
+        {
+          "carrier_slot": 7722,
+          "consumer_group": 51913,
+          "event": [
+            7722,
+            51781,
+            51913
+          ],
+          "event_index": 436415,
+          "exact_Q23_rank": 2,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 111576
+        },
+        {
+          "carrier_slot": 21402,
+          "consumer_group": 52305,
+          "event": [
+            21402,
+            51781,
+            52305
+          ],
+          "event_index": 379944,
+          "exact_Q23_rank": 1,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 112577
+        },
+        {
+          "carrier_slot": 22023,
+          "consumer_group": 52306,
+          "event": [
+            22023,
+            51781,
+            52306
+          ],
+          "event_index": 379950,
+          "exact_Q23_rank": 1,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 112579
+        },
+        {
+          "carrier_slot": 21420,
+          "consumer_group": 52307,
+          "event": [
+            21420,
+            51781,
+            52307
+          ],
+          "event_index": 379956,
+          "exact_Q23_rank": 1,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 112581
+        },
+        {
+          "carrier_slot": 166,
+          "consumer_group": 52308,
+          "event": [
+            166,
+            51781,
+            52308
+          ],
+          "event_index": 379962,
+          "exact_Q23_rank": 1,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 112583
+        }
+      ],
+      "producer_frame": [
+        4194304,
+        8384767
+      ],
+      "producer_frame_rank": 18,
+      "producer_group": 51781,
+      "recursive_child_relation": "NOT_SHOWN: graph/compiler block groups are not a Section 4 call identity",
+      "retention_screen": {
+        "pairwise_demand_frames_compatible": false,
+        "result": "NO_SINGLE_CARRIER_FRAME_PATH",
+        "serial_frame_chain_compatible": false,
+        "source_to_each_consumer_compatible": true,
+        "terminal_use_present": false,
+        "transitions": [
+          {
+            "compatible": true,
+            "exact_Q23_rank": 1,
+            "new_group": 52305,
+            "new_rank": 19,
+            "old_group": 51781,
+            "old_rank": 18,
+            "rank_method": "exact pinned Q23 frame-dimension identity",
+            "rational_projector_check": "PASS"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 52306,
+            "new_rank": 19,
+            "old_group": 52305,
+            "old_rank": 19,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 52307,
+            "new_rank": 19,
+            "old_group": 52306,
+            "old_rank": 19,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 52308,
+            "new_rank": 19,
+            "old_group": 52307,
+            "old_rank": 19,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": true,
+            "exact_Q23_rank": 1,
+            "new_group": 51893,
+            "new_rank": 20,
+            "old_group": 52308,
+            "old_rank": 19,
+            "rank_method": "exact pinned Q23 frame-dimension identity",
+            "rational_projector_check": "PASS"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 51913,
+            "new_rank": 20,
+            "old_group": 51893,
+            "old_rank": 20,
+            "rank_method": "UNDEFINED: incompatible frames"
+          }
+        ]
+      },
+      "same_group_graph_uses": 0,
+      "unmatched_demand_count": 6,
+      "value": 62986
+    }
+  ],
+  "finalist_values": [
+    62984,
+    62985,
+    62986
+  ],
+  "known_controls": {
+    "Y2048": {
+      "baseline_duplicate_use_copy_xors": 3,
+      "carrier_slots": [
+        21455,
+        22506,
+        22507,
+        22508
+      ],
+      "carry_screen": {
+        "eligible_carry_edge_count": 0,
+        "eligible_carry_edges": [],
+        "optimistic_duplicate_copy_saving_bound": 0,
+        "unmatched_target_uses_with_eligible_edge": 0
+      },
+      "compiler_demand_count": 4,
+      "distinct_carrier_slots": 4,
+      "distinct_demand_groups": 4,
+      "graph_use_count": 4,
+      "graph_uses": [
+        {
+          "consumer": 2349,
+          "consumer_group": 1954,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 2350,
+          "consumer_group": 1974,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 2351,
+          "consumer_group": 2066,
+          "operand": 0,
+          "same_group": false
+        },
+        {
+          "consumer": 2352,
+          "consumer_group": 2086,
+          "operand": 0,
+          "same_group": false
+        }
+      ],
+      "graph_uses_coalesced_by_consumer_group": 0,
+      "matched_demand_count": 0,
+      "physical_demands": [
+        {
+          "carrier_slot": 21455,
+          "consumer_group": 1954,
+          "event": [
+            21455,
+            1929,
+            1954
+          ],
+          "event_index": 260888,
+          "exact_Q23_rank": 2,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 522
+        },
+        {
+          "carrier_slot": 22506,
+          "consumer_group": 1974,
+          "event": [
+            22506,
+            1929,
+            1974
+          ],
+          "event_index": 260935,
+          "exact_Q23_rank": 2,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 571
+        },
+        {
+          "carrier_slot": 22507,
+          "consumer_group": 2066,
+          "event": [
+            22507,
+            1929,
+            2066
+          ],
+          "event_index": 261164,
+          "exact_Q23_rank": 2,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 801
+        },
+        {
+          "carrier_slot": 22508,
+          "consumer_group": 2086,
+          "event": [
+            22508,
+            1929,
+            2086
+          ],
+          "event_index": 261218,
+          "exact_Q23_rank": 2,
+          "matched": false,
+          "rational_projector_check": "PASS",
+          "terminal": null,
+          "use_id": 851
+        }
+      ],
+      "producer_frame": [
+        1,
+        8142787
+      ],
+      "producer_frame_rank": 14,
+      "producer_group": 1929,
+      "recursive_child_relation": "NOT_SHOWN: graph/compiler block groups are not a Section 4 call identity",
+      "retention_screen": {
+        "pairwise_demand_frames_compatible": false,
+        "result": "NO_SINGLE_CARRIER_FRAME_PATH",
+        "serial_frame_chain_compatible": false,
+        "source_to_each_consumer_compatible": true,
+        "terminal_use_present": false,
+        "transitions": [
+          {
+            "compatible": true,
+            "exact_Q23_rank": 2,
+            "new_group": 1954,
+            "new_rank": 16,
+            "old_group": 1929,
+            "old_rank": 14,
+            "rank_method": "exact pinned Q23 frame-dimension identity",
+            "rational_projector_check": "PASS"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 1974,
+            "new_rank": 16,
+            "old_group": 1954,
+            "old_rank": 16,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 2066,
+            "new_rank": 16,
+            "old_group": 1974,
+            "old_rank": 16,
+            "rank_method": "UNDEFINED: incompatible frames"
+          },
+          {
+            "compatible": false,
+            "exact_Q23_rank": null,
+            "new_group": 2086,
+            "new_rank": 16,
+            "old_group": 2066,
+            "old_rank": 16,
+            "rank_method": "UNDEFINED: incompatible frames"
+          }
+        ]
+      },
+      "same_group_graph_uses": 0,
+      "unmatched_demand_count": 4,
+      "value": 2048
+    },
+    "Y2_2044": {
+      "compiler_demand_count": 0,
+      "graph_uses": [
+        {
+          "consumer": 2048,
+          "consumer_group": 1929,
+          "operand": 1,
+          "same_group": true
+        }
+      ],
+      "result": "NO_REUSE_DEMAND"
+    }
+  },
+  "phase": "FAST",
+  "physical_demand_histogram": {
+    "1": 1035,
+    "10": 631,
+    "11": 383,
+    "12": 221,
+    "13": 320,
+    "14": 210,
+    "15": 210,
+    "16": 210,
+    "17": 210,
+    "18": 100,
+    "19": 45,
+    "2": 5983,
+    "3": 713,
+    "4": 3402,
+    "5": 253,
+    "6": 537,
+    "7": 408,
+    "8": 385,
+    "9": 881
+  },
+  "resources": {
+    "peak_rss_kib": 557636,
+    "wall_seconds": 19.955368794006063
+  },
+  "serial_finalist_summaries": [
+    {
+      "baseline_duplicate_use_copy_xors": 1,
+      "carrier_slots": [
+        11565,
+        23848
+      ],
+      "carry_screen": {
+        "eligible_carry_edge_count": 1,
+        "eligible_carry_edges": [
+          {
+            "exact_Q23_rank": 1,
+            "from_group": 4095,
+            "input_index": 1,
+            "new_rank": 20,
+            "old_rank": 19,
+            "target_already_matched": false,
+            "to_group": 4099,
+            "use_id": 4941
+          }
+        ],
+        "optimistic_duplicate_copy_saving_bound": 1,
+        "unmatched_target_uses_with_eligible_edge": 1
+      },
+      "compiler_demand_count": 2,
+      "distinct_carrier_slots": 2,
+      "distinct_demand_groups": 2,
+      "graph_use_count": 2,
+      "graph_uses": [
+        {
+          "consumer": 4380,
+          "consumer_group": 4095,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 4384,
+          "consumer_group": 4099,
+          "operand": 1,
+          "same_group": false
+        }
+      ],
+      "graph_uses_coalesced_by_consumer_group": 0,
+      "matched_demand_count": 0,
+      "physical_demands": [
+        {
+          "carrier_slot": 11565,
+          "consumer_group": 4095,
+          "event": [
+            11565,
+            2240,
+            4095
+          ],
+          "event_index": 358668,
+          "exact_Q23_rank": 1,
+          "matched": false,
+          "terminal": null,
+          "use_id": 4933
+        },
+        {
+          "carrier_slot": 23848,
+          "consumer_group": 4099,
+          "event": [
+            23848,
+            2240,
+            4099
+          ],
+          "event_index": 380569,
+          "exact_Q23_rank": 2,
+          "matched": false,
+          "terminal": null,
+          "use_id": 4941
+        }
+      ],
+      "producer_frame": [
+        9,
+        8388555
+      ],
+      "producer_frame_rank": 18,
+      "producer_group": 2240,
+      "recursive_child_relation": "NOT_SHOWN: graph/compiler block groups are not a Section 4 call identity",
+      "retention_screen": {
+        "pairwise_demand_frames_compatible": true,
+        "result": "SERIAL_FRAME_PATH",
+        "serial_frame_chain_compatible": true,
+        "source_to_each_consumer_compatible": true,
+        "terminal_use_present": false,
+        "transitions": [
+          {
+            "compatible": true,
+            "exact_Q23_rank": 1,
+            "new_group": 4095,
+            "new_rank": 19,
+            "old_group": 2240,
+            "old_rank": 18,
+            "rank_method": "exact pinned Q23 frame-dimension identity"
+          },
+          {
+            "compatible": true,
+            "exact_Q23_rank": 1,
+            "new_group": 4099,
+            "new_rank": 20,
+            "old_group": 4095,
+            "old_rank": 19,
+            "rank_method": "exact pinned Q23 frame-dimension identity"
+          }
+        ]
+      },
+      "same_group_graph_uses": 0,
+      "unmatched_demand_count": 2,
+      "value": 2525
+    },
+    {
+      "baseline_duplicate_use_copy_xors": 1,
+      "carrier_slots": [
+        11590,
+        23851
+      ],
+      "carry_screen": {
+        "eligible_carry_edge_count": 1,
+        "eligible_carry_edges": [
+          {
+            "exact_Q23_rank": 1,
+            "from_group": 4097,
+            "input_index": 1,
+            "new_rank": 20,
+            "old_rank": 19,
+            "target_already_matched": false,
+            "to_group": 4101,
+            "use_id": 4947
+          }
+        ],
+        "optimistic_duplicate_copy_saving_bound": 1,
+        "unmatched_target_uses_with_eligible_edge": 1
+      },
+      "compiler_demand_count": 2,
+      "distinct_carrier_slots": 2,
+      "distinct_demand_groups": 2,
+      "graph_use_count": 2,
+      "graph_uses": [
+        {
+          "consumer": 4382,
+          "consumer_group": 4097,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 4390,
+          "consumer_group": 4101,
+          "operand": 1,
+          "same_group": false
+        }
+      ],
+      "graph_uses_coalesced_by_consumer_group": 0,
+      "matched_demand_count": 0,
+      "physical_demands": [
+        {
+          "carrier_slot": 11590,
+          "consumer_group": 4097,
+          "event": [
+            11590,
+            2411,
+            4097
+          ],
+          "event_index": 358678,
+          "exact_Q23_rank": 1,
+          "matched": false,
+          "terminal": null,
+          "use_id": 4937
+        },
+        {
+          "carrier_slot": 23851,
+          "consumer_group": 4101,
+          "event": [
+            23851,
+            2411,
+            4101
+          ],
+          "event_index": 380591,
+          "exact_Q23_rank": 2,
+          "matched": false,
+          "terminal": null,
+          "use_id": 4947
+        }
+      ],
+      "producer_frame": [
+        33,
+        8388579
+      ],
+      "producer_frame_rank": 18,
+      "producer_group": 2411,
+      "recursive_child_relation": "NOT_SHOWN: graph/compiler block groups are not a Section 4 call identity",
+      "retention_screen": {
+        "pairwise_demand_frames_compatible": true,
+        "result": "SERIAL_FRAME_PATH",
+        "serial_frame_chain_compatible": true,
+        "source_to_each_consumer_compatible": true,
+        "terminal_use_present": false,
+        "transitions": [
+          {
+            "compatible": true,
+            "exact_Q23_rank": 1,
+            "new_group": 4097,
+            "new_rank": 19,
+            "old_group": 2411,
+            "old_rank": 18,
+            "rank_method": "exact pinned Q23 frame-dimension identity"
+          },
+          {
+            "compatible": true,
+            "exact_Q23_rank": 1,
+            "new_group": 4101,
+            "new_rank": 20,
+            "old_group": 4097,
+            "old_rank": 19,
+            "rank_method": "exact pinned Q23 frame-dimension identity"
+          }
+        ]
+      },
+      "same_group_graph_uses": 0,
+      "unmatched_demand_count": 2,
+      "value": 2696
+    },
+    {
+      "baseline_duplicate_use_copy_xors": 1,
+      "carrier_slots": [
+        11618,
+        23855
+      ],
+      "carry_screen": {
+        "eligible_carry_edge_count": 1,
+        "eligible_carry_edges": [
+          {
+            "exact_Q23_rank": 1,
+            "from_group": 4247,
+            "input_index": 1,
+            "new_rank": 20,
+            "old_rank": 19,
+            "target_already_matched": false,
+            "to_group": 4251,
+            "use_id": 5321
+          }
+        ],
+        "optimistic_duplicate_copy_saving_bound": 1,
+        "unmatched_target_uses_with_eligible_edge": 1
+      },
+      "compiler_demand_count": 2,
+      "distinct_carrier_slots": 2,
+      "distinct_demand_groups": 2,
+      "graph_use_count": 2,
+      "graph_uses": [
+        {
+          "consumer": 4608,
+          "consumer_group": 4247,
+          "operand": 1,
+          "same_group": false
+        },
+        {
+          "consumer": 4612,
+          "consumer_group": 4251,
+          "operand": 1,
+          "same_group": false
+        }
+      ],
+      "graph_uses_coalesced_by_consumer_group": 0,
+      "matched_demand_count": 0,
+      "physical_demands": [
+        {
+          "carrier_slot": 11618,
+          "consumer_group": 4247,
+          "event": [
+            11618,
+            2591,
+            4247
+          ],
+          "event_index": 358976,
+          "exact_Q23_rank": 1,
+          "matched": false,
+          "terminal": null,
+          "use_id": 5313
+        },
+        {
+          "carrier_slot": 23855,
+          "consumer_group": 4251,
+          "event": [
+            23855,
+            2591,
+            4251
+          ],
+          "event_index": 381405,
+          "exact_Q23_rank": 2,
+          "matched": false,
+          "terminal": null,
+          "use_id": 5321
+        }
+      ],
+      "producer_frame": [
+        129,
+        8387775
+      ],
+      "producer_frame_rank": 18,
+      "producer_group": 2591,
+      "recursive_child_relation": "NOT_SHOWN: graph/compiler block groups are not a Section 4 call identity",
+      "retention_screen": {
+        "pairwise_demand_frames_compatible": true,
+        "result": "SERIAL_FRAME_PATH",
+        "serial_frame_chain_compatible": true,
+        "source_to_each_consumer_compatible": true,
+        "terminal_use_present": false,
+        "transitions": [
+          {
+            "compatible": true,
+            "exact_Q23_rank": 1,
+            "new_group": 4247,
+            "new_rank": 19,
+            "old_group": 2591,
+            "old_rank": 18,
+            "rank_method": "exact pinned Q23 frame-dimension identity"
+          },
+          {
+            "compatible": true,
+            "exact_Q23_rank": 1,
+            "new_group": 4251,
+            "new_rank": 20,
+            "old_group": 4247,
+            "old_rank": 19,
+            "rank_method": "exact pinned Q23 frame-dimension identity"
+          }
+        ]
+      },
+      "same_group_graph_uses": 0,
+      "unmatched_demand_count": 2,
+      "value": 2876
+    }
+  ],
+  "serial_screen": {
+    "interpretation": "A screen only; it does not prove role availability after consumer synthesis.",
+    "max_baseline_duplicate_use_copy_xors": 1,
+    "multi_group_path_count": 4466,
+    "serial_with_copy_opportunity_count": 220
+  },
+  "source": {
+    "compiler_sha256": "9984aaccf880e4840402322d76678bfddb33ce7e494af78430a43429f51b85fd",
+    "graph_sha256": "3d47e89d2649c90800a276bdd0480131def50e0bdf92c122a19494b55bf17420",
+    "issue19_commit": "eaa21e97209357575ef462d189c0950b6da85e7c",
+    "issue19_source_manifest_files": 24,
+    "issue20_result_commit": "e2cf064a7976566e8a9e60719c16f0c7d12160d9",
+    "pr63_commit": "aa7701b68540b7863d3b66a414e4319915d6282d",
+    "pr74_historical_pin": "23468ac3867e778f54835ab66eb513934965160b",
+    "pr74_selected_verification_pin": "2eecf5f8e4eafb3dd13dbc70b9ecc5b4e6e9a77c",
+    "word_gzip_sha256": "1a57c143380a063211653f1f35e7cc9710539523b0b34c90f354a0425c34bd59",
+    "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+  },
+  "status": "PASS",
+  "universe": {
+    "active_graph_nodes": 64065,
+    "compiler_blocks": 52473,
+    "compiler_use_points": 118332,
+    "graph_operand_occurrences": 124588,
+    "graph_values_with_uses": 58729,
+    "word_frame_events": 444594,
+    "word_physical_xors": 149172,
+    "word_roles": 27918
+  }
+}

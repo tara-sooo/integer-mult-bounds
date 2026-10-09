@@ -1,0 +1,674 @@
+{
+  "baseline": {
+    "elementary_xors": 149172,
+    "rank_histogram": {
+      "0": 302093,
+      "1": 42694,
+      "10": 449,
+      "12": 464,
+      "13": 22,
+      "14": 2005,
+      "15": 544,
+      "16": 547,
+      "17": 368,
+      "18": 4220,
+      "19": 7820,
+      "2": 82741,
+      "21": 165,
+      "22": 23,
+      "3": 11086,
+      "4": 10683,
+      "5": 7757,
+      "6": 2005,
+      "7": 275,
+      "8": 1362,
+      "9": 525
+    },
+    "rank_mass": 642620,
+    "roles": 27918,
+    "word_gzip_sha256": "1a57c143380a063211653f1f35e7cc9710539523b0b34c90f354a0425c34bd59",
+    "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+  },
+  "candidate": {
+    "baseline_duplicate_use_copy_xors": 9,
+    "graph_use_count": 12,
+    "graph_uses": [
+      {
+        "consumer": 1995,
+        "consumer_group": 1905,
+        "operand": 1,
+        "same_group": false
+      },
+      {
+        "consumer": 2025,
+        "consumer_group": 1922,
+        "operand": 0,
+        "same_group": false
+      },
+      {
+        "consumer": 2026,
+        "consumer_group": 1923,
+        "operand": 1,
+        "same_group": false
+      },
+      {
+        "consumer": 5263,
+        "consumer_group": 4669,
+        "operand": 1,
+        "same_group": false
+      },
+      {
+        "consumer": 5293,
+        "consumer_group": 4686,
+        "operand": 0,
+        "same_group": false
+      },
+      {
+        "consumer": 5294,
+        "consumer_group": 4687,
+        "operand": 1,
+        "same_group": false
+      },
+      {
+        "consumer": 62924,
+        "consumer_group": 51689,
+        "operand": 1,
+        "same_group": false
+      },
+      {
+        "consumer": 63051,
+        "consumer_group": 51698,
+        "operand": 0,
+        "same_group": false
+      },
+      {
+        "consumer": 63055,
+        "consumer_group": 51822,
+        "operand": 1,
+        "same_group": false
+      },
+      {
+        "consumer": 63059,
+        "consumer_group": 51825,
+        "operand": 1,
+        "same_group": false
+      },
+      {
+        "consumer": 63063,
+        "consumer_group": 51828,
+        "operand": 1,
+        "same_group": false
+      },
+      {
+        "consumer": 63067,
+        "consumer_group": 51831,
+        "operand": 1,
+        "same_group": false
+      }
+    ],
+    "physical_demands": [
+      {
+        "consumer_group": 1905,
+        "event": [
+          160,
+          20,
+          1905
+        ],
+        "event_index": 106486,
+        "exact_Q23_rank": 5,
+        "slot": 160,
+        "use_id": 361
+      },
+      {
+        "consumer_group": 1922,
+        "event": [
+          161,
+          20,
+          1922
+        ],
+        "event_index": 166371,
+        "exact_Q23_rank": 9,
+        "slot": 161,
+        "use_id": 428
+      },
+      {
+        "consumer_group": 1923,
+        "event": [
+          162,
+          20,
+          1923
+        ],
+        "event_index": 166397,
+        "exact_Q23_rank": 9,
+        "slot": 162,
+        "use_id": 432
+      },
+      {
+        "consumer_group": 4669,
+        "event": [
+          163,
+          20,
+          4669
+        ],
+        "event_index": 108395,
+        "exact_Q23_rank": 5,
+        "slot": 163,
+        "use_id": 6393
+      },
+      {
+        "consumer_group": 4686,
+        "event": [
+          164,
+          20,
+          4686
+        ],
+        "event_index": 168073,
+        "exact_Q23_rank": 9,
+        "slot": 164,
+        "use_id": 6460
+      },
+      {
+        "consumer_group": 4687,
+        "event": [
+          165,
+          20,
+          4687
+        ],
+        "event_index": 168099,
+        "exact_Q23_rank": 9,
+        "slot": 165,
+        "use_id": 6464
+      },
+      {
+        "consumer_group": 51689,
+        "event": [
+          166,
+          20,
+          51689
+        ],
+        "event_index": 105249,
+        "exact_Q23_rank": 3,
+        "slot": 166,
+        "use_id": 110924
+      },
+      {
+        "consumer_group": 51698,
+        "event": [
+          167,
+          20,
+          51698
+        ],
+        "event_index": 105412,
+        "exact_Q23_rank": 3,
+        "slot": 167,
+        "use_id": 110953
+      },
+      {
+        "consumer_group": 51822,
+        "event": [
+          168,
+          20,
+          51822
+        ],
+        "event_index": 137542,
+        "exact_Q23_rank": 5,
+        "slot": 168,
+        "use_id": 111347
+      },
+      {
+        "consumer_group": 51825,
+        "event": [
+          169,
+          20,
+          51825
+        ],
+        "event_index": 195530,
+        "exact_Q23_rank": 9,
+        "slot": 169,
+        "use_id": 111354
+      },
+      {
+        "consumer_group": 51828,
+        "event": [
+          21426,
+          51825,
+          51828
+        ],
+        "event_index": 260629,
+        "exact_Q23_rank": 4,
+        "slot": 21426,
+        "use_id": 111361
+      },
+      {
+        "consumer_group": 51831,
+        "event": [
+          168,
+          51828,
+          51831
+        ],
+        "event_index": 357612,
+        "exact_Q23_rank": 4,
+        "slot": 168,
+        "use_id": 111368
+      }
+    ],
+    "producer_group": 20,
+    "producer_group_duplicate_use_copy_xors": 9,
+    "value": 21
+  },
+  "local_dirty_checks": {
+    "1905": {
+      "arbitrary_dirty_role_basis_vectors": 9,
+      "gate_count": 11,
+      "scope": "local group M followed by its exact inverse; not a full word replay",
+      "status": "PASS",
+      "touched_role_slots": [
+        160,
+        1454,
+        1475,
+        1510,
+        20033,
+        20034,
+        20035,
+        20036,
+        20037
+      ]
+    },
+    "1922": {
+      "arbitrary_dirty_role_basis_vectors": 4,
+      "gate_count": 11,
+      "scope": "local group M followed by its exact inverse; not a full word replay",
+      "status": "PASS",
+      "touched_role_slots": [
+        161,
+        20016,
+        20023,
+        21450
+      ]
+    },
+    "1923": {
+      "arbitrary_dirty_role_basis_vectors": 4,
+      "gate_count": 10,
+      "scope": "local group M followed by its exact inverse; not a full word replay",
+      "status": "PASS",
+      "touched_role_slots": [
+        162,
+        20028,
+        20031,
+        21460
+      ]
+    },
+    "4669": {
+      "arbitrary_dirty_role_basis_vectors": 9,
+      "gate_count": 11,
+      "scope": "local group M followed by its exact inverse; not a full word replay",
+      "status": "PASS",
+      "touched_role_slots": [
+        9,
+        25,
+        163,
+        1525,
+        20106,
+        20107,
+        20108,
+        20109,
+        20110
+      ]
+    },
+    "4686": {
+      "arbitrary_dirty_role_basis_vectors": 4,
+      "gate_count": 11,
+      "scope": "local group M followed by its exact inverse; not a full word replay",
+      "status": "PASS",
+      "touched_role_slots": [
+        164,
+        20089,
+        20096,
+        21486
+      ]
+    },
+    "4687": {
+      "arbitrary_dirty_role_basis_vectors": 4,
+      "gate_count": 10,
+      "scope": "local group M followed by its exact inverse; not a full word replay",
+      "status": "PASS",
+      "touched_role_slots": [
+        165,
+        20101,
+        20104,
+        21496
+      ]
+    },
+    "51689": {
+      "arbitrary_dirty_role_basis_vectors": 7,
+      "gate_count": 10,
+      "scope": "local group M followed by its exact inverse; not a full word replay",
+      "status": "PASS",
+      "touched_role_slots": [
+        166,
+        301,
+        1760,
+        2975,
+        12548,
+        19909,
+        19910
+      ]
+    },
+    "51698": {
+      "arbitrary_dirty_role_basis_vectors": 5,
+      "gate_count": 9,
+      "scope": "local group M followed by its exact inverse; not a full word replay",
+      "status": "PASS",
+      "touched_role_slots": [
+        167,
+        1516,
+        2822,
+        12530,
+        19927
+      ]
+    },
+    "51822": {
+      "arbitrary_dirty_role_basis_vectors": 3,
+      "gate_count": 6,
+      "scope": "local group M followed by its exact inverse; not a full word replay",
+      "status": "PASS",
+      "touched_role_slots": [
+        168,
+        1421,
+        1481
+      ]
+    },
+    "51825": {
+      "arbitrary_dirty_role_basis_vectors": 3,
+      "gate_count": 3,
+      "scope": "local group M followed by its exact inverse; not a full word replay",
+      "status": "PASS",
+      "touched_role_slots": [
+        168,
+        169,
+        21426
+      ]
+    },
+    "51828": {
+      "arbitrary_dirty_role_basis_vectors": 3,
+      "gate_count": 4,
+      "scope": "local group M followed by its exact inverse; not a full word replay",
+      "status": "PASS",
+      "touched_role_slots": [
+        168,
+        21425,
+        21426
+      ]
+    },
+    "51831": {
+      "arbitrary_dirty_role_basis_vectors": 7,
+      "gate_count": 12,
+      "scope": "local group M followed by its exact inverse; not a full word replay",
+      "status": "PASS",
+      "touched_role_slots": [
+        168,
+        1226,
+        21425,
+        23694,
+        27771,
+        27772,
+        27773
+      ]
+    }
+  },
+  "phase": "FOCUSED_REGENERATION_SCREEN",
+  "physical_value_span_screen": {
+    "per_demand": {
+      "1905": {
+        "eligible_other_roles": 11,
+        "interpretation": "A witness is only a control-span screen; writing, restoring, and endpoint costs remain due.",
+        "retired_eligible_roles": 8,
+        "retired_one_to_three_carrier_witness": null,
+        "target_frame": [
+          1,
+          8126467
+        ],
+        "target_group": 1905,
+        "target_in_available_other_role_span": false,
+        "target_input_slots": [
+          160
+        ],
+        "value": 21,
+        "witness": []
+      },
+      "1922": {
+        "eligible_other_roles": 35,
+        "interpretation": "A witness is only a control-span screen; writing, restoring, and endpoint costs remain due.",
+        "retired_eligible_roles": 31,
+        "retired_one_to_three_carrier_witness": null,
+        "target_frame": [
+          1,
+          4195327
+        ],
+        "target_group": 1922,
+        "target_in_available_other_role_span": false,
+        "target_input_slots": [
+          161
+        ],
+        "value": 21,
+        "witness": []
+      },
+      "1923": {
+        "eligible_other_roles": 35,
+        "interpretation": "A witness is only a control-span screen; writing, restoring, and endpoint costs remain due.",
+        "retired_eligible_roles": 31,
+        "retired_one_to_three_carrier_witness": null,
+        "target_frame": [
+          1,
+          4455427
+        ],
+        "target_group": 1923,
+        "target_in_available_other_role_span": false,
+        "target_input_slots": [
+          162
+        ],
+        "value": 21,
+        "witness": []
+      },
+      "4669": {
+        "eligible_other_roles": 11,
+        "interpretation": "A witness is only a control-span screen; writing, restoring, and endpoint costs remain due.",
+        "retired_eligible_roles": 8,
+        "retired_one_to_three_carrier_witness": null,
+        "target_frame": [
+          2,
+          4194367
+        ],
+        "target_group": 4669,
+        "target_in_available_other_role_span": false,
+        "target_input_slots": [
+          163
+        ],
+        "value": 21,
+        "witness": []
+      },
+      "4686": {
+        "eligible_other_roles": 35,
+        "interpretation": "A witness is only a control-span screen; writing, restoring, and endpoint costs remain due.",
+        "retired_eligible_roles": 31,
+        "retired_one_to_three_carrier_witness": null,
+        "target_frame": [
+          2,
+          8372227
+        ],
+        "target_group": 4686,
+        "target_in_available_other_role_span": false,
+        "target_input_slots": [
+          164
+        ],
+        "value": 21,
+        "witness": []
+      },
+      "4687": {
+        "eligible_other_roles": 35,
+        "interpretation": "A witness is only a control-span screen; writing, restoring, and endpoint costs remain due.",
+        "retired_eligible_roles": 31,
+        "retired_one_to_three_carrier_witness": null,
+        "target_frame": [
+          2,
+          4210627
+        ],
+        "target_group": 4687,
+        "target_in_available_other_role_span": false,
+        "target_input_slots": [
+          165
+        ],
+        "value": 21,
+        "witness": []
+      },
+      "51689": {
+        "eligible_other_roles": 4,
+        "interpretation": "A witness is only a control-span screen; writing, restoring, and endpoint costs remain due.",
+        "retired_eligible_roles": 0,
+        "retired_one_to_three_carrier_witness": null,
+        "target_frame": [
+          4194304,
+          4194319
+        ],
+        "target_group": 51689,
+        "target_in_available_other_role_span": false,
+        "target_input_slots": [
+          166
+        ],
+        "value": 21,
+        "witness": []
+      },
+      "51698": {
+        "eligible_other_roles": 4,
+        "interpretation": "A witness is only a control-span screen; writing, restoring, and endpoint costs remain due.",
+        "retired_eligible_roles": 0,
+        "retired_one_to_three_carrier_witness": null,
+        "target_frame": [
+          4194304,
+          7340035
+        ],
+        "target_group": 51698,
+        "target_in_available_other_role_span": false,
+        "target_input_slots": [
+          167
+        ],
+        "value": 21,
+        "witness": []
+      },
+      "51822": {
+        "eligible_other_roles": 11,
+        "interpretation": "A witness is only a control-span screen; writing, restoring, and endpoint costs remain due.",
+        "retired_eligible_roles": 8,
+        "retired_one_to_three_carrier_witness": null,
+        "target_frame": [
+          4194304,
+          5177347
+        ],
+        "target_group": 51822,
+        "target_in_available_other_role_span": false,
+        "target_input_slots": [
+          168
+        ],
+        "value": 21,
+        "witness": []
+      },
+      "51825": {
+        "eligible_other_roles": 30,
+        "interpretation": "A witness is only a control-span screen; writing, restoring, and endpoint costs remain due.",
+        "retired_eligible_roles": 27,
+        "retired_one_to_three_carrier_witness": null,
+        "target_frame": [
+          4194304,
+          5238787
+        ],
+        "target_group": 51825,
+        "target_in_available_other_role_span": false,
+        "target_input_slots": [
+          169
+        ],
+        "value": 21,
+        "witness": []
+      },
+      "51828": {
+        "eligible_other_roles": 63,
+        "interpretation": "A witness is only a control-span screen; writing, restoring, and endpoint costs remain due.",
+        "retired_eligible_roles": 59,
+        "retired_one_to_three_carrier_witness": null,
+        "target_frame": [
+          4194304,
+          5242627
+        ],
+        "target_group": 51828,
+        "target_in_available_other_role_span": false,
+        "target_input_slots": [
+          21426
+        ],
+        "value": 21,
+        "witness": []
+      },
+      "51831": {
+        "eligible_other_roles": 102,
+        "interpretation": "A witness is only a control-span screen; writing, restoring, and endpoint costs remain due.",
+        "retired_eligible_roles": 98,
+        "retired_one_to_three_carrier_witness": null,
+        "target_frame": [
+          4194304,
+          5242867
+        ],
+        "target_group": 51831,
+        "target_in_available_other_role_span": false,
+        "target_input_slots": [
+          168
+        ],
+        "value": 21,
+        "witness": []
+      }
+    },
+    "scope": "fresh-signal forms carried by currently frame-eligible roles; a hit is not a dirty-state reconstruction schedule",
+    "summary": {
+      "demand_count": 12,
+      "min_witness_roles": null,
+      "span_hits": 0,
+      "witness_role_counts": {
+        "1905": 0,
+        "1922": 0,
+        "1923": 0,
+        "4669": 0,
+        "4686": 0,
+        "4687": 0,
+        "51689": 0,
+        "51698": 0,
+        "51822": 0,
+        "51825": 0,
+        "51828": 0,
+        "51831": 0
+      }
+    }
+  },
+  "resources": {
+    "baseline_compile_seconds": 50.97007638702053,
+    "free_disk_kib": 37490656,
+    "peak_rss_kib": 462464,
+    "wall_seconds": 53.647775812016334
+  },
+  "source": {
+    "compiler_sha256": "9984aaccf880e4840402322d76678bfddb33ce7e494af78430a43429f51b85fd",
+    "graph_sha256": "3d47e89d2649c90800a276bdd0480131def50e0bdf92c122a19494b55bf17420",
+    "issue19_commit": "eaa21e97209357575ef462d189c0950b6da85e7c",
+    "issue20_result_commit": "e2cf064a7976566e8a9e60719c16f0c7d12160d9",
+    "pinned_instrumented_compiler_sha256": "e2eb7063e5ca6788dd86b3c2affdc49b470efc3ba57ca89ef820e76e6843bb89",
+    "pinned_word_gzip_sha256": "1a57c143380a063211653f1f35e7cc9710539523b0b34c90f354a0425c34bd59",
+    "pinned_word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad",
+    "pr63_commit": "aa7701b68540b7863d3b66a414e4319915d6282d",
+    "runtime_instrumentation_sha256": "a8fc358c6584cbd00e7712184e9f2d56e4400137ecbf5ffccd9216713c935462"
+  },
+  "status": "PASS",
+  "validation": {
+    "all_frame_inclusions_asserted": true,
+    "baseline_canonical_hash_matches_frozen": true,
+    "compiler_internal_all_block_input_signal_assertions": true,
+    "full_global_dirty_basis_replay": "NOT_RUN",
+    "global_scatter_assertion": true,
+    "local_group_M_then_inverse_all_touched_dirty_role_basis": true
+  }
+}

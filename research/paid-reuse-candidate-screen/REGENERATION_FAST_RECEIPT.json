@@ -1,0 +1,61 @@
+{
+  "availability_schema": "Rows are [logical_value, demand_group, in_span, eligible_other_roles, retired_eligible_roles]. A span hit is a fresh-form witness screen, not a complete dirty-state reconstruction or paid schedule.",
+  "baseline": {
+    "elementary_xors": 149172,
+    "rank_histogram": {
+      "0": 302093,
+      "1": 42694,
+      "10": 449,
+      "12": 464,
+      "13": 22,
+      "14": 2005,
+      "15": 544,
+      "16": 547,
+      "17": 368,
+      "18": 4220,
+      "19": 7820,
+      "2": 82741,
+      "21": 165,
+      "22": 23,
+      "3": 11086,
+      "4": 10683,
+      "5": 7757,
+      "6": 2005,
+      "7": 275,
+      "8": 1362,
+      "9": 525
+    },
+    "rank_mass": 642620,
+    "roles": 27918,
+    "word_gzip_sha256": "1a57c143380a063211653f1f35e7cc9710539523b0b34c90f354a0425c34bd59",
+    "word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad"
+  },
+  "coverage": {
+    "definition": "For each demand, screen the candidate fresh-signal form against other currently frame/future-use-eligible physical role forms, excluding direct candidate carriers.",
+    "graph_multi_values_with_multiple_physical_demand_groups": 15102,
+    "graph_multi_values_with_multiple_physical_demands": 15102,
+    "multiple_physical_values_without_an_external_block_input": 0,
+    "separate_demand_points": 79075,
+    "span_hit_demands": 1080,
+    "span_hit_values": 786
+  },
+  "phase": "FAST_REGENERATION_AVAILABILITY",
+  "resources": {
+    "baseline_compile_seconds": 921.6114520439878,
+    "free_disk_kib": 37510908,
+    "peak_rss_kib": 539696,
+    "wall_seconds": 926.1129557400127
+  },
+  "source": {
+    "compiler_sha256": "9984aaccf880e4840402322d76678bfddb33ce7e494af78430a43429f51b85fd",
+    "graph_sha256": "3d47e89d2649c90800a276bdd0480131def50e0bdf92c122a19494b55bf17420",
+    "issue19_commit": "eaa21e97209357575ef462d189c0950b6da85e7c",
+    "issue20_result_commit": "e2cf064a7976566e8a9e60719c16f0c7d12160d9",
+    "pinned_instrumented_compiler_sha256": "e2eb7063e5ca6788dd86b3c2affdc49b470efc3ba57ca89ef820e76e6843bb89",
+    "pinned_word_gzip_sha256": "1a57c143380a063211653f1f35e7cc9710539523b0b34c90f354a0425c34bd59",
+    "pinned_word_sha256": "640696dd7cd893add9d6e12d0d587956fecf113b2eff8c29547b82e5a6f3c0ad",
+    "pr63_commit": "aa7701b68540b7863d3b66a414e4319915d6282d",
+    "runtime_instrumentation_sha256": "ab8f1d5373aed392242cca9bf8771a019699db00307b7251c4662e4a667f8093"
+  },
+  "status": "PASS"
+}
