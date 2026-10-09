@@ -1,0 +1,21 @@
+# Cost and realization gate
+
+State: **STOP before a candidate-specific cost ledger.** The local matrix has exact dyadic coefficients, but the source does not provide a typed five-port multiplication interface. The requirements below remain separate; a zero or blank cost is never inferred from missing data.
+
+| Obligation | Frozen-source fact | Five-pair candidate state |
+|---|---|---|
+| Complex scalar values | The original complex network uses \(\mathbb Z[i,1/2]\); \(+1/4\) and \(-1/4\) belong to that ring. | **KNOWN** as formal coefficients only. This does not define legal source roots or a scalar circuit. |
+| Walsh operation | \(K_*\) has 512 formal nonzero entries and is a Walsh block and its transpose divided by four. PR 144's p4/h8 control has 128 formal \(K\) entries. | **UNKNOWN** paid effort. No reversible Walsh/4 word, intermediate roles, precision bound, or source/target frames were constructed. The nonzero count is not a physical cost comparison. |
+| Bit supplier and \(H_0\) | PR 130's distinct bit word uses triples in \(\mathbb Q^{23}\), \(H_0=(I-J/9)/2\), and unit norm on triple indicators. | **NOT RUN** as a candidate supplier: no map to its typed roles exists. As a formal weight-five coordinate vector in \(\mathbb Q^{23}\), unchanged \(H_0\) gives \(10/9\), not one; this rules out that unchanged reuse only. A new bit supplier is **UNKNOWN**. |
+| Dirty restoration | The source's signed word has explicit \(V,M,J\), inverse cleanup, signed old-value corrections, and restores arbitrary initial dirty data. | **NOT RUN**. The candidate defines none of \(V_*,M_*,J_*\), no old-value reads, and no arbitrary-dirty schedule. |
+| Source/target frames | The manuscript requires common frames at every gate incidence and exact source/sink endpoint actions. PR 130/144 supply frames only for their typed triple data. | **UNKNOWN**. No five-port source, target, or intermediate frame is assigned. |
+| Roles and copies | The source counts data roles, ordered side-copy wires, centers, and stage-specific scratch roles separately. | **UNKNOWN**. The 32 matrix indices do not define data roles, copies, centers, or invocation multiplicity. |
+| Signs and corrections | PR 144's signs, conservative supports, old-value pre-reads, and inverse signs are part of its actual word. | **NOT RUN**. No \(H_*\) or \(B_*\) source schedule exists, so no signed-root or correction ledger exists. |
+| Stage routing and phases | PR 130 uses its triple-indexed three-stage cover with local dimension \(3h-2\); PR 144's sharing layer embeds that cover in ambient \(m=3h\) using three orthogonal \(h\)-blocks. | **UNKNOWN**. No five-port stages, bijective role routes, phase endpoints, or adapters are defined. |
+| Prime, ring, and tape implementation | The bit and complex networks use different scalar domains. The full-array Swap additionally needs a fixed bit network, rational gate frames, exact endpoint equations, and a rank sum. | **NOT RUN**. No bit network or Walsh tape word exists. The formal dyadic entries cannot be reduced modulo two to supply one. |
+| Recursion and child profile | The source recurrence requires actual \(W,m,s\), role-row routing, and child ranks. The \(3h-2\) and \(3h\) formulas belong to the cited triple-port constructions. | **UNKNOWN**. No candidate \(W\), \(m\), \(s\), parent width, or histogram \(n_r\) is defined. No conditional substitution is used. |
+| Cost and \(\kappa\) | A local matrix identity does not certify a paid full-array recursion. | **NOT RUN**. No moment, rank deficit, strict inequalities, margins, or \(\kappa\) are computed. |
+
+The original source's \(m=h^3\), PR 130's \(m=3h-2\) local active space, and PR 144's \(m=3h\) shared ambient space are different typed layers. None supplies a legal \(m\) for this motif. Likewise, the PR 144 full p5 family has 80 three-pair ports; its later certificates and costs are not transferred to the proposed 32-port five-pair family.
+
+The only quantitative comparison here is formal support size: 512 entries in \(K_*\) versus 128 in the p4/h8 control. It does not account for a Walsh algorithm, copies, phases, frames, dirty restoration, bit work, routing, or recursion. No projected cost advantage or \(\kappa\) is claimed.

@@ -1,0 +1,267 @@
+{
+  "PR144_original_p4_h8_positive_control": {
+    "K_H_support_orthogonal_counts": {
+      "H": 384,
+      "K": 128
+    },
+    "K_plus_H_plus_B_identity": true,
+    "K_squared_identity": true,
+    "address_span_rank_gf2": 8,
+    "copied_coordinate_star_scatter_equals_B": true,
+    "cube_count": 4,
+    "gram_rows_hex_lsb_is_column_zero": [
+      "66666669",
+      "66999996",
+      "99669996",
+      "99996669",
+      "99996696",
+      "99669969",
+      "66999969",
+      "66666696",
+      "5a5a6966",
+      "5aa59699",
+      "a55a9699",
+      "a5a56966",
+      "a5a59666",
+      "a55a6999",
+      "5aa56999",
+      "5a5a9666",
+      "3c695a5a",
+      "3c96a5a5",
+      "c3965aa5",
+      "c369a55a",
+      "c396a55a",
+      "c3695aa5",
+      "3c69a5a5",
+      "3c965a5a",
+      "693c3c3c",
+      "963cc3c3",
+      "96c33cc3",
+      "69c3c33c",
+      "96c3c33c",
+      "69c33cc3",
+      "693cc3c3",
+      "963c3c3c"
+    ],
+    "h": 8,
+    "matrix_coefficients": {
+      "B": {
+        "-1/2": 224,
+        "0": 480,
+        "1": 32,
+        "1/2": 288
+      },
+      "H": {
+        "-1/2": 192,
+        "0": 640,
+        "1/2": 192
+      },
+      "K": {
+        "-1/2": 96,
+        "0": 896,
+        "1/2": 32
+      }
+    },
+    "matrix_nonzero_counts": {
+      "B": 544,
+      "H": 384,
+      "K": 128
+    },
+    "matrix_sha256_row_major_fraction_text": {
+      "B": "c3ca09a82f9fcfa3d79fad48f6cc182daf0391d23584f8a47ac53789b621dc8a",
+      "H": "8c8c6f2ab85588383feb79f42c4ee39d8bfaf4450827ff4393e8b0dbe1137a6c",
+      "K": "fc6ac2b076e637cac42e330164893f31085d6e6970c44c5617546d7c8d3fdc10"
+    },
+    "p": 4,
+    "port_masks_hex": [
+      "15",
+      "16",
+      "19",
+      "1a",
+      "25",
+      "26",
+      "29",
+      "2a",
+      "45",
+      "46",
+      "49",
+      "4a",
+      "85",
+      "86",
+      "89",
+      "8a",
+      "51",
+      "52",
+      "61",
+      "62",
+      "91",
+      "92",
+      "a1",
+      "a2",
+      "54",
+      "58",
+      "64",
+      "68",
+      "94",
+      "98",
+      "a4",
+      "a8"
+    ],
+    "port_weight": 3,
+    "ports": 32
+  },
+  "candidate_5_pair_motif": {
+    "K_coefficients": {
+      "-1/4": 240,
+      "0": 512,
+      "1/4": 272
+    },
+    "K_matrix_sha256_row_major_fraction_text": "66c5046580cccddb6cf8d986aee9b13101cf838b7e5546fd6bfae46fede578a4",
+    "K_nonzero_count": 512,
+    "K_squared_identity": true,
+    "K_support_orthogonal_count": 512,
+    "address_span_rank_gf2": 6,
+    "address_width": 10,
+    "gram_diagonal_all_one": true,
+    "gram_row_signature": {
+      "diagonal": 1,
+      "off_diagonal_ones": 15,
+      "off_diagonal_zeros": 16
+    },
+    "gram_rows_hex_lsb_is_column_zero": [
+      "69969669",
+      "96696996",
+      "96696996",
+      "69969669",
+      "96696996",
+      "69969669",
+      "69969669",
+      "96696996",
+      "96696996",
+      "69969669",
+      "69969669",
+      "96696996",
+      "69969669",
+      "96696996",
+      "96696996",
+      "69969669",
+      "96696996",
+      "69969669",
+      "69969669",
+      "96696996",
+      "69969669",
+      "96696996",
+      "96696996",
+      "69969669",
+      "69969669",
+      "96696996",
+      "96696996",
+      "69969669",
+      "96696996",
+      "69969669",
+      "69969669",
+      "96696996"
+    ],
+    "negative_controls": {
+      "free_relabel_from_PR144_p4_h8": {
+        "PR144_p4_h8_port_weight": 3,
+        "PR144_p4_h8_span_rank_gf2": 8,
+        "candidate_port_weight": 5,
+        "candidate_span_rank_gf2": 6,
+        "expected_failure_observed": true
+      },
+      "removed_one_quarter_scaling": {
+        "expected_failure_observed": true,
+        "unscaled_AA_transpose_diagonal": "16"
+      },
+      "removed_one_walsh_sign": {
+        "expected_failure_observed": true,
+        "row_0_dot_row_1": "-1/8"
+      },
+      "same_parity_distinct_port_edge": {
+        "cap_dot": 1,
+        "expected_failure_observed": true,
+        "selectors": [
+          0,
+          3
+        ]
+      },
+      "self_edge": {
+        "cap_dot": 1,
+        "expected_failure_observed": true,
+        "port_norm_remains_one": true,
+        "selector": 0
+      },
+      "unchanged_PR130_H0_reuse": {
+        "ambient_dimension": 23,
+        "expected_failure_observed": true,
+        "five_indicator_norm": "10/9",
+        "formal_coordinate_check_only": true,
+        "triple_indicator_norm": "1"
+      }
+    },
+    "port_count": 32,
+    "port_masks_hex": [
+      "155",
+      "156",
+      "159",
+      "15a",
+      "165",
+      "166",
+      "169",
+      "16a",
+      "195",
+      "196",
+      "199",
+      "19a",
+      "1a5",
+      "1a6",
+      "1a9",
+      "1aa",
+      "255",
+      "256",
+      "259",
+      "25a",
+      "265",
+      "266",
+      "269",
+      "26a",
+      "295",
+      "296",
+      "299",
+      "29a",
+      "2a5",
+      "2a6",
+      "2a9",
+      "2aa"
+    ],
+    "selector_weight": 5,
+    "walsh_sign_rows_x_then_y": [
+      "++++++++++++++++",
+      "+-+-+-+-+-+-+-+-",
+      "++--++--++--++--",
+      "+--++--++--++--+",
+      "++++----++++----",
+      "+-+--+-++-+--+-+",
+      "++----++++----++",
+      "+--+-++-+--+-++-",
+      "++++++++--------",
+      "+-+-+-+--+-+-+-+",
+      "++--++----++--++",
+      "+--++--+-++--++-",
+      "++++--------++++",
+      "+-+--+-+-+-++-+-",
+      "++----++--++++--",
+      "+--+-++--++-+--+"
+    ],
+    "walsh_squared_identity": true
+  },
+  "method": "Python standard library; exact integers and fractions only",
+  "primary_status": "MULTIPLICATION_PORT_TYPE_MISSING",
+  "schema": "source-first-signed-motif-check-v1",
+  "scope": {
+    "candidate_is_full_PR144_p5_family": false,
+    "p5_full_PR144_family_port_count": 80,
+    "typed_5_port_decoder": "NOT RUN"
+  }
+}
