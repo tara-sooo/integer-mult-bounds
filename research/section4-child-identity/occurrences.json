@@ -1,0 +1,71 @@
+{
+  "outcome_scope": "two real pivots from one real Section 4 edge; not a global impossibility claim",
+  "source": {
+    "repository": "openai/math",
+    "commit": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "section3": "upstream/build/sections/03-motifs.tex",
+    "section4": "upstream/build/sections/04-swap.tex"
+  },
+  "parent": {
+    "operation": "Swap_2",
+    "m": 1000000,
+    "k": 2,
+    "chunk_digits": 1000000000000,
+    "child_field_digits": 1000000,
+    "role_count_W": "177176569091445000000",
+    "radix": "q_*: fixed by the source's finite denominator table, numeric value not published",
+    "array_shape": "[W^2] x [q_*^(m^2)] x [q_*^(m^2)]",
+    "volume": "W^2 * q_*^(2*m^2)",
+    "selected_role_stream_shape": "[W] x [q_*^m]^(2*m)",
+    "selected_role_stream_volume": "W * q_*^(2*m^2) = V/W",
+    "row_class": "r=W*g+(w-1), g=0,...,W-1; w denotes C_1 in a source-unspecified wire enumeration"
+  },
+  "edge": {
+    "semantic_key": {
+      "stage": 3,
+      "fixed_triples": ["{1,2,3}", "{1,2,3}"],
+      "wire": "central scratch C_1",
+      "tail_gate": "time 1 subtract-scatter",
+      "head_gate": "time 3 gather"
+    },
+    "tail_frame": "(I_10000 - P) tensor I_100",
+    "head_frame": "I_1000000",
+    "difference": "A_e = P tensor I_100",
+    "rational_rank": 100,
+    "factorization": {
+      "L": "I_10000 + (u-e_1)e_1^T",
+      "R": "I_10000 + e_10000(v^T/4-e_10000^T)",
+      "Pi_0": "e_1 e_10000^T",
+      "E_1": "L tensor I_100",
+      "Pi": "Pi_0 tensor I_100",
+      "E_2": "R tensor I_100",
+      "u": "t tensor t; t=1_{ {1,2,3} }",
+      "v": "(G t) tensor (G t); G=I-J/9",
+      "P": "u v^T/4"
+    },
+    "numeric_wire_index": "not defined by the source; semantic role key is exact"
+  },
+  "calls": [
+    {
+      "pivot_order": 1,
+      "pivot_matrix_coordinates_1_based": [1, 999901],
+      "tensor_coordinates": [[1, 1], [10000, 1]],
+      "recursion": "Swap_1 inside Swap_2",
+      "target_fields": ["H_1", "D_999901"],
+      "full_input_shape": "[W] x [q_*^m]^(2*m), with all other fields as spectators",
+      "live_input_state": "pre_shear(D_999901 += H_1, pretriangular(Phi_Mtail(Z_source)))"
+    },
+    {
+      "pivot_order": 2,
+      "pivot_matrix_coordinates_1_based": [2, 999902],
+      "tensor_coordinates": [[1, 2], [10000, 2]],
+      "recursion": "Swap_1 inside Swap_2",
+      "target_fields": ["H_2", "D_999902"],
+      "full_input_shape": "[W] x [q_*^m]^(2*m), with all other fields as spectators",
+      "live_input_state": "pre_shear_2(complete_pivot_1(pretriangular(Phi_Mtail(Z_source))))"
+    }
+  ],
+  "runtime_payload": "arbitrary full bit arrays, including arbitrary dirty scratch; no concrete production tape instance is supplied by the theorem",
+  "factorization_choice": "explicit valid exact factors; Pi entries executed in increasing row order",
+  "note": "No synthetic sequential call IDs are used; the records are keyed by the source-defined edge and actual Pi pivot coordinates."
+}
