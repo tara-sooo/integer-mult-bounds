@@ -3,6 +3,9 @@
 All source snapshots below are pinned by exact commit. Issue, PR, and commit
 links use the redirect form. No current upstream HEAD was substituted.
 
+The dedicated linked worktree branch `issue-28-new-signed-reduction` was
+created from fork `main` at [commit `0605a24a28836168ad29d6239b46064b892298fc`](https://redirect.github.com/tara-sooo/integer-mult-bounds/commit/0605a24a28836168ad29d6239b46064b892298fc).
+
 ## Read-only research inputs
 
 - Full request and exit taxonomy: [fork Issue 28](https://redirect.github.com/tara-sooo/integer-mult-bounds/issues/28).
@@ -18,24 +21,24 @@ Hashes are over exact file bytes at the stated commit.
 
 | Source snapshot | File | SHA-256 |
 |---|---|---|
-| PR 144 | `scripts/paired_cube/graph.py` | `c757d47997f2fa42a95c16f6e6855cf8b125216ae3335b3891e305cf1da82855` |
-| PR 144 | `scripts/paired_cube/frames.py` | `7d897418dbfee47de0723ea4983098a982610ccba45e1bac9000a79626d8421c` |
-| PR 144 | `notes/paired-cube-construction.tex` | `fb478cda034c1934c62230487008c0a753867e1b153b7d0088878d6fa06856b4` |
-| PR 144 | `notes/paired-cube-bit.tex` | `bed3841c349b1b897cab338b9800dc6030afcdcff0bc7cfdb437501e84fdcd19` |
-| PR 144 | `LICENSE` | `c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4` |
-| PR 144 | `NOTICE` | `f8511476690f8554d2ee37304b34dc7f58e385e4bff77555d5bd895bcda6212e` |
-| PR 130 | `notes/three-stage-cover-assembly.tex` | `ccf34a6d37c4af14bebeab15be50ab204eb1caebe546385520050ec30089441d` |
-| PR 130 | `notes/general-clifford-frames.tex` | `c9bb9655b594583c6b4bab8cb485233f1d1e588f83858cf1e4c3530cee8fed54` |
-| PR 130 | `notes/three-stage-cover-bit.tex` | `47123a756f823c83a0d48cca2bf5add6472cd88410b13aed345e70c8834fb511` |
-| PR 130 | `LICENSE` | `c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4` |
-| PR 130 | `NOTICE` | `e891051aa7858815850030c9531a88794ba0f39436fbd03cc0f2607a76da8b74` |
+| [PR 144](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/144) | `scripts/paired_cube/graph.py` | `c757d47997f2fa42a95c16f6e6855cf8b125216ae3335b3891e305cf1da82855` |
+| [PR 144](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/144) | `scripts/paired_cube/frames.py` | `7d897418dbfee47de0723ea4983098a982610ccba45e1bac9000a79626d8421c` |
+| [PR 144](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/144) | `notes/paired-cube-construction.tex` | `fb478cda034c1934c62230487008c0a753867e1b153b7d0088878d6fa06856b4` |
+| [PR 144](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/144) | `notes/paired-cube-bit.tex` | `bed3841c349b1b897cab338b9800dc6030afcdcff0bc7cfdb437501e84fdcd19` |
+| [PR 144](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/144) | `LICENSE` | `c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4` |
+| [PR 144](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/144) | `NOTICE` | `f8511476690f8554d2ee37304b34dc7f58e385e4bff77555d5bd895bcda6212e` |
+| [PR 130](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/130) | `notes/three-stage-cover-assembly.tex` | `ccf34a6d37c4af14bebeab15be50ab204eb1caebe546385520050ec30089441d` |
+| [PR 130](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/130) | `notes/general-clifford-frames.tex` | `c9bb9655b594583c6b4bab8cb485233f1d1e588f83858cf1e4c3530cee8fed54` |
+| [PR 130](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/130) | `notes/three-stage-cover-bit.tex` | `47123a756f823c83a0d48cca2bf5add6472cd88410b13aed345e70c8834fb511` |
+| [PR 130](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/130) | `LICENSE` | `c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4` |
+| [PR 130](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/130) | `NOTICE` | `e891051aa7858815850030c9531a88794ba0f39436fbd03cc0f2607a76da8b74` |
 | Manuscript | `preprints/Integer-multiplication-below-n-log-n-September-23-2026/paper.pdf` | `834f644c3ce67932b9f7357d3615fb8fea4a7ff198d90e4f6883a15ba9df7129` |
 | Manuscript | `preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/03-motifs.tex` | `ed76761194988a01af77ead0ea6469cb5dcd29690ab985a0b5a4006b0f2b69bb` |
 | Manuscript | `preprints/Integer-multiplication-below-n-log-n-September-23-2026/build/sections/04-swap.tex` | `412b170ccaab38dba96e95e3cbfae09f4876a9818f8d278776a746b0f8044906` |
 | Manuscript | `LICENSE` | `c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4` |
 | Issue 24 comparison | `research/outer-cover-moonshot/check_small.py` | `025e210e154559d90f492ea50d92e6a9bffa0a7922e2d79a46d435fddb3cf9a9` |
 
-The Issue 27 artifact files inspected at its pinned commit are recorded by
+The [Issue 27](https://redirect.github.com/tara-sooo/integer-mult-bounds/issues/27) artifact files inspected at its pinned commit are recorded by
 these SHA-256 hashes:
 
 | File | SHA-256 |
@@ -55,15 +58,15 @@ the full doubled-integer matrices.
 
 ## Notices and assistance
 
-The pinned PR 144 graph and construction retain icekylinx's paired-cube
+The pinned [PR 144](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/144) graph and construction retain icekylinx's paired-cube
 work, its disclosed OpenAI GPT-6 Astra assistance, and Codex integration.
-The pinned PR 130 notice credits icekylinx's three-stage extension and
+The pinned [PR 130](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/130) notice credits icekylinx's three-stage extension and
 OpenAI GPT-6 Astra assistance, Codex integration, the adopted local complex
 DAG, and the inherited bit-word authors and notices. The original manuscript
 identifies OpenAI as author. The source trees carry Apache-2.0 licenses; their
 existing `LICENSE` and `NOTICE` files were not changed or copied here.
 
-The Issue 27 audit is credited to OpenAI Codex assistance. This independent
+The [Issue 27](https://redirect.github.com/tara-sooo/integer-mult-bounds/issues/27) audit is credited to OpenAI Codex assistance. This independent
 pilot report and its standard-library verifier were prepared with OpenAI
 Codex assistance. This records research assistance, not independent review,
 an OpenAI endorsement, or a claim of a multiplication improvement. The

@@ -2,7 +2,7 @@
 
 ## Source-defined ports and matrices
 
-This FAST check uses the pinned PR 144 `Graph.labels` order: iterate the four
+This FAST check uses the pinned [PR 144](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/144) `Graph.labels` order: iterate the four
 three-element subsets of pair indices in lexicographic order, then the eight
 selector bit strings in lexicographic order. A port for pair set
 `I=(i0,i1,i2)` and bits `e` is
@@ -42,7 +42,7 @@ nonzero `K` and `H` entry has even `|T intersection S|`, hence
 `q_T dot q_S=0` in `F2`. The checker finds zero support violations in both
 matrices.
 
-## Existing B identity and Issue 27
+## Existing B identity and prior audit
 
 The copied-star formula is
 
@@ -52,9 +52,9 @@ S_i = sum_(S containing i) x_S.
 ```
 
 Every source port occurs in three stars, so `sum_i S_i=3X`. With
-`Z_i=X-S_i`, the Issue 27 decoder `X-(1/2)sum_(i in T)Z_i` is exactly this
+`Z_i=X-S_i`, the [Issue 27](https://redirect.github.com/tara-sooo/integer-mult-bounds/issues/27) decoder `X-(1/2)sum_(i in T)Z_i` is exactly this
 same `B` matrix. The equality holds coefficient by coefficient in this
-receipt. Issue 27 established an identity for the existing PR 144 center;
+receipt. [Issue 27](https://redirect.github.com/tara-sooo/integer-mult-bounds/issues/27) established an identity for the existing [PR 144](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/144) center;
 it did not supply a new center, remove K/H work, or prove a paid saving.
 See the [Issue 27 audit snapshot](https://redirect.github.com/tara-sooo/integer-mult-bounds/commit/91661785056376ecafebf8e00b0ebd7226cd23a0).
 
@@ -91,7 +91,7 @@ See the [Issue 27 audit snapshot](https://redirect.github.com/tara-sooo/integer-
 - The manuscript Section 4 endpoint condition is
   `M_out(rho(w))-M_in(w)=I` on every role. Its rank sum, prime choice,
   recursive calls, rows, spectators, routing and fixed-tape cleanup are
-  charged. The PR 130 pinned assembly supplies its own explicit stage
+  charged. The [PR 130](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/130) pinned assembly supplies its own explicit stage
   involutions and endpoint frames. Neither contract follows from a matrix
   sum alone.
 

@@ -2,7 +2,7 @@
 
 ## Definition
 
-Port labels use the exact PR 144 order recorded in `BASELINE.md`. Choose the
+Port labels use the exact [PR 144](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/144) order recorded in `BASELINE.md`. Choose the
 first cross-cube ordered pair `(a,b)` in that order: `a=0`, with cube
 `(0,1,2)`, bits `000`, port `(0,2,4)`; `b=8`, with cube `(0,1,3)`, bits
 `000`, port `(0,2,6)`. Set `lambda=+1`, and let `E_ab` have its only nonzero

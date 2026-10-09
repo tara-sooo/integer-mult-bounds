@@ -39,7 +39,7 @@ def q(value_twice):
 
 
 def port_order():
-    """PR 144 Graph.labels: combinations, then lexicographic selector bits."""
+    """Pinned paired-cube graph order: combinations, then selector bits."""
     return [(cube, bits, tuple(2 * i + bit for i, bit in zip(cube, bits)))
             for cube in combinations(range(P), 3)
             for bits in product(range(2), repeat=3)]
@@ -70,7 +70,7 @@ def rank_f2(rows):
 
 
 def source_h_coefficient(source_cube, source_bits, target_cube, target_bits):
-    """PR 144 F/A/G channel coefficient for one source in one target root."""
+    """Pinned F/A/G channel coefficient for one source in one target root."""
     shared = sorted(set(source_cube) & set(target_cube))
     if not shared:
         return Fraction(1, 2)
@@ -185,7 +185,7 @@ def main():
     assert all(K2[i][j] == K2[j][i] for i in range(V) for j in range(V))
     assert all(K2[i][j] in (-1, 0, 1) for i in range(V) for j in range(V))
 
-    # Match PR 144's direct B coefficients, copied-star scatter, and F/A/G H roots.
+    # Match the direct B coefficients, copied-star scatter, and F/A/G H roots.
     for i, (cube_t, bits_t, t) in enumerate(ports):
         for j, (cube_s, bits_s, s) in enumerate(ports):
             overlap = len(set(t) & set(s))
@@ -198,19 +198,12 @@ def main():
             assert Fraction(H2[i][j], 2) == expected_h, (i, j, expected_h, H2[i][j])
 
     baseline_support = {}
-    baseline_h0_support = {}
     for name, matrix in (("K", K2), ("H", H2)):
         count, violations = support_audit(matrix, ports)
         assert not violations, (name, violations[:1])
         baseline_support[name] = {"nonzero_entries": count, "orthogonality_violations": 0}
-        h0_bad = []
-        for i in range(V):
-            for j in range(V):
-                if matrix[i][j] and len(set(ports[i][2]) & set(ports[j][2])) != 1:
-                    h0_bad.append([i, j])
-        baseline_h0_support[name] = len(h0_bad)
 
-    # PR 27's existing B identity is a source equality, not new work.
+    # The prior zeta factorization is an equality for existing B, not new work.
     for i, (cube_t, bits_t, t) in enumerate(ports):
         for j, (cube_s, bits_s, s) in enumerate(ports):
             X = 1
@@ -264,19 +257,6 @@ def main():
     # Bit-side is a separate address form and scalar ring; do not reduce 1/2 in F2.
     no_half_inverse_in_f2 = not any((2 * bit) % 2 == 1 for bit in (0, 1))
     assert no_half_inverse_in_f2
-    candidate_h0_support = {}
-    for name, matrix in (("K_prime", Kp2), ("H_prime", Hp2)):
-        bad = []
-        for i in range(V):
-            for j in range(V):
-                overlap = len(set(ports[i][2]) & set(ports[j][2]))
-                if matrix[i][j] and overlap != 1:
-                    bad.append([i, j])
-        candidate_h0_support[name] = {
-            "nonzero_entries": sum(value != 0 for row in matrix for value in row),
-            "nonorthogonal_entries_under_H0": len(bad),
-        }
-
     # Negative controls: omit the inverse, use the wrong conjugating sign, and undo dirty data wrongly.
     omitted_inverse = mm(C, K2)
     omitted_square = mm(omitted_inverse, omitted_inverse)
@@ -299,7 +279,7 @@ def main():
     assert wrong_dirty_sign == dirty + 2 * x
     assert omitted_dirty_undo == dirty + x
 
-    # A tautological H' cannot pass the lawfulness guard, and B' reuses Issue 27's exact B.
+    # A tautological H' cannot pass the lawfulness guard, and B' reuses existing B.
     assert Hp2 == madd(madd(I2, Kp2, -1), Bp2, -1)
     assert Bp2 == B2 and digest(Bp2) == digest(B2)
     assert candidate_support["K_prime"]["orthogonality_violations"] > 0
@@ -334,7 +314,7 @@ def main():
                 "K_squared_equals_I": True,
                 "copied_star_scatter_equals_B": True,
                 "source_fa_g_h_equals_H": True,
-                "issue27_zeta_B_formula_equals_B": True,
+                "prior_zeta_B_formula_equals_existing_B": True,
             },
             "support": baseline_support,
             "physical_source_profile": {
@@ -382,17 +362,16 @@ def main():
         "false_success_guards": {
             "H_prime_definition_is_tautological": True,
             "tautology_alone_accepted_as_success": False,
-            "B_prime_reuses_issue27_exact_B": True,
+            "B_prime_reuses_existing_B": True,
             "reused_B_accepted_as_new_work": False,
             "positive_candidate_status": False,
         },
         "bit_side": {
-            "status": "NO BIT OPERATOR CLAIMED; scalar/role bridge NOT RUN after the complex cap failure",
+            "status": "NOT RUN after the complex cap failure; no F2 bit operator or phase word was built",
             "half_reduced_mod_2": False,
             "2x_equals_1_has_no_solution_in_F2": no_half_inverse_in_f2,
-            "H0_pairing_for_two_triple_addresses": "(|T intersection S|-1)/2; this is a separate rational address form",
-            "baseline_nonorthogonal_counts_under_H0": baseline_h0_support,
-            "candidate_nonorthogonal_counts_under_H0": candidate_h0_support,
+            "required_H0_cap_status": "NOT CHECKED; no typed bit supplier or decoder was constructed",
+            "separate_bit_label_form": "the manuscript's separate rational frame has pairing |T intersection S|-1 on weight-three indicators",
             "minimum_missing_lemma": "an independently typed F2/H0-legal supplier and decoder for a surviving new operator",
         },
         "focused_status": "NOT RUN",

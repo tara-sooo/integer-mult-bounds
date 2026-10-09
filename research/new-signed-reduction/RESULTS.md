@@ -13,7 +13,7 @@ decompositions or encodings.
 ## Evidence and scope
 
 - **FAST baseline: PASS.** All 32 source-defined ports and all exact B, H,
-  K coefficients match the pinned PR 144 graph and construction identities.
+  K coefficients match the pinned [PR 144](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/144) graph and construction identities.
   `K^-1=K`, `K^2=I`, `K+H+B=I`, the source H channels, B star scatter, and
   every original K/H orthogonality check pass. Full matrices and digests are
   in `small_exact_receipt.json`.
@@ -31,7 +31,7 @@ decompositions or encodings.
 - **FOCUSED candidate implementation and paid comparison: NOT RUN** after
   the exact cap failure. **FULL integration: NOT RUN.**
 
-The Issue 27 result was the existing PR 144 B identity in complementary
+The [Issue 27](https://redirect.github.com/tara-sooo/integer-mult-bounds/issues/27) result was the existing [PR 144](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/144) B identity in complementary
 coordinates. It removes no paid K/H or center work and contributes no new
 operator here. No multiplication improvement or `kappa` is claimed. Stop
 candidate exploration at this scoped obstruction.

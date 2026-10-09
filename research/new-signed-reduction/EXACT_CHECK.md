@@ -14,7 +14,7 @@ was run.
 ## Baseline: PASS
 
 All 32 source-defined ports and all 1,024 coefficients of each matrix are
-checked. The verifier confirms the direct PR 144 formulas, its source
+checked. The verifier confirms the direct [PR 144](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/144) formulas, its source
 `F/A/G` construction of `H`, the star scatter for `B`, the signed
 `K=(P-A)/2` identity, `K^-1=K`, `K^2=I`, and `K+H+B=I`. It checks every
 nonzero `K` and `H` entry against the actual `F2^8` address dot product;
@@ -73,20 +73,20 @@ the frozen source/target frame cap.
 - **False success guard:** `H'=I-K'-B'` makes the matrix sum true by
   definition. The verifier rejects positive status because the cap fails.
   `B'=B` has exactly the baseline B digest and is the already existing
-  Issue 27 / PR 144 center identity, not new work.
+  [Issue 27](https://redirect.github.com/tara-sooo/integer-mult-bounds/issues/27) / [PR 144](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/144) center identity, not new work.
 
 ## Separate bit-side check
 
 No scalar coefficient is reduced modulo 2. The checker verifies that
 `2x=1` has no solution in `F2`; hence the rational/complex half coefficients
-do not themselves define a bit operator. For three-address indicators the
-separate bit-side `H0` form has pairing
-`( |T intersection S| - 1 )/2`; its support audit is recorded in the
-receipt. The original baseline K/H support is not an H0 bit supplier, and
-the candidate has no independently typed F2 operator or dirty/frame word.
-The minimum missing lemma is a source-typed F2/H0-legal supplier and decoder
-for a surviving operator. That operator work is **NOT RUN** after the
-complex support failure.
+do not themselves define a bit operator. The manuscript's separate bit-side
+network has its own scalar and frame/phase interface; for weight-three
+indicators its rational label pairing is `|T intersection S| - 1`. No bit
+supplier or decoder was built, so the required H0 cap is **NOT CHECKED** and
+no bit-side compatibility is claimed. The minimum missing lemma is an
+independently typed F2/H0-legal supplier and decoder, with its restoration
+and endpoint contract, for a surviving operator. That work is **NOT RUN**
+after the complex support failure.
 
 ## Scope
 

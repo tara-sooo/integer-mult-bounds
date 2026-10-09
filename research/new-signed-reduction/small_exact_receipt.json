@@ -3296,7 +3296,7 @@
       "K_plus_H_plus_B_equals_I": true,
       "K_squared_equals_I": true,
       "copied_star_scatter_equals_B": true,
-      "issue27_zeta_B_formula_equals_B": true,
+      "prior_zeta_B_formula_equals_existing_B": true,
       "source_fa_g_h_equals_H": true
     },
     "matrix_sha256": {
@@ -3362,24 +3362,11 @@
   },
   "bit_side": {
     "2x_equals_1_has_no_solution_in_F2": true,
-    "H0_pairing_for_two_triple_addresses": "(|T intersection S|-1)/2; this is a separate rational address form",
-    "baseline_nonorthogonal_counts_under_H0": {
-      "H": 384,
-      "K": 128
-    },
-    "candidate_nonorthogonal_counts_under_H0": {
-      "H_prime": {
-        "nonorthogonal_entries_under_H0": 382,
-        "nonzero_entries": 386
-      },
-      "K_prime": {
-        "nonorthogonal_entries_under_H0": 132,
-        "nonzero_entries": 136
-      }
-    },
     "half_reduced_mod_2": false,
     "minimum_missing_lemma": "an independently typed F2/H0-legal supplier and decoder for a surviving new operator",
-    "status": "NO BIT OPERATOR CLAIMED; scalar/role bridge NOT RUN after the complex cap failure"
+    "required_H0_cap_status": "NOT CHECKED; no typed bit supplier or decoder was constructed",
+    "separate_bit_label_form": "the manuscript's separate rational frame has pairing |T intersection S|-1 on weight-three indicators",
+    "status": "NOT RUN after the complex cap failure; no F2 bit operator or phase word was built"
   },
   "candidate": {
     "B_prime_doubled": [
@@ -7218,7 +7205,7 @@
     }
   },
   "false_success_guards": {
-    "B_prime_reuses_issue27_exact_B": true,
+    "B_prime_reuses_existing_B": true,
     "H_prime_definition_is_tautological": true,
     "positive_candidate_status": false,
     "reused_B_accepted_as_new_work": false,
