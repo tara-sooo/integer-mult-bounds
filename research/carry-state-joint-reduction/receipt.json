@@ -1,0 +1,53 @@
+{
+  "adverse_controls": [
+    {
+      "expected": 4,
+      "fault": "omit p01",
+      "got": 0,
+      "inputs": [
+        1,
+        4
+      ],
+      "rejected": true
+    },
+    {
+      "expected": 9,
+      "fault": "decrement carry",
+      "got": 5,
+      "inputs": [
+        3,
+        3
+      ],
+      "rejected": true
+    },
+    {
+      "expected": 0,
+      "fault": "dirty low accumulator",
+      "got": 1,
+      "inputs": [
+        0,
+        0
+      ],
+      "rejected": true
+    }
+  ],
+  "binary_integer_pairs_checked": 256,
+  "candidate": "four-way block product with adjacent carry windows",
+  "input_bits": 4,
+  "minimum_residual_bits_in_pilot": 2,
+  "recursive_nodes_per_product": {
+    "1": 16,
+    "2": 4,
+    "4": 1
+  },
+  "residual_values_with_zero_high_halves": [
+    0,
+    1,
+    2
+  ],
+  "scalar_multiplication_leaves_per_product": 16,
+  "scope": "exact integer semantics; fixed-tape cost is analyzed separately",
+  "status": "PASS",
+  "two_bit_child_products_checked": 16,
+  "window_boundary_bit": 2
+}
