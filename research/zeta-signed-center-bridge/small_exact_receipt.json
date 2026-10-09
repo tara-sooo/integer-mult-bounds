@@ -1,0 +1,205 @@
+{
+  "algebra": {
+    "coefficient_ring": {
+      "Q": true,
+      "Z_i_1_over_2": true,
+      "h8_inverse_1_over_5_is_dyadic": false,
+      "half_is_defined_in_F2": false,
+      "half_is_in_dyadic_ring": true
+    },
+    "dyadic_vectors": {
+      "h4": {
+        "exact": true,
+        "input_denominator": 8,
+        "target_vectors_checked": 4
+      },
+      "p4_h8": {
+        "exact": true,
+        "input_denominator": 8,
+        "target_vectors_checked": 32
+      }
+    },
+    "h4_triple_space": {
+      "all_coefficients_dyadic": true,
+      "coefficient_pairs_checked": 16,
+      "columns": 4,
+      "h": 4,
+      "ports": 4,
+      "rows": 4,
+      "twice_B_sha256": "a16da9e8a6444fa7ad23e302dabf1f3ab0983e5b916d058c00c6b4d6699350a6"
+    },
+    "p4_h8_all_ports": {
+      "all_coefficients_dyadic": true,
+      "coefficient_pairs_checked": 1024,
+      "columns": 32,
+      "h": 8,
+      "ports": 32,
+      "rows": 32,
+      "twice_B_sha256": "29697b4932e26c5d3df4ee33d944032b744d8c1eafbde8fd91640a78e1e909d1"
+    },
+    "symbolic_overlap_cases": [
+      {
+        "candidate": "-1/2",
+        "overlap": 0,
+        "source_B": "-1/2"
+      },
+      {
+        "candidate": "0",
+        "overlap": 1,
+        "source_B": "0"
+      },
+      {
+        "candidate": "1/2",
+        "overlap": 2,
+        "source_B": "1/2"
+      },
+      {
+        "candidate": "1",
+        "overlap": 3,
+        "source_B": "1"
+      }
+    ]
+  },
+  "decoder_inventory": {
+    "X_uses": 32,
+    "p4_ports": 32,
+    "shared_half_schedule": {
+      "half_scalings": 8,
+      "signed_additions": 96
+    },
+    "singleton_root_uses": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "total_singleton_root_uses": 96
+  },
+  "negative_controls": {
+    "disjoint_indicator_and_missing_half": {
+      "B": "1/2",
+      "disjointness_indicator": 0,
+      "intersection": 2,
+      "no_half_decoder": "0",
+      "no_half_value_differs": true,
+      "source": [
+        1,
+        3,
+        7
+      ],
+      "target": [
+        1,
+        3,
+        5
+      ]
+    },
+    "forbidden_h_minus_3_division": {
+      "basis_vector_X": 1,
+      "basis_vector_sum_singleton_roots": 5,
+      "both_sides_mod_5": {
+        "X": 1,
+        "root_sum": 0
+      },
+      "dyadic_denominator": false,
+      "h": 8,
+      "h_minus_3": 5,
+      "inverse": "1/5"
+    },
+    "literal_H0_disjoint_triples": {
+      "pairing": "-1/2",
+      "required_pairing": 0
+    },
+    "missing_X": {
+      "B": "1",
+      "source": [
+        1,
+        3,
+        5
+      ],
+      "target": [
+        1,
+        3,
+        5
+      ],
+      "without_X": "0"
+    }
+  },
+  "p4_center_span_inventory": {
+    "complement_root_dimensions": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "complement_total_dimension": 56,
+    "direct_X_plus_complement_total_dimension": 64,
+    "full_X_source_span_dimension": 8,
+    "source_note": "source-span dimensions only; a derived sum is not a physical frame charge",
+    "star_root_dimensions": [
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "star_total_dimension": 48
+  },
+  "status": "SIGNED_CENTER_IS_EXISTING_STAR_METHOD",
+  "zeta_h8_focused_inventory": {
+    "appended_accumulator_nodes": 1008,
+    "graph_table_R": 1262,
+    "h": 8,
+    "input_masks": 254,
+    "other_roots": 246,
+    "p4_data_inputs": 32,
+    "raw_dirty_preread_terms": {
+      "all_roots": 11846,
+      "maximum_adjoint_coefficient": 1,
+      "per_singleton_root": [
+        253,
+        253,
+        253,
+        253,
+        253,
+        253,
+        253,
+        253
+      ],
+      "singleton_roots": 2024
+    },
+    "readme_claim_disagrees_with_appended_nodes": true,
+    "readme_claimed_additions": 769,
+    "roots": 254,
+    "scalar_updates": {
+      "forward": 2016,
+      "forward_plus_inverse": 4032,
+      "inverse": 2016
+    },
+    "singleton_P4_contributions": 20,
+    "singleton_roots": 8,
+    "singleton_source_slots": 127,
+    "singleton_zero_contributions": 107,
+    "source_data_histogram": {
+      "1": 1270,
+      "2": 254
+    },
+    "source_data_histogram_mass": 1778,
+    "total_roles": 1262,
+    "zero_data_inputs": 222,
+    "zero_inputs_split": {
+      "nontriple_masks": 198,
+      "triple_masks_outside_P4": 24
+    }
+  }
+}
