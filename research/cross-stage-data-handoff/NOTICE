@@ -1,0 +1,16 @@
+Copyright 2026 tara-sooo.
+
+This checkpoint is distributed under the Apache License, Version 2.0, at the
+repository root. Its analysis and exact checker were prepared with substantial
+OpenAI Codex assistance.
+
+The paired-cube construction in [PR 144](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/144)
+retains the attribution and Apache-2.0 notice recorded by icekylinx, including
+its GPT-6 Astra and Codex assistance disclosure. The source-assisted
+construction in [PR 193](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/193)
+credits icekylinx, eumemic, and Avi Eisenberg and retains its Claude
+assistance disclosure. The pinned construction in
+[PR 207](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/207)
+preserves the [PR 200](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/200)
+bit and [PR 202](https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/202)
+complex source notices. No upstream source code is copied into this checkpoint.

@@ -1,0 +1,150 @@
+{
+  "actual_T3_handoff_witness": {
+    "address": [
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        4
+      ]
+    ],
+    "stage1_Y": 1,
+    "stage2_source_Y": 1,
+    "stage2_target_X_after": 0,
+    "stage3_Y_after": 1,
+    "stage3_target_Y_before": 1
+  },
+  "checker_sha256": "bd846f5a3a91ef7ddec6e8af895b63fbc6685e2a67da959700f102413a1ec656",
+  "conclusion": "All original data-child transitions survive unchanged; no data rank transition is removed or reduced.",
+  "full120_bit_paid_profile": {
+    "I": 43200,
+    "L": 4320000,
+    "N": 1728000,
+    "W": 330480000,
+    "Wm_minus_s": -6912000,
+    "auxiliary_child_histogram": {
+      "1": 435456000,
+      "8": 326592000,
+      "9": 108864000,
+      "10": 1296000,
+      "82": 108864000,
+      "90": 144000,
+      "99": 108864000,
+      "892": 108864000,
+      "900": 109008000,
+      "990": 109152000
+    },
+    "auxiliary_rank_mass": 327032640000,
+    "complete_section3_edge_histogram": {
+      "1": 437184000,
+      "8": 326592000,
+      "9": 119232000,
+      "10": 1296000,
+      "81": 3456000,
+      "82": 108864000,
+      "90": 144000,
+      "99": 108864000,
+      "891": 3456000,
+      "892": 108864000,
+      "900": 109008000,
+      "990": 109152000
+    },
+    "data_child_histogram": {
+      "1": 1728000,
+      "9": 10368000,
+      "81": 3456000,
+      "891": 3456000
+    },
+    "data_rank_mass": 3454272000,
+    "m": 1000,
+    "s": 330486912000
+  },
+  "geometry": {
+    "full_triples": 120,
+    "h": 10,
+    "local_cubes": {
+      "H_nonzero_offdiagonal": 2880,
+      "K_nonzero_offdiagonal": 320,
+      "K_plus_H_plus_B": true,
+      "K_squared": true,
+      "cubes": 10,
+      "ports": 80
+    },
+    "local_selector_ports": 80,
+    "omitted_full_triples": 40,
+    "p": 5
+  },
+  "local80_bit_paid_profile": {
+    "I": 19200,
+    "L": 1920000,
+    "N": 512000,
+    "W": 61120000,
+    "Wm_minus_s": -3328000,
+    "auxiliary_child_histogram": {
+      "1": 79872000,
+      "8": 59904000,
+      "9": 19968000,
+      "10": 576000,
+      "82": 19968000,
+      "90": 64000,
+      "99": 19968000,
+      "892": 19968000,
+      "900": 20032000,
+      "990": 20096000
+    },
+    "auxiliary_rank_mass": 60099840000,
+    "complete_section3_edge_histogram": {
+      "1": 80384000,
+      "8": 59904000,
+      "9": 23040000,
+      "10": 576000,
+      "81": 1024000,
+      "82": 19968000,
+      "90": 64000,
+      "99": 19968000,
+      "891": 1024000,
+      "892": 19968000,
+      "900": 20032000,
+      "990": 20096000
+    },
+    "data_child_histogram": {
+      "1": 512000,
+      "9": 3072000,
+      "81": 1024000,
+      "891": 1024000
+    },
+    "data_rank_mass": 1023488000,
+    "m": 1000,
+    "s": 61123328000
+  },
+  "local_operator_checks": {
+    "bit_side_center": true,
+    "complex_side_center": true,
+    "dirty_shears": {
+      "local_bit": 3120,
+      "local_complex": 3200
+    },
+    "full120_bit_side_center": true,
+    "full120_complex_side_center": true,
+    "full120_signed_exchange": true
+  },
+  "pins": {
+    "issue23_commit": "https://redirect.github.com/tara-sooo/integer-mult-bounds/commit/267c24dfa448fbf43fa68b7d2cfdd5f9580be458",
+    "issue25_commit": "https://redirect.github.com/tara-sooo/integer-mult-bounds/commit/520203231ff0de8d9c3121c924ed4fce398c8f69",
+    "issue30_commit": "https://redirect.github.com/tara-sooo/integer-mult-bounds/commit/78f4a20fa1be5fb7366ae93c808a93d191491472",
+    "manuscript_commit": "https://redirect.github.com/openai/math/commit/adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "pr193_head": "https://redirect.github.com/CrocSwap/integer-mult-bounds/commit/187e1010ac8b259af8e9b5166f68b64bc27b4b47",
+    "pr203_head": "https://redirect.github.com/CrocSwap/integer-mult-bounds/commit/d2873e20750d0949d2ad75cbc4cd82b5b1a74e84",
+    "pr207_head": "https://redirect.github.com/CrocSwap/integer-mult-bounds/commit/cd14825023b75af4f5919a30e5e6d548b6ade5bc"
+  },
+  "status": "LEGAL_HANDOFF_BUT_NO_DATA_GAIN"
+}
