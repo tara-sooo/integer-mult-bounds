@@ -18,6 +18,10 @@ This internal algebra is intentionally unchanged by the candidate. The earlier e
 
 For each of four cubes and three stages, the checker tests its explicit 24-coordinate permutation matrix against `H^T H=I` over `F2` and tests both compositions with its explicit inverse. These twelve right-multiplication maps are group-wide bijections because `gH H^-1=g` and `gH^-1 H=g` for every group element `g`.
 
+The checker also asserts `Q != I` and, at logical vertex `g=I`, records the four stage-1 images: three cubes map to `I`, while `C0` maps to `Q`. For arbitrary `g`, the images are three copies of `g` and one `gQ`; they are distinct because `gQ=g` would imply `Q=I` by cancellation. The map `g -> gQ` is bijective.
+
+This is only a per-cube map check. The pinned [PR 144 sharing note](https://redirect.github.com/CrocSwap/integer-mult-bounds/blob/c8b22bc5c10dba497ac25804e27d9647d818e2ff/notes/paired-cube-sharing.tex) indexes its retained physical auxiliary stock by `(g,r)`, without a cube coordinate. The candidate does not establish one-to-one aggregate occupancy for that stock. The source does not establish that a particular `r` is shared across cube components, so this is **UNRESOLVED / NOT PASSED**, not a proven collision. Any cube-split schedule, added route, or copied role stock is unpriced.
+
 For each cube it computes the three active-block pair intersections. The baseline has all zero dimensions. The candidate has exactly one nonzero entry: `C0`, stage pair `(1,2)`, dimension one. The exact shared vector is `e8` and its self-pairing is one. The same overlap and pairing hold at every group vertex by orthogonal invariance. This is the expected focused failure; no orthogonality is claimed for the attempted full construction.
 
 The 12 route maps cover all 32 ports at all three intended stages, or 96 port-stage visits. Every data bank retains its two coordinate complements `e22,e23`, giving two width-two children per port (64 complement children, rank mass 128).
@@ -47,7 +51,14 @@ z <- M^-1 z
 z <- z - V x
 ```
 
-The completed action is `(y,z,x)->(y+x,z,x)`. The checker evaluates the exact map on all 72 standard basis vectors of the state space, and also on all 72 basis vectors after conjugating by `W=diag(I24,Q,I24)` on the dirty auxiliary bank. Both maps restore arbitrary dirty `z`. The accompanying two-coordinate frame sample verifies `U=F_A T_sigma^-1`, `U^-1=T_sigma F_A^-1`, and the full-frame correction on exact noncommuting matrices.
+The completed action is `(y,z,x)->(y+x,z,x)`. The checker evaluates the exact map on all 72 standard basis vectors of the state space, and also on all 72 basis vectors after conjugating by `W=diag(I24,Q,I24)` on the dirty auxiliary bank. Both maps restore arbitrary dirty `z`. The accompanying two-coordinate frame sample verifies `U=F_A T_sigma^-1`, `U^-1=T_sigma F_A^-1`, and both exact corrections:
+
+```text
+F_A U^-1         = F_A T_sigma F_A^-1
+F_A (U^-1)^-1    = F_A^2 T_sigma^-1
+```
+
+These two frame identities are checked on the same exact noncommuting `2x2` matrices. This representative does not replace the source's all-subspace Clifford theorem.
 
 The two source-faithful negative controls are:
 

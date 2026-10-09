@@ -2,7 +2,7 @@
 
 ## Gate decision
 
-**Profile comparison is gated off for the failed candidate.** The `C0` stage-1 block overlaps the stage-2 block in `e8`, with `<e8,e8>=1`. The three-way orthogonal exterior grouping required by the retained construction therefore fails. No candidate child histogram is computed or inferred, and no normalized moment or `kappa` is compared or claimed.
+**Profile comparison is gated off for the failed candidate.** The `C0` stage-1 block overlaps the stage-2 block in `e8`, with `<e8,e8>=1`. The three-way orthogonal exterior grouping required by the retained construction therefore fails. Also, the candidate does not establish one-to-one aggregate occupancy for the retained `(g,r)` shared stock; this remains **UNRESOLVED / NOT PASSED**, without asserting a specific `r` collision. No candidate child histogram is computed or inferred, and no normalized moment or `kappa` is compared or claimed.
 
 | Charge | Focused-candidate record |
 |---|---|
@@ -10,7 +10,8 @@
 | Source/target/gauge child multisets | Not regenerated. The failed grouping blocks a complete source-defined operator profile. |
 | Two width-two complements per data port | Retained by the candidate: 64 children over 32 ports, each width two. This unchanged count is not a complete profile. |
 | Three-way residual-`sigma` exterior children | Not chargeable for the candidate: the required orthogonal factorization fails at `C0`, stages 1/2. |
-| Full persistent role stock | No stock change is proposed; no physical reuse or new stock reduction is claimed. |
+| Stage-1 shared-stock occupancy | **UNRESOLVED / NOT PASSED.** The same logical `g` maps to `g` for three cubes and `gQ` for `C0`. The source stock has no cube coordinate; the candidate supplies no one-to-one aggregate occupancy proof. |
+| Full persistent role stock | No stock change is priced. Any cube-split schedule, extra routes, or role copies needed to resolve occupancy are unpriced. No particular physical-role collision is claimed. |
 | Complete child histogram, normalized moment, `kappa` | **Not computed.** |
 | Finite router constant | No new price is assigned. A different finite router bill alone would not establish a changed recursive moment. |
 
@@ -41,4 +42,4 @@ M'(alpha) = (1/W0') sum_r n'_r (r/m)^(1-alpha)
 
 The lemma is an exact statement about source-defined child multisets, not a claim about all possible covers. A finite router constant may differ while this normalized moment remains equal; that can affect finite guards or row thresholds, but by itself is not a recursive supplier saving.
 
-The p=4 check is not a p=4 production supplier. The source-specific internal, source, target, gauge, phase, row, router, and bit/complex profile charges have not been regenerated here. The historically pinned PR 163 construction is only a separate structural comparison, not a source of interchangeable profile values.
+The candidate is not established as a legal drop-in: orthogonality fails and aggregate shared-stock occupancy is not passed. The p=4 check is not a p=4 production supplier. The source-specific internal, source, target, gauge, phase, row, router, and bit/complex profile charges have not been regenerated here. The historically pinned PR 163 construction is only a separate structural comparison, not a source of interchangeable profile values.

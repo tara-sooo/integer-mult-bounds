@@ -149,6 +149,11 @@ def check_routes_and_intersections(cubes, ps):
     Q[0], Q[8] = Q[8], Q[0]
     base = [H1, H2, H3]
     c0 = (1, 2, 3)  # the cube omitting pair label 0
+    stage1_images_at_identity = [Q if cube == c0 else H1 for cube in cubes]
+    assert Q != H1
+    assert stage1_images_at_identity.count(H1) == 3
+    assert stage1_images_at_identity.count(Q) == 1
+    # For every g, gQ != g by cancellation and Q != I; g -> gQ is bijective.
 
     routes, base_intersections, candidate_intersections = [], [], []
     candidate_orthogonal = {}
@@ -195,6 +200,10 @@ def check_routes_and_intersections(cubes, ps):
     return dict(group_right_maps=len(routes), multipliers_in_O24_2=True,
                 explicit_inverses=True, baseline_pair_intersection_dims="all zero",
                 port_stage_visits=len(port_stage_visits),
+                stage1_images_at_identity={"I": stage1_images_at_identity.count(H1),
+                                           "Q": stage1_images_at_identity.count(Q)},
+                stage1_groupwide_images="three g, one gQ; gQ != g by cancellation",
+                aggregate_shared_stock_occupancy="UNRESOLVED_NOT_PASSED",
                 candidate_intersections=[(c, i, j, d) for c, i, j, d in candidate_intersections
                                          if d],
                 candidate_C0_stage1_stage2_orthogonal=False,
@@ -320,6 +329,7 @@ def check_dirty_core_and_routed_conjugate():
     U_inv = mm(M, FA_inv)
     assert mm(U, U_inv) == I and mm(U_inv, U) == I
     assert mm(FA, U_inv) == mm(mm(FA, M), FA_inv)
+    assert mm(FA, U) == mm(mm(FA, FA), J)
 
     # Omitting cleanup has the exact dirty residual z'=z+x, witnessed by x=e0.
     zero = [0] * m
@@ -329,6 +339,7 @@ def check_dirty_core_and_routed_conjugate():
                 routed_conjugate_basis_vectors=checked,
                 dirty_z_restored=True, routed_dirty_z_restored=True,
                 frame_U="F_A*T_sigma^-1", inverse="T_sigma*F_A^-1",
+                forward_and_reverse_frame_corrections=True,
                 omitted_cleanup="z'=z+x")
 
 

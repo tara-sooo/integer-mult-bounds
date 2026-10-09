@@ -12,9 +12,15 @@ H'_(j,C) = Q H1   if j=1 and C=C0
 route: g -> g H'_(j,C)
 ```
 
-The full domain is `(j,C,g,r)`, where `j in {1,2,3}`, `C` is one of the four full cubes, `g in O(24,2)`, and `r` is a persistent auxiliary role label. The routed role is the same `r` at group vertex `g H'_(j,C)`. Each map has range all of `O(24,2) x {r}` and inverse `g' -> g'(H'_(j,C))^-1`, with `r` unchanged. The twelve multipliers are in `O(24,2)`: each is a coordinate permutation, and each is its own inverse (`I`, `H2`, `H3`, or `Q`). Therefore every individual stage/cube route is a group bijection by right multiplication.
+For each fixed stage `j`, cube `C`, and role label `r`, the candidate map on logical vertices is `g -> g H'_(j,C)`, with inverse `g' -> g'(H'_(j,C))^-1`; `r` is unchanged. The twelve multipliers are in `O(24,2)`: each is a coordinate permutation, and each is its own inverse (`I`, `H2`, `H3`, or `Q`). Therefore each individual stage/cube map is a bijection.
 
-The data-port index is unchanged by this route. Each of the 32 support sets remains attached to its original cube, source/target roles, and all three stage calls. The local `B/H/K` operators, source channels, data shears, gauges, complements, and persistent role count are not edited by the candidate.
+The data-port index is unchanged by this route. Each of the 32 support sets remains attached to its original cube, source/target roles, and all three stage calls. The local `B/H/K` operators, source channels, data shears, gauges, and complements are not edited by the candidate.
+
+## Aggregate shared-stock occupancy
+
+The pinned [PR 144 sharing note](https://redirect.github.com/CrocSwap/integer-mult-bounds/blob/c8b22bc5c10dba497ac25804e27d9647d818e2ff/notes/paired-cube-sharing.tex) indexes one physical auxiliary bank by `(g,r)`; it has no cube coordinate, and its stage route `g -> gH_j` is cube-independent. The candidate's four stage-1 maps instead send the same logical vertex `g` to `g` for the three cubes other than `C0`, and to `gQ` for `C0`. Since `Q != I`, cancellation in the group gives `gQ != g` for every `g`; right multiplication by `Q` is itself a bijection. At `g=I` the exact image multiplicities are three `I` images and one `Q` image, so the image set is `{g,gQ}` with multiplicities `3,1` for every `g`.
+
+This proves the per-cube maps are bijective, but does not establish a one-to-one occupancy map for the retained shared physical role stock across cube components. The source does not establish that a particular role label `r` is shared across those cube calls, so this is not a proven physical-role collision. Aggregate shared-stock occupancy is **UNRESOLVED / NOT PASSED**. A cube-split schedule, extra routing, or copied role stock would need its own ownership proof and price; none is supplied here. The candidate is not established as a legal drop-in.
 
 ## Exact active-block invariant
 

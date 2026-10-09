@@ -8,9 +8,11 @@
 
 ## FOCUSED
 
-**Exact p=4 check completed for the single specified candidate.** The checker confirms all four full eight-port cubes and 32 ports, frozen `B/H/K` identities and `K^2=I`, all twelve stage/cube right-multiplication maps with explicit inverses in `O(24,2)`, all 96 port-stage visits, and all per-cube stage-pair active-block intersections. The baseline intersections are all zero; the candidate has exactly one dimension-one intersection, `C0` stages 1/2. A common `g in O(24,2)` preserves this overlap and its nonzero pairing, so the group-wide failure is exact without enumerating the group.
+**Exact p=4 check completed for the single specified candidate.** The checker confirms all four full eight-port cubes and 32 ports, frozen `B/H/K` identities and `K^2=I`, all twelve per-cube stage right-multiplication maps with explicit inverses in `O(24,2)`, all 96 port-stage visits, and all per-cube stage-pair active-block intersections. The baseline intersections are all zero; the candidate has exactly one dimension-one intersection, `C0` stages 1/2. A common `g in O(24,2)` preserves this overlap and its nonzero pairing, so the group-wide failure is exact without enumerating the group.
 
-The data contracts survive: all 32 ports retain their exact adjacent frames in dimension `3h-2=22`, both width-two complements per port remain, and the signed shears multiply to `(X,Y)->(-Y,X)`. The representative completed dirty core and its `Q`-routed conjugate restore arbitrary dirty contents on every one of 72 basis vectors. The triple exterior grouping fails at the nonorthogonal overlap, so the full construction is not legal.
+The aggregate role-stock check is **UNRESOLVED / NOT PASSED**. At stage 1, for a fixed logical vertex `g`, the three non-`C0` cube maps go to `g` and the `C0` map goes to `gQ`; these are distinct because `Q != I`. At `g=I` the exact multiplicities are three `I` images and one `Q` image. PR 144 indexes its shared physical stock by `(g,r)` without a cube coordinate, while this candidate changes the destination by cube. The source does not establish that one particular `r` is shared across these cube components, so we do not claim a proven role collision. The candidate does not establish a one-to-one occupancy map for the retained shared stock. Any cube-split schedule, added route, or role copy is unpriced; this is an additional reason it is not a legal drop-in.
+
+The data contracts survive: all 32 ports retain their exact adjacent frames in dimension `3h-2=22`, both width-two complements per port remain, and the signed shears multiply to `(X,Y)->(-Y,X)`. The representative completed dirty core and its `Q`-routed conjugate restore arbitrary dirty contents on every one of 72 basis vectors. Its exact frame sample checks both `F_A U^-1=F_A T_sigma F_A^-1` and `F_A (U^-1)^-1=F_A^2 T_sigma^-1`; the representative does not replace the all-subspace Clifford theorem. The triple exterior grouping fails at the nonorthogonal overlap, and aggregate shared-stock occupancy is not passed, so the full construction is not legal.
 
 The two focused negative controls pass: the candidate overlap has `<e8,e8>=1`, and omitting final dirty cleanup gives `z'=z+x`. The earlier [Issue 24 result](https://redirect.github.com/tara-sooo/integer-mult-bounds/commit/6cb527acd8f96019638bf33f520db333d9b26031) remains an external control only: its even-parity half-cube had frozen `B_block=I4`, `K=0`, and `K^2 != I`. It is not reused as this candidate.
 
@@ -28,7 +30,7 @@ Command:
 /usr/bin/time -v python3 research/full-cube-stage-twist/check_small.py
 ```
 
-On 2026-10-09 UTC the checker exited `0` (the expected obstruction was verified): user time `0.17 s`, system time `0.02 s`, elapsed wall time `0.25 s`, maximum RSS `15,076 kB`. The zero exit status means the exact baseline checks and expected candidate failure were reproduced; it does not certify candidate legality.
+On 2026-10-09 UTC the checker exited `0` (the expected obstruction and unresolved aggregate-occupancy status were reproduced): user time `0.12 s`, system time `0.02 s`, elapsed wall time `0.22 s`, maximum RSS `15,152 kB`. The zero exit status means the exact baseline checks, both frame identities, and expected candidate findings were reproduced; it does not certify candidate legality.
 
 ## Decision
 
