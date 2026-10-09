@@ -1,0 +1,125 @@
+{
+  "bit_stage3_gate_witness": {
+    "added_component_third_factor": "e_2-e_1",
+    "bilinear_pairing_g_b": "0",
+    "consumer": "time-2 X-side copy gate",
+    "section3_gate_label_retyping_by_P_AB": false,
+    "source_T_one_based": [
+      1,
+      3,
+      5
+    ],
+    "source_line_transport_still_holds": true,
+    "stage": 3,
+    "target_line_third_factor": "span(e_2+e_4+e_6)",
+    "target_tau_T_one_based": [
+      2,
+      4,
+      6
+    ],
+    "witness_b": {
+      "e_(1,1)": 1,
+      "e_(4,5)": -4
+    }
+  },
+  "checkpoint": "Issue 39 Phase 0; stop before Phase 1",
+  "label_checks": [
+    {
+      "P_squared_identity_Z_Q_F2": true,
+      "determinant": 1,
+      "direct_sum_contexts": 2,
+      "direct_sum_rank_F2": 4,
+      "direct_sum_rank_Q": 4,
+      "dual_basis_checks_Z_Q_F2": 252,
+      "fixed_triples": 0,
+      "h": 4,
+      "k": 2,
+      "m": 64,
+      "phi_d": [
+        [
+          -2,
+          0
+        ],
+        [
+          0,
+          -2
+        ]
+      ],
+      "rank_P_minus_I_F2": 2,
+      "rank_P_minus_I_Q": 2,
+      "triples": 4,
+      "wrong_dual_witness": {
+        "T_one_based": [
+          1,
+          2,
+          3
+        ],
+        "covector_coordinate_one_based": [
+          1,
+          1,
+          4
+        ],
+        "source_pairing": 0,
+        "target_pairing_after_wrong_P": -8
+      },
+      "wrong_sign_rejected_Z_Q": true
+    },
+    {
+      "P_squared_identity_Z_Q_F2": true,
+      "determinant": -1,
+      "direct_sum_contexts": 10,
+      "direct_sum_rank_F2": 30,
+      "direct_sum_rank_Q": 30,
+      "dual_basis_checks_Z_Q_F2": 4300,
+      "fixed_triples": 0,
+      "h": 6,
+      "k": 3,
+      "m": 216,
+      "phi_d": [
+        [
+          -2,
+          0,
+          0
+        ],
+        [
+          0,
+          -2,
+          0
+        ],
+        [
+          0,
+          0,
+          -2
+        ]
+      ],
+      "rank_P_minus_I_F2": 3,
+      "rank_P_minus_I_Q": 3,
+      "triples": 20,
+      "wrong_dual_witness": {
+        "T_one_based": [
+          1,
+          2,
+          3
+        ],
+        "covector_coordinate_one_based": [
+          1,
+          1,
+          4
+        ],
+        "source_pairing": 0,
+        "target_pairing_after_wrong_P": -8
+      },
+      "wrong_sign_rejected_Z_Q": true
+    }
+  ],
+  "packing_controls": {
+    "independent_values_preserved": true,
+    "lossy_tau_alias_control_rejected": true,
+    "operation_status": "storage reindexing only; no shared gate or frame supplied",
+    "typed_storage_E_D_round_trip_all_20_XY_and_dirty_scratch": true,
+    "wrong_independent_pairing_rejected": true,
+    "wrong_signed_endpoint_rejected": true,
+    "zero_filled_padding_dirty_state_control_rejected": true
+  },
+  "scope": "Exact finite label, lane-reindex, and one original bit gate-label checks only; no Section 4 supplier, complex array operator, full recurrence, or kappa claim."
+}
