@@ -1,0 +1,32 @@
+{
+  "status": "NO_SOURCE_TYPED_BRIDGE",
+  "base_commit": "https://redirect.github.com/tara-sooo/integer-mult-bounds/commit/0605a24a28836168ad29d6239b46064b892298fc",
+  "issue": "https://redirect.github.com/tara-sooo/integer-mult-bounds/issues/37",
+  "issue_comments": 0,
+  "source_manifest": "upstream/manifest.json",
+  "original_section_sha256": {
+    "03-motifs.tex": "ed76761194988a01af77ead0ea6469cb5dcd29690ab985a0b5a4006b0f2b69bb",
+    "04-swap.tex": "412b170ccaab38dba96e95e3cbfae09f4876a9818f8d278776a746b0f8044906",
+    "06-transforms.tex": "924316e4bc905066281d8f9e8746a49d8829aeb393688608deb1e61c3c87853c"
+  },
+  "pins": {
+    "wht_pr": "https://redirect.github.com/CrocSwap/integer-mult-bounds/pull/209",
+    "wht_pr_head": "https://redirect.github.com/CrocSwap/integer-mult-bounds/commit/a7aeea067ec1e2b7e91b0ecec660512b7cafca26",
+    "wht_project": "https://redirect.github.com/jacobalansussman/wht-power-saving-lean/commit/fdfb7815c15ec43af0fb54818a6a57ae4025126b",
+    "comparison_pr_193": "https://redirect.github.com/CrocSwap/integer-mult-bounds/commit/187e1010ac8b259af8e9b5166f68b64bc27b4b47",
+    "comparison_pr_203": "https://redirect.github.com/CrocSwap/integer-mult-bounds/commit/d2873e20750d0949d2ad75cbc4cd82b5b1a74e84",
+    "comparison_pr_208": "https://redirect.github.com/CrocSwap/integer-mult-bounds/commit/2352ffee98179a14af9059be316fb282711000fe",
+    "comparison_pr_210": "https://redirect.github.com/CrocSwap/integer-mult-bounds/commit/0af9e985f381616bdc33f80f6009f0a513836a9b",
+    "comparison_pr_215": "https://redirect.github.com/CrocSwap/integer-mult-bounds/commit/1afe68ea9a03e62306796e882acfd4a99f8b3d8c",
+    "issue_35_checkpoint": "https://redirect.github.com/tara-sooo/integer-mult-bounds/commit/f6618ae74e6e2ad4c2583c915f967809887d4794",
+    "issue_36_checkpoint": "https://redirect.github.com/tara-sooo/integer-mult-bounds/commit/6a9cdb35d76d73e3f2367b494366c230b78a2ce6"
+  },
+  "checks": {
+    "vendored_source_manifest_hashes": "MATCH",
+    "natural_twin_role_map": "REJECTED_BY_SOURCE_LINE_INJECTIVITY_AND_ROLE_ALIASING",
+    "complex_to_f2_coefficient_reduction": "REJECTED: 2 IS INVERTIBLE IN Z[i,1/2] BUT ZERO IN F2",
+    "wht_lean_rebuild": "NOT_RUN",
+    "multiplication_t2_or_t3_execution": "NOT_RUN_BY_PHASE_0_STOP",
+    "new_paid_rank_ledger_or_kappa": "NOT_DEFINED"
+  }
+}
