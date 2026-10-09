@@ -170,6 +170,23 @@
         "candidate_span_rank_gf2": 6,
         "expected_failure_observed": true
       },
+      "old_complex_side_center_direct_reuse": {
+        "candidate_overlap": 3,
+        "candidate_overlap_parity": "odd",
+        "direct_reuse_fails": true,
+        "formal_old_central_coefficient": "1",
+        "formal_old_side_contribution": "0",
+        "formal_old_side_plus_center_sum": "1",
+        "old_side_edge_exists": false,
+        "old_side_edge_predicate": "distinct triples with overlap 0 or 2",
+        "required_identity_off_diagonal": "0",
+        "scope": "direct reuse only; not a no-go theorem or evidence about an unspecified new theorem",
+        "selector_hamming_distance": 2,
+        "selectors": [
+          0,
+          3
+        ]
+      },
       "removed_one_quarter_scaling": {
         "expected_failure_observed": true,
         "unscaled_AA_transpose_diagonal": "16"

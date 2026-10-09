@@ -53,7 +53,9 @@ PR 130's three-stage cover is another, conditional layer over its triple word. I
 
 The bit supplier is separately typed. PR 130's bit note uses a retained triple word at \(h=23\), a rational space \(\mathbb Q^{23}\), and \(H_0=(I-J/9)/2\), with \(q_S^{\mathsf T}H_0q_S=1\) for triple indicators. It is not the complex dyadic graph reduced modulo two. The five-pair motif has no map to these rational bit roles or frames.
 
-Section 4's full-array Swap has its own contract: a fixed finite bit network with \(W\) roles, common rational gate frames \(M_v\), a signed role permutation \(\rho\), endpoint equations \(M_{\rm out(\rho(w))}-M_{\rm in(w)}=I_m\) for every role, and total edge-rank sum \(s<Wm\). The recurrence uses those exact \(W,m,s\), a row split by role, and the complete endpoint and cleanup schedule. A local involution does not supply this contract.
+Pinned manuscript Section 4 (`build/sections/04-swap.tex` at the [original manuscript commit](https://redirect.github.com/openai/math/commit/adc7f1241b42e322a6451854ab7e4b4c146bf78a)) states the full-array Swap theorem. For an array laid out as \([P]\times[2^u]\times[G]\times[2^u]\times[B]\), it interchanges the two \([2^u]\) coordinates by \((p,h,g,d,z)\mapsto(p,d,g,h,z)\), in time \(O(Vu^\tau)\) for \(V=PGB2^{2u}\); \(B=1\) is allowed. The stated work includes shape processing, padding and unpadding, and fixed-tape workspace cleanup.
+
+Its prerequisites are a finite bit circuit with \(W\) roles, including scratch roles; common rational gate and terminal frames \(M_v\); a signed role permutation \(\rho\); and, for every role \(w\), the endpoint equation \(M_{\rm out(\rho(w))}-M_{\rm in(w)}=I_m\). For its edge set, \(s=\sum_e\operatorname{rank}_{\mathbb Q}(M_{\rm head(e)}-M_{\rm tail(e)})<Wm\), and the role-row splitting with fixed-tape cleanup gives \(F_0=O(1)\), \(F_k\le(s/W)F_{k-1}+O(1)\). These are the pinned Section 4 hypotheses and recurrence; the candidate \(K_*\) supplies none of them.
 
 ## The missing source theorem
 

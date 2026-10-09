@@ -146,6 +146,24 @@ def candidate_motif():
     self_dot = dot2(ports[0], ports[0])
     assert same_parity_dot == 1 and self_dot == 1
 
+    direct_reuse_selectors = (0, 3)
+    direct_reuse_hamming = (direct_reuse_selectors[0] ^
+                            direct_reuse_selectors[1]).bit_count()
+    direct_reuse_overlap = (ports[0] & ports[3]).bit_count()
+    old_side_edge_exists = (direct_reuse_selectors[0] !=
+                            direct_reuse_selectors[1] and
+                            direct_reuse_overlap in (0, 2))
+    assert not old_side_edge_exists
+    formal_old_central = Fraction(direct_reuse_overlap - 1, 2)
+    formal_old_side = Fraction(0)
+    formal_old_sum = formal_old_side + formal_old_central
+    required_identity_off_diagonal = Fraction(0)
+    assert direct_reuse_hamming == 2
+    assert direct_reuse_overlap == 3 and direct_reuse_overlap % 2 == 1
+    assert formal_old_central == 1 and formal_old_side == 0
+    assert formal_old_sum == 1
+    assert formal_old_sum != required_identity_off_diagonal
+
     h0_triple_norm = Fraction(3) - Fraction(9, 9)
     h0_triple_norm /= 2
     h0_five_norm = (Fraction(5) - Fraction(25, 9)) / 2
@@ -184,6 +202,24 @@ def candidate_motif():
                 "selectors": [0, 3],
                 "cap_dot": same_parity_dot,
                 "expected_failure_observed": same_parity_dot != 0,
+            },
+            "old_complex_side_center_direct_reuse": {
+                "selectors": list(direct_reuse_selectors),
+                "selector_hamming_distance": direct_reuse_hamming,
+                "candidate_overlap": direct_reuse_overlap,
+                "candidate_overlap_parity": "odd",
+                "old_side_edge_predicate":
+                    "distinct triples with overlap 0 or 2",
+                "old_side_edge_exists": old_side_edge_exists,
+                "formal_old_central_coefficient": str(formal_old_central),
+                "formal_old_side_contribution": str(formal_old_side),
+                "formal_old_side_plus_center_sum": str(formal_old_sum),
+                "required_identity_off_diagonal":
+                    str(required_identity_off_diagonal),
+                "direct_reuse_fails":
+                    formal_old_sum != required_identity_off_diagonal,
+                "scope": "direct reuse only; not a no-go theorem or evidence "
+                         "about an unspecified new theorem",
             },
             "self_edge": {
                 "selector": 0,

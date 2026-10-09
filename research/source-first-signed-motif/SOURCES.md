@@ -63,8 +63,8 @@ The section paths are inside the pinned manuscript subtree preprints/Integer-mul
 
 | File | SHA-256 |
 |---|---|
-| check_small.py | 344a656ed2270a6501d1cb3cc0f3624a8acde55fa14db6f5bb6688a02399a8ef |
-| receipt.json | b4e1b380fb1ba594fc00e2b1853ebacc160cac1972e25a60dbeef2508f3cd090 |
+| check_small.py | 3431d2b71062c1d8601dd257c8ace73518cff9cf562156d0ce529a18ca7c6b36 |
+| receipt.json | 513d1e3020cfc500afcc924f472df06b41f4f7cc3d4ee2fff566fc8a9ac18125 |
 | Repository LICENSE | c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4 |
 | Repository NOTICE | 4cd3cfb404ada8692803f15b33077fca3bb2d684e18bf4593bfd4e3159fa168e |
 

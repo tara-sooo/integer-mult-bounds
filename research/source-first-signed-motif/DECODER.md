@@ -8,6 +8,10 @@ For the proposed labels, \(K_*^2=I\) and each nonzero \(K_*\) coefficient is bin
 
 The manuscript's typed local identity is \(\mathcal J\mathcal V+\mathcal R\mathcal G=I\), where the side-copy path and the center path add to the identity on actual triple-indexed values. PR 144's separate arbitrary-dirty word uses \(JMV=I\), where \(V\) injects source values into dirty carriers, \(M\) is the signed carrier word, and \(J\) decodes to target values. Their domains and mechanisms differ; neither identity follows from \(K_*^2=I\).
 
+## Direct reuse of the original complex side-plus-center formula
+
+In the original complex triple construction, side wires join only distinct triples whose intersection has even size, namely 0 or 2, while the central coefficient is \((|S\cap T|-1)/2\) (pinned manuscript Section 3, `build/sections/03-motifs.tex`, at the [original manuscript commit](https://redirect.github.com/openai/math/commit/adc7f1241b42e322a6451854ab7e4b4c146bf78a)). Candidate selectors 0 and 3 differ in two selector bits and their five-pair addresses overlap in three coordinates. The old side predicate therefore gives no side edge, while formally extending the old central expression gives \((3-1)/2=1\). The resulting direct-reuse side-plus-center off-diagonal coefficient is 1, where the identity requires 0. This is only an obstruction to direct reuse of that old formula; it is not a no-go theorem or evidence against an unspecified new theorem.
+
 ## Missing theorem required to continue
 
 A new outer reduction theorem must first specify genuine source and target value spaces, the five-port input/output types and their relationship to multiplication data, and a non-tautological decoder on those values. If its source and target are different representations, it must state their prescribed identification. It must then prove the correctly typed identity for its chosen construction:

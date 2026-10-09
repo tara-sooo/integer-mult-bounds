@@ -12,6 +12,7 @@ The pinned source indexes its source and target banks by triples; it does not de
 | Walsh block \(A_{x,y}=(-1)^{x\cdot y}/4\) | PASS; exact \(AA^{\mathsf T}=I_{16}\) |
 | \(K_*^2=I_{32}\), exact coefficients, support count | PASS; 512 directed nonzeros, each \(+1/4\) or \(-1/4\) |
 | Binary cap on every nonzero \(K_*\) entry | PASS; all 512 connect opposite selector parities and are orthogonal |
+| Direct reuse of original complex side-plus-center formula on selectors 0 and 3 | Expected direct-reuse failure; Hamming distance 2, overlap 3, no old side edge, formal center coefficient and total 1 versus required off-diagonal 0. This is not a no-go theorem for an unspecified new theorem. |
 | PR 144 original p4/h8 positive control | PASS; 32 weight-three ports, four cubes, \(K^2=I\), \(K+H+B=I\), counts \(K=128,H=384,B=544\), all 512 total \(K/H\) support entries orthogonal |
 | Remove one Walsh sign | Expected failure observed; the exact row-0/row-1 inner product becomes \(-1/8\) |
 | Remove the \(1/4\) scaling | Expected failure observed; \(AA^{\mathsf T}=16I\) |
@@ -36,6 +37,6 @@ Run from the repository root: python3 research/source-first-signed-motif/check_s
 | Candidate source/target roles, copies, corrections, routing, and endpoints | **NOT RUN** | The local matrix does not define these objects. |
 | Paid child profile, recurrence, or \(\kappa\) | **NOT RUN** | No valid candidate \(W,m,s,n_r\) exists. |
 
-**Decision:** NO-GO for advancing this local motif to a multiplication decoder or cost phase under the pinned interface. A new source-typed outer reduction theorem is the prerequisite. This is not a no-go theorem for other multiplication reductions or for the broader goal.
+**Decision:** STOP at MULTIPLICATION_PORT_TYPE_MISSING. The direct-reuse control rejects only direct reuse of the original complex side-plus-center formula. A new source-typed outer reduction theorem is the prerequisite; neither finding is a no-go theorem or evidence against an unspecified new theorem.
 
-The exact checker was run on Python 3 in this Termux worktree. Elapsed time: **0.369779 seconds**; peak resident set: **17,880 kB**. No full repository verification, large CRT computation, full group enumeration, physical profile, production recurrence, or \(\kappa\) computation was run.
+The exact checker was run on Python 3.14 in this Termux worktree. Elapsed time: **0.356857 seconds**; peak resident set: **19,056 kB**. No full repository verification, large CRT computation, full group enumeration, physical profile, production recurrence, or \(\kappa\) computation was run.
