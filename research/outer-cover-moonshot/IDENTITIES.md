@@ -10,7 +10,7 @@ The p=4 positive model builds the actual eight-selector ports from four coordina
 
 For each port, the checker builds a basis of `q-perp`, copies its exact Gram matrix into two 7-dimensional banks, and verifies the two port-specific data-cover swaps are orthogonal involutions. It also checks all stage endpoint dimensions, the three signed shear product, three mutually orthogonal 8-blocks in the separate 24-dimensional auxiliary ambient space, and the rank-two full-ambient data complements.
 
-The copied-center check verifies each actual coordinate-star source span has rank six and matches `U_i`; total center rank is `48`. Its exact scatter coefficient agrees with `B` entry by entry. The arbitrary-dirty check expands the full `(y,z,x)` state as a 6-by-6 rational transformation for the source's literal signed cleanup order. It proves for every initial `y,z,x` in that two-coordinate check that dirty `z` is restored and `y` gains `JMVx`. The raw-core matrix control independently checks `U=F_A T_sigma^-1`, `U^-1=T_sigma F_A^-1`, and the conjugated full-frame correction on exact noncommuting matrices.
+The copied-center check verifies each actual coordinate-star source span has rank six and matches `U_i`; total center rank is `48`. Its exact scatter coefficient agrees with `B` entry by entry. The arbitrary-dirty check expands the full `(y,z,x)` state as a 6-by-6 rational transformation for the source's literal signed cleanup order. It proves for every initial `y,z,x` in that two-coordinate check that dirty `z` is restored and `y` gains `JMVx`. The raw-core matrix control independently checks `U=F_A T_sigma^-1`, `U^-1=T_sigma F_A^-1`, and both full-frame corrections `F_A U^-1=F_A T_sigma F_A^-1` and `F_A (U^-1)^-1=F_A^2 T_sigma^-1` on exact noncommuting matrices.
 
 The check does not replay the frozen p=12 production DAG or prove the all-dimension Clifford/weighted-recursion theorem. The raw-core matrix is a compact exact check of the source's operator equation; the p=4 dirty matrix is a compact exact instance of the source's universal algebraic cleanup. The production proof and certificates remain the authority for their larger words.
 
@@ -34,4 +34,4 @@ The successful deterministic check was run as:
 /usr/bin/time -v python3 research/outer-cover-moonshot/check_small.py
 ```
 
-It exited 0 in `0.27 s` wall time, with `0.20 s` user time, `0.02 s` system time, and maximum RSS `15,568 kB` on 2026-10-09 UTC. No production profile, global CRT, full repository verifier or broad CI was run.
+It exited 0 in `0.28 s` wall time, with `0.19 s` user time, `0.01 s` system time, and maximum RSS `15,620 kB` on 2026-10-09 UTC. No production profile, global CRT, full repository verifier or broad CI was run.

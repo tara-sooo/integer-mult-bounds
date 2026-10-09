@@ -38,6 +38,42 @@ For p=4, `V24=|O(24,2)|=2^144 prod_(i=1)^11(2^(2i)-1)`. A completed baseline wou
 
 The dimensions in the two supplier columns never combine. The bit word is not the p=4 paired-cube local word, and the production p=12 child histogram is not a p=4 profile. The two upstream baselines also remain separate. The first source charges `G=N+3V_0L+64(m_c+1)^3W^2`; the second charges `K_r=3VL+8W+4N+8m_cRV`, `G_r=64(m_c+1)^3(K_r+1)(W+1)^2`, and `E=64(W+m_c+G_r+1)^3`. These are source-specific bills; no production value is substituted for a p=4 or candidate variable.
 
+The complete paired-cube source histograms below are copied from the hash-pinned certificate inputs listed in `SOURCES.md`. They are per group vertex. Child-call totals can exceed `W0`, which counts persistent roles; the weighted totals are the source rank charges.
+
+| Width `r` | Complex `n_r` | Bit `n_r` |
+|---:|---:|---:|
+| 1 | 79,374 | 193,950 |
+| 2 | 81,787 | 200,588 |
+| 3 | 34,704 | 40,116 |
+| 4 | 29,763 | 33,642 |
+| 5 | 22,455 | 18,126 |
+| 6 | 8,535 | 4,875 |
+| 7 | 7,929 | 2,250 |
+| 8 | 7,881 | 3,489 |
+| 9 | 3,603 | 1,482 |
+| 10 | 5,829 | 474 |
+| 11 | 3,261 | 1,365 |
+| 12 | 3,291 | 585 |
+| 13 | 2,028 | 1,059 |
+| 14 | 6,972 | 330 |
+| 15 | 2,478 | 2,580 |
+| 16 | 6,789 | 3,180 |
+| 17 | 4,794 | 4,935 |
+| 18 | 1,194 | 3,246 |
+| 19 | 11,760 | 9,987 |
+| 20 | 11,880 | 7,161 |
+| 21 | 2,640 | 1,242 |
+| 22 | 2,712 | 75 |
+| 48 | 0 | 72 |
+| 51 | 0 | 131 |
+| 54 | 0 | 806 |
+| 57 | 0 | 3,871 |
+| 60 | 4,840 | 1,307 |
+| 63 | 0 | 1,596 |
+| 66 | 0 | 1,760 |
+
+Thus the complex histogram has 346,499 child calls and weighted rank `2,153,528`; the bit histogram has 544,280 child calls and weighted rank `2,234,128`. Their role stocks remain `W0=29,937` and `W0=32,408`, respectively. The width-60 complex exterior children are exactly the 4,840 selected gauges; the bit's maximum child is 66. No candidate histogram is inferred from these baseline counts.
+
 For either complete supplier, a future legal candidate must give its own source-defined multiset and prove, independently for bit and complex,
 
 ```text

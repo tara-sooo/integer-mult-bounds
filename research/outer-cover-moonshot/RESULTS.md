@@ -19,7 +19,7 @@ The exact check command was:
 /usr/bin/time -v python3 research/outer-cover-moonshot/check_small.py
 ```
 
-It exited 0 in `0.27 s` wall time (`0.20 s` user, `0.02 s` system) with maximum RSS `15,568 kB`, on 2026-10-09 UTC. The check creates no production or certificate files.
+It exited 0 in `0.28 s` wall time (`0.19 s` user, `0.01 s` system) with maximum RSS `15,620 kB`, on 2026-10-09 UTC. The check creates no production or certificate files.
 
 ## Decision
 

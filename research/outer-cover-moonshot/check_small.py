@@ -311,6 +311,7 @@ def check_dirty_and_frame_contract():
     assert mm(raw, raw_inv) == eye(2) and mm(raw_inv, raw) == eye(2)
     assert raw_inv == mm(gauge, fourier_inv)
     assert mm(fourier, raw_inv) == mm(mm(fourier, gauge), fourier_inv)
+    assert mm(fourier, raw) == mm(mm(fourier, fourier), gauge_inv)
     return dict(dirty_state_dimension=2, JMV="I", raw_operator="F_A*T_sigma^-1",
                 raw_inverse="T_sigma*F_A^-1", missing_restore_rejected=True)
 
