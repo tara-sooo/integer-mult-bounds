@@ -1,0 +1,42 @@
+{
+  "bilinear_basis_pairs_checked": 16,
+  "n": 4,
+  "negative_control": {
+    "expected_coefficients": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "inputs": [
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "meaning": "omitting -p2 adds the spurious x^2 term",
+    "rejected": true,
+    "wrong_coefficients": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0
+    ]
+  },
+  "ring": "Z",
+  "status": "PASS"
+}
