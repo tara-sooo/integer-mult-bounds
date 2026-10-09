@@ -1,0 +1,24 @@
+{
+  "command": "python3 research/structured-high-arity-joint/check_obstruction.py",
+  "exit_code": 0,
+  "observed": {
+    "binary_integer_product_pairs_checked": 4096,
+    "child_rank_from_classical_theorem": 3,
+    "field_for_rank_statement": "Q",
+    "integer_target_tensor_basis_pairs_checked": 36,
+    "m": 2,
+    "n": 6,
+    "q4_rank_capacity": 12,
+    "q4_status": "NOT_DECIDED",
+    "r": 3,
+    "rank_lower_bound_on_child_count": 4,
+    "rejected_candidate_child_count": 3,
+    "rejected_candidate_rank_capacity": 9,
+    "runtime_seconds": 0.048961,
+    "status": "PASS_SCOPED_RANK_GATE",
+    "target_rank_from_classical_theorem": 11
+  },
+  "runtime_seconds": 0.048961,
+  "runtime_scope": "check_obstruction.py perf_counter measurement; includes all exact basis and binary-input checks",
+  "rank_theorem": "cited prior theorem; not checked by the script"
+}
