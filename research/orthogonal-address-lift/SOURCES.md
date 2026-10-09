@@ -54,6 +54,9 @@ Hashes below are SHA-256 over exact file bytes from the named commit. Source cit
 |---|---|
 | research/orthogonal-address-lift/check_small.py | 3f7e3d7aae4af6aec59587b148629ead397f3b55bbb4d43582a7a1ad4eb3a6b4 |
 | research/orthogonal-address-lift/receipt.json | 0336cea880cca5eb62b85a173976bbf6c4cb8d5b8d865fee0ba15dbc6d47e594 |
+| research/orthogonal-address-lift/COST_DELTA.md | 3d1f6bfa0bff4b3beac530737fee14496b745940d249b6fe50607c211960ba2c |
+
+The exact checker was rerun after the cost-ledger update: 0.21 seconds elapsed, peak RSS 22,448 kB. The checker and receipt bytes did not change; the revised cost ledger hash is recorded above and in RESULTS.md.
 
 The checker reimplements the exact port and matrix equations recorded in the pinned sources and the fixed shear from the Issue 28 verification. It imports no source module, graph dump, generated operator, or private memory. The repository's Apache-2.0 license applies; no source LICENSE or NOTICE was copied or modified. Source-specific notices remain at the cited pins.
 

@@ -16,6 +16,7 @@ The rank 2 witness is not a legal PR 144 lift. Six proposed labels have weight f
 | Rank 1 separate source/target model | FAIL as a model; exact UNSAT certificate |
 | Rank 2 common partial Gram constraints | PASS; explicit 32-label witness checks all 516 support pairs |
 | Rank 2 labels on original baseline K/H supports | PASS; 128 K and 384 H edges checked, zero violations in each; B kept separate |
+| Conditional geometry arithmetic in the cost ledger | PASS as arithmetic only: h 8→10, 3h 24→30, and conditionally 3h−2 22→28; applicability to a realizing h=10 source construction is UNKNOWN / NOT RUN |
 | Source port injectivity and lifted address-span form | PASS; 32 distinct labels, span and Gram rank 10 |
 | Existing paired-cube and norm-one geometry | FAIL; six lifted labels are weight four and isotropic |
 | Existing source/target endpoint and arbitrary-dirty realization | NOT RUN; no source-defined physical lift |
@@ -28,11 +29,12 @@ The exact check is the standard-library script [check_small.py](check_small.py);
 python3 research/orthogonal-address-lift/check_small.py
 ~~~
 
-Measured run: 0.17 seconds elapsed, peak RSS 21,568 kB. SHA-256:
+Rerun after the cost-ledger update: 0.21 seconds elapsed, peak RSS 22,448 kB. SHA-256:
 
 | Artifact | SHA-256 |
 |---|---|
 | check_small.py | 3f7e3d7aae4af6aec59587b148629ead397f3b55bbb4d43582a7a1ad4eb3a6b4 |
 | receipt.json | 0336cea880cca5eb62b85a173976bbf6c4cb8d5b8d865fee0ba15dbc6d47e594 |
+| COST_DELTA.md | 3d1f6bfa0bff4b3beac530737fee14496b745940d249b6fe50607c211960ba2c |
 
 The check is FAST and finite. No whole-repository verify, large CRT regeneration, full group enumeration, full bit word, or full recurrence proof was run. No multiplication improvement or $\kappa$ is claimed.
