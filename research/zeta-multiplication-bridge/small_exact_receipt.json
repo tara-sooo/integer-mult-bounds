@@ -1,0 +1,710 @@
+{
+  "dirty_word_control": {
+    "correct": {
+      "y": "13",
+      "z": "5"
+    },
+    "expected": {
+      "y": "y + J*M*V*x",
+      "z": "original z"
+    },
+    "inputs": {
+      "J": 1,
+      "M": 2,
+      "V": 1,
+      "x": 3,
+      "y": 7,
+      "z": 5
+    },
+    "skipped_inverse": {
+      "y": "13",
+      "z": "13"
+    },
+    "skipped_pre_read": {
+      "y": "23",
+      "z": "5"
+    }
+  },
+  "h0_exact_values": {
+    "disjoint_singleton_coordinate_masks": "-1/18",
+    "disjoint_triples": "-1/2",
+    "formula": "(intersection_size - |left|*|right|/9)/2",
+    "one_point_intersection_triples": "0"
+  },
+  "original_section3_small_port_maps": {
+    "3": {
+      "bit_sum": [
+        [
+          1
+        ]
+      ],
+      "complex_center": [
+        [
+          "1"
+        ]
+      ],
+      "complex_side": [
+        [
+          "0"
+        ]
+      ],
+      "complex_sum": [
+        [
+          "1"
+        ]
+      ],
+      "labels": [
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "ports": 1
+    },
+    "4": {
+      "bit_sum": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "complex_center": [
+        [
+          "1",
+          "1/2",
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "1",
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "1",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "1/2",
+          "1"
+        ]
+      ],
+      "complex_side": [
+        [
+          "0",
+          "-1/2",
+          "-1/2",
+          "-1/2"
+        ],
+        [
+          "-1/2",
+          "0",
+          "-1/2",
+          "-1/2"
+        ],
+        [
+          "-1/2",
+          "-1/2",
+          "0",
+          "-1/2"
+        ],
+        [
+          "-1/2",
+          "-1/2",
+          "-1/2",
+          "0"
+        ]
+      ],
+      "complex_sum": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "labels": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "ports": 4
+    }
+  },
+  "paired_cube_source_control": {
+    "K_squared_is_identity": true,
+    "block_count": 4,
+    "coordinate_star_loss": 48,
+    "h": 8,
+    "identity_decomposition": true,
+    "p": 4,
+    "ports": 32,
+    "side_supports_are_binary_orthogonal": true,
+    "synthetic_disjointness_control": {
+      "B_coefficient": "1/2",
+      "disjointness_indicator": 0,
+      "intersection": 2,
+      "scope": "synthetic restriction on source port labels; not a zeta embedding",
+      "source": [
+        1,
+        3,
+        7
+      ],
+      "target": [
+        1,
+        3,
+        5
+      ]
+    }
+  },
+  "scope": "Exact operator diagnostics and source-defined controls; no mask-to-port encoding is asserted.",
+  "source_histogram_audit": [
+    {
+      "default": {
+        "-1": 6,
+        "1": 6,
+        "2": 6
+      },
+      "default_mass": 12,
+      "h": 3,
+      "required_mass": 12,
+      "supplied": {
+        "2": 6
+      },
+      "supplied_mass": 12,
+      "supplied_overrides_default": true,
+      "v": 6
+    },
+    {
+      "default": {
+        "0": 14,
+        "1": 14,
+        "2": 14
+      },
+      "default_mass": 42,
+      "h": 4,
+      "required_mass": 42,
+      "supplied": {
+        "1": 14,
+        "2": 14
+      },
+      "supplied_mass": 42,
+      "supplied_overrides_default": true,
+      "v": 14
+    },
+    {
+      "default": {
+        "1": 30,
+        "2": 30
+      },
+      "default_mass": 90,
+      "h": 5,
+      "required_mass": 120,
+      "supplied": {
+        "1": 60,
+        "2": 30
+      },
+      "supplied_mass": 120,
+      "supplied_overrides_default": true,
+      "v": 30
+    },
+    {
+      "default": {
+        "1": 62,
+        "2": 62
+      },
+      "default_mass": 186,
+      "h": 6,
+      "required_mass": 310,
+      "supplied": {
+        "1": 186,
+        "2": 62
+      },
+      "supplied_mass": 310,
+      "supplied_overrides_default": true,
+      "v": 62
+    },
+    {
+      "default": {
+        "1": 126,
+        "2": 126,
+        "3": 126
+      },
+      "default_mass": 756,
+      "h": 7,
+      "required_mass": 756,
+      "supplied": {
+        "1": 504,
+        "2": 126
+      },
+      "supplied_mass": 756,
+      "supplied_overrides_default": true,
+      "v": 126
+    },
+    {
+      "default": {
+        "1": 254,
+        "2": 254,
+        "4": 254
+      },
+      "default_mass": 1778,
+      "h": 8,
+      "required_mass": 1778,
+      "supplied": {
+        "1": 1270,
+        "2": 254
+      },
+      "supplied_mass": 1778,
+      "supplied_overrides_default": true,
+      "v": 254
+    }
+  ],
+  "status": "REDUCTION_BRIDGE_NOT_SPECIFIED",
+  "zeta_matrices": [
+    {
+      "D": [
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "D2_diagonal": [
+        3,
+        3,
+        1,
+        3,
+        1,
+        1
+      ],
+      "D2_first_column": [
+        3,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "h": 3,
+      "labels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "rank_over_Q": 6,
+      "row_sums": [
+        3,
+        3,
+        1,
+        3,
+        1,
+        1
+      ],
+      "symmetric": true,
+      "zero_diagonal": true
+    },
+    {
+      "D": [
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "D2_diagonal": [
+        7,
+        7,
+        3,
+        7,
+        3,
+        3,
+        1,
+        7,
+        3,
+        3,
+        1,
+        3,
+        1,
+        1
+      ],
+      "D2_first_column": [
+        7,
+        3,
+        3,
+        3,
+        3,
+        1,
+        1,
+        3,
+        3,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "h": 4,
+      "labels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "rank_over_Q": 14,
+      "row_sums": [
+        7,
+        7,
+        3,
+        7,
+        3,
+        3,
+        1,
+        7,
+        3,
+        3,
+        1,
+        3,
+        1,
+        1
+      ],
+      "symmetric": true,
+      "zero_diagonal": true
+    }
+  ]
+}
