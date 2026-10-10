@@ -1,0 +1,15 @@
+# Novelty and matched-cost comparison
+
+| Method or prior result | Exact relationship to this pilot | Cost consequence |
+|---|---|---|
+| Karatsuba | `J_2` is two Karatsuba products that share `a0+a1`. | Six base products remain; only one repeated linear addition can be removed versus a naive schedule. |
+| Toom–Cook | At every evaluation point, `J_n` pairs two ordinary products; both interpolation maps remain. This is standard multi-output evaluation with a shared input. | Exactly `4n-2` field multiplication leaves are necessary and sufficient for the full-output type. Evaluation/interpolation and coefficient-height growth are charged. |
+| FFT/NTT | A common operand's forward transform can be computed once and used in two pointwise products. This is known shared-transform work. | It avoids duplicate transform work when the baseline fails to cache it; it does not remove either pointwise multiplication or the two inverse/output paths. |
+| Truncated/middle product | It computes fewer output coefficients because the requested output is a window. | Not comparable: `J_n` requests two full products, so no output can be discarded. |
+| Carry-state / streaming carry | Carries normalize integer coefficients and move information between adjacent digits. | This changes output recovery/state, not the bilinear coefficient products in this type. The prior carry-state issue is a novelty control, not a new result here. |
+| Guarded independent-product packing | One `Mul_(3n+1)` replaces two `Mul_n` calls, with a full middle cross term discarded after decoding. | Standard digit packing; `M(3n+1)+O(n)` loses to `2M(n)` in the fixed-shape scaling models evaluated in `JOINT_TYPE.md`. |
+| Issue 23 completed-child screen | Equal child shapes did not give identical complete runtime payloads in the tested Section 4 scope. | This pilot claims no cache hit; its shared input exists before evaluation and its recursive leaves remain distinct. |
+| Issues 31–32 typed/rank pilots | Karatsuba is classical; the Issue 32 lower bound is restricted to rational-linear convolution-child encoding. | Our output-flattening proof is a separate, exact bound for the explicitly typed shared-left full-output map. It does not generalize Issue 32 or cover nonlinear bit states. |
+| Issues 35–39 data/gate/packing screens | Reusing chronology, labels, or frame formulas did not by itself remove a fully charged source-typed child. | The same standard is applied here: the child count is expanded and every parent overhead is charged. |
+
+The only positive operation reuse is a common linear evaluation/transform of `A`; it is familiar, can be included in the independent baseline, and does not save recursive multiplication leaves. This checkpoint proves no strict recursive-child gain; it does not claim a numerical tape-time comparison for the `C_M` and `C_J` movement constants. The exact bilinear result is not a lower bound for arbitrary bit circuits, source-frame suppliers, nonlinear carry states, or a redesigned global integer multiplication algorithm.
