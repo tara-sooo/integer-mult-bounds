@@ -1,0 +1,21 @@
+{
+  "root_operand_width": 2,
+  "strict_child_measure": "left_width + right_width < 2 * root_operand_width",
+  "child_types": [[1, 1], [1, 2], [2, 1]],
+  "max_child_calls": 3,
+  "child_cost": "left_width * right_width elementary 1x1 products",
+  "schoolbook_baseline_cost": 4,
+  "target_max_child_cost": 3,
+  "encoders": "arbitrary independent truth tables from the full A or B source value to the typed child operand",
+  "decoder": "arbitrary truth table of child integer-product outputs only; no original source access",
+  "scratch": "none; source values remain separate and read-only",
+  "seed": null,
+  "resource_budget": {
+    "enumerate_source_pairs": 16,
+    "generalization_diagnostic_source_pairs": 4096,
+    "enumerate_ordered_child_type_profiles": 40,
+    "max_encoder_sets_checked": 4000000,
+    "decoder_tables_enumerated": 0,
+    "stop_rule": "first prune by exact output-signature cardinality; then enumerate only quotient representatives with enough signatures and child cost at most 3"
+  }
+}

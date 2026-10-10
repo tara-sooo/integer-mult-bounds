@@ -1,0 +1,1284 @@
+{
+  "adverse_controls": {
+    "aliased_source_roles": {
+      "independent_product": 2,
+      "inputs": [
+        1,
+        2
+      ],
+      "rejected": true,
+      "square_after_aliasing": 1
+    },
+    "carryless_f2_decode_is_not_integer_decode": {
+      "carryless_polynomial_product": 5,
+      "inputs": [
+        3,
+        3
+      ],
+      "integer_product": 9,
+      "karatsuba_child_outputs": [
+        0,
+        1,
+        1
+      ],
+      "rejected": true
+    },
+    "omitted_partial_product_collision": {
+      "products": [
+        0,
+        4
+      ],
+      "rejected": true,
+      "shared_three_product_signature": [
+        0,
+        0,
+        0
+      ],
+      "source_pairs": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ]
+    },
+    "one_bit_multiplication_sanity": {
+      "cardinality_bound_rejects": false,
+      "one_child_signature_capacity": 2,
+      "product_image": [
+        0,
+        1
+      ]
+    },
+    "restricted_domain_scope": {
+      "cardinality_bound_rejects": false,
+      "domain_per_role": [
+        0,
+        1,
+        2
+      ],
+      "product_image": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "three_bit_signature_capacity": 8
+    }
+  },
+  "checks": {
+    "all_cost_feasible_profiles_either_pruned_or_searched": true,
+    "all_encoder_decoder_tables_enumerated": false,
+    "all_exact_encoder_hits_have_checked_decoder_examples": true,
+    "all_source_pairs_replayed": true,
+    "known_candidate_full_truth_table_exact": true,
+    "natural_extension_collision_replayed": true,
+    "reason_decoder_tables_not_enumerated": "a decoder exists exactly when the child-output signatures separate distinct products; unused entries do not affect correctness"
+  },
+  "child_type_profiles_checked": 40,
+  "classification": {
+    "known_toom_or_karatsuba_isomorphism": true,
+    "novel_operator_found": false,
+    "only_exact_encoder_orbit": "known bitwise Karatsuba: low-bit product, high-bit product, and XOR-form product"
+  },
+  "config": "milestone2_config.json",
+  "conflicting_input_pair_constraints": 96,
+  "deterministic": true,
+  "exact_candidate": {
+    "candidate_boolean_gate_count_for_stated_decoder": {
+      "and_including_children": 6,
+      "not": 1,
+      "total_elementary_gates": 12,
+      "xor_including_encoders_and_decoder": 5
+    },
+    "child_calls": 3,
+    "child_cost_units": 3,
+    "complete_input_output_truth_table": [
+      {
+        "A": 0,
+        "B": 0,
+        "decoded_product": 0,
+        "high_child": 0,
+        "low_child": 0,
+        "xor_child": 0
+      },
+      {
+        "A": 0,
+        "B": 1,
+        "decoded_product": 0,
+        "high_child": 0,
+        "low_child": 0,
+        "xor_child": 0
+      },
+      {
+        "A": 0,
+        "B": 2,
+        "decoded_product": 0,
+        "high_child": 0,
+        "low_child": 0,
+        "xor_child": 0
+      },
+      {
+        "A": 0,
+        "B": 3,
+        "decoded_product": 0,
+        "high_child": 0,
+        "low_child": 0,
+        "xor_child": 0
+      },
+      {
+        "A": 1,
+        "B": 0,
+        "decoded_product": 0,
+        "high_child": 0,
+        "low_child": 0,
+        "xor_child": 0
+      },
+      {
+        "A": 1,
+        "B": 1,
+        "decoded_product": 1,
+        "high_child": 0,
+        "low_child": 1,
+        "xor_child": 1
+      },
+      {
+        "A": 1,
+        "B": 2,
+        "decoded_product": 2,
+        "high_child": 0,
+        "low_child": 0,
+        "xor_child": 1
+      },
+      {
+        "A": 1,
+        "B": 3,
+        "decoded_product": 3,
+        "high_child": 0,
+        "low_child": 1,
+        "xor_child": 0
+      },
+      {
+        "A": 2,
+        "B": 0,
+        "decoded_product": 0,
+        "high_child": 0,
+        "low_child": 0,
+        "xor_child": 0
+      },
+      {
+        "A": 2,
+        "B": 1,
+        "decoded_product": 2,
+        "high_child": 0,
+        "low_child": 0,
+        "xor_child": 1
+      },
+      {
+        "A": 2,
+        "B": 2,
+        "decoded_product": 4,
+        "high_child": 1,
+        "low_child": 0,
+        "xor_child": 1
+      },
+      {
+        "A": 2,
+        "B": 3,
+        "decoded_product": 6,
+        "high_child": 1,
+        "low_child": 0,
+        "xor_child": 0
+      },
+      {
+        "A": 3,
+        "B": 0,
+        "decoded_product": 0,
+        "high_child": 0,
+        "low_child": 0,
+        "xor_child": 0
+      },
+      {
+        "A": 3,
+        "B": 1,
+        "decoded_product": 3,
+        "high_child": 0,
+        "low_child": 1,
+        "xor_child": 0
+      },
+      {
+        "A": 3,
+        "B": 2,
+        "decoded_product": 6,
+        "high_child": 1,
+        "low_child": 0,
+        "xor_child": 0
+      },
+      {
+        "A": 3,
+        "B": 3,
+        "decoded_product": 9,
+        "high_child": 1,
+        "low_child": 1,
+        "xor_child": 0
+      }
+    ],
+    "decoder_boolean_gate_upper_bound": {
+      "and": 3,
+      "gate_model": "two-input XOR/AND/NOT; this is a direct implementation, not a minimum-circuit proof",
+      "not": 1,
+      "xor": 3
+    },
+    "decoder_formula": "q = x XOR l XOR h; c = l AND h AND NOT x; product = l + 2*q + 4*c + 4*h",
+    "decoder_truth_table": [
+      {
+        "child_outputs": [
+          0,
+          0,
+          0
+        ],
+        "product": 0
+      },
+      {
+        "child_outputs": [
+          0,
+          0,
+          1
+        ],
+        "product": 6
+      },
+      {
+        "child_outputs": [
+          0,
+          1,
+          0
+        ],
+        "product": 3
+      },
+      {
+        "child_outputs": [
+          0,
+          1,
+          1
+        ],
+        "product": 9
+      },
+      {
+        "child_outputs": [
+          1,
+          0,
+          0
+        ],
+        "product": 2
+      },
+      {
+        "child_outputs": [
+          1,
+          0,
+          1
+        ],
+        "product": 4
+      },
+      {
+        "child_outputs": [
+          1,
+          1,
+          0
+        ],
+        "product": 1
+      }
+    ],
+    "encoding_boolean_gates": {
+      "and": 0,
+      "not": 0,
+      "xor": 2
+    },
+    "exact_replay_pairs": 16,
+    "schoolbook_child_cost_units": 4,
+    "schoolbook_reference_boolean_gates": {
+      "partial_product_and": 4,
+      "recombination_and": 2,
+      "recombination_xor": 2,
+      "total_elementary_gates": 8
+    },
+    "source_encoders": [
+      "A0 XOR A1 and B0 XOR B1",
+      "A0 and B0",
+      "A1 and B1"
+    ]
+  },
+  "exact_encoder_search": {
+    "all_one_bit_children": {
+      "exact_encoder_sets": 1,
+      "exact_sets_mod_child_permutation_and_source_swap": 1,
+      "examples": [
+        {
+          "decoder": [
+            {
+              "child_outputs": [
+                0,
+                0,
+                0
+              ],
+              "product": 0
+            },
+            {
+              "child_outputs": [
+                0,
+                0,
+                1
+              ],
+              "product": 6
+            },
+            {
+              "child_outputs": [
+                0,
+                1,
+                0
+              ],
+              "product": 3
+            },
+            {
+              "child_outputs": [
+                0,
+                1,
+                1
+              ],
+              "product": 9
+            },
+            {
+              "child_outputs": [
+                1,
+                0,
+                0
+              ],
+              "product": 2
+            },
+            {
+              "child_outputs": [
+                1,
+                0,
+                1
+              ],
+              "product": 4
+            },
+            {
+              "child_outputs": [
+                1,
+                1,
+                0
+              ],
+              "product": 1
+            }
+          ],
+          "encoders": [
+            [
+              6,
+              6
+            ],
+            [
+              10,
+              10
+            ],
+            [
+              12,
+              12
+            ]
+          ],
+          "term_ids": [
+            102,
+            170,
+            204
+          ]
+        }
+      ],
+      "known_f2_karatsuba_encoder_set_found": true,
+      "unordered_encoder_sets_checked": 2829056
+    },
+    "encoder_sets_checked": 3877632,
+    "heterogeneous_1x1_plus_2x1_covered_by_global_source_swap": true,
+    "heterogeneous_children_1x1_plus_1x2": {
+      "encoder_pairs_checked": 1048576,
+      "exact_encoder_pairs": 0,
+      "examples": []
+    },
+    "resource_budget_encoder_sets": 4000000,
+    "symmetries_quotiented": [
+      "child permutation",
+      "global A/B source-role exchange"
+    ]
+  },
+  "exact_product_image": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    6,
+    9
+  ],
+  "exact_product_image_size": 7,
+  "exact_scheme_count": 1,
+  "low_cost_profiles_pruned_by_cardinality": 5,
+  "maximum_low_cost_signature_capacity": 8,
+  "natural_uniform_extension_check": {
+    "extension": "split each 2m-bit operand into m-bit halves; use low product, high product, and product of bitwise-XOR halves",
+    "halfwidth_1_collision": null,
+    "halfwidth_2_collision": null,
+    "halfwidth_3_collision": {
+      "decoder_exists": false,
+      "first": {
+        "A": 1,
+        "B": 43,
+        "child_signature": [
+          6,
+          3,
+          0
+        ],
+        "product": 43
+      },
+      "second": {
+        "A": 3,
+        "B": 25,
+        "child_signature": [
+          6,
+          3,
+          0
+        ],
+        "product": 75
+      }
+    },
+    "parent_operand_width": 6,
+    "source_pairs_checked": 4096
+  },
+  "profile_details": [
+    {
+      "child_cost": 0,
+      "child_types": [],
+      "disposition": "pruned_by_output_cardinality",
+      "signature_capacity_upper_bound": 1
+    },
+    {
+      "child_cost": 1,
+      "child_types": [
+        [
+          1,
+          1
+        ]
+      ],
+      "disposition": "pruned_by_output_cardinality",
+      "signature_capacity_upper_bound": 2
+    },
+    {
+      "child_cost": 2,
+      "child_types": [
+        [
+          1,
+          2
+        ]
+      ],
+      "disposition": "pruned_by_output_cardinality",
+      "signature_capacity_upper_bound": 4
+    },
+    {
+      "child_cost": 2,
+      "child_types": [
+        [
+          2,
+          1
+        ]
+      ],
+      "disposition": "pruned_by_output_cardinality",
+      "signature_capacity_upper_bound": 4
+    },
+    {
+      "child_cost": 2,
+      "child_types": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "disposition": "pruned_by_output_cardinality",
+      "signature_capacity_upper_bound": 4
+    },
+    {
+      "child_cost": 3,
+      "child_types": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "disposition": "survives_lower_bound",
+      "signature_capacity_upper_bound": 8
+    },
+    {
+      "child_cost": 3,
+      "child_types": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "disposition": "survives_lower_bound",
+      "signature_capacity_upper_bound": 8
+    },
+    {
+      "child_cost": 3,
+      "child_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "disposition": "survives_lower_bound",
+      "signature_capacity_upper_bound": 8
+    },
+    {
+      "child_cost": 4,
+      "child_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 16
+    },
+    {
+      "child_cost": 4,
+      "child_types": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 16
+    },
+    {
+      "child_cost": 3,
+      "child_types": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "disposition": "survives_lower_bound",
+      "signature_capacity_upper_bound": 8
+    },
+    {
+      "child_cost": 4,
+      "child_types": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 16
+    },
+    {
+      "child_cost": 4,
+      "child_types": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 16
+    },
+    {
+      "child_cost": 3,
+      "child_types": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "disposition": "survives_lower_bound",
+      "signature_capacity_upper_bound": 8
+    },
+    {
+      "child_cost": 4,
+      "child_types": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 16
+    },
+    {
+      "child_cost": 4,
+      "child_types": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 16
+    },
+    {
+      "child_cost": 4,
+      "child_types": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 16
+    },
+    {
+      "child_cost": 5,
+      "child_types": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 32
+    },
+    {
+      "child_cost": 5,
+      "child_types": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 32
+    },
+    {
+      "child_cost": 4,
+      "child_types": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 16
+    },
+    {
+      "child_cost": 5,
+      "child_types": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 32
+    },
+    {
+      "child_cost": 5,
+      "child_types": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 32
+    },
+    {
+      "child_cost": 4,
+      "child_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 16
+    },
+    {
+      "child_cost": 5,
+      "child_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 32
+    },
+    {
+      "child_cost": 5,
+      "child_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 32
+    },
+    {
+      "child_cost": 5,
+      "child_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 32
+    },
+    {
+      "child_cost": 6,
+      "child_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 64
+    },
+    {
+      "child_cost": 6,
+      "child_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 64
+    },
+    {
+      "child_cost": 5,
+      "child_types": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 32
+    },
+    {
+      "child_cost": 6,
+      "child_types": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 64
+    },
+    {
+      "child_cost": 6,
+      "child_types": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 64
+    },
+    {
+      "child_cost": 4,
+      "child_types": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 16
+    },
+    {
+      "child_cost": 5,
+      "child_types": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 32
+    },
+    {
+      "child_cost": 5,
+      "child_types": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 32
+    },
+    {
+      "child_cost": 5,
+      "child_types": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 32
+    },
+    {
+      "child_cost": 6,
+      "child_types": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 64
+    },
+    {
+      "child_cost": 6,
+      "child_types": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 64
+    },
+    {
+      "child_cost": 5,
+      "child_types": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 32
+    },
+    {
+      "child_cost": 6,
+      "child_types": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 64
+    },
+    {
+      "child_cost": 6,
+      "child_types": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "disposition": "over_cost_budget",
+      "signature_capacity_upper_bound": 64
+    }
+  ],
+  "profiles_over_cost_budget": 30,
+  "profiles_retained_after_cardinality_bound": [
+    {
+      "child_cost": 3,
+      "child_types": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "disposition": "survives_lower_bound",
+      "signature_capacity_upper_bound": 8
+    },
+    {
+      "child_cost": 3,
+      "child_types": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "disposition": "survives_lower_bound",
+      "signature_capacity_upper_bound": 8
+    },
+    {
+      "child_cost": 3,
+      "child_types": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "disposition": "survives_lower_bound",
+      "signature_capacity_upper_bound": 8
+    },
+    {
+      "child_cost": 3,
+      "child_types": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "disposition": "survives_lower_bound",
+      "signature_capacity_upper_bound": 8
+    },
+    {
+      "child_cost": 3,
+      "child_types": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "disposition": "survives_lower_bound",
+      "signature_capacity_upper_bound": 8
+    }
+  ],
+  "profiles_with_cost_at_most_budget": 10,
+  "seed": null,
+  "source_domain": {
+    "A": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "B": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "source_pair_count": 16,
+  "status": "BOUNDED_NEW_GRAMMAR_OBSTRUCTION",
+  "status_scope": "only the bounded typed encoder-child-decoder grammar and child-cost budget in milestone2_config.json",
+  "three_one_bit_call_raw_function_space": {
+    "combined_assignments": 72057594037927936,
+    "decoder_assignments": 4294967296,
+    "encoder_assignments": 16777216,
+    "enumerated": false,
+    "scope_note": "7 distinct exact products fit within 8 signatures; the exact encoder enumeration, not this bound alone, leaves only the known Karatsuba orbit"
+  },
+  "witness_pair_by_product": {
+    "0": [
+      3,
+      0
+    ],
+    "1": [
+      1,
+      1
+    ],
+    "2": [
+      2,
+      1
+    ],
+    "3": [
+      3,
+      1
+    ],
+    "4": [
+      2,
+      2
+    ],
+    "6": [
+      3,
+      2
+    ],
+    "9": [
+      3,
+      3
+    ]
+  }
+}
