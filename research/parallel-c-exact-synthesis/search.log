@@ -1,0 +1,27 @@
+{
+  "accepted_candidates_before_symmetry": 16,
+  "decoder_denominator_histogram_for_exact_spans": {
+    "1": 6,
+    "10": 4,
+    "12": 4,
+    "15": 4,
+    "2": 10,
+    "3": 6,
+    "4": 2,
+    "6": 12,
+    "60": 4,
+    "8": 2,
+    "9": 2
+  },
+  "elapsed_seconds": 8.086582,
+  "orbit_class_counts": {
+    "Karatsuba difference-evaluation": 1,
+    "Karatsuba sum-evaluation (Toom-2 at 0, 1, infinity)": 1,
+    "three-point Toom-2 evaluation/interpolation": 7
+  },
+  "rank_three_triples": 40768,
+  "symmetry_orbits": 9,
+  "triples_examined": 41664,
+  "triples_spanning_all_three_convolution_outputs": 56
+}
+receipt=search_receipt.json

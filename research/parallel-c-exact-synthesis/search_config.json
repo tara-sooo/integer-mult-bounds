@@ -1,0 +1,6 @@
+{
+  "max_abs_linear_coefficient": 2,
+  "decoder_denominators": [1, 2],
+  "products_per_candidate": 3,
+  "finite_replay_limb_bits": 2
+}

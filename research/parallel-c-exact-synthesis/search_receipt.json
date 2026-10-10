@@ -1,0 +1,2332 @@
+{
+  "accepted_candidates": [
+    {
+      "decoder_numerators": [
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          -1,
+          -1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      "denominator": 1,
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            -2
+          ],
+          "b": [
+            1,
+            -2
+          ]
+        },
+        {
+          "a": [
+            1,
+            -1
+          ],
+          "b": [
+            1,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "decoder_numerators": [
+        [
+          0,
+          4,
+          2
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      "denominator": 2,
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            -2
+          ],
+          "b": [
+            1,
+            -2
+          ]
+        },
+        {
+          "a": [
+            1,
+            0
+          ],
+          "b": [
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "decoder_numerators": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "denominator": 1,
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            -1
+          ],
+          "b": [
+            1,
+            -1
+          ]
+        },
+        {
+          "a": [
+            1,
+            0
+          ],
+          "b": [
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "decoder_numerators": [
+        [
+          -2,
+          0,
+          2
+        ],
+        [
+          1,
+          -1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "denominator": 2,
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            -1
+          ],
+          "b": [
+            1,
+            -1
+          ]
+        },
+        {
+          "a": [
+            1,
+            1
+          ],
+          "b": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "decoder_numerators": [
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          -2,
+          -4,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "denominator": 2,
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            -1
+          ],
+          "b": [
+            1,
+            -1
+          ]
+        },
+        {
+          "a": [
+            2,
+            -1
+          ],
+          "b": [
+            2,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "decoder_numerators": [
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "denominator": 1,
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            0
+          ],
+          "b": [
+            1,
+            0
+          ]
+        },
+        {
+          "a": [
+            1,
+            1
+          ],
+          "b": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "decoder_numerators": [
+        [
+          0,
+          -4,
+          2
+        ],
+        [
+          2,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "denominator": 2,
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            0
+          ],
+          "b": [
+            1,
+            0
+          ]
+        },
+        {
+          "a": [
+            1,
+            2
+          ],
+          "b": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "decoder_numerators": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          4,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ]
+      ],
+      "denominator": 2,
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            0
+          ],
+          "b": [
+            1,
+            0
+          ]
+        },
+        {
+          "a": [
+            2,
+            -1
+          ],
+          "b": [
+            2,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "decoder_numerators": [
+        [
+          0,
+          -1,
+          2
+        ],
+        [
+          2,
+          -4,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "denominator": 2,
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            0
+          ],
+          "b": [
+            1,
+            0
+          ]
+        },
+        {
+          "a": [
+            2,
+            1
+          ],
+          "b": [
+            2,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "decoder_numerators": [
+        [
+          2,
+          -3,
+          1
+        ],
+        [
+          2,
+          -1,
+          0
+        ],
+        [
+          -1,
+          1,
+          0
+        ]
+      ],
+      "denominator": 1,
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            1
+          ],
+          "b": [
+            1,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            2
+          ],
+          "b": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "decoder_numerators": [
+        [
+          1,
+          -3,
+          2
+        ],
+        [
+          -2,
+          4,
+          0
+        ],
+        [
+          1,
+          -1,
+          0
+        ]
+      ],
+      "denominator": 2,
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            1
+          ],
+          "b": [
+            1,
+            1
+          ]
+        },
+        {
+          "a": [
+            2,
+            1
+          ],
+          "b": [
+            2,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "decoder_numerators": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          -4,
+          -2
+        ],
+        [
+          2,
+          3,
+          1
+        ]
+      ],
+      "denominator": 2,
+      "terms": [
+        {
+          "a": [
+            1,
+            -2
+          ],
+          "b": [
+            1,
+            -2
+          ]
+        },
+        {
+          "a": [
+            1,
+            -1
+          ],
+          "b": [
+            1,
+            -1
+          ]
+        },
+        {
+          "a": [
+            1,
+            0
+          ],
+          "b": [
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "decoder_numerators": [
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          2,
+          0,
+          -2
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "denominator": 2,
+      "terms": [
+        {
+          "a": [
+            1,
+            -1
+          ],
+          "b": [
+            1,
+            -1
+          ]
+        },
+        {
+          "a": [
+            1,
+            0
+          ],
+          "b": [
+            1,
+            0
+          ]
+        },
+        {
+          "a": [
+            1,
+            1
+          ],
+          "b": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "decoder_numerators": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          0,
+          -1,
+          -1
+        ]
+      ],
+      "denominator": 1,
+      "terms": [
+        {
+          "a": [
+            1,
+            -1
+          ],
+          "b": [
+            1,
+            -1
+          ]
+        },
+        {
+          "a": [
+            1,
+            0
+          ],
+          "b": [
+            1,
+            0
+          ]
+        },
+        {
+          "a": [
+            2,
+            -1
+          ],
+          "b": [
+            2,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "decoder_numerators": [
+        [
+          2,
+          -3,
+          1
+        ],
+        [
+          0,
+          4,
+          -2
+        ],
+        [
+          0,
+          -1,
+          1
+        ]
+      ],
+      "denominator": 2,
+      "terms": [
+        {
+          "a": [
+            1,
+            0
+          ],
+          "b": [
+            1,
+            0
+          ]
+        },
+        {
+          "a": [
+            1,
+            1
+          ],
+          "b": [
+            1,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            2
+          ],
+          "b": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "decoder_numerators": [
+        [
+          1,
+          -3,
+          2
+        ],
+        [
+          0,
+          -1,
+          2
+        ],
+        [
+          0,
+          1,
+          -1
+        ]
+      ],
+      "denominator": 1,
+      "terms": [
+        {
+          "a": [
+            1,
+            0
+          ],
+          "b": [
+            1,
+            0
+          ]
+        },
+        {
+          "a": [
+            1,
+            1
+          ],
+          "b": [
+            1,
+            1
+          ]
+        },
+        {
+          "a": [
+            2,
+            1
+          ],
+          "b": [
+            2,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "accepted_candidates_before_symmetry": 16,
+  "actual_integer_multiplication_replay": {
+    "base": 4,
+    "candidate_count": 16,
+    "input_quadruples_per_candidate": 256,
+    "limb_bits": 2,
+    "status": "PASS"
+  },
+  "adverse_controls": {
+    "independent_source_roles": {
+      "a": [
+        1,
+        2
+      ],
+      "aliased_product": 81,
+      "b": [
+        3,
+        1
+      ],
+      "independent_product": 63,
+      "status": "PASS: aliasing B's source to A's values fails on a != b"
+    },
+    "wrong_decoder": {
+      "status": "PASS: rejected by exact tensor check and finite replay",
+      "witness": {
+        "a": [
+          0,
+          1
+        ],
+        "b": [
+          0,
+          1
+        ],
+        "candidate_output": 17,
+        "expected": 16,
+        "failure": "wrong integer product"
+      }
+    }
+  },
+  "all_evaluation_triples_in_projective_form_set": 56,
+  "config": {
+    "decoder_denominators": [
+      1,
+      2
+    ],
+    "finite_replay_limb_bits": 2,
+    "max_abs_linear_coefficient": 2,
+    "products_per_candidate": 3
+  },
+  "decoder_denominator_histogram_for_exact_spans": {
+    "1": 6,
+    "10": 4,
+    "12": 4,
+    "15": 4,
+    "2": 10,
+    "3": 6,
+    "4": 2,
+    "6": 12,
+    "60": 4,
+    "8": 2,
+    "9": 2
+  },
+  "elapsed_seconds": 8.086582,
+  "exact_span_classification": "PASS: the complete valid set is exactly every triple of distinct diagonal source forms (same projective linear form on A and B)",
+  "exact_tensor_checks": "PASS for every accepted candidate: integer numerator tensors equal denominator times convolution tensor",
+  "input_forms": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      -2
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      -1
+    ],
+    [
+      2,
+      1
+    ]
+  ],
+  "method": "deterministic exhaustive enumeration; no RNG seed",
+  "orbit_class_counts": {
+    "Karatsuba difference-evaluation": 1,
+    "Karatsuba sum-evaluation (Toom-2 at 0, 1, infinity)": 1,
+    "three-point Toom-2 evaluation/interpolation": 7
+  },
+  "platform": "Android-15-aarch64-64bit-ELF",
+  "python_version": "3.14.6",
+  "rank_three_triples": 40768,
+  "representatives": [
+    {
+      "cost_screen_at_configured_limb_bits": {
+        "base": 4,
+        "children": [
+          {
+            "a_abs_bound": 3,
+            "a_form": [
+              0,
+              1
+            ],
+            "a_magnitude_bits": 2,
+            "a_sign_variable": false,
+            "b_abs_bound": 3,
+            "b_form": [
+              0,
+              1
+            ],
+            "b_magnitude_bits": 2,
+            "b_sign_variable": false,
+            "child": 1
+          },
+          {
+            "a_abs_bound": 3,
+            "a_form": [
+              1,
+              -1
+            ],
+            "a_magnitude_bits": 2,
+            "a_sign_variable": true,
+            "b_abs_bound": 3,
+            "b_form": [
+              1,
+              -1
+            ],
+            "b_magnitude_bits": 2,
+            "b_sign_variable": true,
+            "child": 2
+          },
+          {
+            "a_abs_bound": 3,
+            "a_form": [
+              1,
+              0
+            ],
+            "a_magnitude_bits": 2,
+            "a_sign_variable": false,
+            "b_abs_bound": 3,
+            "b_form": [
+              1,
+              0
+            ],
+            "b_magnitude_bits": 2,
+            "b_sign_variable": false,
+            "child": 3
+          }
+        ],
+        "decoder": [
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              0,
+              0,
+              1
+            ],
+            "minimum_binary_adds_to_combine": 0,
+            "nonunit_constant_scales": [],
+            "nonzero_products": 1,
+            "output_coefficient": 0
+          },
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              1,
+              -1,
+              1
+            ],
+            "minimum_binary_adds_to_combine": 2,
+            "nonunit_constant_scales": [],
+            "nonzero_products": 3,
+            "output_coefficient": 1
+          },
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              1,
+              0,
+              0
+            ],
+            "minimum_binary_adds_to_combine": 0,
+            "nonunit_constant_scales": [],
+            "nonzero_products": 1,
+            "output_coefficient": 2
+          }
+        ],
+        "limb_bits": 2,
+        "variable_sign_input_normalizations": 2,
+        "variable_sign_product_restorations": 1
+      },
+      "decoder_numerators": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "denominator": 1,
+      "known_class": "Karatsuba difference-evaluation",
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            -1
+          ],
+          "b": [
+            1,
+            -1
+          ]
+        },
+        {
+          "a": [
+            1,
+            0
+          ],
+          "b": [
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "cost_screen_at_configured_limb_bits": {
+        "base": 4,
+        "children": [
+          {
+            "a_abs_bound": 3,
+            "a_form": [
+              0,
+              1
+            ],
+            "a_magnitude_bits": 2,
+            "a_sign_variable": false,
+            "b_abs_bound": 3,
+            "b_form": [
+              0,
+              1
+            ],
+            "b_magnitude_bits": 2,
+            "b_sign_variable": false,
+            "child": 1
+          },
+          {
+            "a_abs_bound": 6,
+            "a_form": [
+              1,
+              -2
+            ],
+            "a_magnitude_bits": 3,
+            "a_sign_variable": true,
+            "b_abs_bound": 6,
+            "b_form": [
+              1,
+              -2
+            ],
+            "b_magnitude_bits": 3,
+            "b_sign_variable": true,
+            "child": 2
+          },
+          {
+            "a_abs_bound": 3,
+            "a_form": [
+              1,
+              -1
+            ],
+            "a_magnitude_bits": 2,
+            "a_sign_variable": true,
+            "b_abs_bound": 3,
+            "b_form": [
+              1,
+              -1
+            ],
+            "b_magnitude_bits": 2,
+            "b_sign_variable": true,
+            "child": 3
+          }
+        ],
+        "decoder": [
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              2,
+              -1,
+              2
+            ],
+            "minimum_binary_adds_to_combine": 2,
+            "nonunit_constant_scales": [
+              2,
+              2
+            ],
+            "nonzero_products": 3,
+            "output_coefficient": 0
+          },
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              3,
+              -1,
+              1
+            ],
+            "minimum_binary_adds_to_combine": 2,
+            "nonunit_constant_scales": [
+              3
+            ],
+            "nonzero_products": 3,
+            "output_coefficient": 1
+          },
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              1,
+              0,
+              0
+            ],
+            "minimum_binary_adds_to_combine": 0,
+            "nonunit_constant_scales": [],
+            "nonzero_products": 1,
+            "output_coefficient": 2
+          }
+        ],
+        "limb_bits": 2,
+        "variable_sign_input_normalizations": 4,
+        "variable_sign_product_restorations": 2
+      },
+      "decoder_numerators": [
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          -1,
+          -1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      "denominator": 1,
+      "known_class": "three-point Toom-2 evaluation/interpolation",
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            -2
+          ],
+          "b": [
+            1,
+            -2
+          ]
+        },
+        {
+          "a": [
+            1,
+            -1
+          ],
+          "b": [
+            1,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "cost_screen_at_configured_limb_bits": {
+        "base": 4,
+        "children": [
+          {
+            "a_abs_bound": 3,
+            "a_form": [
+              0,
+              1
+            ],
+            "a_magnitude_bits": 2,
+            "a_sign_variable": false,
+            "b_abs_bound": 3,
+            "b_form": [
+              0,
+              1
+            ],
+            "b_magnitude_bits": 2,
+            "b_sign_variable": false,
+            "child": 1
+          },
+          {
+            "a_abs_bound": 3,
+            "a_form": [
+              1,
+              0
+            ],
+            "a_magnitude_bits": 2,
+            "a_sign_variable": false,
+            "b_abs_bound": 3,
+            "b_form": [
+              1,
+              0
+            ],
+            "b_magnitude_bits": 2,
+            "b_sign_variable": false,
+            "child": 2
+          },
+          {
+            "a_abs_bound": 6,
+            "a_form": [
+              1,
+              1
+            ],
+            "a_magnitude_bits": 3,
+            "a_sign_variable": false,
+            "b_abs_bound": 6,
+            "b_form": [
+              1,
+              1
+            ],
+            "b_magnitude_bits": 3,
+            "b_sign_variable": false,
+            "child": 3
+          }
+        ],
+        "decoder": [
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              0,
+              1,
+              0
+            ],
+            "minimum_binary_adds_to_combine": 0,
+            "nonunit_constant_scales": [],
+            "nonzero_products": 1,
+            "output_coefficient": 0
+          },
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              -1,
+              -1,
+              1
+            ],
+            "minimum_binary_adds_to_combine": 2,
+            "nonunit_constant_scales": [],
+            "nonzero_products": 3,
+            "output_coefficient": 1
+          },
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              1,
+              0,
+              0
+            ],
+            "minimum_binary_adds_to_combine": 0,
+            "nonunit_constant_scales": [],
+            "nonzero_products": 1,
+            "output_coefficient": 2
+          }
+        ],
+        "limb_bits": 2,
+        "variable_sign_input_normalizations": 0,
+        "variable_sign_product_restorations": 0
+      },
+      "decoder_numerators": [
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "denominator": 1,
+      "known_class": "Karatsuba sum-evaluation (Toom-2 at 0, 1, infinity)",
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            0
+          ],
+          "b": [
+            1,
+            0
+          ]
+        },
+        {
+          "a": [
+            1,
+            1
+          ],
+          "b": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "cost_screen_at_configured_limb_bits": {
+        "base": 4,
+        "children": [
+          {
+            "a_abs_bound": 3,
+            "a_form": [
+              0,
+              1
+            ],
+            "a_magnitude_bits": 2,
+            "a_sign_variable": false,
+            "b_abs_bound": 3,
+            "b_form": [
+              0,
+              1
+            ],
+            "b_magnitude_bits": 2,
+            "b_sign_variable": false,
+            "child": 1
+          },
+          {
+            "a_abs_bound": 6,
+            "a_form": [
+              1,
+              1
+            ],
+            "a_magnitude_bits": 3,
+            "a_sign_variable": false,
+            "b_abs_bound": 6,
+            "b_form": [
+              1,
+              1
+            ],
+            "b_magnitude_bits": 3,
+            "b_sign_variable": false,
+            "child": 2
+          },
+          {
+            "a_abs_bound": 9,
+            "a_form": [
+              1,
+              2
+            ],
+            "a_magnitude_bits": 4,
+            "a_sign_variable": false,
+            "b_abs_bound": 9,
+            "b_form": [
+              1,
+              2
+            ],
+            "b_magnitude_bits": 4,
+            "b_sign_variable": false,
+            "child": 3
+          }
+        ],
+        "decoder": [
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              2,
+              2,
+              -1
+            ],
+            "minimum_binary_adds_to_combine": 2,
+            "nonunit_constant_scales": [
+              2,
+              2
+            ],
+            "nonzero_products": 3,
+            "output_coefficient": 0
+          },
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              -3,
+              -1,
+              1
+            ],
+            "minimum_binary_adds_to_combine": 2,
+            "nonunit_constant_scales": [
+              -3
+            ],
+            "nonzero_products": 3,
+            "output_coefficient": 1
+          },
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              1,
+              0,
+              0
+            ],
+            "minimum_binary_adds_to_combine": 0,
+            "nonunit_constant_scales": [],
+            "nonzero_products": 1,
+            "output_coefficient": 2
+          }
+        ],
+        "limb_bits": 2,
+        "variable_sign_input_normalizations": 0,
+        "variable_sign_product_restorations": 0
+      },
+      "decoder_numerators": [
+        [
+          2,
+          -3,
+          1
+        ],
+        [
+          2,
+          -1,
+          0
+        ],
+        [
+          -1,
+          1,
+          0
+        ]
+      ],
+      "denominator": 1,
+      "known_class": "three-point Toom-2 evaluation/interpolation",
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            1
+          ],
+          "b": [
+            1,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            2
+          ],
+          "b": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "cost_screen_at_configured_limb_bits": {
+        "base": 4,
+        "children": [
+          {
+            "a_abs_bound": 3,
+            "a_form": [
+              0,
+              1
+            ],
+            "a_magnitude_bits": 2,
+            "a_sign_variable": false,
+            "b_abs_bound": 3,
+            "b_form": [
+              0,
+              1
+            ],
+            "b_magnitude_bits": 2,
+            "b_sign_variable": false,
+            "child": 1
+          },
+          {
+            "a_abs_bound": 3,
+            "a_form": [
+              1,
+              -1
+            ],
+            "a_magnitude_bits": 2,
+            "a_sign_variable": true,
+            "b_abs_bound": 3,
+            "b_form": [
+              1,
+              -1
+            ],
+            "b_magnitude_bits": 2,
+            "b_sign_variable": true,
+            "child": 2
+          },
+          {
+            "a_abs_bound": 6,
+            "a_form": [
+              1,
+              1
+            ],
+            "a_magnitude_bits": 3,
+            "a_sign_variable": false,
+            "b_abs_bound": 6,
+            "b_form": [
+              1,
+              1
+            ],
+            "b_magnitude_bits": 3,
+            "b_sign_variable": false,
+            "child": 3
+          }
+        ],
+        "decoder": [
+          {
+            "exact_division_by": 2,
+            "integer_coefficients_after_common_factor_reduction": [
+              -2,
+              1,
+              1
+            ],
+            "minimum_binary_adds_to_combine": 2,
+            "nonunit_constant_scales": [
+              -2
+            ],
+            "nonzero_products": 3,
+            "output_coefficient": 0
+          },
+          {
+            "exact_division_by": 2,
+            "integer_coefficients_after_common_factor_reduction": [
+              0,
+              -1,
+              1
+            ],
+            "minimum_binary_adds_to_combine": 1,
+            "nonunit_constant_scales": [],
+            "nonzero_products": 2,
+            "output_coefficient": 1
+          },
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              1,
+              0,
+              0
+            ],
+            "minimum_binary_adds_to_combine": 0,
+            "nonunit_constant_scales": [],
+            "nonzero_products": 1,
+            "output_coefficient": 2
+          }
+        ],
+        "limb_bits": 2,
+        "variable_sign_input_normalizations": 2,
+        "variable_sign_product_restorations": 1
+      },
+      "decoder_numerators": [
+        [
+          -2,
+          0,
+          2
+        ],
+        [
+          1,
+          -1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "denominator": 2,
+      "known_class": "three-point Toom-2 evaluation/interpolation",
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            -1
+          ],
+          "b": [
+            1,
+            -1
+          ]
+        },
+        {
+          "a": [
+            1,
+            1
+          ],
+          "b": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "cost_screen_at_configured_limb_bits": {
+        "base": 4,
+        "children": [
+          {
+            "a_abs_bound": 3,
+            "a_form": [
+              0,
+              1
+            ],
+            "a_magnitude_bits": 2,
+            "a_sign_variable": false,
+            "b_abs_bound": 3,
+            "b_form": [
+              0,
+              1
+            ],
+            "b_magnitude_bits": 2,
+            "b_sign_variable": false,
+            "child": 1
+          },
+          {
+            "a_abs_bound": 3,
+            "a_form": [
+              1,
+              -1
+            ],
+            "a_magnitude_bits": 2,
+            "a_sign_variable": true,
+            "b_abs_bound": 3,
+            "b_form": [
+              1,
+              -1
+            ],
+            "b_magnitude_bits": 2,
+            "b_sign_variable": true,
+            "child": 2
+          },
+          {
+            "a_abs_bound": 6,
+            "a_form": [
+              2,
+              -1
+            ],
+            "a_magnitude_bits": 3,
+            "a_sign_variable": true,
+            "b_abs_bound": 6,
+            "b_form": [
+              2,
+              -1
+            ],
+            "b_magnitude_bits": 3,
+            "b_sign_variable": true,
+            "child": 3
+          }
+        ],
+        "decoder": [
+          {
+            "exact_division_by": 2,
+            "integer_coefficients_after_common_factor_reduction": [
+              1,
+              -2,
+              1
+            ],
+            "minimum_binary_adds_to_combine": 2,
+            "nonunit_constant_scales": [
+              -2
+            ],
+            "nonzero_products": 3,
+            "output_coefficient": 0
+          },
+          {
+            "exact_division_by": 2,
+            "integer_coefficients_after_common_factor_reduction": [
+              3,
+              -4,
+              1
+            ],
+            "minimum_binary_adds_to_combine": 2,
+            "nonunit_constant_scales": [
+              3,
+              -4
+            ],
+            "nonzero_products": 3,
+            "output_coefficient": 1
+          },
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              1,
+              0,
+              0
+            ],
+            "minimum_binary_adds_to_combine": 0,
+            "nonunit_constant_scales": [],
+            "nonzero_products": 1,
+            "output_coefficient": 2
+          }
+        ],
+        "limb_bits": 2,
+        "variable_sign_input_normalizations": 4,
+        "variable_sign_product_restorations": 2
+      },
+      "decoder_numerators": [
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          -2,
+          -4,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "denominator": 2,
+      "known_class": "three-point Toom-2 evaluation/interpolation",
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            -1
+          ],
+          "b": [
+            1,
+            -1
+          ]
+        },
+        {
+          "a": [
+            2,
+            -1
+          ],
+          "b": [
+            2,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "cost_screen_at_configured_limb_bits": {
+        "base": 4,
+        "children": [
+          {
+            "a_abs_bound": 3,
+            "a_form": [
+              0,
+              1
+            ],
+            "a_magnitude_bits": 2,
+            "a_sign_variable": false,
+            "b_abs_bound": 3,
+            "b_form": [
+              0,
+              1
+            ],
+            "b_magnitude_bits": 2,
+            "b_sign_variable": false,
+            "child": 1
+          },
+          {
+            "a_abs_bound": 6,
+            "a_form": [
+              1,
+              -2
+            ],
+            "a_magnitude_bits": 3,
+            "a_sign_variable": true,
+            "b_abs_bound": 6,
+            "b_form": [
+              1,
+              -2
+            ],
+            "b_magnitude_bits": 3,
+            "b_sign_variable": true,
+            "child": 2
+          },
+          {
+            "a_abs_bound": 3,
+            "a_form": [
+              1,
+              0
+            ],
+            "a_magnitude_bits": 2,
+            "a_sign_variable": false,
+            "b_abs_bound": 3,
+            "b_form": [
+              1,
+              0
+            ],
+            "b_magnitude_bits": 2,
+            "b_sign_variable": false,
+            "child": 3
+          }
+        ],
+        "decoder": [
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              0,
+              0,
+              1
+            ],
+            "minimum_binary_adds_to_combine": 0,
+            "nonunit_constant_scales": [],
+            "nonzero_products": 1,
+            "output_coefficient": 0
+          },
+          {
+            "exact_division_by": 2,
+            "integer_coefficients_after_common_factor_reduction": [
+              4,
+              -1,
+              1
+            ],
+            "minimum_binary_adds_to_combine": 2,
+            "nonunit_constant_scales": [
+              4
+            ],
+            "nonzero_products": 3,
+            "output_coefficient": 1
+          },
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              1,
+              0,
+              0
+            ],
+            "minimum_binary_adds_to_combine": 0,
+            "nonunit_constant_scales": [],
+            "nonzero_products": 1,
+            "output_coefficient": 2
+          }
+        ],
+        "limb_bits": 2,
+        "variable_sign_input_normalizations": 2,
+        "variable_sign_product_restorations": 1
+      },
+      "decoder_numerators": [
+        [
+          0,
+          4,
+          2
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      "denominator": 2,
+      "known_class": "three-point Toom-2 evaluation/interpolation",
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            -2
+          ],
+          "b": [
+            1,
+            -2
+          ]
+        },
+        {
+          "a": [
+            1,
+            0
+          ],
+          "b": [
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "cost_screen_at_configured_limb_bits": {
+        "base": 4,
+        "children": [
+          {
+            "a_abs_bound": 3,
+            "a_form": [
+              0,
+              1
+            ],
+            "a_magnitude_bits": 2,
+            "a_sign_variable": false,
+            "b_abs_bound": 3,
+            "b_form": [
+              0,
+              1
+            ],
+            "b_magnitude_bits": 2,
+            "b_sign_variable": false,
+            "child": 1
+          },
+          {
+            "a_abs_bound": 3,
+            "a_form": [
+              1,
+              0
+            ],
+            "a_magnitude_bits": 2,
+            "a_sign_variable": false,
+            "b_abs_bound": 3,
+            "b_form": [
+              1,
+              0
+            ],
+            "b_magnitude_bits": 2,
+            "b_sign_variable": false,
+            "child": 2
+          },
+          {
+            "a_abs_bound": 9,
+            "a_form": [
+              1,
+              2
+            ],
+            "a_magnitude_bits": 4,
+            "a_sign_variable": false,
+            "b_abs_bound": 9,
+            "b_form": [
+              1,
+              2
+            ],
+            "b_magnitude_bits": 4,
+            "b_sign_variable": false,
+            "child": 3
+          }
+        ],
+        "decoder": [
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              0,
+              1,
+              0
+            ],
+            "minimum_binary_adds_to_combine": 0,
+            "nonunit_constant_scales": [],
+            "nonzero_products": 1,
+            "output_coefficient": 0
+          },
+          {
+            "exact_division_by": 2,
+            "integer_coefficients_after_common_factor_reduction": [
+              -4,
+              -1,
+              1
+            ],
+            "minimum_binary_adds_to_combine": 2,
+            "nonunit_constant_scales": [
+              -4
+            ],
+            "nonzero_products": 3,
+            "output_coefficient": 1
+          },
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              1,
+              0,
+              0
+            ],
+            "minimum_binary_adds_to_combine": 0,
+            "nonunit_constant_scales": [],
+            "nonzero_products": 1,
+            "output_coefficient": 2
+          }
+        ],
+        "limb_bits": 2,
+        "variable_sign_input_normalizations": 0,
+        "variable_sign_product_restorations": 0
+      },
+      "decoder_numerators": [
+        [
+          0,
+          -4,
+          2
+        ],
+        [
+          2,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "denominator": 2,
+      "known_class": "three-point Toom-2 evaluation/interpolation",
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            0
+          ],
+          "b": [
+            1,
+            0
+          ]
+        },
+        {
+          "a": [
+            1,
+            2
+          ],
+          "b": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "cost_screen_at_configured_limb_bits": {
+        "base": 4,
+        "children": [
+          {
+            "a_abs_bound": 3,
+            "a_form": [
+              0,
+              1
+            ],
+            "a_magnitude_bits": 2,
+            "a_sign_variable": false,
+            "b_abs_bound": 3,
+            "b_form": [
+              0,
+              1
+            ],
+            "b_magnitude_bits": 2,
+            "b_sign_variable": false,
+            "child": 1
+          },
+          {
+            "a_abs_bound": 6,
+            "a_form": [
+              1,
+              1
+            ],
+            "a_magnitude_bits": 3,
+            "a_sign_variable": false,
+            "b_abs_bound": 6,
+            "b_form": [
+              1,
+              1
+            ],
+            "b_magnitude_bits": 3,
+            "b_sign_variable": false,
+            "child": 2
+          },
+          {
+            "a_abs_bound": 9,
+            "a_form": [
+              2,
+              1
+            ],
+            "a_magnitude_bits": 4,
+            "a_sign_variable": false,
+            "b_abs_bound": 9,
+            "b_form": [
+              2,
+              1
+            ],
+            "b_magnitude_bits": 4,
+            "b_sign_variable": false,
+            "child": 3
+          }
+        ],
+        "decoder": [
+          {
+            "exact_division_by": 2,
+            "integer_coefficients_after_common_factor_reduction": [
+              1,
+              -2,
+              1
+            ],
+            "minimum_binary_adds_to_combine": 2,
+            "nonunit_constant_scales": [
+              -2
+            ],
+            "nonzero_products": 3,
+            "output_coefficient": 0
+          },
+          {
+            "exact_division_by": 2,
+            "integer_coefficients_after_common_factor_reduction": [
+              -3,
+              4,
+              -1
+            ],
+            "minimum_binary_adds_to_combine": 2,
+            "nonunit_constant_scales": [
+              -3,
+              4
+            ],
+            "nonzero_products": 3,
+            "output_coefficient": 1
+          },
+          {
+            "exact_division_by": 1,
+            "integer_coefficients_after_common_factor_reduction": [
+              1,
+              0,
+              0
+            ],
+            "minimum_binary_adds_to_combine": 0,
+            "nonunit_constant_scales": [],
+            "nonzero_products": 1,
+            "output_coefficient": 2
+          }
+        ],
+        "limb_bits": 2,
+        "variable_sign_input_normalizations": 0,
+        "variable_sign_product_restorations": 0
+      },
+      "decoder_numerators": [
+        [
+          1,
+          -3,
+          2
+        ],
+        [
+          -2,
+          4,
+          0
+        ],
+        [
+          1,
+          -1,
+          0
+        ]
+      ],
+      "denominator": 2,
+      "known_class": "three-point Toom-2 evaluation/interpolation",
+      "terms": [
+        {
+          "a": [
+            0,
+            1
+          ],
+          "b": [
+            0,
+            1
+          ]
+        },
+        {
+          "a": [
+            1,
+            1
+          ],
+          "b": [
+            1,
+            1
+          ]
+        },
+        {
+          "a": [
+            2,
+            1
+          ],
+          "b": [
+            2,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "symmetry_orbits": 9,
+  "symmetry_quotient": [
+    "product permutation",
+    "A/B input exchange",
+    "simultaneous limb reversal with endpoint-output reversal",
+    "per-factor sign normalization"
+  ],
+  "term_count": 64,
+  "triples_examined": 41664,
+  "triples_spanning_all_three_convolution_outputs": 56
+}
