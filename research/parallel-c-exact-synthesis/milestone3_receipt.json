@@ -1,0 +1,280 @@
+{
+  "result": "SCOPED_FRAME_NO_GO",
+  "result_counts": {
+    "E12_and_E21_histogram": {
+      "10": 38,
+      "11": 282,
+      "12": 892,
+      "13": 3608,
+      "14": 7558,
+      "15": 19650,
+      "16": 31068,
+      "17": 60604,
+      "18": 79712,
+      "19": 119224,
+      "20": 134964,
+      "21": 167540,
+      "22": 167032,
+      "23": 170732,
+      "24": 145544,
+      "25": 122800,
+      "26": 90050,
+      "27": 61432,
+      "28": 36754,
+      "29": 18236,
+      "30": 7916,
+      "31": 2246,
+      "32": 638
+    },
+    "E12_and_E21_strict_deficit_assignments": 0,
+    "assignments_containing_E12_and_E21": 1448520,
+    "assignments_containing_E12_and_E21_expected": 1448520,
+    "baseline_Wm": 8,
+    "best_frame_examples_palette_ids": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "best_rank_sum": 8,
+    "rank_sum_histogram": {
+      "10": 472,
+      "11": 1685,
+      "12": 3325,
+      "13": 10087,
+      "14": 17807,
+      "15": 37819,
+      "16": 54592,
+      "17": 96701,
+      "18": 122160,
+      "19": 171187,
+      "20": 187599,
+      "21": 223353,
+      "22": 217842,
+      "23": 216046,
+      "24": 181861,
+      "25": 151154,
+      "26": 109906,
+      "27": 73719,
+      "28": 43219,
+      "29": 20784,
+      "30": 8726,
+      "31": 2344,
+      "32": 638,
+      "8": 18,
+      "9": 81
+    },
+    "strict_deficit_assignments": 0
+  },
+  "search": {
+    "W": 4,
+    "common_translation_quotiented": true,
+    "data_roles": [
+      0,
+      1,
+      2
+    ],
+    "elapsed_seconds": 21.702,
+    "enumerated_assignments": 1953125,
+    "field": "Q",
+    "frame_palette_matrices": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0
+      ]
+    ],
+    "frame_palette_names": [
+      "0",
+      "I",
+      "E12",
+      "E21",
+      "E12+E21"
+    ],
+    "gate_word_control_target": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "limit": "exhaustive over the stated fixed topology and palette; no timeout",
+    "m": 2,
+    "raw_palette_assignments_including_scratch": 9765625,
+    "rho_input_to_output": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "scratch_frame_palette_choices_quotiented": 5,
+    "scratch_frame_quotiented": true,
+    "scratch_roles": [
+      3
+    ],
+    "seed": null
+  },
+  "verification": {
+    "common_gate_frame": "one matrix variable per gate shared by both incident roles",
+    "f2_aliased_role_domain_rejected": true,
+    "f2_all_independent_inputs": 16,
+    "f2_permutation_pass": true,
+    "f2_scratch_arbitrary_and_preserved": true,
+    "f2_wrong_control_gate_rejected": true,
+    "f2_wrong_control_mismatching_rows": 12,
+    "q_endpoint_equations_checked_all_distinct_source_tuples": 500,
+    "q_endpoint_perturbation_rejected": true,
+    "q_rank_controls_pass": true,
+    "q_rank_formula": "0 for zero, 1 for nonzero determinant-zero, 2 for nonzero determinant"
+  }
+}
